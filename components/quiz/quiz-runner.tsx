@@ -11,6 +11,7 @@ import { Progress } from "@/components/ui/progress";
 import { MODULE_VALIDATION_THRESHOLD } from "@/content/data/reglementation";
 import { newCard, reviewCard } from "@/lib/calc/sm2";
 import { getDomain } from "@/lib/catalog";
+import { uuid } from "@/lib/ids";
 import { useProgressStore } from "@/lib/progress";
 import {
   buildDomainResults,
@@ -19,13 +20,6 @@ import {
   type AnswerMap,
 } from "@/lib/quiz/selection";
 import type { LevelSlug, ProgressStore, Question, QuizAttempt } from "@/lib/types";
-
-function makeId(prefix: string): string {
-  if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
-    return `${prefix}-${crypto.randomUUID()}`;
-  }
-  return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
-}
 
 /**
  * Enregistre les cartes de révision espacée pour les questions ratées :
@@ -122,7 +116,7 @@ export function QuizRunner({
     const finishedAt = new Date().toISOString();
     const { score, maxScore, percent } = scoreAnswers(questions, answers);
     const attempt: QuizAttempt = {
-      id: makeId("quiz"),
+      id: uuid(),
       kind: mode,
       level,
       moduleSlug,

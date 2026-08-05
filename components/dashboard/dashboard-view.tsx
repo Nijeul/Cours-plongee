@@ -270,6 +270,9 @@ export function DashboardView({ availableModules, questionCounts, questionMeta }
     const entries: HistoryEntry[] = [];
     for (const attempt of snap.attempts) {
       if (attempt.maxScore <= 0) continue;
+      // Les examens blancs sont listés via leur session (avec réussite/échec) :
+      // la tentative jumelle de kind « examen » ferait doublon.
+      if (attempt.kind === "examen") continue;
       const moduleTitle = attempt.moduleSlug
         ? (getCatalogModule(attempt.moduleSlug)?.title ?? attempt.moduleSlug)
         : `Série ${getLevel(attempt.level).title}`;
@@ -363,7 +366,7 @@ export function DashboardView({ availableModules, questionCounts, questionMeta }
         <StatCard
           icon={<Target className="size-4" />}
           label="Quiz réalisés"
-          value={snap.attempts.length}
+          value={snap.attempts.filter((a) => a.kind !== "examen").length}
           hint="entraînements, validations et révisions"
         />
         <StatCard

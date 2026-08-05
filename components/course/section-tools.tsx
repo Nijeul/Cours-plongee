@@ -14,6 +14,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
+import { uuid } from "@/lib/ids";
 import { useProgressStore } from "@/lib/progress";
 import type { Bookmark as BookmarkType, Note, SectionRef } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -21,13 +22,6 @@ import { cn } from "@/lib/utils";
 interface SectionToolsProps {
   moduleSlug: string;
   sections: SectionRef[];
-}
-
-function newId(): string {
-  if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
-    return crypto.randomUUID();
-  }
-  return `id-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
 }
 
 /**
@@ -70,7 +64,7 @@ export function SectionTools({ moduleSlug, sections }: SectionToolsProps) {
         toast("Marque-page retiré");
       } else {
         const bookmark: BookmarkType = {
-          id: newId(),
+          id: uuid(),
           moduleSlug,
           anchor: section.anchor,
           title: section.title,
@@ -105,7 +99,7 @@ export function SectionTools({ moduleSlug, sections }: SectionToolsProps) {
         }
       } else {
         const note: Note = {
-          id: existing?.id ?? newId(),
+          id: existing?.id ?? uuid(),
           moduleSlug,
           anchor: editing.anchor,
           content,
