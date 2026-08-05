@@ -1,0 +1,3465 @@
+{
+  "level": "n1",
+  "questions": [
+    {
+      "id": "n1-physique-001",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "la-pression--le-poids-de-leau-au-dessus-de-vous",
+      "prompt": "En descendant sous l'eau, de combien la pression augmente-t-elle environ tous les 10 mètres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,1 bar"
+        },
+        {
+          "id": "b",
+          "text": "1 bar"
+        },
+        {
+          "id": "c",
+          "text": "10 bars"
+        },
+        {
+          "id": "d",
+          "text": "2 bars"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'eau est environ 800 fois plus dense que l'air : il suffit de descendre 10 mètres pour que la colonne d'eau ajoute 1 bar de pression. C'est la règle d'or de toute la physique de la plongée. Les réponses 0,1 bar et 10 bars correspondent à des erreurs d'un facteur 10, et 2 bars serait la valeur pour 20 mètres, pas pour 10.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-physique-002",
+      "type": "calcul",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "pression-atmosphérique-relative-et-absolue",
+      "prompt": "Quelle est la pression absolue subie par un plongeur à 20 m de profondeur en mer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 bars"
+        },
+        {
+          "id": "b",
+          "text": "3 bars"
+        },
+        {
+          "id": "c",
+          "text": "20 bars"
+        },
+        {
+          "id": "d",
+          "text": "1 bar"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La pression absolue est la somme de la pression atmosphérique (1 bar) et de la pression relative due à l'eau (1 bar tous les 10 m, soit 2 bars à 20 m) : $P_{abs} = 1 + 20/10 = 3$ bars. Répondre 2 bars est l'erreur classique qui consiste à oublier le bar atmosphérique ; 20 bars confond profondeur et pression, et 1 bar est la pression en surface.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-physique-003",
+      "type": "calcul",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "pression-atmosphérique-relative-et-absolue",
+      "prompt": "À 15 m de profondeur, quelle est la pression absolue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5 bar"
+        },
+        {
+          "id": "b",
+          "text": "2 bars"
+        },
+        {
+          "id": "c",
+          "text": "2,5 bars"
+        },
+        {
+          "id": "d",
+          "text": "3 bars"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "La pression relative à 15 m vaut $15/10 = 1{,}5$ bar ; en ajoutant la pression atmosphérique de 1 bar, on obtient $P_{abs} = 1 + 1{,}5 = 2{,}5$ bars. La réponse 1,5 bar oublie l'atmosphère, 2 bars correspondrait à 10 m et 3 bars à 20 m : la formule fonctionne aussi pour les profondeurs intermédiaires.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-physique-004",
+      "type": "calcul",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "pression-atmosphérique-relative-et-absolue",
+      "prompt": "Quelle est la pression relative (hydrostatique) exercée par l'eau seule sur un plongeur à 30 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 bars"
+        },
+        {
+          "id": "b",
+          "text": "4 bars"
+        },
+        {
+          "id": "c",
+          "text": "30 bars"
+        },
+        {
+          "id": "d",
+          "text": "1 bar"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La pression relative est le poids de la seule colonne d'eau : $P_{rel} = 30/10 = 3$ bars. La réponse 4 bars est la pression absolue (3 + 1 bar d'atmosphère), qu'il ne faut pas confondre avec la pression relative demandée ici ; 30 bars confond mètres et bars.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-physique-005",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "pression-atmosphérique-relative-et-absolue",
+      "prompt": "Entre la surface et 10 m de profondeur, la pression absolue double.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "C'est vrai : la pression absolue passe de 1 bar en surface à 2 bars à 10 m, soit une augmentation de 100 %. Aucune autre tranche de 10 m ne produit une variation relative aussi forte (de 30 à 40 m, la pression ne gagne que 25 %) : c'est pourquoi la zone proche de la surface est celle où le corps est le plus sollicité.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-physique-006",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "pression-atmosphérique-relative-et-absolue",
+      "prompt": "Dans quelle zone les variations **relatives** de pression sont-elles les plus fortes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Près de la surface (0 à 10 m)"
+        },
+        {
+          "id": "b",
+          "text": "Entre 20 et 30 m"
+        },
+        {
+          "id": "c",
+          "text": "Au-delà de 40 m"
+        },
+        {
+          "id": "d",
+          "text": "Elles sont identiques à toutes les profondeurs"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Entre 0 et 10 m, la pression absolue double (de 1 à 2 bars, +100 %), alors qu'en profondeur chaque tranche de 10 m représente une part de plus en plus faible de la pression totale. Les volumes d'air varient donc le plus vite près de la surface : c'est là que surviennent la plupart des barotraumatismes, et non en grande profondeur comme on pourrait l'imaginer intuitivement.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-physique-007",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "lair-se-comprime-leau-non",
+      "prompt": "L'eau, comme l'air, se comprime lorsqu'on descend en profondeur.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : l'air est compressible mais l'eau ne l'est pas, comme le montre l'expérience de la seringue bouchée. Le corps humain, essentiellement composé d'eau, ne craint donc rien de la pression directe ; seules les poches d'air (oreilles, sinus, poumons, masque, gilet) voient leur volume changer avec la profondeur, et ce sont elles qui posent problème.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-physique-008",
+      "type": "calcul",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "lair-se-comprime-leau-non",
+      "prompt": "Un ballon souple contient 6 litres d'air en surface. Quel volume occupe-t-il à 10 m de profondeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 L"
+        },
+        {
+          "id": "b",
+          "text": "3 L"
+        },
+        {
+          "id": "c",
+          "text": "2 L"
+        },
+        {
+          "id": "d",
+          "text": "12 L"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "À 10 m, la pression absolue passe de 1 à 2 bars : elle double, donc le volume d'air est divisé par deux, soit $6/2 = 3$ L. La réponse 2 L correspondrait à 20 m (3 bars), 12 L supposerait que l'air se dilate à la descente (c'est l'inverse), et 6 L supposerait un volume constant, ce qui n'est vrai que pour un récipient rigide.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-physique-009",
+      "type": "calcul",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "lair-se-comprime-leau-non",
+      "prompt": "Un ballon souple contient 2 litres d'air à 20 m. Quel volume occupera cet air une fois revenu en surface ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 L"
+        },
+        {
+          "id": "b",
+          "text": "4 L"
+        },
+        {
+          "id": "c",
+          "text": "6 L"
+        },
+        {
+          "id": "d",
+          "text": "1 L"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "À 20 m la pression absolue est de 3 bars ; en surface elle n'est que de 1 bar. Le volume est donc multiplié par 3 : $2 \\times 3 = 6$ L. La réponse 4 L correspondrait à un facteur 2 (erreur d'oubli du bar atmosphérique), et 1 L supposerait que l'air se comprime à la remontée alors qu'il se dilate. Ce mécanisme de dilatation est exactement celui qui menace les poumons d'un plongeur qui bloquerait sa respiration.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-physique-010",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "la-poussée-darchimède-racontée-simplement",
+      "prompt": "Qu'est-ce que la poussée d'Archimède ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une poussée vers le haut égale au poids du volume d'eau déplacé"
+        },
+        {
+          "id": "b",
+          "text": "Une force vers le bas due au poids de l'eau"
+        },
+        {
+          "id": "c",
+          "text": "La force du courant qui pousse le plongeur"
+        },
+        {
+          "id": "d",
+          "text": "La pression exercée par l'air du gilet"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Tout corps plongé dans l'eau reçoit une poussée verticale dirigée du bas vers le haut, égale au poids du volume d'eau qu'il déplace : c'est le principe d'Archimède. La force vers le bas est le poids, pas la poussée ; le courant et le gilet n'ont rien à voir avec ce principe, même si le gilet exploite Archimède en augmentant le volume du plongeur.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-physique-011",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "la-poussée-darchimède-racontée-simplement",
+      "prompt": "Un plongeur en flottabilité neutre :",
+      "options": [
+        {
+          "id": "a",
+          "text": "remonte lentement vers la surface"
+        },
+        {
+          "id": "b",
+          "text": "reste stable entre deux eaux, sans monter ni descendre"
+        },
+        {
+          "id": "c",
+          "text": "coule doucement vers le fond"
+        },
+        {
+          "id": "d",
+          "text": "flotte obligatoirement en surface"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La flottabilité neutre correspond à l'équilibre parfait entre le poids (vers le bas) et la poussée d'Archimède (vers le haut) : le plongeur reste immobile entre deux eaux, comme un poisson. S'il remonte, sa flottabilité est positive ; s'il coule, elle est négative. C'est cet équilibre que le plongeur recherche en permanence pour évoluer sans effort.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-physique-012",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "la-poussée-darchimède-racontée-simplement",
+      "prompt": "On flotte mieux en eau de mer qu'en eau douce.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "C'est vrai : l'eau de mer, plus dense à cause du sel, pousse plus fort vers le haut à volume déplacé égal. Conséquence pratique : un plongeur équilibré en piscine ou en lac devra ajouter du plomb en passant en mer, car la poussée y est plus forte — le lestage se réajuste à chaque changement de milieu.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-physique-013",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "le-plongeur--un-équilibre-qui-change-pendant-la-plongée",
+      "prompt": "Que devient la combinaison en néoprène quand le plongeur descend en profondeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle gonfle et fait remonter le plongeur"
+        },
+        {
+          "id": "b",
+          "text": "Ses microbulles s'écrasent : elle perd de la flottabilité"
+        },
+        {
+          "id": "c",
+          "text": "Elle ne change pas, le néoprène est incompressible"
+        },
+        {
+          "id": "d",
+          "text": "Elle devient plus isolante grâce à la pression"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le néoprène est rempli de milliers de microbulles de gaz qui, comme toute poche d'air, s'écrasent avec la pression : la combinaison perd du volume, donc de la poussée d'Archimède, et le plongeur devient plus « lourd » en descendant. C'est pourquoi il faut injecter de l'air dans le gilet au fil de la descente. Le néoprène n'est ni incompressible ni plus isolant sous pression — il isole au contraire moins bien une fois écrasé.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-physique-014",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "le-plongeur--un-équilibre-qui-change-pendant-la-plongée",
+      "prompt": "Comment utiliser ses poumons comme « réglage fin » de la flottabilité (poumon-ballast) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inspirer amplement pour monter légèrement, expirer longuement pour descendre"
+        },
+        {
+          "id": "b",
+          "text": "Bloquer sa respiration pour rester stable"
+        },
+        {
+          "id": "c",
+          "text": "Expirer pour monter, inspirer pour descendre"
+        },
+        {
+          "id": "d",
+          "text": "Respirer très vite pour rester entre deux eaux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les poumons sont une poche d'air dont le volume varie avec la respiration : une inspiration ample augmente le volume, donc la poussée d'Archimède, et fait légèrement monter ; une expiration prolongée fait descendre. La réponse c inverse le mécanisme, et bloquer sa respiration est exactement le geste interdit en plongée (risque de surpression pulmonaire à la remontée).",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-physique-015",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "le-plongeur--un-équilibre-qui-change-pendant-la-plongée",
+      "prompt": "Pourquoi faut-il purger régulièrement son gilet pendant la remontée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que l'air du gilet se dilate et accélère dangereusement la remontée"
+        },
+        {
+          "id": "b",
+          "text": "Parce que l'air du gilet se comprime et fait couler"
+        },
+        {
+          "id": "c",
+          "text": "Pour économiser l'air du bloc"
+        },
+        {
+          "id": "d",
+          "text": "Pour éviter que le gilet ne se remplisse d'eau"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À la remontée, la pression diminue et l'air du gilet se dilate : la flottabilité augmente, la vitesse aussi, donc l'air se dilate encore plus — un cercle vicieux qui transforme le gilet en « fusée ». Purger régulièrement casse cet emballement et maintient une vitesse lente. L'air se comprime à la descente, pas à la remontée, et la purge n'a rien à voir avec l'économie d'air ni avec une entrée d'eau.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-physique-016",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "le-plongeur--un-équilibre-qui-change-pendant-la-plongée",
+      "prompt": "Quelles sont les conséquences d'un surlestage (trop de plombs) ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il oblige à gonfler davantage le gilet"
+        },
+        {
+          "id": "b",
+          "text": "Il rend la stabilisation instable et fatigante"
+        },
+        {
+          "id": "c",
+          "text": "Il augmente la consommation d'air"
+        },
+        {
+          "id": "d",
+          "text": "Il améliore la descente et la sécurité"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le surlestage est un faux ami : pour compenser l'excès de plomb, il faut gonfler davantage le gilet, dont le volume varie alors plus fortement avec la profondeur — la stabilisation devient instable, le plongeur lutte, se fatigue et consomme plus d'air. Il ne fait en rien « mieux descendre » en sécurité : le bon lestage se vérifie en surface avec l'aide du moniteur.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-physique-017",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "le-plongeur--un-équilibre-qui-change-pendant-la-plongée",
+      "prompt": "Comment vérifie-t-on un bon lestage en surface ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gilet vide et poumons à mi-capacité, on flotte au niveau des yeux et on s'immerge sur une expiration"
+        },
+        {
+          "id": "b",
+          "text": "Gilet gonflé à fond, on doit flotter la tête haute"
+        },
+        {
+          "id": "c",
+          "text": "On doit couler immédiatement dès l'entrée dans l'eau"
+        },
+        {
+          "id": "d",
+          "text": "On doit pouvoir rester en surface sans palmer, gilet vide et poumons pleins d'air bloqué"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le critère du bon lestage : gilet vide et poumons à mi-capacité, le plongeur flotte au niveau des yeux et s'immerge sur une simple expiration. Couler immédiatement traduit un surlestage, dangereux et fatigant ; tester gilet gonflé ne renseigne en rien sur le lestage puisque le gilet compense n'importe quel excès de plomb.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-physique-018",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physique",
+      "moduleSlug": "n1-flottabilite-pression",
+      "sectionAnchor": "ce-que-la-pression-change-concrètement-dans-votre-plongée",
+      "prompt": "Pourquoi la bouteille se vide-t-elle plus vite à 20 m qu'en surface ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que chaque litre d'air respiré à 3 bars « contient » trois fois plus d'air qu'en surface"
+        },
+        {
+          "id": "b",
+          "text": "Parce que le détendeur fuit en profondeur"
+        },
+        {
+          "id": "c",
+          "text": "Parce que le froid contracte l'air du bloc"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'on respire plus vite au fond, uniquement"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À 20 m, la pression absolue est de 3 bars : le détendeur délivre l'air à cette pression, et chaque litre inspiré prélève l'équivalent de trois litres d'air détendu sur le bloc. La consommation triple donc même à ventilation identique. Le détendeur ne fuit pas en profondeur et le froid ne suffit pas à expliquer ce phénomène ; le rythme respiratoire peut s'ajouter, mais la cause principale est physique.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-001",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "un-mécanisme-commun-à-tous-les-barotraumatismes",
+      "prompt": "Quel est le mécanisme commun à tous les barotraumatismes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une différence de pression entre une cavité d'air fermée et le milieu extérieur"
+        },
+        {
+          "id": "b",
+          "text": "Une infection due à l'eau de mer"
+        },
+        {
+          "id": "c",
+          "text": "Un excès d'azote dissous dans les tissus"
+        },
+        {
+          "id": "d",
+          "text": "Un manque d'oxygène dans le sang"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Un barotraumatisme survient quand une cavité aérienne ne communique plus avec l'extérieur : la différence de pression entre l'intérieur et l'extérieur tire ou comprime les tissus (tympan, muqueuses, poumons), comme une bouteille en plastique fermée qui s'écrase à la descente. L'excès d'azote dissous correspond à l'accident de désaturation, un mécanisme totalement différent, et il ne s'agit ni d'une infection ni d'un manque d'oxygène.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-baro-002",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "un-mécanisme-commun-à-tous-les-barotraumatismes",
+      "prompt": "Quels barotraumatismes surviennent principalement à la **descente** ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les oreilles"
+        },
+        {
+          "id": "b",
+          "text": "Le plaquage de masque"
+        },
+        {
+          "id": "c",
+          "text": "La surpression pulmonaire"
+        },
+        {
+          "id": "d",
+          "text": "Les sinus"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "À la descente, les cavités se retrouvent « en dépression » et les tissus sont aspirés vers l'intérieur : ce mécanisme touche les oreilles, les sinus et le masque. La surpression pulmonaire est au contraire l'accident typique de la remontée : l'air enfermé dans les poumons se dilate et distend les alvéoles quand le plongeur bloque sa respiration.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-003",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "un-mécanisme-commun-à-tous-les-barotraumatismes",
+      "prompt": "Les barotraumatismes de la descente surviennent surtout dans les 10 premiers mètres.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "C'est vrai : les variations relatives de pression sont maximales près de la surface (la pression absolue double entre 0 et 10 m), donc les volumes d'air y varient le plus vite. C'est pour cette raison que les oreilles font mal dès les premiers mètres, et que le risque de surpression pulmonaire reste présent jusqu'au dernier mètre de la remontée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-004",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-oreilles--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "Par quel canal l'oreille moyenne communique-t-elle avec l'arrière-nez ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le conduit auditif externe"
+        },
+        {
+          "id": "b",
+          "text": "La trompe d'Eustache"
+        },
+        {
+          "id": "c",
+          "text": "Le canal lacrymal"
+        },
+        {
+          "id": "d",
+          "text": "Les sinus frontaux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'oreille moyenne est une caisse d'air fermée par le tympan, reliée au pharynx par la trompe d'Eustache, normalement fermée au repos : c'est par elle que la manœuvre de Valsalva envoie l'air qui rééquilibre les pressions. Le conduit auditif externe est du côté extérieur du tympan et n'intervient pas dans l'équilibrage ; le canal lacrymal et les sinus n'ont aucun lien avec l'oreille moyenne.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-baro-005",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-oreilles--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "En quoi consiste la manœuvre de Valsalva ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pincer le nez, bouche fermée, et souffler doucement comme pour se moucher"
+        },
+        {
+          "id": "b",
+          "text": "Avaler sa salive en apnée profonde"
+        },
+        {
+          "id": "c",
+          "text": "Souffler fort par la bouche dans le détendeur"
+        },
+        {
+          "id": "d",
+          "text": "Se boucher les oreilles avec les doigts et déglutir"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le Valsalva consiste à pincer le nez, bouche fermée, et à souffler doucement dans le nez : l'air remonte par les trompes d'Eustache et « regonfle » l'oreille moyenne. C'est la manœuvre enseignée au Niveau 1, efficace à condition de souffler en douceur. La déglutition aide certains plongeurs mais ce n'est pas le Valsalva, et souffler dans le détendeur ou se boucher les oreilles n'équilibre rien du tout.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-baro-006",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-oreilles--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "Quand faut-il équilibrer ses oreilles à la descente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tôt, souvent, et avant d'avoir mal"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement quand la douleur apparaît"
+        },
+        {
+          "id": "c",
+          "text": "Une seule fois, arrivé au fond"
+        },
+        {
+          "id": "d",
+          "text": "Seulement en dessous de 10 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La règle d'or est d'équilibrer dès la mise à l'eau, tous les mètres au début, et surtout avant que la douleur n'apparaisse : une trompe d'Eustache déjà comprimée par la différence de pression devient très difficile à ouvrir. Attendre la douleur ou n'équilibrer qu'au fond, c'est laisser le tympan se déformer ; et c'est précisément dans les 10 premiers mètres, pas en dessous, que l'équilibrage est le plus sollicité.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-007",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-oreilles--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "À la descente, votre oreille « ne passe pas » malgré un Valsalva doux. Que faites-vous ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Je force le Valsalva jusqu'à ce que ça passe"
+        },
+        {
+          "id": "b",
+          "text": "Je stoppe la descente, je remonte d'un ou deux mètres et je réessaie calmement"
+        },
+        {
+          "id": "c",
+          "text": "Je continue la descente, la douleur finira par disparaître"
+        },
+        {
+          "id": "d",
+          "text": "Je retire mon masque pour équilibrer"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La conduite correcte est de stopper la descente, remonter légèrement pour réduire la différence de pression, puis réessayer sans forcer ; si l'oreille ne passe toujours pas, on fait le signe « ça ne va pas » en montrant l'oreille et la plongée s'arrête — ce n'est jamais un échec. Forcer expose à une lésion de l'oreille interne, continuer à descendre mène à la déchirure du tympan, et retirer son masque n'a aucun effet sur l'oreille moyenne.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-008",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-oreilles--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "À la remontée, il faut faire des manœuvres de Valsalva régulières pour protéger ses oreilles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux, et c'est même une règle de sécurité majeure : à la remontée, l'air en excès sort tout seul des oreilles par les trompes d'Eustache. Un Valsalva ajouterait de la pression dans une oreille déjà en surpression et pourrait léser l'oreille interne (vertiges, surdité, acouphènes, parfois définitifs). Le Valsalva est un geste de descente uniquement.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-baro-009",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-oreilles--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "Pourquoi ne faut-il pas plonger enrhumé, même avec un spray décongestionnant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que les trompes d'Eustache encombrées ne laissent pas passer l'air, et l'effet du spray peut cesser au fond et piéger l'air à la remontée"
+        },
+        {
+          "id": "b",
+          "text": "Parce que le rhume s'aggrave toujours avec la pression"
+        },
+        {
+          "id": "c",
+          "text": "Parce que le spray est interdit par le Code du sport"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'on risque de contaminer sa palanquée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Enrhumé, les trompes d'Eustache et les canaux des sinus sont encombrés : l'équilibrage devient impossible et le barotraumatisme guette. Les sprays décongestionnants sont une fausse solution : leur effet peut se dissiper pendant la plongée et piéger l'air dans les cavités à la remontée, provoquant l'accident qu'on voulait éviter. Il ne s'agit ni d'une interdiction réglementaire ni d'un problème de contagion : c'est un mécanisme purement physique.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-baro-010",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-oreilles--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "Quel risque fait courir un Valsalva trop fort et prolongé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une lésion de l'oreille interne (vertiges, surdité, acouphènes), parfois définitive"
+        },
+        {
+          "id": "b",
+          "text": "Aucun : plus on souffle fort, mieux l'oreille passe"
+        },
+        {
+          "id": "c",
+          "text": "Un simple mal de tête passager"
+        },
+        {
+          "id": "d",
+          "text": "Un essoufflement immédiat"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Un Valsalva doit rester un souffle doux et bref : souffler fort et longtemps transmet une surpression brutale à l'oreille interne et peut provoquer vertiges, surdité et acouphènes, avec des lésions parfois irréversibles. L'idée que « plus on force, mieux ça passe » est exactement le réflexe dangereux à combattre ; il ne s'agit ni d'un simple mal de tête ni d'un essoufflement.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-baro-011",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-sinus-et-les-dents",
+      "prompt": "Une douleur vive au front ou sous les yeux pendant la descente évoque :",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un barotraumatisme des sinus"
+        },
+        {
+          "id": "b",
+          "text": "Un début de narcose"
+        },
+        {
+          "id": "c",
+          "text": "Un plaquage de masque"
+        },
+        {
+          "id": "d",
+          "text": "Un accident de désaturation"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les sinus sont des cavités creusées dans les os du front et des pommettes : quand leurs canaux sont bouchés (rhume, sinusite), la descente crée une dépression douloureuse à ces endroits précis, parfois avec un petit saignement de nez. Le plaquage de masque donne une sensation de ventouse sur le visage et les yeux, pas une douleur osseuse localisée ; la narcose ne survient pas à ces profondeurs au N1 et l'ADD se déclare après la plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-012",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-sinus-et-les-dents",
+      "prompt": "Comment une dent peut-elle être le siège d'un barotraumatisme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une minuscule bulle d'air piégée sous un plombage défectueux ou dans une carie subit les variations de pression"
+        },
+        {
+          "id": "b",
+          "text": "L'émail se dissout dans l'eau de mer"
+        },
+        {
+          "id": "c",
+          "text": "Le froid de l'air détendu fait éclater la dent"
+        },
+        {
+          "id": "d",
+          "text": "La pression écrase directement la mâchoire"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Une carie ou un soin défectueux peut emprisonner une microbulle d'air : comprimée à la descente puis dilatée à la remontée, elle met la pulpe dentaire sous tension et provoque une douleur localisée. La prévention passe par une bonne hygiène dentaire et par le fait de signaler sa pratique de la plongée à son dentiste. L'émail ne se dissout pas, le froid n'éclate pas les dents et la pression ne peut pas « écraser » la mâchoire, qui ne contient pas de cavité d'air en temps normal.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-baro-013",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "le-plaquage-de-masque",
+      "prompt": "Comment prévenir le plaquage de masque à la descente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Souffler de temps en temps un peu d'air par le nez dans le masque"
+        },
+        {
+          "id": "b",
+          "text": "Serrer davantage la sangle du masque"
+        },
+        {
+          "id": "c",
+          "text": "Retenir sa respiration pendant la descente"
+        },
+        {
+          "id": "d",
+          "text": "Mettre de l'eau dans le masque avant de descendre"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À la descente, l'air du masque se comprime et le transforme en ventouse ; il suffit de souffler régulièrement un peu d'air par le nez pour rétablir la pression — c'est précisément pour cela que le masque de plongée englobe le nez. Serrer la sangle aggrave l'effet ventouse, retenir sa respiration n'a aucun effet sur le volume du masque, et le remplir d'eau supprimerait la vision nette qu'il procure.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-baro-014",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "le-plaquage-de-masque",
+      "prompt": "Pourquoi ne plonge-t-on jamais en bouteille avec des lunettes de piscine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'elles n'englobent pas le nez : impossible de compenser leur volume d'air à la descente"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'elles ne tiennent pas avec une cagoule"
+        },
+        {
+          "id": "c",
+          "text": "Parce que leur verre n'est pas assez résistant à la pression"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'elles donnent une vision déformée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La compensation du plaquage se fait en soufflant de l'air par le nez dans le masque : des lunettes de piscine, qui laissent le nez à l'extérieur, ne permettent pas ce geste et se transforment en ventouses sur les yeux dès les premiers mètres. Le problème n'est ni la solidité du verre, ni la cagoule, ni l'optique : c'est bien l'impossibilité physique d'équilibrer leur volume d'air interne.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-015",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "le-plaquage-de-masque",
+      "prompt": "À la remontée, il faut souffler par le nez dans son masque pour éviter qu'il ne se plaque.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : le plaquage de masque est un accident de la descente, quand l'air du masque se comprime. À la remontée, l'air en excès se dilate et s'échappe tout seul sous la jupe souple du masque — il n'y a strictement rien à faire. Le geste de compensation par le nez ne s'impose donc qu'en descendant.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-016",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--rare-mais-gravissime",
+      "prompt": "Quelle est la cause de la surpression pulmonaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le blocage de la respiration pendant la remontée : l'air des poumons se dilate et déchire les alvéoles"
+        },
+        {
+          "id": "b",
+          "text": "Une inspiration trop profonde au fond"
+        },
+        {
+          "id": "c",
+          "text": "L'azote qui forme des bulles dans le sang"
+        },
+        {
+          "id": "d",
+          "text": "Une descente trop rapide sans équilibrer"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le détendeur délivre de l'air à la pression du fond ; si le plongeur remonte en bloquant sa respiration, cet air veut se dilater (loi des volumes) et distend les poumons jusqu'à déchirer les alvéoles, laissant l'air passer dans les tissus et la circulation. Inspirer profondément au fond est sans danger si l'on continue de respirer ; les bulles d'azote caractérisent l'accident de désaturation, et la descente rapide provoque des barotraumatismes des oreilles ou des sinus, pas des poumons.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-baro-017",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--rare-mais-gravissime",
+      "prompt": "Quelle est LA règle absolue de prévention de la surpression pulmonaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ne jamais bloquer sa respiration à la remontée"
+        },
+        {
+          "id": "b",
+          "text": "Ne jamais descendre au-delà de 10 m"
+        },
+        {
+          "id": "c",
+          "text": "Toujours remonter en apnée pour économiser l'air"
+        },
+        {
+          "id": "d",
+          "text": "Faire un Valsalva toutes les 30 secondes"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La règle du Niveau 1 tient en une phrase : ne jamais bloquer sa respiration à la remontée — on respire normalement, en continu, et lors d'une remontée sans embout on expire doucement tout au long. L'expiration libre laisse l'air dilaté s'échapper et les poumons ne peuvent pas se surgonfler. Remonter en apnée est exactement le geste qui tue, la limite des 10 m ne protège pas (l'accident est possible à 2 m) et le Valsalva concerne les oreilles à la descente.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-baro-018",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--rare-mais-gravissime",
+      "prompt": "Une surpression pulmonaire peut survenir en piscine, à moins de 2 mètres de profondeur.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "C'est vrai : c'est entre la surface et 10 m que le volume de l'air varie proportionnellement le plus vite, et quelques dixièmes de bar d'écart suffisent à léser les alvéoles. Un plongeur qui inspire au fond d'une piscine et remonte en bloquant sa respiration peut donc faire une surpression pulmonaire à moins de 2 m — raison pour laquelle cette règle est enseignée dès le baptême.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-019",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--rare-mais-gravissime",
+      "prompt": "Quels signes doivent faire évoquer une surpression pulmonaire après une remontée ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Douleur thoracique brutale et difficulté à respirer"
+        },
+        {
+          "id": "b",
+          "text": "Crachats sanglants"
+        },
+        {
+          "id": "c",
+          "text": "Troubles neurologiques (perte de connaissance, paralysie)"
+        },
+        {
+          "id": "d",
+          "text": "Douleur d'oreille isolée"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "La déchirure des alvéoles provoque douleur thoracique, détresse respiratoire et crachats sanglants ; si l'air passe dans la circulation jusqu'au cerveau, s'y ajoutent des troubles neurologiques graves (perte de connaissance, paralysie) pouvant aller jusqu'à l'arrêt cardiaque. Une douleur d'oreille isolée évoque un barotraumatisme de l'oreille, sans rapport avec les poumons. Devant ces signes : sortir la victime de l'eau, alerter, oxygène par l'encadrement.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-baro-020",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--rare-mais-gravissime",
+      "prompt": "Lors d'une remontée sans embout (exercice ou panne), que doit faire le plongeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expirer doucement et continûment tout au long de la remontée"
+        },
+        {
+          "id": "b",
+          "text": "Bloquer sa respiration pour garder de l'air"
+        },
+        {
+          "id": "c",
+          "text": "Inspirer par petites saccades"
+        },
+        {
+          "id": "d",
+          "text": "Remonter le plus vite possible en apnée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Sans embout, la seule conduite sûre est d'expirer doucement en continu : l'air pulmonaire, qui se dilate à mesure que la pression diminue, s'échappe librement et les poumons ne se surgonflent jamais. Bloquer sa respiration ou remonter en apnée inspiration bloquée crée exactement les conditions de la surpression pulmonaire, l'accident le plus grave de la plongée ; inspirer est de toute façon impossible sans embout.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-baro-021",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--rare-mais-gravissime",
+      "prompt": "Quels facteurs favorisent la surpression pulmonaire ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le stress et la panique (remontée précipitée en apnée)"
+        },
+        {
+          "id": "b",
+          "text": "Une toux ou un fou rire pendant la remontée"
+        },
+        {
+          "id": "c",
+          "text": "L'asthme non contrôlé"
+        },
+        {
+          "id": "d",
+          "text": "Le fait de respirer calmement en continu"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "La panique conduit à remonter vite en bloquant l'inspiration, une toux ou un fou rire peuvent fermer la glotte au mauvais moment, et l'asthme non contrôlé peut piéger de l'air dans certaines zones du poumon — d'où l'importance de la visite médicale. Respirer calmement en continu est au contraire la protection même contre cet accident : l'air dilaté s'évacue à chaque expiration.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-baro-022",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-barotraumatismes",
+      "sectionAnchor": "les-autres-cavités-et-le-récapitulatif",
+      "prompt": "Comment limiter les douleurs digestives liées à la dilatation des gaz à la remontée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Éviter les boissons gazeuses et les aliments qui fermentent avant de plonger, et ralentir la remontée"
+        },
+        {
+          "id": "b",
+          "text": "Rester en apnée pendant la remontée"
+        },
+        {
+          "id": "c",
+          "text": "Boire beaucoup d'eau gazeuse avant la mise à l'eau"
+        },
+        {
+          "id": "d",
+          "text": "Serrer sa ceinture de lest au maximum"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les gaz de l'estomac et des intestins se dilatent à la remontée : d'éventuelles douleurs abdominales cèdent en ralentissant la remontée et en laissant les gaz s'évacuer naturellement, et se préviennent en évitant boissons gazeuses et aliments fermentescibles avant la plongée. Boire de l'eau gazeuse aggraverait le phénomène, l'apnée à la remontée est l'interdit majeur de la plongée, et serrer la ceinture ne ferait qu'augmenter l'inconfort.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-risques-001",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "respirer-sous-leau-nest-pas-respirer-en-surface",
+      "prompt": "Quelle est la bonne façon de respirer en plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lentement et amplement, en insistant sur l'expiration"
+        },
+        {
+          "id": "b",
+          "text": "Rapidement et superficiellement pour renouveler l'air souvent"
+        },
+        {
+          "id": "c",
+          "text": "En apnées courtes pour économiser l'air"
+        },
+        {
+          "id": "d",
+          "text": "En inspirant fort et en expirant à peine"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Sous l'eau, l'air est plus dense et le détendeur ajoute une résistance : la ventilation doit être lente, ample et calme, en insistant sur l'expiration, car c'est elle qui chasse le CO₂ — le gaz dont l'accumulation déclenche l'essoufflement. Une respiration rapide et superficielle ventile mal le fond des poumons et prépare l'essoufflement ; les apnées sont interdites en plongée bouteille (risque de surpression pulmonaire à la remontée).",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-risques-002",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "respirer-sous-leau-nest-pas-respirer-en-surface",
+      "prompt": "Quel gaz déclenche l'envie irrépressible de respirer lorsqu'il s'accumule ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'oxygène (O₂)"
+        },
+        {
+          "id": "b",
+          "text": "L'azote (N₂)"
+        },
+        {
+          "id": "c",
+          "text": "Le gaz carbonique (CO₂)"
+        },
+        {
+          "id": "d",
+          "text": "L'hélium"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "C'est l'accumulation de CO₂, le déchet de la respiration, qui commande l'envie de respirer : quand il monte, la ventilation s'accélère. C'est pourquoi une expiration insuffisante prépare l'essoufflement. L'oxygène est le gaz consommé (son manque ne déclenche pas d'alarme fiable), l'azote est neutre pour la commande respiratoire et l'hélium n'entre pas dans l'air respiré au Niveau 1.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-risques-003",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "lessoufflement--le-cercle-vicieux-du-co",
+      "prompt": "Quelles situations peuvent déclencher un essoufflement ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un palmage rapide contre le courant"
+        },
+        {
+          "id": "b",
+          "text": "Le froid et le stress"
+        },
+        {
+          "id": "c",
+          "text": "Un lestage excessif qui oblige à lutter"
+        },
+        {
+          "id": "d",
+          "text": "Une expiration longue et calme"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Tout ce qui augmente la production de CO₂ ou dégrade son élimination peut lancer le cercle vicieux : effort intense (palmage contre le courant), frissons liés au froid, stress, surlestage qui oblige à lutter, détendeur mal réglé. Une expiration longue et calme est au contraire la meilleure protection : c'est elle qui évacue le CO₂ et casse le cercle vicieux.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-risques-004",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "lessoufflement--le-cercle-vicieux-du-co",
+      "prompt": "Vous vous sentez essoufflé en plongée. Quelle est la conduite à tenir, dans l'ordre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stopper tout effort, forcer l'expiration, prévenir l'encadrant"
+        },
+        {
+          "id": "b",
+          "text": "Accélérer la respiration pour reprendre son souffle"
+        },
+        {
+          "id": "c",
+          "text": "Remonter immédiatement en surface le plus vite possible"
+        },
+        {
+          "id": "d",
+          "text": "Retirer son détendeur pour respirer plus librement"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La conduite à tenir du Niveau 1 : j'arrête tout effort (je me tiens à un rocher, je me pose si possible), j'expire à fond plusieurs fois — c'est l'expiration forcée qui évacue le CO₂ et casse le cercle vicieux — et je fais le signe « je suis essoufflé » à l'encadrant. Accélérer la respiration aggrave l'essoufflement, remonter précipitamment expose à la surpression pulmonaire, et retirer son détendeur mène à la noyade.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-risques-005",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "lessoufflement--le-cercle-vicieux-du-co",
+      "prompt": "À quels signes reconnaît-on un coéquipier en train de s'essouffler ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gros bouillons de bulles rapprochés"
+        },
+        {
+          "id": "b",
+          "text": "Yeux écarquillés, agitation, position verticale"
+        },
+        {
+          "id": "c",
+          "text": "Main crispée sur le détendeur"
+        },
+        {
+          "id": "d",
+          "text": "Palmage lent et régulier, bulles espacées"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "L'essoufflement se voit de l'extérieur : les expirations rapprochées produisent de gros bouillons quasi continus, le plongeur s'agite, passe en position verticale, écarquille les yeux et se crispe sur son détendeur. Face à ces signes : le signaler à l'encadrant, rester près du coéquipier et l'inciter au calme et à l'expiration. Un palmage lent avec des bulles espacées est au contraire le signe d'un plongeur détendu.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-risques-006",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "lessoufflement--le-cercle-vicieux-du-co",
+      "prompt": "Pour casser un essoufflement, il faut inspirer plus vite et plus fort.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux, et c'est le piège même de l'essoufflement : le réflexe d'inspirer plus vite rend la respiration superficielle, ventile mal le fond des poumons et laisse le CO₂ s'accumuler encore plus. La seule issue est inverse : stopper tout effort et forcer l'expiration, longue et complète, pour évacuer le CO₂. L'expiration forcée est « le geste qui sauve ».",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-risques-007",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "le-froid--un-ennemi-silencieux",
+      "prompt": "Par rapport à l'air, l'eau refroidit le corps environ :",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 fois plus vite"
+        },
+        {
+          "id": "b",
+          "text": "25 fois plus vite"
+        },
+        {
+          "id": "c",
+          "text": "800 fois plus vite"
+        },
+        {
+          "id": "d",
+          "text": "À la même vitesse"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'eau conduit la chaleur environ 25 fois mieux que l'air : même à 25 °C, elle refroidit le plongeur en permanence, d'où la nécessité d'une combinaison adaptée. Le chiffre 800 correspond au rapport de densité entre l'eau et l'air (utilisé pour expliquer la pression), pas à la conduction thermique — c'est une confusion classique entre les deux ordres de grandeur du cours.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-risques-008",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "le-froid--un-ennemi-silencieux",
+      "prompt": "En plongée, vous commencez à frissonner. Que faites-vous ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Je fais le signe « j'ai froid » : la plongée se termine et on remonte calmement"
+        },
+        {
+          "id": "b",
+          "text": "Je palme plus fort pour me réchauffer"
+        },
+        {
+          "id": "c",
+          "text": "Je serre les dents, ça passera"
+        },
+        {
+          "id": "d",
+          "text": "Je remonte seul immédiatement sans prévenir"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les frissons marquent le stade où le froid n'est plus une simple gêne : il augmente la consommation d'air, favorise l'essoufflement et dégrade l'attention. La bonne réponse est le signe « j'ai froid », qui entraîne la fin de plongée et un retour calme. Palmer plus fort mène à l'essoufflement, « serrer les dents » laisse le froid s'aggraver, et on ne quitte jamais sa palanquée pour remonter seul.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-risques-009",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "le-froid--un-ennemi-silencieux",
+      "prompt": "Après une plongée où vous avez eu froid, quelle boisson est adaptée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une boisson chaude non alcoolisée"
+        },
+        {
+          "id": "b",
+          "text": "Un alcool fort « pour se réchauffer »"
+        },
+        {
+          "id": "c",
+          "text": "Une boisson glacée"
+        },
+        {
+          "id": "d",
+          "text": "Rien : il ne faut pas boire après une plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Une fois sorti, on se sèche, on se couvre (bonnet compris, la tête perdant beaucoup de chaleur) et on boit une boisson chaude non alcoolisée. L'alcool est un faux ami : il donne une sensation de chaleur alors qu'il accélère en réalité le refroidissement, en plus de déshydrater. Une boisson glacée aggraverait le refroidissement, et bien s'hydrater après la plongée est au contraire recommandé.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-risques-010",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "le-froid--un-ennemi-silencieux",
+      "prompt": "Comment prévenir le froid en plongée ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porter une combinaison adaptée à la température de l'eau et bien ajustée"
+        },
+        {
+          "id": "b",
+          "text": "Se protéger du vent avant et après la plongée"
+        },
+        {
+          "id": "c",
+          "text": "Manger correctement et être bien hydraté avant de plonger"
+        },
+        {
+          "id": "d",
+          "text": "Choisir une combinaison très ample pour être à l'aise"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "La prévention du froid combine une combinaison adaptée (épaisseur, cagoule) et bien ajustée, une protection contre le vent avant et après la plongée, et un organisme qui a du carburant : repas correct et bonne hydratation. Une combinaison trop grande est précisément le piège à éviter : elle laisse circuler l'eau le long du corps et isole très mal.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-risques-011",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "lazote--un-invité-qui-sincruste",
+      "prompt": "Que devient l'azote de l'air respiré pendant une plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il se dissout dans le sang et les tissus sous l'effet de la pression"
+        },
+        {
+          "id": "b",
+          "text": "Il est consommé par les muscles"
+        },
+        {
+          "id": "c",
+          "text": "Il est transformé en oxygène"
+        },
+        {
+          "id": "d",
+          "text": "Il est intégralement rejeté à chaque expiration, sans effet"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'air contient environ 80 % d'azote, un gaz neutre que le corps ne consomme pas : sous pression, il se dissout dans le sang et les tissus, comme le gaz d'une bouteille d'eau gazeuse fermée — plus la plongée est profonde et longue, plus le corps se charge. Il n'est ni consommé ni transformé, et c'est justement parce qu'il ne ressort que lentement à la remontée qu'il impose des règles de remontée strictes.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-risques-012",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "lazote--un-invité-qui-sincruste",
+      "prompt": "Que risque-t-il de se passer si la remontée est trop rapide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'azote dissous forme des bulles dans le sang et les tissus : c'est l'accident de désaturation"
+        },
+        {
+          "id": "b",
+          "text": "L'oxygène devient toxique"
+        },
+        {
+          "id": "c",
+          "text": "Rien, tant qu'on expire correctement"
+        },
+        {
+          "id": "d",
+          "text": "Le bloc se vide plus vite"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Si la remontée est trop rapide, l'azote dissous fait comme le gaz d'une bouteille d'eau pétillante ouverte brutalement : il forme des bulles dans le sang et les tissus, qui peuvent bloquer la circulation ou comprimer des structures — c'est l'accident de désaturation (ADD), un accident grave. Expirer protège des barotraumatismes pulmonaires mais pas de l'ADD : les deux règles (expirer ET remonter lentement) sont complémentaires. La toxicité de l'oxygène n'apparaît qu'à des profondeurs hors du cadre N1.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-risques-013",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "lazote--un-invité-qui-sincruste",
+      "prompt": "À quoi sert le palier de quelques minutes vers 3 m parfois demandé par l'encadrant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À laisser le temps à l'azote dissous de s'évacuer en douceur"
+        },
+        {
+          "id": "b",
+          "text": "À vérifier le matériel avant de sortir"
+        },
+        {
+          "id": "c",
+          "text": "À économiser l'air du bloc"
+        },
+        {
+          "id": "d",
+          "text": "À se réchauffer avant la surface"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le palier est du temps offert à l'azote : en s'arrêtant quelques minutes à faible profondeur, le corps évacue tranquillement par la respiration l'azote dissous pendant la plongée, ce qui réduit le risque de formation de bulles. Ce n'est ni un contrôle du matériel, ni une économie d'air (on en consomme au contraire), ni un moment de réchauffement — l'eau y est d'ailleurs souvent plus fraîche qu'en surface.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-risques-014",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "après-la-plongée--les-règles-qui-protègent",
+      "prompt": "Combien de temps faut-il attendre au minimum avant de prendre l'avion après une plongée unique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 heures"
+        },
+        {
+          "id": "b",
+          "text": "12 heures (24 heures après des plongées répétées)"
+        },
+        {
+          "id": "c",
+          "text": "48 heures dans tous les cas"
+        },
+        {
+          "id": "d",
+          "text": "Aucun délai n'est nécessaire"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La cabine d'un avion est en dépression : l'azote résiduel encore présent dans les tissus peut y former des bulles. La règle enseignée : attendre au moins 12 heures après une plongée unique et 24 heures après des plongées répétées, en suivant la consigne la plus prudente donnée par l'encadrant. Deux heures sont très insuffisantes, la désaturation se poursuivant pendant des heures après la sortie ; 48 heures ne sont pas exigées, même si attendre plus longtemps ne nuit jamais.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-risques-015",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "après-la-plongée--les-règles-qui-protègent",
+      "prompt": "Quels comportements sont à éviter juste après une plongée ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faire des efforts violents"
+        },
+        {
+          "id": "b",
+          "text": "Faire de l'apnée"
+        },
+        {
+          "id": "c",
+          "text": "Monter en altitude (col routier, montagne)"
+        },
+        {
+          "id": "d",
+          "text": "Boire de l'eau régulièrement"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Après la plongée, le corps contient encore de l'azote excédentaire : l'effort violent favorise la formation de bulles, les descentes et remontées répétées de l'apnée brassent l'azote résiduel, et la montée en altitude reproduit le mécanisme de l'avion (baisse de pression ambiante). Boire de l'eau régulièrement est au contraire recommandé : la déshydratation épaissit le sang et gêne l'élimination de l'azote.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-risques-016",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "physiologie",
+      "moduleSlug": "n1-risques-du-plongeur",
+      "sectionAnchor": "après-la-plongée--les-règles-qui-protègent",
+      "prompt": "Pourquoi la déshydratation est-elle un facteur de risque après la plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle épaissit le sang et gêne l'élimination de l'azote"
+        },
+        {
+          "id": "b",
+          "text": "Elle donne soif, ce qui distrait le plongeur"
+        },
+        {
+          "id": "c",
+          "text": "Elle augmente la pression de l'eau sur le corps"
+        },
+        {
+          "id": "d",
+          "text": "Elle n'a aucun effet sur la désaturation"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'azote résiduel s'élimine par la circulation sanguine jusqu'aux poumons : un sang épaissi par la déshydratation circule moins bien et évacue moins efficacement ce gaz, ce qui augmente le risque de formation de bulles. C'est pourquoi on boit de l'eau régulièrement après la plongée et on proscrit l'alcool, qui déshydrate en plus de masquer les symptômes. La déshydratation ne change évidemment rien à la pression de l'eau.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-materiel-001",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "palmes-masque-tuba--le-trio-de-base",
+      "prompt": "Comment vérifier qu'un masque est bien adapté à votre visage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le plaquer sur le visage sans la sangle et inspirer légèrement par le nez : il doit tenir tout seul"
+        },
+        {
+          "id": "b",
+          "text": "Serrer la sangle au maximum et vérifier qu'il ne bouge pas"
+        },
+        {
+          "id": "c",
+          "text": "Le remplir d'eau et vérifier qu'elle ne fuit pas"
+        },
+        {
+          "id": "d",
+          "text": "Choisir la plus grande taille disponible pour le confort"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le test d'étanchéité se fait sans la sangle : on plaque le masque sur le visage et on inspire légèrement par le nez ; s'il tient tout seul par la dépression, la jupe épouse bien le visage. La sangle ne sert qu'à maintenir le masque en place — la serrer fort ne corrige pas un masque inadapté et favorise les fuites et l'inconfort. La taille se choisit selon la morphologie, pas « la plus grande ».",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-materiel-002",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "palmes-masque-tuba--le-trio-de-base",
+      "prompt": "À quoi sert le tuba en plongée bouteille ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À respirer en surface la tête dans l'eau sans consommer l'air du bloc"
+        },
+        {
+          "id": "b",
+          "text": "À respirer au fond en cas de panne d'air"
+        },
+        {
+          "id": "c",
+          "text": "À équilibrer les oreilles"
+        },
+        {
+          "id": "d",
+          "text": "À signaler sa position au bateau"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le tuba permet de respirer en surface la tête dans l'eau sans puiser dans le bloc : utile pour rejoindre le bateau, attendre ou observer. Il est évidemment inutilisable au fond — en cas de panne d'air, c'est l'octopus de l'équipier qui dépanne. Il n'a aucun rôle dans l'équilibrage des oreilles ni dans la signalisation de surface.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-materiel-003",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "palmes-masque-tuba--le-trio-de-base",
+      "prompt": "D'où doit venir le mouvement d'un palmage efficace ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des hanches, jambes tendues et souples, sans pédalage"
+        },
+        {
+          "id": "b",
+          "text": "Des genoux, en pédalant comme à vélo"
+        },
+        {
+          "id": "c",
+          "text": "Des chevilles uniquement"
+        },
+        {
+          "id": "d",
+          "text": "Des bras, qui aident à la propulsion"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le palmage efficace part des hanches, jambes tendues mais souples : toute la palme travaille et propulse. Le pédalage des genoux est le défaut classique du débutant : il brasse de l'eau sans avancer et fatigue. Les bras restent le long du corps en plongée — les utiliser augmente la consommation sans propulser efficacement.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-materiel-004",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "la-combinaison--votre-isolation-thermique",
+      "prompt": "Comment fonctionne une combinaison humide en néoprène ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle laisse entrer une fine couche d'eau que le corps réchauffe, et le néoprène isole grâce à ses microbulles de gaz"
+        },
+        {
+          "id": "b",
+          "text": "Elle empêche totalement l'eau de toucher la peau"
+        },
+        {
+          "id": "c",
+          "text": "Elle chauffe électriquement le plongeur"
+        },
+        {
+          "id": "d",
+          "text": "Elle isole uniquement grâce à son épaisseur de tissu"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La combinaison humide laisse pénétrer une fine couche d'eau que le corps réchauffe une fois pour toutes ; l'isolation vient du néoprène, rempli de microbulles de gaz. C'est la combinaison étanche — hors programme N1 — qui empêche l'eau d'entrer, et aucune combinaison classique ne chauffe activement. D'où l'importance de l'ajustement : trop grande, l'eau circule en permanence et l'effet isolant disparaît.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-materiel-005",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "la-combinaison--votre-isolation-thermique",
+      "prompt": "Une combinaison trop grande isole moins bien du froid.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "C'est vrai : le principe de la combinaison humide repose sur une fine couche d'eau immobile que le corps réchauffe. Trop grande, la combinaison laisse l'eau circuler librement : la couche réchauffée est sans cesse remplacée par de l'eau froide et l'isolation s'effondre. L'ajustement est donc aussi important que l'épaisseur du néoprène.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-materiel-006",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "le-bloc-et-lair-comprimé",
+      "prompt": "Que contient un bloc de plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De l'air ordinaire filtré et séché, comprimé à environ 200 bars"
+        },
+        {
+          "id": "b",
+          "text": "De l'oxygène pur comprimé"
+        },
+        {
+          "id": "c",
+          "text": "Un mélange spécial d'oxygène et d'hélium"
+        },
+        {
+          "id": "d",
+          "text": "De l'air enrichi en azote"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le bloc du plongeur loisir contient de l'air ordinaire — environ 20 % d'oxygène et 80 % d'azote — simplement filtré, séché et comprimé à environ 200 bars. L'oxygène pur est dangereux dès quelques mètres de profondeur et les mélanges à l'hélium relèvent de la plongée technique : ni l'un ni l'autre ne concernent le Niveau 1. Personne n'enrichit l'air en azote, qui est déjà le gaz majoritaire.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-materiel-007",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "le-bloc-et-lair-comprimé",
+      "prompt": "Quelles règles de bon sens s'appliquent à la manipulation d'un bloc ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ne jamais le laisser debout sans surveillance"
+        },
+        {
+          "id": "b",
+          "text": "Le transporter couché et le protéger du soleil et des chocs"
+        },
+        {
+          "id": "c",
+          "text": "Ne jamais graisser les raccords"
+        },
+        {
+          "id": "d",
+          "text": "Le vider complètement après chaque plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Un bloc debout non surveillé peut tomber et endommager sa robinetterie ou blesser quelqu'un ; on le transporte couché, à l'abri du soleil et des chocs, et on ne graisse jamais les raccords (la graisse peut s'enflammer au contact d'air comprimé). En revanche, on ne stocke jamais un bloc complètement vide : une pression résiduelle empêche l'humidité d'entrer et de corroder l'intérieur.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-materiel-008",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "le-détendeur--respirer-à-la-pression-du-fond",
+      "prompt": "Quel est le rôle du premier étage du détendeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réduire la haute pression du bloc (jusqu'à 200 bars) à une moyenne pression d'environ 8 à 10 bars au-dessus de la pression ambiante"
+        },
+        {
+          "id": "b",
+          "text": "Délivrer l'air directement dans la bouche du plongeur"
+        },
+        {
+          "id": "c",
+          "text": "Filtrer l'air pour le rendre respirable"
+        },
+        {
+          "id": "d",
+          "text": "Mesurer la pression restante dans le bloc"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le détendeur travaille en deux temps : le premier étage, vissé sur la robinetterie, abaisse la haute pression du bloc à une moyenne pression d'environ 8 à 10 bars au-dessus de la pression ambiante ; c'est le deuxième étage, en bouche, qui délivre ensuite l'air à la pression ambiante, à la demande. Le filtrage de l'air est fait au gonflage, et la mesure de pression est le rôle du manomètre, simplement branché sur le premier étage.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-materiel-009",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "le-détendeur--respirer-à-la-pression-du-fond",
+      "prompt": "À quelle pression le deuxième étage délivre-t-il l'air au plongeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À la pression ambiante de la profondeur, uniquement à l'inspiration"
+        },
+        {
+          "id": "b",
+          "text": "À 200 bars en continu"
+        },
+        {
+          "id": "c",
+          "text": "À 8-10 bars en continu"
+        },
+        {
+          "id": "d",
+          "text": "Toujours à 1 bar, comme en surface"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le deuxième étage — l'embout en bouche — délivre l'air exactement à la pression ambiante, et seulement quand le plongeur inspire : c'est le système « à la demande », qui s'adapte automatiquement à la profondeur sans réglage. De l'air à 200 bars serait irrespirable et dangereux, les 8-10 bars correspondent à la moyenne pression interne entre les deux étages, et délivrer à 1 bar au fond rendrait l'inspiration impossible contre la pression de l'eau.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-materiel-010",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "le-détendeur--respirer-à-la-pression-du-fond",
+      "prompt": "Qu'est-ce que l'« octopus » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un deuxième étage de secours, souvent jaune, qui permet de dépanner un coéquipier en air"
+        },
+        {
+          "id": "b",
+          "text": "Un instrument de mesure de la profondeur"
+        },
+        {
+          "id": "c",
+          "text": "Le flexible qui gonfle le gilet"
+        },
+        {
+          "id": "d",
+          "text": "Une lampe de plongée à huit faisceaux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'octopus est un deuxième étage supplémentaire, branché sur le premier étage et souvent de couleur jaune pour être repérable : il permet de donner de l'air à un coéquipier en difficulté sans partager son propre embout. Ce n'est ni un instrument de mesure (profondimètre), ni le flexible du gilet (direct system), ni un éclairage.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-materiel-011",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "le-gilet-stabilisateur-et-le-lestage",
+      "prompt": "Quelles sont les fonctions du gilet stabilisateur ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porter le bloc sur le dos"
+        },
+        {
+          "id": "b",
+          "text": "Ajuster la flottabilité en immersion"
+        },
+        {
+          "id": "c",
+          "text": "Faire flotter le plongeur en surface sans effort"
+        },
+        {
+          "id": "d",
+          "text": "Fournir de l'air de secours en cas de panne"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le gilet cumule le portage du bloc, l'ajustement de la flottabilité en immersion (gonflage par le direct system, dégonflage par les purges) et la flottaison confortable en surface ; il facilite aussi une éventuelle assistance. En revanche, il ne constitue pas une réserve d'air respirable : en cas de panne, c'est l'octopus du coéquipier qui dépanne, jamais l'air du gilet.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-materiel-012",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "le-gilet-stabilisateur-et-le-lestage",
+      "prompt": "Quelle caractéristique la ceinture de plombs doit-elle impérativement avoir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une boucle largable d'une seule main"
+        },
+        {
+          "id": "b",
+          "text": "Un cadenas pour éviter de la perdre"
+        },
+        {
+          "id": "c",
+          "text": "Un poids d'au moins 10 kg"
+        },
+        {
+          "id": "d",
+          "text": "Une fixation solidaire du gilet, impossible à détacher"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En cas de problème grave en surface, larguer sa ceinture garantit immédiatement la flottabilité : sa boucle doit donc pouvoir s'ouvrir d'une seule main, sans hésitation. Tout dispositif qui bloque le largage (cadenas, fixation indémontable) est un contresens de sécurité. Le poids, lui, se règle individuellement selon la morphologie, la combinaison et le milieu — il n'existe aucun minimum imposé.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-materiel-013",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "les-instruments-et-lentretien-du-matériel",
+      "prompt": "En plongée, votre manomètre indique 50 bars. Que faites-vous ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Je préviens l'encadrant : c'est la réserve, la palanquée entame le retour"
+        },
+        {
+          "id": "b",
+          "text": "Je continue la plongée jusqu'à 0 bar"
+        },
+        {
+          "id": "c",
+          "text": "Je remonte seul immédiatement"
+        },
+        {
+          "id": "d",
+          "text": "Je ferme la robinetterie pour économiser l'air"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Par convention, 50 bars marquent la réserve : on prévient l'encadrant avec le signe convenu, et la palanquée entame le retour ou la remontée — on ne finit jamais son bloc au fond. Continuer jusqu'à 0 bar mène à la panne d'air, remonter seul est interdit en plongée encadrée, et fermer la robinetterie couperait tout simplement l'air du détendeur.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-materiel-014",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "materiel",
+      "moduleSlug": "n1-materiel",
+      "sectionAnchor": "les-instruments-et-lentretien-du-matériel",
+      "prompt": "Quelle est la règle d'or de l'entretien du détendeur après la plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rincer à l'eau douce avec le bouchon de protection sec et vissé : l'eau ne doit jamais entrer dans le premier étage"
+        },
+        {
+          "id": "b",
+          "text": "Le démonter entièrement pour le sécher"
+        },
+        {
+          "id": "c",
+          "text": "Le rincer en appuyant sur le bouton de surpression sous l'eau"
+        },
+        {
+          "id": "d",
+          "text": "Le laisser sécher en plein soleil"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La règle d'or : jamais d'eau dans le premier étage. On rince donc le détendeur à l'eau douce avec le bouchon de protection sec et bien vissé, sans appuyer sur le bouton de surpression sous l'eau (ce qui ouvrirait le circuit et ferait entrer l'eau). Le démontage relève du technicien lors de la révision périodique, et le séchage se fait à l'ombre : le soleil dégrade joints et flexibles.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-signes-001",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "pourquoi-un-langage-codifié",
+      "prompt": "Que doit faire un plongeur qui reçoit un signe de son encadrant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Répondre immédiatement et clairement : un signe est un message qui exige une réponse"
+        },
+        {
+          "id": "b",
+          "text": "Ne répondre que si quelque chose ne va pas"
+        },
+        {
+          "id": "c",
+          "text": "Hocher la tête, cela suffit toujours"
+        },
+        {
+          "id": "d",
+          "text": "Attendre que le signe soit répété pour être sûr"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Premier principe de la communication subaquatique : un signe est un message qui exige une réponse. Quand l'encadrant demande « ça va ? », ne pas répondre laisse croire à un problème — le silence n'est jamais neutre sous l'eau. On répond donc immédiatement, face à l'émetteur, par « OK » ou par le signe adapté au problème ; un hochement de tête n'est pas un signe conventionnel et peut être mal interprété.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-signes-002",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "les-signes-indispensables-du-niveau-1",
+      "prompt": "Que signifie le pouce levé vers le haut en plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« Tout va bien »"
+        },
+        {
+          "id": "b",
+          "text": "« On monte » / « Je demande à monter »"
+        },
+        {
+          "id": "c",
+          "text": "« Super, j'adore cette plongée ! »"
+        },
+        {
+          "id": "d",
+          "text": "« Regardez en haut »"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le pouce levé signifie « on monte », rien d'autre : la réponse attendue est de répéter le signe puis d'entamer la remontée ensemble, au rythme de l'encadrant. Pour dire que tout va bien, on utilise le cercle pouce-index (« OK »). Cette confusion, héritée du langage courant, est le piège classique du débutant : un pouce levé « enthousiaste » peut être compris comme une demande de remontée.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-signes-003",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "les-signes-indispensables-du-niveau-1",
+      "prompt": "Comment indique-t-on « ça va » / « tout va bien » sous l'eau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pouce et index joints en cercle, autres doigts levés"
+        },
+        {
+          "id": "b",
+          "text": "Pouce levé vers le haut"
+        },
+        {
+          "id": "c",
+          "text": "Main à plat balancée de gauche à droite"
+        },
+        {
+          "id": "d",
+          "text": "Poing fermé sur la poitrine"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le signe « OK » se fait en joignant le pouce et l'index en cercle, les autres doigts levés : il sert à la fois de question (« ça va ? ») et de réponse (« ça va »). Le pouce levé signifie « on monte », la main à plat qui bascule signifie « ça ne va pas », et le poing sur la poitrine évoque le signe d'essoufflement — autant de messages très différents qu'il ne faut jamais mélanger.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-signes-004",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "les-signes-indispensables-du-niveau-1",
+      "prompt": "Un plongeur fait le geste de « trancher » le cou avec la main. Que se passe-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est une urgence absolue : il n'a plus d'air, il faut lui fournir immédiatement une source d'air (octopus)"
+        },
+        {
+          "id": "b",
+          "text": "Il indique qu'il a froid au cou"
+        },
+        {
+          "id": "c",
+          "text": "Il signale la fin de l'exercice"
+        },
+        {
+          "id": "d",
+          "text": "Il demande à faire demi-tour"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le geste de trancher le cou signifie « je n'ai plus d'air » : c'est une urgence absolue, la réponse est de donner immédiatement une source d'air — l'octopus de l'encadrant ou du binôme. Le signe du froid se fait bras croisés en frottant les épaules, et la fin d'exercice ou le demi-tour ont leurs propres signes : confondre ces messages ferait perdre des secondes vitales.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-signes-005",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "les-signes-indispensables-du-niveau-1",
+      "prompt": "Comment signale-t-on une gêne non vitale (« ça ne va pas ») ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Main à plat, paume vers le bas, balancée de gauche à droite, puis on montre ce qui ne va pas"
+        },
+        {
+          "id": "b",
+          "text": "Pouce baissé vers le bas"
+        },
+        {
+          "id": "c",
+          "text": "Grands gestes des deux bras"
+        },
+        {
+          "id": "d",
+          "text": "On ne signale rien tant que ce n'est pas grave"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le signe « ça ne va pas » est une main à plat balancée de gauche à droite ; l'encadrant vient alors vers vous et vous montrez ensuite ce qui ne va pas (l'oreille par exemple). Le pouce baissé signifie « on descend », les grands gestes des bras sont le signe de détresse en surface, et se taire est le mauvais réflexe : signaler une gêne tôt permet une solution simple — c'est un principe de sécurité, pas une gêne pour le groupe.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-signes-006",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "les-signes-indispensables-du-niveau-1",
+      "prompt": "L'encadrant fait le signe « on monte ». Quelle est la réponse correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Répéter le signe et entamer la remontée ensemble, au rythme de l'encadrant"
+        },
+        {
+          "id": "b",
+          "text": "Faire OK et rester au fond encore un peu"
+        },
+        {
+          "id": "c",
+          "text": "Remonter immédiatement le plus vite possible"
+        },
+        {
+          "id": "d",
+          "text": "Ignorer le signe si on a encore de l'air"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À un signe directif comme « on monte », on répond en répétant le signe (preuve qu'il est compris) puis on l'applique : la palanquée remonte ensemble, lentement, au rythme de l'encadrant. Rester au fond ou ignorer la consigne brise la cohésion de la palanquée, et remonter précipitamment expose à la surpression pulmonaire et à l'accident de désaturation — la vitesse de remontée est toujours contrôlée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-signes-007",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "les-signes-indispensables-du-niveau-1",
+      "prompt": "Que déclenche le signe « j'ai froid » (bras croisés, mains frottant les épaules) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fin de la plongée : la palanquée remonte calmement"
+        },
+        {
+          "id": "b",
+          "text": "Un simple accusé de réception, la plongée continue"
+        },
+        {
+          "id": "c",
+          "text": "Le passage à une profondeur plus faible uniquement"
+        },
+        {
+          "id": "d",
+          "text": "L'encadrant prête sa cagoule"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le signe « j'ai froid » entraîne la fin de la plongée pour la palanquée, avec un retour calme vers la surface : poursuivre en frissonnant augmente la consommation, favorise l'essoufflement et l'accident de désaturation. Ce n'est donc pas une simple information à « accuser réception », et il n'existe pas de demi-mesure du type « on remonte un peu » : le froid ne fait que s'aggraver en immersion.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-signes-008",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "les-signes-indispensables-du-niveau-1",
+      "prompt": "Sous l'eau, le pouce levé signifie « tout va bien ».",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : le pouce levé signifie « on monte » et rien d'autre — l'encadrant qui le voit comprend une demande de remontée. Pour dire que tout va bien, on fait le signe « OK » : pouce et index joints en cercle. Cette distinction est l'un des premiers réflexes à automatiser, car la confusion venue des habitudes terrestres est très fréquente chez le débutant.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-signes-009",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "communiquer-sa-pression-dair",
+      "prompt": "Quels signes doivent être émis spontanément, sans attendre d'être interrogé ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "« Je suis à la réserve » (50 bars)"
+        },
+        {
+          "id": "b",
+          "text": "« Ça ne va pas » et « j'ai froid »"
+        },
+        {
+          "id": "c",
+          "text": "« Je suis essoufflé »"
+        },
+        {
+          "id": "d",
+          "text": "« Regardez ce poisson »"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Quatre messages de sécurité s'émettent sans attendre d'être interrogé : le passage à la réserve, « ça ne va pas », « j'ai froid » et « je suis essoufflé ». Les émettre tôt permet à l'encadrant d'agir avant que la situation ne se dégrade — c'est un réflexe de sécurité, jamais une gêne pour le groupe. Montrer un poisson relève de la communication d'agrément : utile pour partager, mais en rien obligatoire ni prioritaire.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-signes-010",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "communiquer-sa-pression-dair",
+      "prompt": "Quand faut-il annoncer son passage à la réserve (50 bars) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spontanément, dès que l'aiguille du manomètre atteint 50 bars"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement si l'encadrant le demande"
+        },
+        {
+          "id": "c",
+          "text": "Une fois revenu au bateau"
+        },
+        {
+          "id": "d",
+          "text": "Quand le bloc est complètement vide"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le passage à la réserve ne se demande pas : il s'annonce spontanément dès que l'aiguille atteint 50 bars, et la palanquée fait alors demi-tour ou entame la remontée — on ne finit jamais son bloc au fond. Attendre la question de l'encadrant, la sortie de l'eau ou pire, le bloc vide, prive la palanquée d'une information de sécurité essentielle à la gestion collective de l'air.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-signes-011",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "communiquer-sa-pression-dair",
+      "prompt": "L'encadrant vous demande votre pression. Quelle réponse est toujours acceptée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Montrer son manomètre, cadran tourné vers lui"
+        },
+        {
+          "id": "b",
+          "text": "Faire le signe OK"
+        },
+        {
+          "id": "c",
+          "text": "Hausser les épaules si on ne sait pas"
+        },
+        {
+          "id": "d",
+          "text": "Montrer son ordinateur de plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Montrer son manomètre cadran tourné vers l'encadrant est la réponse universelle, toujours acceptée quelle que soit la convention de chiffres adoptée au briefing — car les conventions de doigts varient d'un club à l'autre et « le briefing fait foi ». Le signe OK ne répond pas à la question posée, hausser les épaules n'est pas un signe conventionnel, et l'ordinateur n'affiche pas la pression du bloc (sauf modèles à gestion d'air, hors programme N1).",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-signes-012",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "en-surface--se-signaler-de-loin",
+      "prompt": "Comment signale-t-on « tout va bien » au bateau depuis la surface ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les deux bras levés joints au-dessus de la tête, formant un cercle"
+        },
+        {
+          "id": "b",
+          "text": "Un bras agité de grands mouvements latéraux"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle pouce-index, comme sous l'eau"
+        },
+        {
+          "id": "d",
+          "text": "En criant « ça va ! »"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'« OK surface » se fait avec les deux bras levés joints au-dessus de la tête en formant un cercle (ou un seul bras si l'autre est occupé) : c'est un signe visible de loin, à faire en émergeant vers le bateau ou la surveillance de surface. Le bras agité est au contraire le signe de détresse qui déclenche les secours, le petit cercle pouce-index est invisible à distance et la voix ne porte pas à plusieurs dizaines de mètres.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-signes-013",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "en-surface--se-signaler-de-loin",
+      "prompt": "En surface, un plongeur agite un bras de grands mouvements latéraux. Que signifie ce geste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a besoin d'une assistance immédiate : c'est le signe de détresse surface"
+        },
+        {
+          "id": "b",
+          "text": "Il salue le bateau"
+        },
+        {
+          "id": "c",
+          "text": "Il indique que tout va bien"
+        },
+        {
+          "id": "d",
+          "text": "Il demande la direction du mouillage"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Un bras levé agité de grands mouvements latéraux est le signe de détresse en surface : il signifie « j'ai besoin d'assistance immédiate » et déclenche les secours — raison pour laquelle on ne le fait jamais « pour rire » ni pour saluer. Le « tout va bien » de surface est un geste immobile : les bras joints en cercle au-dessus de la tête.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-signes-014",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "vivre-en-palanquée--les-règles-de-communication",
+      "prompt": "Vous réalisez que vous avez perdu votre palanquée. Quelle est la procédure classique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chercher visuellement moins d'une minute, puis remonter lentement en respirant normalement, gonfler le gilet en surface, faire OK vers le bateau et attendre"
+        },
+        {
+          "id": "b",
+          "text": "Partir seul au fond dans la direction probable du groupe"
+        },
+        {
+          "id": "c",
+          "text": "Remonter en apnée le plus vite possible"
+        },
+        {
+          "id": "d",
+          "text": "Rester sur place au fond jusqu'à ce qu'on vous retrouve"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La consigne classique (rappelée à chaque briefing) : recherche visuelle brève autour de soi et vers la surface — moins d'une minute — puis remontée lente en respirant normalement, gilet gonflé en surface, signe OK vers le bateau et attente ; la palanquée applique la même procédure et tout le monde se retrouve en surface. Repartir seul au fond aggrave la séparation, remonter en apnée expose à la surpression pulmonaire, et attendre indéfiniment au fond consomme l'air sans résoudre rien.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-signes-015",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-signes-communication",
+      "sectionAnchor": "vivre-en-palanquée--les-règles-de-communication",
+      "prompt": "Quelles règles de vie en palanquée s'appliquent au plongeur Niveau 1 ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rester proche de l'encadrant et dans son champ de vision"
+        },
+        {
+          "id": "b",
+          "text": "Jeter un œil régulier à son binôme (contrôle mutuel)"
+        },
+        {
+          "id": "c",
+          "text": "Montrer immédiatement tout problème sans attendre"
+        },
+        {
+          "id": "d",
+          "text": "Explorer librement à condition de revenir toutes les cinq minutes"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "La palanquée fonctionne comme une cordée : on reste à quelques mètres de l'encadrant, visible, ni au-dessus ni en dessous du groupe sans consigne ; on surveille régulièrement son binôme (bulles, comportement) ; et tout problème se montre immédiatement — chaque situation vue en cours a son signe. « Explorer librement » n'existe pas en plongée encadrée : on descend ensemble, on évolue ensemble, on remonte ensemble.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-milieu-001",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "le-courant-la-houle-et-la-visibilité",
+      "prompt": "Dans quel sens commence-t-on une plongée lorsqu'il y a du courant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Face au courant : le retour se fait ensuite en se laissant porter"
+        },
+        {
+          "id": "b",
+          "text": "Dans le sens du courant, pour économiser ses forces à l'aller"
+        },
+        {
+          "id": "c",
+          "text": "Perpendiculairement au courant"
+        },
+        {
+          "id": "d",
+          "text": "Peu importe, le courant ne change rien"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On commence la plongée face au courant : à l'aller, on est frais et le courant freine ; au retour, fatigué et le bloc entamé, on se laisse porter vers le point de sortie. Partir dans le sens du courant est le piège classique : le retour se transforme en lutte épuisante, droit vers l'essoufflement. Le courant est infatigable — le plongeur, non.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-milieu-002",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "le-courant-la-houle-et-la-visibilité",
+      "prompt": "En surface, un courant fort vous empêche de rejoindre le bateau à la nage. Que faites-vous ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Je garde mon gilet gonflé, je fais signe au bateau et j'attends qu'il vienne me chercher"
+        },
+        {
+          "id": "b",
+          "text": "Je nage de toutes mes forces contre le courant"
+        },
+        {
+          "id": "c",
+          "text": "Je largue mon bloc pour nager plus vite"
+        },
+        {
+          "id": "d",
+          "text": "Je redescends sous l'eau pour éviter le courant"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La règle : ne jamais s'épuiser contre un courant fort en surface — gilet gonflé pour flotter sans effort, signe vers le bateau, et c'est le bateau qui vient. Nager contre le courant mène à l'épuisement et à la détresse ; larguer son matériel est une mesure extrême injustifiée ici ; et redescendre seul, en fin de plongée, à l'écart de la palanquée, cumulerait les dangers.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-milieu-003",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "les-bateaux--le-danger-vient-den-haut",
+      "prompt": "Que signifie le pavillon Alpha (bicolore blanc et bleu) hissé sur un bateau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« J'ai des plongeurs en immersion : restez à distance et à vitesse réduite »"
+        },
+        {
+          "id": "b",
+          "text": "« Le bateau est en panne »"
+        },
+        {
+          "id": "c",
+          "text": "« Zone de baignade surveillée »"
+        },
+        {
+          "id": "d",
+          "text": "« Régate en cours »"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le pavillon Alpha du code international des signaux, blanc et bleu à bord échancré, signale un bateau ayant des plongeurs en immersion : les autres navires doivent s'en écarter et réduire leur vitesse. Il ne signale ni une panne, ni une zone de baignade, ni une régate. En pratique, tous les plaisanciers ne le connaissent pas : la prudence du plongeur (remonter au mouillage, tour d'horizon) reste indispensable.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-milieu-004",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "les-bateaux--le-danger-vient-den-haut",
+      "prompt": "Quels réflexes protègent du trafic des bateaux en fin de plongée ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remonter le long du mouillage chaque fois que possible"
+        },
+        {
+          "id": "b",
+          "text": "Faire un tour d'horizon en regardant et en écoutant avant d'émerger"
+        },
+        {
+          "id": "c",
+          "text": "Rester groupés en surface, gilet gonflé, et rejoindre la zone du bateau"
+        },
+        {
+          "id": "d",
+          "text": "Remonter n'importe où : les bateaux sont tenus de nous éviter"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "L'hélice d'un bateau qui ignore votre présence est l'un des dangers les plus sérieux du plongeur : on remonte le long du mouillage ou près de la bouée, on termine la remontée en regardant la surface et en écoutant les bruits d'hélice, avec un tour d'horizon avant d'émerger, puis on reste groupés gilet gonflé. Compter sur la seule obligation des bateaux de s'écarter est illusoire : beaucoup de plaisanciers ne connaissent pas la signalisation.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-milieu-005",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "la-faune--regarder-sans-toucher",
+      "prompt": "Après une piqûre de vive ou de rascasse, quelle est la conduite à tenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approcher une source de chaleur (eau chaude) car le venin est thermolabile, puis consulter"
+        },
+        {
+          "id": "b",
+          "text": "Appliquer de la glace immédiatement"
+        },
+        {
+          "id": "c",
+          "text": "Inciser la plaie pour faire sortir le venin"
+        },
+        {
+          "id": "d",
+          "text": "Frotter énergiquement avec du sable"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le venin des vives et des rascasses est thermolabile : il est détruit par la chaleur. La conduite à tenir est donc d'approcher une source de chaleur (eau chaude supportable) de la piqûre, puis de consulter. La glace ne détruit pas le venin, l'incision aggrave la plaie et le risque d'infection, et frotter au sable également. En prévention : ne jamais poser mains ni genoux sur le fond, où la vive se tient ensablée.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-milieu-006",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "la-faune--regarder-sans-toucher",
+      "prompt": "Après un contact avec une méduse, que faut-il faire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rincer à l'eau de mer, retirer les filaments sans frotter, consulter si la réaction est importante"
+        },
+        {
+          "id": "b",
+          "text": "Rincer abondamment à l'eau douce"
+        },
+        {
+          "id": "c",
+          "text": "Frotter la zone avec une serviette"
+        },
+        {
+          "id": "d",
+          "text": "Ne rien faire, la brûlure disparaît toujours seule"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On rince à l'eau de mer — surtout pas à l'eau douce, qui fait éclater les cellules urticantes restées sur la peau et aggrave la brûlure — puis on retire les filaments sans frotter et on consulte en cas de réaction importante. Frotter déclenche les cellules urticantes encore intactes. Rappel de prévention : on ne touche pas les méduses, même échouées sur la plage, car elles restent urticantes.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-milieu-007",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "la-faune--regarder-sans-toucher",
+      "prompt": "Quelle est la règle d'or vis-à-vis de la faune sous-marine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On ne touche rien, on ne poursuit rien, on ne nourrit rien"
+        },
+        {
+          "id": "b",
+          "text": "On peut toucher les animaux inoffensifs"
+        },
+        {
+          "id": "c",
+          "text": "On peut nourrir les poissons pour les approcher"
+        },
+        {
+          "id": "d",
+          "text": "On peut saisir les animaux lents comme les étoiles de mer"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La quasi-totalité des blessures liées à la faune sont des accidents de contact provoqué : une main posée au mauvais endroit, un animal saisi ou acculé. La règle d'or protège donc à la fois le plongeur et le milieu : on ne touche rien, on ne poursuit rien, on ne nourrit rien. Le nourrissage modifie les comportements et déséquilibre le milieu, et même un animal « inoffensif » ou lent souffre d'être manipulé.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-milieu-008",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "plonger-écoresponsable--les-gestes-qui-comptent-sous-leau",
+      "prompt": "Quel est le geste écologique numéro un du plongeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maîtriser sa flottabilité pour ne jamais toucher le fond"
+        },
+        {
+          "id": "b",
+          "text": "Ramasser les coquillages pour les protéger"
+        },
+        {
+          "id": "c",
+          "text": "Nourrir les poissons avec des aliments naturels"
+        },
+        {
+          "id": "d",
+          "text": "Palmer près du fond pour observer de plus près"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Un plongeur stabilisé ne laboure pas le fond, ne casse rien et ne soulève pas le sédiment : la maîtrise de la flottabilité est LE geste écologique numéro un — votre travail technique du Niveau 1 est aussi un acte de protection. Ramasser des coquillages est un prélèvement (souvent, une coquille « vide » abrite un occupant), le nourrissage déséquilibre le milieu, et palmer au ras du fond casse les organismes fixés et trouble l'eau.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-milieu-009",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "plonger-écoresponsable--les-gestes-qui-comptent-sous-leau",
+      "prompt": "Il est acceptable de remonter une coquille vide comme souvenir de plongée.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : même une coquille apparemment vide abrite souvent un occupant (bernard-l'hermite, petits organismes), et le principe est de ne rien prélever du milieu — ni coquillage, ni étoile de mer, ni « souvenir ». La photo est le seul prélèvement qui ne laisse pas de trace. Dans les zones protégées, le prélèvement est de surcroît sanctionné.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-milieu-010",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "environnement",
+      "moduleSlug": "n1-milieu-naturel",
+      "sectionAnchor": "avant-et-après-la-plongée--lécoresponsabilité-continue-à-terre",
+      "prompt": "Quels gestes écoresponsables s'appliquent avant et après la plongée ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Préférer une crème solaire respectueuse du milieu marin, appliquée longtemps avant la mise à l'eau"
+        },
+        {
+          "id": "b",
+          "text": "Ne rien jeter par-dessus bord, pas même un mégot"
+        },
+        {
+          "id": "c",
+          "text": "Signaler à l'encadrant une pollution ou un filet perdu observés en plongée"
+        },
+        {
+          "id": "d",
+          "text": "Jeter les restes de pique-nique à la mer puisqu'ils sont biodégradables"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "L'écoresponsabilité continue à terre : certains filtres chimiques des crèmes solaires dégradent coraux et larves (d'où le choix de protections adaptées, ou mieux, de vêtements), rien ne passe par-dessus bord — un seul mégot pollue des centaines de litres d'eau — et signaler ses observations (pollution, filet perdu, espèce inhabituelle) alimente la protection du site. « Biodégradable » ne veut pas dire sans impact : aucun déchet ne va à la mer.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-regl-001",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "le-brevet-niveau-1-et-laptitude-pe20",
+      "prompt": "Que signifie l'aptitude PE20 attestée par le Niveau 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plongeur Encadré jusqu'à 20 mètres"
+        },
+        {
+          "id": "b",
+          "text": "Plongeur Expérimenté, 20 plongées minimum"
+        },
+        {
+          "id": "c",
+          "text": "Plongeur Autonome jusqu'à 20 mètres"
+        },
+        {
+          "id": "d",
+          "text": "Plongée En équipe de 20 personnes maximum"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "PE20 signifie « Plongeur Encadré à 20 mètres » : le titulaire évolue toujours au sein d'une palanquée conduite par un encadrant, dans l'espace de 0 à 20 m. L'autonomie à 20 m (PA20) est une aptitude du Niveau 2, et le sigle n'a rien à voir avec un nombre de plongées ou une taille d'équipe. Le « E » de « encadré » est le mot clé des prérogatives du N1.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-regl-002",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "le-brevet-niveau-1-et-laptitude-pe20",
+      "prompt": "En exploration, qui conduit la palanquée d'un plongeur Niveau 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un guide de palanquée, plongeur Niveau 4 au minimum"
+        },
+        {
+          "id": "b",
+          "text": "Le plongeur N1 le plus expérimenté du groupe"
+        },
+        {
+          "id": "c",
+          "text": "N'importe quel plongeur Niveau 2"
+        },
+        {
+          "id": "d",
+          "text": "Personne : les N1 plongent entre eux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En exploration, la palanquée d'un N1 est menée par un guide de palanquée, c'est-à-dire un plongeur Niveau 4 au minimum ; en situation d'enseignement, c'est un moniteur (E2 minimum selon la profondeur). Un N2 n'a pas les prérogatives d'encadrement, et des N1 ne plongent jamais entre eux seuls : le « E » de PE20 signifie précisément « encadré ».",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-regl-003",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "le-brevet-niveau-1-et-laptitude-pe20",
+      "prompt": "Quelle est la profondeur maximale de la plongée à l'air en France ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 mètres"
+        },
+        {
+          "id": "b",
+          "text": "60 mètres"
+        },
+        {
+          "id": "c",
+          "text": "100 mètres"
+        },
+        {
+          "id": "d",
+          "text": "20 mètres"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La réglementation française limite la plongée à l'air à 60 mètres, tous niveaux confondus : c'est le plafond absolu de l'activité à l'air. Les 20 m correspondent à l'espace du plongeur PE20 (Niveau 1) et les 40 m à celui du PE40 (Niveau 2 encadré) : ce sont des prérogatives individuelles, pas la limite générale de l'air.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-regl-004",
+      "type": "vrai-faux",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "le-brevet-niveau-1-et-laptitude-pe20",
+      "prompt": "Deux plongeurs Niveau 1 peuvent plonger seuls ensemble, sans encadrant, jusqu'à 20 m.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : le Niveau 1 est un plongeur encadré (PE20), qui évolue toujours en palanquée conduite par un guide de palanquée, jamais entre débutants seuls. La seule ouverture vers l'autonomie au N1 est la qualification PA12 (plongeurs majeurs, formation complémentaire, 0-12 m, sous l'autorité d'un DP) — mais elle ne permet en aucun cas de plonger à 20 m sans guide.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-regl-005",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "la-palanquée--votre-cellule-de-plongée",
+      "prompt": "Combien de plongeurs encadrés une palanquée peut-elle compter au maximum ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 plongeurs encadrés, plus le guide de palanquée"
+        },
+        {
+          "id": "b",
+          "text": "8 plongeurs encadrés"
+        },
+        {
+          "id": "c",
+          "text": "2 plongeurs encadrés seulement"
+        },
+        {
+          "id": "d",
+          "text": "Aucune limite si le guide est expérimenté"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le Code du sport limite la palanquée encadrée à 4 plongeurs encadrés au maximum, plus le guide de palanquée (un plongeur autonome supplémentaire pouvant s'y joindre dans les conditions prévues par les textes). Cette taille n'est pas arbitraire : c'est le maximum qu'un encadrant peut surveiller efficacement. Aucune expérience du guide ne permet de dépasser cet effectif réglementaire.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-regl-006",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "la-palanquée--votre-cellule-de-plongée",
+      "prompt": "Qu'est-ce qu'une palanquée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le groupe de plongeurs qui effectuent ensemble la même plongée : mêmes profondeur, trajet et durée"
+        },
+        {
+          "id": "b",
+          "text": "L'ensemble des plongeurs présents sur le bateau"
+        },
+        {
+          "id": "c",
+          "text": "Le matériel collectif de secours"
+        },
+        {
+          "id": "d",
+          "text": "La liste d'inscription à la sortie club"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La palanquée est la cellule de plongée : le petit groupe qui descend ensemble, évolue ensemble et remonte ensemble, avec les mêmes paramètres de profondeur, de durée et de trajet. Il n'y a pas de « je vous rejoins » ni de « je remonte seul ». L'ensemble des plongeurs du bateau se répartit en plusieurs palanquées, constituées par le directeur de plongée sur la fiche de sécurité.",
+      "difficulty": 1
+    },
+    {
+      "id": "n1-regl-007",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "la-palanquée--votre-cellule-de-plongée",
+      "prompt": "Quelles sont les missions du guide de palanquée pendant la plongée ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choisir le parcours dans le cadre fixé par le directeur de plongée"
+        },
+        {
+          "id": "b",
+          "text": "Surveiller chaque membre et gérer profondeur, durée et remontée"
+        },
+        {
+          "id": "c",
+          "text": "Prendre en charge tout incident"
+        },
+        {
+          "id": "d",
+          "text": "Fixer les paramètres maximaux de toutes les palanquées du bateau"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le guide de palanquée conduit la plongée : il choisit le parcours dans le cadre fixé par le DP, surveille chaque membre, gère la profondeur, la durée, l'air et la remontée, et prend en charge tout incident. Fixer les paramètres maximaux de chaque palanquée est en revanche la mission du directeur de plongée, qui organise l'activité depuis la surface — c'est la distinction classique GP/DP attendue à l'examen.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-regl-008",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "le-directeur-de-plongée-et-lorganisation-dune-sortie",
+      "prompt": "Parmi ces missions, lesquelles relèvent du directeur de plongée (DP) ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixer pour chaque palanquée les paramètres maximaux (profondeur, durée)"
+        },
+        {
+          "id": "b",
+          "text": "S'assurer de la présence du matériel de secours sur le site"
+        },
+        {
+          "id": "c",
+          "text": "Faire remplir la fiche de sécurité"
+        },
+        {
+          "id": "d",
+          "text": "Porter le bloc de chaque plongeur jusqu'au bateau"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le DP est le responsable de l'organisation : il décide du site et des horaires (il peut annuler si les conditions l'exigent), fixe les paramètres maximaux de chaque palanquée selon les aptitudes, garantit la présence du matériel de secours (oxygénothérapie, trousse, moyen d'alerte, plan de secours) et fait remplir la fiche de sécurité qui liste qui est dans l'eau. Le portage du matériel relève de chacun — et n'a rien de réglementaire.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-regl-009",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "le-directeur-de-plongée-et-lorganisation-dune-sortie",
+      "prompt": "Qu'est-ce que la fiche de sécurité (ou feuille de palanquée) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La liste nominative des palanquées avec les aptitudes de chacun et les paramètres prévus et réalisés"
+        },
+        {
+          "id": "b",
+          "text": "La notice d'utilisation du matériel de secours"
+        },
+        {
+          "id": "c",
+          "text": "Le contrat d'assurance du club"
+        },
+        {
+          "id": "d",
+          "text": "Le carnet de plongée du directeur de plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La fiche de sécurité est le document réglementaire tenu par le DP : liste nominative des palanquées, aptitudes de chacun, fonction dans la palanquée, paramètres prévus puis réalisés (profondeurs, durées, heures). Elle permet de savoir à tout instant qui est dans l'eau — c'est pourquoi on annonce ses paramètres au DP en sortant. Ce n'est ni une notice, ni une assurance, ni un carnet personnel.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-regl-010",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "le-directeur-de-plongée-et-lorganisation-dune-sortie",
+      "prompt": "Que doit faire le plongeur en sortant de l'eau après la plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Annoncer ses paramètres (profondeur, durée) au DP pour la fiche de sécurité"
+        },
+        {
+          "id": "b",
+          "text": "Ranger son matériel sans rien dire à personne"
+        },
+        {
+          "id": "c",
+          "text": "Attendre le lendemain pour transmettre ses paramètres"
+        },
+        {
+          "id": "d",
+          "text": "Signer la fiche de sécurité à la place du DP"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Au retour, chaque palanquée annonce ses paramètres réalisés (profondeur maximale, durée) au DP, qui complète la fiche de sécurité : c'est ainsi que l'organisation sait que tout le monde est sorti de l'eau et dans quelles conditions. Partir ranger son matériel sans se signaler peut déclencher une recherche inutile ; l'information doit être transmise immédiatement, et c'est le DP qui tient le document.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-regl-011",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "vos-documents-et-votre-matériel-obligatoire",
+      "prompt": "Quels documents une structure demande-t-elle classiquement avant de vous faire plonger ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La carte de brevet (niveau)"
+        },
+        {
+          "id": "b",
+          "text": "La licence fédérale en cours de validité"
+        },
+        {
+          "id": "c",
+          "text": "Le certificat médical ou questionnaire de santé selon les règles en vigueur"
+        },
+        {
+          "id": "d",
+          "text": "Le permis bateau"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le trio classique : carte de brevet qui atteste le niveau, licence fédérale (adhésion et assurance en responsabilité civile), et justificatif médical selon les règles en vigueur (certificat ou questionnaire de santé) — auxquels s'ajoute le carnet de plongée qui justifie l'expérience. Le permis bateau n'a rien à voir avec la pratique de la plongée : il concerne la conduite des navires.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-regl-012",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "vos-documents-et-votre-matériel-obligatoire",
+      "prompt": "Quelle assurance la licence fédérale FFESSM inclut-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une assurance en responsabilité civile (dommages causés à autrui)"
+        },
+        {
+          "id": "b",
+          "text": "Une assurance tous risques couvrant le plongeur lui-même, caisson compris"
+        },
+        {
+          "id": "c",
+          "text": "Une assurance du matériel personnel"
+        },
+        {
+          "id": "d",
+          "text": "Aucune assurance"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La licence inclut une assurance en responsabilité civile : elle couvre les dommages que vous causez à autrui. Elle ne couvre pas vos propres dommages — frais de caisson, rapatriement, accidents corporels — qui relèvent des assurances individuelles complémentaires facultatives (type « loisir »), fortement conseillées, notamment à l'étranger. Le matériel personnel n'est pas davantage couvert par la licence.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-regl-013",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "vos-documents-et-votre-matériel-obligatoire",
+      "prompt": "Quel équipement le Code du sport impose-t-il au plongeur encadré en exploration ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un gilet stabilisateur avec gonflage au gaz et un détendeur avec manomètre"
+        },
+        {
+          "id": "b",
+          "text": "Un ordinateur de plongée personnel obligatoire dès le Niveau 1"
+        },
+        {
+          "id": "c",
+          "text": "Un parachute de palier individuel"
+        },
+        {
+          "id": "d",
+          "text": "Deux détendeurs complets sur deux sorties indépendantes"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le plongeur encadré doit disposer d'un gilet stabilisateur à gonflage au gaz et d'un détendeur avec manomètre (ou équivalent) pour contrôler sa pression. En zone PE20 encadrée, le contrôle des paramètres de plongée est assuré par le guide : l'ordinateur personnel n'est pas exigé. Les deux détendeurs complets et le parachute par palanquée concernent le plongeur autonome (PA), pas l'encadré du Niveau 1.",
+      "difficulty": 2
+    },
+    {
+      "id": "n1-regl-014",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "pa12-et-la-suite--vers-lautonomie",
+      "prompt": "Quelles sont les conditions de l'aptitude PA12 ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Être majeur et avoir suivi la formation complémentaire correspondante"
+        },
+        {
+          "id": "b",
+          "text": "Évoluer entre 0 et 12 m, sous l'autorité d'un directeur de plongée"
+        },
+        {
+          "id": "c",
+          "text": "Palanquée limitée à 3 plongeurs autonomes"
+        },
+        {
+          "id": "d",
+          "text": "Plonger jusqu'à 20 m sans guide"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le PA12 (Plongeur Autonome à 12 mètres) permet de plonger sans guide entre plongeurs majeurs disposant de cette aptitude, dans l'espace 0-12 m, sous l'autorité d'un DP et à 3 plongeurs autonomes au maximum par palanquée ; à la FFESSM, il peut être délivré à un N1 majeur après une formation complémentaire (orientation, gestion de l'air, assistance). L'autonomie à 20 m est le PA20, une aptitude du Niveau 2 — pas du PA12.",
+      "difficulty": 3
+    },
+    {
+      "id": "n1-regl-015",
+      "type": "qcm",
+      "level": "n1",
+      "domain": "reglementation",
+      "moduleSlug": "n1-prerogatives",
+      "sectionAnchor": "pa12-et-la-suite--vers-lautonomie",
+      "prompt": "Vos prérogatives de plongeur sont :",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un plafond : le DP peut fixer des limites plus strictes et vous pouvez toujours renoncer"
+        },
+        {
+          "id": "b",
+          "text": "Un objectif à atteindre à chaque plongée"
+        },
+        {
+          "id": "c",
+          "text": "Un droit absolu que personne ne peut restreindre"
+        },
+        {
+          "id": "d",
+          "text": "Une simple recommandation sans valeur"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les prérogatives sont un plafond, pas un objectif : le DP peut toujours fixer des limites plus strictes (site difficile, conditions moyennes, plongeur peu récent), et vous pouvez toujours demander une plongée moins profonde ou renoncer si vous ne le sentez pas. On plonge dans le cadre le plus prudent entre les textes, les consignes du DP et son propre ressenti — les prérogatives ne sont ni un droit absolu ni une simple recommandation : les dépasser rend la plongée irrégulière.",
+      "difficulty": 2
+    }
+  ]
+}
