@@ -158,7 +158,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "La loi de Boyle-Mariotte énonce qu'à température constante, le produit pression × volume d'une masse de gaz reste constant : si la pression double, le volume est divisé par deux. La proposition b inverse la relation (elle est inversement, pas directement, proportionnelle) ; la proposition c est la loi de Dalton (pressions partielles) et la proposition d la loi de Henry (dissolution) — trois lois à ne pas confondre à l'examen.",
+      "explanation": "La loi de Boyle-Mariotte énonce qu'à température constante, le produit pression × volume d'une masse de gaz reste constant : si la pression double, le volume est divisé par deux. La proposition « La pression d'un gaz est proportionnelle à son volume » inverse la relation (elle est inversement, pas directement, proportionnelle) ; la proposition « Chaque gaz d'un mélange exerce une pression proportionnelle… » est la loi de Dalton (pressions partielles) et la proposition « La quantité de gaz dissoute dans un liquide est… » la loi de Henry (dissolution) — trois lois à ne pas confondre à l'examen.",
       "difficulty": 1
     },
     {
@@ -446,7 +446,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "Le principe d'Archimède : tout corps plongé dans un fluide reçoit une poussée verticale dirigée du bas vers le haut, égale au poids du volume de fluide déplacé — elle résulte de la différence de pression entre la face inférieure et la face supérieure de l'objet. La proposition b confond la poussée avec le poids du corps lui-même, la c décrit la loi de Mariotte appliquée aux gaz, et la d n'a aucun sens physique : c'est le rapport poids/volume qui décide, pas la masse seule.",
+      "explanation": "Le principe d'Archimède : tout corps plongé dans un fluide reçoit une poussée verticale dirigée du bas vers le haut, égale au poids du volume de fluide déplacé — elle résulte de la différence de pression entre la face inférieure et la face supérieure de l'objet. La proposition « Tout corps plongé dans un fluide subit une force égale à… » confond la poussée avec le poids du corps lui-même, la proposition « Tout corps immergé voit son volume diminuer… » décrit la loi de Mariotte appliquée aux gaz, et la d n'a aucun sens physique : c'est le rapport poids/volume qui décide, pas la masse seule.",
       "difficulty": 1
     },
     {
@@ -800,7 +800,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "L'air réel contient environ 78 % d'azote, 21 % d'oxygène et 1 % de gaz rares et de CO₂ ; pour les calculs, on utilise la convention simplifiée 80 % de N₂ et 20 % d'O₂, le reste étant négligé. Inverser les deux gaz (réponse c) est l'erreur d'étourderie classique : l'azote est bien le gaz majoritaire. Chaque gaz joue un rôle différent : l'O₂ est consommé, le N₂ se dissout, le CO₂ commande la ventilation.",
+      "explanation": "L'air réel contient environ 78 % d'azote, 21 % d'oxygène et 1 % de gaz rares et de CO₂ ; pour les calculs, on utilise la convention simplifiée 80 % de N₂ et 20 % d'O₂, le reste étant négligé. Inverser les deux gaz (proposition « 80 % d'oxygène et 20 % d'azote ») est l'erreur d'étourderie classique : l'azote est bien le gaz majoritaire. Chaque gaz joue un rôle différent : l'O₂ est consommé, le N₂ se dissout, le CO₂ commande la ventilation.",
       "difficulty": 1
     },
     {
@@ -832,7 +832,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "La loi de Dalton : chaque gaz d'un mélange exerce une pression proportionnelle à son pourcentage, comme s'il occupait seul tout le volume, soit $P_p = P_{abs} \\times \\%$ ; la somme des pressions partielles reconstitue la pression absolue. Utiliser la pression relative (réponse b) est le piège habituel de l'oubli du bar atmosphérique, et diviser par le pourcentage n'a pas de sens physique. C'est la pression partielle, pas le pourcentage, qui gouverne les effets d'un gaz sur l'organisme.",
+      "explanation": "La loi de Dalton : chaque gaz d'un mélange exerce une pression proportionnelle à son pourcentage, comme s'il occupait seul tout le volume, soit $P_p = P_{abs} \\times \\%$ ; la somme des pressions partielles reconstitue la pression absolue. Utiliser la pression relative (proposition « $P_p = P_{rel} \\times \\%_{gaz}$ ») est le piège habituel de l'oubli du bar atmosphérique, et diviser par le pourcentage n'a pas de sens physique. C'est la pression partielle, pas le pourcentage, qui gouverne les effets d'un gaz sur l'organisme.",
       "difficulty": 1
     },
     {
@@ -1048,7 +1048,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "La loi de Henry décrit la dissolution : à température constante et à saturation, la quantité de gaz dissoute dans un liquide est proportionnelle à la pression partielle de ce gaz au contact du liquide — c'est le fondement de la saturation en azote du plongeur, illustrée par la bouteille d'eau gazeuse. La proposition b est la loi de Boyle-Mariotte et la c la loi de Dalton ; quant à la d, l'eau gazeuse prouve chaque jour le contraire.",
+      "explanation": "La loi de Henry décrit la dissolution : à température constante et à saturation, la quantité de gaz dissoute dans un liquide est proportionnelle à la pression partielle de ce gaz au contact du liquide — c'est le fondement de la saturation en azote du plongeur, illustrée par la bouteille d'eau gazeuse. La proposition « Le volume d'un gaz est inversement proportionnel à sa… » est la loi de Boyle-Mariotte et la proposition « Chaque gaz d'un mélange exerce une pression proportionnelle… » la loi de Dalton ; quant à la d, l'eau gazeuse prouve chaque jour le contraire.",
       "difficulty": 1
     },
     {
@@ -1112,7 +1112,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "La chaîne complète attendue à l'examen : Dalton (la pression partielle d'azote augmente avec la profondeur) → Henry (l'azote se dissout proportionnellement dans le sang et les tissus) → à la remontée, sursaturation → si elle est trop rapide, l'azote reprend sa forme gazeuse en bulles → accident de désaturation. La proposition b décrit la surpression pulmonaire (accident barotraumatique, pas de désaturation), la c confond avec l'hyperoxie, et la d est fausse : le pourcentage ne change jamais.",
+      "explanation": "La chaîne complète attendue à l'examen : Dalton (la pression partielle d'azote augmente avec la profondeur) → Henry (l'azote se dissout proportionnellement dans le sang et les tissus) → à la remontée, sursaturation → si elle est trop rapide, l'azote reprend sa forme gazeuse en bulles → accident de désaturation. La proposition « Mariotte : l'air se dilate à la remontée → les poumons… » décrit la surpression pulmonaire (accident barotraumatique, pas de désaturation), la c confond avec l'hyperoxie, et la d est fausse : le pourcentage ne change jamais.",
       "difficulty": 2
     },
     {
@@ -2844,7 +2844,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "La procédure MN90 : remontée du fond au premier palier à 15-17 m/min, puis 6 m/min entre les paliers et du dernier palier à la surface. Inverser les deux vitesses (réponse b) est le piège classique : c'est bien près de la surface, là où les variations relatives de pression sont maximales, que l'on ralentit le plus. Une remontée à 30 m/min est une remontée rapide, qui impose une procédure de rattrapage.",
+      "explanation": "La procédure MN90 : remontée du fond au premier palier à 15-17 m/min, puis 6 m/min entre les paliers et du dernier palier à la surface. Inverser les deux vitesses (proposition « 6 m/min du fond au premier palier, puis 15 à 17 m/min… ») est le piège classique : c'est bien près de la surface, là où les variations relatives de pression sont maximales, que l'on ralentit le plus. Une remontée à 30 m/min est une remontée rapide, qui impose une procédure de rattrapage.",
       "difficulty": 1
     },
     {
@@ -3604,7 +3604,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "Durée fictive = durée réelle + majoration = $25 + 16 = 41$ min ; on entre dans la table 20 m avec 41 min, arrondi à la ligne supérieure 45 min → palier de 4 min à 3 m, GPS I. Tout se passe comme si la plongée avait commencé 16 minutes avant l'immersion réelle. Lire la ligne 40 min arrondirait la durée vers le bas (interdit), ignorer la majoration (réponse c) est l'erreur la plus grave, et la ligne 50 min pénalise au-delà du nécessaire.",
+      "explanation": "Durée fictive = durée réelle + majoration = $25 + 16 = 41$ min ; on entre dans la table 20 m avec 41 min, arrondi à la ligne supérieure 45 min → palier de 4 min à 3 m, GPS I. Tout se passe comme si la plongée avait commencé 16 minutes avant l'immersion réelle. Lire la ligne 40 min arrondirait la durée vers le bas (interdit), ignorer la majoration (proposition « On lit 25 min : aucun palier, GPS E ») est l'erreur la plus grave, et la ligne 50 min pénalise au-delà du nécessaire.",
       "difficulty": 3
     },
     {
@@ -3764,7 +3764,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "L'intervalle de 10 min (< 15 min) fait de la seconde plongée une consécutive : durée cumulée $30 + 20 = 50$ min, profondeur maximale 18 m → table 20 m, ligne 50 min → palier de 9 min à 3 m (à faire à la fin de la seconde plongée), GPS I. Lire la seule seconde plongée (réponse b) ou la seule première (réponse c) ignore le cumul, et additionner les profondeurs (réponse d) est un contresens : on retient le maximum, jamais la somme.",
+      "explanation": "L'intervalle de 10 min (< 15 min) fait de la seconde plongée une consécutive : durée cumulée $30 + 20 = 50$ min, profondeur maximale 18 m → table 20 m, ligne 50 min → palier de 9 min à 3 m (à faire à la fin de la seconde plongée), GPS I. Lire la seule seconde plongée (proposition « Table 15 m, 20 min → aucun palier, GPS B ») ou la seule première (proposition « Table 20 m, 30 min → aucun palier, GPS F ») ignore le cumul, et additionner les profondeurs (proposition « Table 35 m (18 + 15 arrondi), 50 min → paliers profonds ») est un contresens : on retient le maximum, jamais la somme.",
       "difficulty": 3
     },
     {
@@ -3860,7 +3860,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "La durée à retenir court de l'immersion à la fin du palier à mi-profondeur : $17 + 2 + 5 = 24$ min, avec la profondeur maximale (30 m) → table 30 m, ligne 25 min → palier de 9 min à 3 m, GPS G. Ne compter que les 17 min initiales (réponse b) ignore la redescente ; lire la table 15 m (réponse c) confond mi-profondeur et profondeur de lecture ; et 22 min (réponse d) oublie la redescente de 2 min — le résultat est ici identique par l'arrondi, mais la méthode est fausse et peut coûter cher sur d'autres valeurs.",
+      "explanation": "La durée à retenir court de l'immersion à la fin du palier à mi-profondeur : $17 + 2 + 5 = 24$ min, avec la profondeur maximale (30 m) → table 30 m, ligne 25 min → palier de 9 min à 3 m, GPS G. Ne compter que les 17 min initiales (proposition « Durée 17 min → table 30 m, ligne 20 min : 4 min à 3 m, GPS F ») ignore la redescente ; lire la table 15 m (proposition « Durée 24 min → table 15 m : aucun palier ») confond mi-profondeur et profondeur de lecture ; et 22 min (proposition « Durée 22 min → table 30 m, ligne 25 min : 9 min à 3 m ») oublie la redescente de 2 min — le résultat est ici identique par l'arrondi, mais la méthode est fausse et peut coûter cher sur d'autres valeurs.",
       "difficulty": 3
     },
     {
@@ -3924,7 +3924,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "Le premier étage abaisse la haute pression du bloc à une moyenne pression asservie à la pression ambiante : environ 8 à 10 bars **au-dessus** de celle-ci, car sa chambre humide communique avec l'eau. C'est ce qui permet au deuxième étage de délivrer un air facile à inspirer à toute profondeur. Une MP fixe en valeur absolue (réponse b) rendrait l'inspiration de plus en plus dure en descendant ; la pression ambiante seule est le rôle du deuxième étage ; et 200 bars est la pression du bloc.",
+      "explanation": "Le premier étage abaisse la haute pression du bloc à une moyenne pression asservie à la pression ambiante : environ 8 à 10 bars **au-dessus** de celle-ci, car sa chambre humide communique avec l'eau. C'est ce qui permet au deuxième étage de délivrer un air facile à inspirer à toute profondeur. Une MP fixe en valeur absolue (proposition « Exactement 8 à 10 bars absolus, quelle que soit la… ») rendrait l'inspiration de plus en plus dure en descendant ; la pression ambiante seule est le rôle du deuxième étage ; et 200 bars est la pression du bloc.",
       "difficulty": 2
     },
     {
@@ -4402,7 +4402,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "Le piège d'examen classique : la palanquée autonome compte au maximum 3 plongeurs (sans guide), la palanquée encadrée 4 plongeurs encadrés plus le guide de palanquée (et éventuellement un plongeur supplémentaire apte selon les cas prévus par les textes). Inverser les deux chiffres (réponse b) est l'erreur la plus fréquente. Ces effectifs correspondent à ce qu'un guide peut surveiller et à ce qu'une équipe autonome peut gérer en assistance mutuelle.",
+      "explanation": "Le piège d'examen classique : la palanquée autonome compte au maximum 3 plongeurs (sans guide), la palanquée encadrée 4 plongeurs encadrés plus le guide de palanquée (et éventuellement un plongeur supplémentaire apte selon les cas prévus par les textes). Inverser les deux chiffres (proposition « Palanquée autonome : 4 plongeurs ; palanquée encadrée : 3… ») est l'erreur la plus fréquente. Ces effectifs correspondent à ce qu'un guide peut surveiller et à ce qu'une équipe autonome peut gérer en assistance mutuelle.",
       "difficulty": 2
     },
     {

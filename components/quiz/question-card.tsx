@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { getDomain } from "@/lib/catalog";
-import { isAnswerCorrect } from "@/lib/quiz/selection";
+import { displayOptions, isAnswerCorrect } from "@/lib/quiz/selection";
 import type { Question } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -103,12 +103,17 @@ export function QuestionCard({
     return <span aria-hidden className="size-4 shrink-0" />;
   };
 
-  const optionLabel = (optionId: string, text: string) => (
+  const optionLabel = (position: number, text: string) => (
     <span className="flex-1 text-sm leading-relaxed">
-      <span className="text-muted-foreground mr-1.5 font-semibold uppercase">{optionId}.</span>
+      <span className="text-muted-foreground mr-1.5 font-semibold uppercase">
+        {String.fromCharCode(97 + position)}.
+      </span>
       <RichText text={text} />
     </span>
   );
+
+  // Ordre d'affichage mélangé de façon déterministe (biais de position neutralisé).
+  const options = displayOptions(question);
 
   return (
     <Card className={className}>
@@ -131,7 +136,7 @@ export function QuestionCard({
       <CardContent className="space-y-4">
         {multiple ? (
           <div className="grid gap-2" role="group" aria-label="Options de réponse">
-            {question.options.map((option) => {
+            {options.map((option, position) => {
               const inputId = `${question.id}-${option.id}`;
               return (
                 <label key={option.id} htmlFor={inputId} className={optionClasses(option.id)}>
@@ -142,7 +147,7 @@ export function QuestionCard({
                     disabled={!interactive}
                     onCheckedChange={(checked) => toggleOption(option.id, checked === true)}
                   />
-                  {optionLabel(option.id, option.text)}
+                  {optionLabel(position, option.text)}
                   {optionStatusIcon(option.id)}
                 </label>
               );
@@ -157,12 +162,12 @@ export function QuestionCard({
               if (interactive && onSelectionChange) onSelectionChange([value]);
             }}
           >
-            {question.options.map((option) => {
+            {options.map((option, position) => {
               const inputId = `${question.id}-${option.id}`;
               return (
                 <label key={option.id} htmlFor={inputId} className={optionClasses(option.id)}>
                   <RadioGroupItem id={inputId} value={option.id} className="mt-0.5" />
-                  {optionLabel(option.id, option.text)}
+                  {optionLabel(position, option.text)}
                   {optionStatusIcon(option.id)}
                 </label>
               );

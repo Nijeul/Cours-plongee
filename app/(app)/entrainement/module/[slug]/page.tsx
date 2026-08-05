@@ -6,8 +6,8 @@ import { notFound } from "next/navigation";
 import { LevelBadge } from "@/components/layout/level-badge";
 import { ModuleQuiz } from "@/components/quiz/module-quiz";
 import { DISCLAIMER, MODULE_VALIDATION_THRESHOLD } from "@/content/data/reglementation";
-import { CATALOG, getCatalogModule } from "@/lib/catalog";
-import { loadQuestions } from "@/lib/content";
+import { CATALOG, getCatalogModule, getLevel, getModulesForLevel } from "@/lib/catalog";
+import { loadQuestions, moduleExists } from "@/lib/content";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -39,6 +39,17 @@ export default async function EntrainementModulePage({ params, searchParams }: P
   const validation = mode === "validation";
   const questions = loadQuestions(catalogModule.level).filter((q) => q.moduleSlug === slug);
   const backHref = `/entrainement/${catalogModule.level}`;
+
+  // Étape suivante du parcours : le prochain module du niveau (s'il a son cours),
+  // ou l'examen blanc du niveau quand on vient de valider le dernier module.
+  const levelModules = getModulesForLevel(catalogModule.level);
+  const nextModule = levelModules
+    .filter((m) => m.order > catalogModule.order && moduleExists(m.slug))
+    .at(0);
+  const nextHref = nextModule ? `/cours/${nextModule.slug}` : `/examen/${catalogModule.level}`;
+  const nextLabel = nextModule
+    ? `Module suivant : ${nextModule.title}`
+    : `Examen blanc ${getLevel(catalogModule.level).title}`;
 
   return (
     <div className="mx-auto w-full max-w-3xl px-4 py-8 sm:py-10">
@@ -82,6 +93,11 @@ export default async function EntrainementModulePage({ params, searchParams }: P
           mode={validation ? "validation" : "entrainement"}
           backHref={backHref}
           backLabel="Retour à l'entraînement"
+          nextHref={nextHref}
+          nextLabel={nextLabel}
+          validationHref={
+            validation ? undefined : `/entrainement/module/${catalogModule.slug}?mode=validation`
+          }
         />
       )}
 
