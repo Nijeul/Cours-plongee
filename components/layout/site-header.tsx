@@ -12,8 +12,10 @@ import { cn } from "@/lib/utils";
 const NAV_ITEMS = [
   { href: "/#niveaux", label: "Niveaux" },
   { href: "/dashboard", label: "Tableau de bord" },
+  { href: "/entrainement", label: "Entraînement" },
   { href: "/revision", label: "Révisions" },
   { href: "/examen", label: "Examen blanc" },
+  { href: "/simulateurs", label: "Simulateurs" },
 ] as const;
 
 function Logo({ className }: { className?: string }) {
