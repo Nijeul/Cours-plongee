@@ -35,6 +35,7 @@ import {
 } from "@/components/ui/table";
 import { newCard, reviewCard } from "@/lib/calc/sm2";
 import { getDomain, getLevel } from "@/lib/catalog";
+import { uuid } from "@/lib/ids";
 import { useProgressStore } from "@/lib/progress";
 import {
   buildDomainResults,
@@ -45,13 +46,6 @@ import {
 } from "@/lib/quiz/selection";
 import type { ExamConfig, ExamSession as ExamSessionRecord, Question, QuizAttempt } from "@/lib/types";
 import { cn } from "@/lib/utils";
-
-function makeId(prefix: string): string {
-  if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
-    return `${prefix}-${crypto.randomUUID()}`;
-  }
-  return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
-}
 
 interface ExamSessionProps {
   config: ExamConfig;
@@ -120,7 +114,7 @@ export function ExamSession({ config, questions }: ExamSessionProps) {
       const { score, maxScore, percent } = scoreAnswers(series, finalAnswers);
       const quizAnswers = toQuizAnswers(series, finalAnswers);
       const session: ExamSessionRecord = {
-        id: makeId("exam"),
+        id: uuid(),
         level: config.level,
         startedAt: startedAtRef.current,
         finishedAt,
@@ -132,7 +126,7 @@ export function ExamSession({ config, questions }: ExamSessionProps) {
         answers: quizAnswers,
       };
       const attempt: QuizAttempt = {
-        id: makeId("quiz"),
+        id: uuid(),
         kind: "examen",
         level: config.level,
         moduleSlug: null,
