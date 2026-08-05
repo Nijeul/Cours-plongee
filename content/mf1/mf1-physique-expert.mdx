@@ -1,0 +1,110 @@
+---
+slug: mf1-physique-expert
+title: "Physique : niveau expert"
+level: mf1
+domain: physique
+description: "Tous les calculs, cas limites et démonstrations nécessaires pour enseigner la physique de la plongée."
+objectives:
+  - "Démontrer les lois de Mariotte, Dalton, Henry et Archimède au niveau attendu d'un enseignant"
+  - "Traiter les cas limites et les pièges de calcul (pression absolue/relative, arrondis, unités)"
+  - "Identifier les erreurs classiques des élèves et proposer une remédiation ciblée"
+  - "Construire un exemple numérique progressif pour introduire une loi physique en cours"
+  - "Relier chaque loi à son application physiologique et matérielle pour donner du sens au calcul"
+durationMinutes: 70
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+  - "Publications de la Commission Médicale et de Prévention Nationale FFESSM"
+---
+
+Enseigner la physique de la plongée demande plus que de savoir calculer : il faut **démontrer**, anticiper les **erreurs** des élèves et choisir le bon exemple pour faire comprendre. Ce module reprend les lois fondamentales sous l'angle du moniteur : la rigueur de la démonstration, les cas limites, et surtout le catalogue des confusions les plus fréquentes avec leur remédiation.
+
+## Pression : la confusion fondatrice
+
+Avant toute loi, l'élève doit distinguer sans hésiter les trois pressions. La **pression relative** (hydrostatique) ne dépend que de la colonne d'eau : $P_{rel} = profondeur / 10$. La **pression atmosphérique** vaut 1 bar au niveau de la mer. La **pression absolue**, seule physiquement réelle pour le plongeur, est leur somme :
+
+$$P_{abs} = P_{atm} + \frac{profondeur}{10}$$
+
+La démonstration du « 1 bar par 10 m » se fait par le poids d'une colonne d'eau : 10 m d'eau sur 1 cm² pèsent environ 1 kg, soit une pression d'environ 1 bar. À 30 m, $P_{abs} = 4$ bars ; à 60 m, 7 bars.
+
+L'**erreur classique** consiste à utiliser la pression relative là où il faut l'absolue, notamment dans Mariotte et Dalton. Un élève qui écrit « à 20 m, la pression est de 2 bars » confond relative et absolue (c'est 2 bars **relatifs**, 3 bars **absolus**). La remédiation la plus efficace est de faire systématiquement **écrire les deux** au brouillon et de rappeler que tout calcul de gaz utilise l'**absolue**. Un moyen mnémotechnique : « le poumon ne connaît que l'absolue ».
+
+<Attention>
+
+Neuf erreurs de calcul sur dix en formation viennent d'une confusion relative/absolue. Imposer dès le N2 le réflexe : convertir la profondeur en **pression absolue** ($1 + p/10$) **avant** d'appliquer Mariotte, Dalton ou Henry.
+
+</Attention>
+
+## Boyle-Mariotte : démonstration et cas limites
+
+À température constante, pour une masse de gaz fixée : $P_1 V_1 = P_2 V_2$. On le démontre expérimentalement en comprimant un volume fermé et en constatant la variation inverse ; on l'illustre par une seringue bouchée. La conséquence physiologique majeure est que la **détente volumique est maximale près de la surface** : de 10 m à la surface, la pression est divisée par deux, donc le volume double ; de 40 m à 30 m, il ne varie que d'un quart. C'est le fondement de la dangerosité des derniers mètres pour la surpression pulmonaire.
+
+Les **cas limites** à maîtriser : le volume d'air d'un bloc (capacité $= V \times P$, ex. $12 \times 200 = 2400$ L) ; le transvasement de deux blocs (conservation de la quantité, $P_{eq} = \frac{P_1V_1 + P_2V_2}{V_1+V_2}$) ; la remontée d'une bulle ou d'un parachute. L'**erreur classique** est d'oublier que Mariotte suppose une **température constante** : un bloc gonflé chauffe, sa pression lue à chaud surestime le remplissage réel une fois refroidi. Autre piège : appliquer Mariotte à un volume **ouvert** (le poumon d'un plongeur qui respire normalement ne se comprime pas, car il se réalimente en air).
+
+<SimLoisPhysiques />
+
+## Dalton : pressions partielles et démonstration
+
+La pression d'un mélange gazeux est la somme des pressions partielles de ses composants (Dalton) ; la pression partielle d'un gaz vaut la pression absolue multipliée par sa fraction : $P_pX = P_{abs} \times F_X$. Pour l'air, on retient $F_{O_2} \approx 21\,\%$ et $F_{N_2} \approx 79\,\%$. Ainsi à 40 m ($P_{abs} = 5$ bars) : $P_pO_2 = 5 \times 0{,}21 = 1{,}05$ bar, $P_pN_2 = 5 \times 0{,}79 = 3{,}95$ bars.
+
+La grande force pédagogique de Dalton est de retrouver **par le calcul inverse** les profondeurs seuils. Seuil d'hyperoxie à $P_pO_2 = 1{,}6$ bar : $P_{abs} = 1{,}6 / 0{,}21 \approx 7{,}6$ bars, soit environ 66 m à l'air — d'où la limite des 60 m qui garde une marge. Pour le nitrox 40 %, la MOD à $1{,}6$ bar : $P_{abs} = 1{,}6/0{,}40 = 4$ bars, soit 30 m. L'**erreur classique** est d'appliquer la fraction à la pression **relative** ou d'oublier de convertir la profondeur en absolue ; là encore, la remédiation passe par l'ordre imposé : profondeur → pression absolue → fraction.
+
+<EnPratique>
+
+**Exemple progressif pour introduire Dalton en cours.** Partir d'une question concrète : « à partir de quelle profondeur l'oxygène de l'air devient-il toxique ? »
+1. On rappelle la composition de l'air (21 % O₂).
+2. On pose le seuil admis ($P_pO_2 = 1{,}6$ bar).
+3. On cherche la pression absolue : $P_{abs} = 1{,}6/0{,}21 \approx 7{,}6$ bars.
+4. On traduit en profondeur : $\approx 66$ m.
+5. On conclut sur la limite réglementaire de 60 m et sa marge.
+
+L'élève voit ainsi la loi **servir** à répondre à une vraie question, au lieu de subir une formule abstraite.
+
+</EnPratique>
+
+## Henry : dissolution, saturation, gradient
+
+À température donnée, la quantité de gaz dissous dans un liquide à l'équilibre est proportionnelle à la pression partielle de ce gaz au contact du liquide (Henry). En plongée, cela régit la dissolution de l'azote dans les tissus. Trois états à nommer précisément : **saturation** (équilibre atteint entre tension dissoute et pression respirée), **sous-saturation** (le tissu peut encore absorber, cas de la descente), **sursaturation** (la tension dépasse la pression ambiante, cas de la remontée). Le **gradient** est la différence qui pousse l'échange dans un sens ou l'autre.
+
+L'**erreur classique** est de croire que la dissolution est **instantanée** : Henry décrit l'état d'équilibre, pas la vitesse pour l'atteindre, qui dépend des tissus (voir le modèle de Haldane). Autre confusion : penser que « sursaturation » signifie « accident ». La sursaturation est normale et tolérée dans une limite ; c'est son **excès** qui fait buller. Le moniteur relie Henry à la nécessité des paliers et d'une remontée lente : on laisse le gradient évacuer l'azote sans le faire passer à l'état gazeux.
+
+## Archimède : démonstration et lestage
+
+Tout corps immergé subit une poussée verticale ascendante égale au **poids du volume de liquide déplacé** (Archimède). Le **poids apparent** est le poids réel moins cette poussée. La flottabilité est nulle quand les deux s'égalent, positive quand la poussée l'emporte, négative sinon. On le démontre par le bilan des forces sur un volume immergé ; on l'illustre par le gonflage/dégonflage du gilet, qui modifie le volume déplacé donc la poussée.
+
+Le **cas limite** utile est le calcul de lestage et le poids apparent d'un objet à remonter : un bloc de 15 L en acier, une gueuse, un parachute de relevage. L'**erreur classique** est d'oublier que la combinaison **se comprime avec la profondeur** : son volume diminue, la poussée baisse, le plongeur s'alourdit en descendant — d'où la nécessité d'ajuster le gilet. Autre piège fréquent : confondre masse (kg) et poids, ou négliger la différence de masse volumique entre eau douce (1 kg/L) et eau de mer (≈ 1,03 kg/L), qui explique qu'on se leste un peu plus en mer.
+
+<ARetenir>
+
+Les quatre lois se tiennent : **Mariotte** (volume), **Dalton** (pressions partielles), **Henry** (dissolution), **Archimède** (flottabilité). Trois d'entre elles exigent la **pression absolue**. Enseigner, c'est démontrer, puis appliquer à une question concrète, puis traquer l'erreur relative/absolue.
+
+</ARetenir>
+
+## Le catalogue des erreurs et la posture du moniteur
+
+Au-delà des confusions déjà citées, quelques erreurs reviennent : mélanger les unités (bar, m, L), négliger les arrondis dans le sens de la sécurité, appliquer Mariotte à température variable, ou « plaquer » une formule sans vérifier qu'elle correspond au phénomène. La posture du moniteur face à ces erreurs est plus importante que leur liste : **faire verbaliser** le raisonnement de l'élève pour localiser la faute, corriger la **cause** (souvent conceptuelle) et non seulement le résultat, puis proposer un exercice de même famille pour ancrer la correction. Un élève qui a compris **pourquoi** il s'est trompé ne refera pas l'erreur ; un élève à qui l'on a seulement donné la bonne réponse la reproduira. C'est cette approche diagnostique qui fait la valeur pédagogique d'un moniteur en physique.
+
+<Memo>
+
+### Les trois pressions
+
+- Relative $= p/10$ ; atmosphérique $= 1$ bar ; **absolue** $= 1 + p/10$ (la seule pour les calculs de gaz).
+- 30 m → 4 bars ; 40 m → 5 bars ; 60 m → 7 bars.
+
+### Lois et formules
+
+- **Mariotte** : $P_1V_1 = P_2V_2$ (T constante). Détente max près de la surface. Capacité bloc $= V\times P$.
+- **Dalton** : $P_pX = P_{abs}\times F_X$. Air : 21 % O₂ / 79 % N₂. Seuils par calcul inverse (hyperoxie $P_pO_2 = 1{,}6$).
+- **Henry** : dissolution ∝ pression partielle. Saturation / sous- / sur-saturation ; gradient. Pas instantané.
+- **Archimède** : poussée = poids du volume déplacé. Poids apparent = poids réel − poussée. Combinaison se comprime → s'alourdit en descendant.
+
+### Erreurs classiques à corriger
+
+- Relative/absolue (n°1) → convertir en absolue **avant** tout calcul.
+- Dissolution « instantanée » (Henry décrit l'équilibre, pas la vitesse).
+- Sursaturation ≠ accident (c'est son excès).
+- Mariotte à T variable (bloc chaud), sur volume ouvert (poumon qui respire).
+- Masse/poids, eau douce/mer, unités, arrondis.
+- Remédiation : faire **verbaliser**, corriger la cause, redonner un exercice de même famille.
+
+</Memo>

@@ -1,0 +1,25 @@
+{
+  "name": "Théorie Plongée — N1 à MF1",
+  "short_name": "Théorie Plongée",
+  "description": "Apprentissage et entraînement à la théorie de la plongée sous-marine (FFESSM N1 à MF1) : cours, QCM corrigés, simulateurs, examens blancs, révision espacée.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0e4a6b",
+  "icons": [
+    {
+      "src": "/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/app-icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

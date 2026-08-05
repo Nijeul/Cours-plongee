@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "katex/dist/katex.min.css";
 import "./globals.css";
 
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { PwaRegister } from "@/components/pwa-register";
 import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
@@ -25,6 +26,8 @@ export const metadata: Metadata = {
   description:
     "Cours structurés, entraînement corrigé, révision espacée et examens blancs pour préparer la théorie des niveaux de plongée FFESSM : N1, N2, N3, N4/GP et MF1.",
   applicationName: "Théorie Plongée",
+  manifest: "/manifest.webmanifest",
+  icons: { icon: "/icons/app-icon.svg" },
   keywords: [
     "plongée",
     "théorie plongée",
@@ -37,6 +40,13 @@ export const metadata: Metadata = {
     "MF1",
     "tables MN90",
     "examen blanc plongée",
+  ],
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#0e4a6b" },
+    { media: "(prefers-color-scheme: dark)", color: "#0b1220" },
   ],
 };
 
@@ -61,6 +71,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main className="flex flex-1 flex-col">{children}</main>
         <SiteFooter />
         <Toaster />
+        <PwaRegister />
       </body>
     </html>
   );
