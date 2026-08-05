@@ -20,6 +20,9 @@ interface ModuleQuizProps {
   /** Lien de retour affiché sur l'écran de résultats. */
   backHref: string;
   backLabel: string;
+  nextHref?: string;
+  nextLabel?: string;
+  validationHref?: string;
 }
 
 /**
@@ -38,6 +41,9 @@ export function ModuleQuiz({
   mode,
   backHref,
   backLabel,
+  nextHref,
+  nextLabel,
+  validationHref,
 }: ModuleQuizProps) {
   const [seed, setSeed] = React.useState(INITIAL_SEED);
 
@@ -56,6 +62,9 @@ export function ModuleQuiz({
       onRestart={() => setSeed(Date.now())}
       backHref={backHref}
       backLabel={backLabel}
+      nextHref={nextHref}
+      nextLabel={nextLabel}
+      validationHref={validationHref}
     />
   );
 }

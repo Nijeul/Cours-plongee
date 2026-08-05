@@ -11,6 +11,7 @@ import type {
   ExamConfig,
   ExamDomainResult,
   Question,
+  QuestionOption,
   QuizAnswer,
 } from "@/lib/types";
 import { DOMAIN_SLUGS } from "@/lib/types";
@@ -25,6 +26,26 @@ export interface TrainingSelectionOptions {
   count: number;
   /** Graine du tirage (par défaut : Date.now()). */
   seed?: number;
+}
+
+/** Hachage djb2 d'une chaîne vers un entier 32 bits non signé (graine de mélange). */
+function hashString(value: string): number {
+  let hash = 5381;
+  for (let i = 0; i < value.length; i++) {
+    hash = ((hash << 5) + hash + value.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
+
+/**
+ * Ordre d'affichage des options d'une question : mélange déterministe par id
+ * de question (stable entre les rendus et sur l'écran de revue), pour
+ * neutraliser tout biais de position des bonnes réponses dans la banque.
+ * Les questions vrai/faux gardent l'ordre « Vrai » puis « Faux ».
+ */
+export function displayOptions(question: Question): QuestionOption[] {
+  if (question.type === "vrai-faux") return question.options;
+  return shuffle(question.options, mulberry32(hashString(question.id)));
 }
 
 /** Mélange de Fisher-Yates, sans modifier le tableau d'origine. */

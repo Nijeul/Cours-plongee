@@ -63,6 +63,11 @@ interface QuizRunnerProps {
   /** Lien de retour affiché sur l'écran de résultats. */
   backHref?: string;
   backLabel?: string;
+  /** Étape suivante du parcours (module suivant ou examen blanc), mise en avant après une validation réussie. */
+  nextHref?: string;
+  nextLabel?: string;
+  /** Lien vers le test de validation, proposé à la fin d'un entraînement de module. */
+  validationHref?: string;
 }
 
 /**
@@ -83,6 +88,9 @@ export function QuizRunner({
   onRestart,
   backHref,
   backLabel,
+  nextHref,
+  nextLabel,
+  validationHref,
 }: QuizRunnerProps) {
   const { store } = useProgressStore();
   const storeRef = React.useRef(store);
@@ -124,13 +132,11 @@ export function QuizRunner({
       finishedAt,
       answers: toQuizAnswers(questions, answers),
     };
-    try {
-      await activeStore.saveAttempt(attempt);
-      await registerFailedQuestions(
-        activeStore,
-        questions.filter((q) => !attempt.answers.find((a) => a.questionId === q.id)?.correct),
-      );
-      if (mode === "validation" && moduleSlug) {
+    // Chaque étape est isolée : un échec (réseau, session expirée…) ne doit
+    // jamais empêcher les suivantes — en particulier la validation du module,
+    // écrite en premier car c'est l'information la plus importante.
+    if (mode === "validation" && moduleSlug) {
+      try {
         const snapshot = await activeStore.getSnapshot();
         const existing = snapshot.modules.find((m) => m.moduleSlug === moduleSlug);
         await activeStore.upsertModuleProgress({
@@ -141,9 +147,22 @@ export function QuizRunner({
           bestValidationScore: Math.max(existing?.bestValidationScore ?? 0, percent),
           updatedAt: finishedAt,
         });
+      } catch (error) {
+        console.error("Échec de l'enregistrement de la validation du module :", error);
       }
+    }
+    try {
+      await activeStore.saveAttempt(attempt);
     } catch (error) {
       console.error("Échec de l'enregistrement de la tentative :", error);
+    }
+    try {
+      await registerFailedQuestions(
+        activeStore,
+        questions.filter((q) => !attempt.answers.find((a) => a.questionId === q.id)?.correct),
+      );
+    } catch (error) {
+      console.error("Échec de l'enregistrement des cartes de révision :", error);
     }
   }, [answers, level, mode, moduleSlug, questions, threshold, total]);
 
@@ -242,7 +261,31 @@ export function QuizRunner({
             ) : null}
 
             <div className="flex flex-wrap gap-2 pt-2">
-              <Button onClick={onRestart ?? reset}>
+              {mode === "validation" && passed && nextHref ? (
+                <Button asChild>
+                  <Link href={nextHref}>
+                    {nextLabel ?? "Module suivant"}
+                    <ArrowRight aria-hidden className="size-4" />
+                  </Link>
+                </Button>
+              ) : null}
+              {mode === "entrainement" && validationHref ? (
+                <Button asChild>
+                  <Link href={validationHref}>
+                    <Flag aria-hidden className="size-4" />
+                    Passer le test de validation
+                  </Link>
+                </Button>
+              ) : null}
+              <Button
+                variant={
+                  (mode === "validation" && passed && nextHref) ||
+                  (mode === "entrainement" && validationHref)
+                    ? "outline"
+                    : "default"
+                }
+                onClick={onRestart ?? reset}
+              >
                 <RotateCcw aria-hidden className="size-4" />
                 Recommencer
               </Button>
