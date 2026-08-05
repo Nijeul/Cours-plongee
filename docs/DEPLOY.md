@@ -160,6 +160,8 @@ Appliquez **d'abord la migration, ensuite le seed** (le seed insère dans les ta
 
 | Symptôme | Cause probable | Correction |
 |---|---|---|
+| Toutes les pages renvoient `404: NOT_FOUND` alors que le déploiement est `Ready` et que le build liste bien les routes | **Framework Preset** du projet Vercel sur « Other » au moment du build : la sortie Next.js n'est pas routée | **Settings → Build and Deployment → Framework Preset = Next.js**, puis **Redeploy** (le réglage ne s'applique qu'aux builds suivants). |
+| Le déploiement échoue sur `The Edge Function "middleware" is referencing unsupported modules` | Fichier `middleware.ts` déprécié en Next.js 16 | Convention `proxy.ts` (fonction exportée `proxy`) — déjà appliqué dans ce dépôt. |
 | Le lien de confirmation ou de réinitialisation renvoie une erreur (`redirect_to` refusé) ou atterrit sur `localhost` | URL absente des **Redirect URLs**, ou **Site URL** restée sur `localhost` | Étapes C.2 et F : ajoutez `https://VOTRE-DOMAINE/**` et `https://VOTRE-DOMAINE/auth/callback`, corrigez la Site URL. |
 | Après clic sur le lien de l'email, redirection vers `/connexion?erreur=lien-invalide` | Code PKCE expiré ou déjà consommé (lien ouvert deux fois, ou dans un autre navigateur que celui de la demande) | Redemandez un email ; ouvrez le lien dans le navigateur d'origine. |
 | Email de confirmation jamais reçu | Quota d'envoi Supabase par défaut très limité, ou email en spam | En développement : désactivez **Confirm email** (étape C.4). En production : configurez un SMTP personnalisé (**Settings → Auth → SMTP**). |
