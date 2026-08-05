@@ -1,0 +1,130 @@
+---
+slug: mf1-decompression
+title: "Modèles de décompression"
+level: mf1
+domain: tables-deco
+description: "Haldane, périodes des compartiments, coefficients de sursaturation critique et construction d'une table."
+objectives:
+  - "Décrire le modèle de Haldane : compartiments, périodes, saturation exponentielle et gradient"
+  - "Calculer la tension d'azote d'un compartiment par périodes successives (50 %, 75 %, 87,5 %)"
+  - "Définir le coefficient de sursaturation critique et l'appliquer à la profondeur de remontée admissible"
+  - "Expliquer le principe de construction d'une table et la notion de compartiment directeur"
+  - "Situer les limites du modèle haldanien et les apports modernes (M-values, modèles à bulles)"
+  - "Réinvestir ces notions pour enseigner la désaturation à un public N2 ou N4"
+durationMinutes: 80
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Tables de plongée à l'air MN90, édition FFESSM"
+  - "Publications de la Commission Médicale et de Prévention Nationale FFESSM"
+  - "Travaux historiques de J. S. Haldane et de A. A. Bühlmann (adaptés)"
+---
+
+Le futur moniteur doit dépasser la simple lecture des tables : il lui faut comprendre **d'où viennent les paliers** pour les justifier devant un élève et répondre aux « pourquoi ». Ce module reconstruit la logique du modèle de Haldane, socle des tables MN90, jusqu'aux apports modernes que l'on cite en notion. L'objectif n'est pas de recalculer une table à la main, mais de maîtriser le raisonnement qui la fonde.
+
+<Attention>
+
+Les valeurs numériques employées ici (périodes, coefficients) illustrent la méthode et le raisonnement pédagogique. Elles ne se substituent pas aux tables MN90 officielles ni aux paramètres exacts d'un modèle donné. Aucun calcul de ce module ne doit servir à planifier une plongée réelle.
+
+</Attention>
+
+## Le problème posé par la désaturation
+
+Sous pression, l'azote inspiré se dissout dans les tissus selon la loi de Henry : la quantité dissoute à saturation est proportionnelle à la pression partielle d'azote respirée. En descendant, le plongeur augmente cette pression et **charge** ses tissus en azote ; en remontant, il l'abaisse et ses tissus se **déchargent**. Tant que l'azote reste dissous, aucun problème ; le danger naît si la remontée est trop rapide et que le gaz repasse à l'état gazeux sous forme de **bulles** : c'est l'accident de désaturation.
+
+Toute la difficulté est que l'organisme n'est pas homogène. Le sang, le cerveau, la moelle, les graisses, les articulations n'échangent pas l'azote à la même vitesse : un tissu très vascularisé sature et désature vite, un tissu peu irrigué le fait lentement. Un bon modèle doit donc représenter cette diversité et prédire, à chaque instant, si la remontée envisagée reste tolérable. C'est exactement ce que propose Haldane dès 1908.
+
+## Les compartiments et la saturation exponentielle
+
+Haldane modélise le corps par un jeu de **compartiments** théoriques, indépendants les uns des autres, chacun caractérisé par une vitesse d'échange propre. Cette vitesse s'exprime par la **période** (ou temps de demi-saturation) $T$ : c'est le temps au bout duquel le compartiment comble **la moitié** de l'écart entre sa tension de départ et la tension qu'il atteindrait à saturation complète. Les tables MN90 utilisent une série de compartiments dont les périodes s'échelonnent typiquement de **5 à 120 minutes** ; on parle de tissus « courts » (5, 10, 20 min) rapides, et de tissus « longs » (60, 80, 120 min) lents.
+
+L'échange suit une loi **exponentielle**. Si $T_0$ est la tension initiale du compartiment et $T_f$ la tension imposée par le gaz respiré (la pression partielle d'azote alvéolaire), la tension après un temps $t$ vaut :
+
+$$T(t) = T_f + (T_0 - T_f)\,e^{-\frac{t \ln 2}{T}}$$
+
+On lit cette loi plus simplement par **périodes successives**. À chaque période écoulée, le compartiment comble la moitié du chemin restant :
+
+- après **1 période** : 50 % du gradient comblé ;
+- après **2 périodes** : 75 % ;
+- après **3 périodes** : 87,5 % ;
+- après **4 périodes** : 93,75 % ; puis 96,875 %…
+
+On considère la saturation **pratiquement complète après 6 périodes** (environ 99 %). Cette lecture par moitiés successives est la manière la plus parlante d'expliquer le phénomène à un élève : on n'ajoute jamais un pourcentage fixe, on comble toujours la moitié de ce qui reste.
+
+<EnPratique>
+
+**Exemple chiffré.** Un plongeur en surface a ses compartiments à l'équilibre, tension d'azote ≈ 0,8 bar (l'azote de l'air à 1 bar). Il descend et stabilise à 20 m : la pression partielle d'azote respirée devient environ $0{,}8 \times 3 = 2{,}4$ bars. Pour le compartiment de **période 20 min**, le gradient à combler est $2{,}4 - 0{,}8 = 1{,}6$ bar.
+
+- Après 20 min (1 période) : tension = $0{,}8 + 0{,}50 \times 1{,}6 = 1{,}60$ bar.
+- Après 40 min (2 périodes) : $0{,}8 + 0{,}75 \times 1{,}6 = 2{,}00$ bars.
+- Après 60 min (3 périodes) : $0{,}8 + 0{,}875 \times 1{,}6 = 2{,}20$ bars.
+
+Le même calcul pour le compartiment de période 5 min montre qu'il serait déjà quasi saturé (plus de 6 périodes) au bout d'une heure, tandis que le compartiment 120 min n'aurait comblé qu'une fraction du gradient.
+
+</EnPratique>
+
+## Le gradient et le coefficient de sursaturation critique
+
+À la remontée, la logique s'inverse : la pression ambiante chute, mais la tension d'azote dissous dans un compartiment ne peut pas suivre instantanément. Le compartiment se retrouve alors en **sursaturation** : sa tension d'azote $T_{N_2}$ dépasse la pression absolue ambiante $P_{abs}$. Cette sursaturation est **normale et tolérée** dans une certaine limite ; c'est même elle qui crée le gradient moteur de la désaturation. Le danger n'apparaît que si elle devient excessive et provoque la formation de bulles.
+
+Haldane a exprimé cette limite par un **rapport critique** : un compartiment tolère une tension jusqu'à environ **deux fois** la pression absolue ambiante (rapport 2:1 dans sa formulation d'origine). Les modèles ultérieurs remplacent ce rapport unique par un **coefficient de sursaturation critique** $Sc$ **propre à chaque compartiment** : les tissus rapides tolèrent une sursaturation plus forte que les tissus lents. La remontée est admissible tant que, pour **tous** les compartiments :
+
+$$T_{N_2} \le Sc \times P_{abs}$$
+
+On en déduit la **pression absolue minimale** (donc la profondeur minimale) que le compartiment autorise à un instant donné :
+
+$$P_{abs}^{\min} = \frac{T_{N_2}}{Sc}$$
+
+Cette relation est le cœur du calcul : elle indique jusqu'où l'on peut remonter sans dépasser la sursaturation critique.
+
+## Compartiment directeur et construction d'une table
+
+À chaque instant de la remontée, on calcule la profondeur minimale admissible pour **chacun** des compartiments. Le plus contraignant — celui qui impose la remontée la moins profonde, c'est-à-dire le palier le plus profond ou le plus long — est appelé **compartiment directeur** (ou compartiment pilote). C'est lui qui « commande » la décompression à ce moment-là.
+
+Le compartiment directeur **change au cours de la plongée et de la remontée**. Pour une plongée courte et profonde, ce sont les tissus rapides (5, 10, 20 min) qui dirigent : ils se chargent vite et imposent les premiers paliers. Pour une plongée longue, les tissus lents (60, 80, 120 min) prennent le relais et prolongent la décompression. C'est pourquoi une plongée « profil carré » longue génère des paliers gouvernés par des tissus différents d'une plongée brève.
+
+Construire une table, c'est donc, pour chaque couple **profondeur/durée** : calculer la tension de tous les compartiments en fin de plongée, puis simuler la remontée en cherchant à chaque profondeur le compartiment directeur, et en imposant des **paliers** (à 3, 6, 9 m…) jusqu'à ce que tous les compartiments autorisent la surface. Les MN90 y ajoutent une couche de **sécurité statistique** issue de campagnes d'essais (Marine nationale), qui explique que les valeurs finales soient plus prudentes que le calcul brut.
+
+<ARetenir>
+
+La remontée est autorisée tant que, pour chaque compartiment, $T_{N_2} \le Sc \times P_{abs}$. Le **compartiment directeur** est le plus contraignant à l'instant considéré ; il change au fil de la plongée : tissus rapides pour les plongées courtes et profondes, tissus lents pour les plongées longues.
+
+</ARetenir>
+
+## Limites du modèle et apports modernes
+
+Le modèle haldanien est un modèle **de gaz dissous** : il suppose qu'aucune bulle ne se forme tant que la sursaturation critique n'est pas franchie, et que compartiments et échanges sont parfaitement symétriques à la charge et à la décharge. Ces hypothèses sont commodes mais fausses en toute rigueur. Des **bulles circulantes silencieuses** apparaissent même après des plongées respectant les tables ; la désaturation est souvent plus lente que la saturation ; et le modèle ignore la morphologie, l'effort, le froid, la déshydratation, le foramen ovale perméable — autant de facteurs favorisants réels d'un accident.
+
+Les modèles modernes affinent l'approche. Les **M-values** (Workman, puis Bühlmann avec les séries ZH-L) remplacent le rapport critique unique par une **droite** reliant la tension tolérée à la pression ambiante, propre à chaque compartiment : $T_{tol} = a + \frac{P_{abs}}{b}$. C'est la formulation qu'utilisent la plupart des **ordinateurs de plongée**. D'autres modèles, dits **à bulles** (RGBM, VPM), intègrent explicitement la naissance et la croissance de micro-bulles et tendent à imposer des paliers plus profonds. Le moniteur retient l'idée directrice : les tables restent une **approche statistique prudente**, jamais une garantie ; la prévention de l'ADD passe autant par le respect des vitesses, des paliers et des règles d'hygiène de plongée que par le modèle lui-même.
+
+<SimDesaturation />
+
+## Enseigner la désaturation
+
+Pour transmettre ces notions, on adapte le niveau d'abstraction au public. À un **N2**, on reste sur l'image : l'azote se dissout comme le gaz d'une bouteille de soda, il faut remonter doucement et faire les paliers pour laisser le gaz s'échapper sans faire mousser. À un **N4**, on introduit compartiments, périodes et la lecture par moitiés successives, sans la formule exponentielle complète. Le raisonnement du compartiment directeur, lui, éclaire immédiatement une question fréquente : « pourquoi une plongée courte et profonde et une plongée longue et peu profonde ne donnent pas les mêmes paliers ? » Le moniteur qui maîtrise le modèle répond sans réciter la table.
+
+<Memo>
+
+### Modèle de Haldane
+
+- Corps = jeu de **compartiments** indépendants, chacun de **période** $T$ (demi-saturation). MN90 : périodes de **5 à 120 min**.
+- Saturation **exponentielle** : $T(t) = T_f + (T_0 - T_f)\,e^{-t\ln 2 / T}$.
+- Par périodes : **50 %** (1), **75 %** (2), **87,5 %** (3), 93,75 % (4)… quasi complet à **6 périodes**.
+
+### Sursaturation critique
+
+- Remontée admissible si $T_{N_2} \le Sc \times P_{abs}$ pour **tous** les compartiments.
+- Profondeur mini autorisée : $P_{abs}^{\min} = T_{N_2} / Sc$.
+- Haldane d'origine : rapport ≈ **2:1**. $Sc$ propre à chaque compartiment (rapides tolèrent plus).
+
+### Table et compartiment directeur
+
+- **Compartiment directeur** = le plus contraignant à l'instant t ; il change (rapides → plongées courtes/profondes ; lents → plongées longues).
+- Table = calcul des tensions + recherche du directeur à chaque profondeur + paliers + marge de sécurité statistique.
+
+### Limites et modernité
+
+- Modèle de gaz dissous : ignore bulles silencieuses, asymétrie charge/décharge, facteurs individuels.
+- **M-values** (Workman, Bühlmann ZH-L) : droite $T_{tol} = a + P_{abs}/b$ (ordinateurs).
+- Modèles **à bulles** (RGBM, VPM) : paliers plus profonds. Les tables restent statistiques, jamais une garantie.
+
+</Memo>

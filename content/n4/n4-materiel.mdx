@@ -1,0 +1,129 @@
+---
+slug: n4-materiel
+title: "Le matériel : fonctionnement et réglementation"
+level: n4
+domain: materiel
+description: "Détendeurs (schémas de principe), blocs et robinetterie, compresseurs, instruments : niveau examen."
+objectives:
+  - "Expliquer le principe de détente en deux étages et le rôle de chaque étage"
+  - "Distinguer un premier étage à piston et à membrane, compensé ou non"
+  - "Décrire le bloc, sa robinetterie et les obligations réglementaires (marquage, épreuve, TIV)"
+  - "Expliquer le principe d'un compresseur et de sa filtration"
+  - "Citer les instruments de contrôle et le matériel obligatoire associé"
+durationMinutes: 60
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+  - "Normes EN relatives aux équipements de plongée (à vérifier)"
+---
+
+Le guide de palanquée doit comprendre le matériel qu'il utilise et supervise : principe du détendeur et de ses étages, blocs et robinetterie, compresseur et filtration, instruments de contrôle, ainsi que le cadre réglementaire (marquage, épreuves, requalification). Ce module traite le fonctionnement au niveau de l'examen, schémas de principe à l'appui.
+
+## Le détendeur : principe de la détente en deux étages
+
+Un détendeur transforme l'air stocké à haute pression dans le bloc (jusqu'à 200-300 bars) en air respirable à la pression ambiante, à la demande du plongeur. Il réalise cette réduction en **deux étapes** (deux étages) reliés par un tuyau moyenne pression.
+
+Le **premier étage**, fixé sur la robinetterie du bloc, abaisse la haute pression du bloc à une **moyenne pression** fixe au-dessus de la pression ambiante (de l'ordre de 8 à 10 bars au-dessus de l'ambiante). Le **second étage**, tenu en bouche, abaisse cette moyenne pression à la **pression ambiante** exactement, et seulement quand le plongeur inspire : c'est la détente « à la demande ». À l'inspiration, la dépression créée dans le boîtier fléchit une membrane qui bascule un levier ouvrant le clapet ; l'air s'écoule ; à l'arrêt de l'inspiration, le clapet se referme. Le **bouton de surface** (ou de purge) permet d'ouvrir manuellement le clapet.
+
+Ce principe explique une propriété capitale : le détendeur délivre l'air **à la pression ambiante**, donc de plus en plus dense en profondeur (Mariotte). L'effort ventilatoire augmente avec la profondeur, d'où l'intérêt d'un détendeur performant, bien réglé, pour limiter le risque d'essoufflement.
+
+<svg viewBox="0 0 400 140" width="100%" stroke="currentColor" fill="none" strokeWidth="2">
+  <rect x="10" y="45" width="45" height="50" rx="4" />
+  <text x="32" y="115" fill="currentColor" stroke="none" fontSize="10" textAnchor="middle">Bloc HP</text>
+  <line x1="55" y1="70" x2="110" y2="70" />
+  <rect x="110" y="50" width="55" height="40" rx="4" />
+  <text x="137" y="115" fill="currentColor" stroke="none" fontSize="10" textAnchor="middle">1er étage</text>
+  <line x1="165" y1="70" x2="270" y2="70" />
+  <text x="217" y="60" fill="currentColor" stroke="none" fontSize="9" textAnchor="middle">moyenne pression</text>
+  <rect x="270" y="50" width="55" height="40" rx="4" />
+  <text x="297" y="115" fill="currentColor" stroke="none" fontSize="10" textAnchor="middle">2e étage</text>
+  <line x1="325" y1="70" x2="375" y2="70" strokeLinecap="round" />
+  <text x="360" y="60" fill="currentColor" stroke="none" fontSize="9" textAnchor="middle">ambiante</text>
+</svg>
+
+## Premier étage : piston et membrane
+
+Le premier étage maintient une moyenne pression constante au-dessus de l'ambiante grâce à l'équilibre entre deux forces : la pression de l'air moyenne pression d'un côté, un ressort taré (et la pression ambiante) de l'autre. Deux technologies réalisent cette fonction.
+
+Le premier étage **à piston** utilise un piston mobile dont une face reçoit la moyenne pression et l'autre le ressort. Robuste, simple, performant, il expose des pièces mobiles au contact direct de l'eau (donc au froid, au sel, au sable) sur les modèles non isolés. Le premier étage **à membrane** interpose une membrane souple entre l'eau et le mécanisme : l'intérieur est isolé du milieu, ce qui protège du froid, du sable et de la corrosion — un atout en eau froide ou chargée.
+
+<svg viewBox="0 0 400 120" width="100%" stroke="currentColor" fill="none" strokeWidth="2">
+  <rect x="20" y="30" width="150" height="60" rx="4" />
+  <line x1="60" y1="30" x2="60" y2="90" />
+  <text x="40" y="105" fill="currentColor" stroke="none" fontSize="9" textAnchor="middle">piston</text>
+  <path d="M60 45 L100 45 L100 75 L60 75" />
+  <path d="M120 40 l8 8 l-8 8 l8 8 l-8 8" strokeLinecap="round" />
+  <text x="140" y="105" fill="currentColor" stroke="none" fontSize="9" textAnchor="middle">ressort</text>
+  <rect x="230" y="30" width="150" height="60" rx="4" />
+  <path d="M270 35 q10 25 0 50" />
+  <text x="255" y="105" fill="currentColor" stroke="none" fontSize="9" textAnchor="middle">membrane</text>
+  <path d="M320 40 l8 8 l-8 8 l8 8 l-8 8" strokeLinecap="round" />
+  <text x="345" y="105" fill="currentColor" stroke="none" fontSize="9" textAnchor="middle">ressort</text>
+</svg>
+
+## Compensé ou non : l'effet de la pression du bloc
+
+Sur un premier étage **non compensé**, la haute pression du bloc agit sur le clapet dans un sens qui varie avec la pression du bloc : à mesure que le bloc se vide, la moyenne pression délivrée **dérive** légèrement, et le confort respiratoire change entre un bloc plein et un bloc presque vide. Sur un premier étage **compensé**, un dispositif fait en sorte que la pression du bloc s'exerce de façon **équilibrée** sur le clapet : la moyenne pression reste **stable quelle que soit la pression du bloc** et quelle que soit la profondeur. Le plongeur bénéficie d'un débit et d'un confort constants du début à la fin de la plongée et à toute profondeur — d'où l'intérêt d'un détendeur compensé pour la plongée profonde et le froid, situations où le débit demandé est élevé.
+
+Le second étage peut lui aussi être compensé, pour un effort inspiratoire indépendant de la moyenne pression. Beaucoup de détendeurs modernes associent premier étage membrane compensé et second étage compensé, avec traitement grand froid.
+
+<ARetenir>
+
+Deux étages : HP bloc → moyenne pression (1er étage) → pression ambiante à la demande (2e étage). Membrane = isolée de l'eau (froid, sable). **Compensé** = moyenne pression stable quelle que soit la pression du bloc et la profondeur.
+
+</ARetenir>
+
+## Bloc, robinetterie et réglementation
+
+Le **bloc** (bouteille) stocke l'air comprimé. En acier ou en aluminium, il porte un **marquage** gravé indiquant notamment le fabricant, le numéro, la contenance en litres, la **pression de service**, la **pression d'épreuve**, la date de fabrication et les dates d'épreuve. La **robinetterie** relie le bloc au détendeur ; elle peut être **monosortie** ou **bi-sortie** (deux détendeurs indépendants, exigés en plongée autonome) et intègre parfois un système de réserve.
+
+Sur le plan réglementaire, un bloc est un **équipement sous pression** soumis à des obligations de contrôle. Il doit subir une **épreuve hydraulique** périodique (requalification par un organisme agréé), à une pression supérieure à la pression de service, dont la périodicité est fixée par la réglementation. Entre deux épreuves, la fédération organise une **inspection visuelle** annuelle par un **technicien en inspection visuelle (TIV)** habilité : le bloc est ouvert, l'intérieur examiné (corrosion, chocs), le pastillage attestant le contrôle. Un bloc dont la validité d'épreuve ou de TIV est dépassée ne doit pas être gonflé. Le guide vérifie la validité du bloc avant emploi.
+
+<Attention>
+
+Un bloc est un équipement sous pression : épreuve hydraulique périodique + TIV annuel. Bloc hors validité = interdit au gonflage. Ne jamais gonfler ni plonger avec un bloc à la robinetterie ou au marquage douteux.
+
+</Attention>
+
+## Compresseur et filtration
+
+Le **compresseur** produit l'air comprimé en plusieurs **étages de compression** successifs : chaque étage comprime l'air, ce qui l'échauffe (compression = échauffement), puis un **refroidisseur** (échangeur) abaisse la température entre les étages, et un **purgeur** évacue l'eau et l'huile condensées. On passe ainsi de la pression atmosphérique à 200-300 bars par compressions étagées, plus efficaces et moins chaudes qu'une compression unique.
+
+La **qualité de l'air respirable** est essentielle : l'air comprimé doit être exempt d'humidité, d'huile, de poussières et surtout de **monoxyde de carbone**. Une **cartouche de filtration** (charbon actif, tamis moléculaire, dessiccant) retient l'eau, les vapeurs d'huile et les odeurs en fin de chaîne. La **prise d'air** doit être placée au vent, loin de tout échappement de moteur, car aspirer des gaz d'échappement contaminerait l'air en CO — cause d'intoxication grave. La maintenance du compresseur, le remplacement des cartouches et le contrôle périodique de la qualité de l'air relèvent d'obligations de sécurité.
+
+<EnPratique>
+
+Un air de gonflage de mauvaise qualité (CO, huile, humidité) empoisonne toute une palanquée. Prise d'air au vent et éloignée des moteurs, filtration entretenue, contrôle périodique de l'air : la qualité du gonflage est un enjeu de sécurité collective.
+
+</EnPratique>
+
+## Instruments et matériel obligatoire
+
+Le plongeur contrôle sa plongée avec plusieurs instruments : le **manomètre** (pression restante du bloc, contrôle permanent de l'air), le **profondimètre** et la **montre** (ou un **ordinateur** qui combine profondeur, temps, vitesse de remontée et gestion de décompression), une **boussole** pour l'orientation. S'y ajoutent le **gilet stabilisateur** (contrôle de flottabilité, gonflage au gaz obligatoire), le **parachute de palier** (signalisation et sécurisation de la remontée, un par palanquée en autonomie) et le **second détendeur de secours** (octopus). Le Code du sport impose ce matériel selon le statut (encadré ou autonome). Le guide vérifie que sa palanquée en est équipée et que tout fonctionne avant l'immersion.
+
+<Memo>
+
+### Détendeur
+
+- Deux étages : 1er étage HP bloc → moyenne pression (≈ +8-10 bars/ambiante) ; 2e étage moyenne pression → ambiante à la demande.
+- Piston (simple, robuste) vs membrane (isolée de l'eau : froid, sable).
+- **Compensé** : moyenne pression stable quelle que soit la pression du bloc et la profondeur.
+- Air délivré à la pression ambiante → plus dense en profondeur (Mariotte).
+
+### Bloc et robinetterie
+
+- Marquage gravé : contenance, pression de service et d'épreuve, dates.
+- Mono ou bi-sortie (2 détendeurs en autonomie).
+- Réglementaire : **épreuve hydraulique** périodique + **TIV annuel**. Hors validité = pas de gonflage.
+
+### Compresseur
+
+- Compression en plusieurs étages + refroidisseurs + purgeurs (compression = échauffement).
+- Filtration (charbon actif, dessiccant) contre eau, huile, CO. Prise d'air au vent, loin des échappements.
+
+### Instruments et matériel obligatoire
+
+- Manomètre, profondimètre + montre ou ordinateur, boussole.
+- Gilet à gonflage au gaz, octopus (autonomie), parachute de palier (1/palanquée).
+
+</Memo>

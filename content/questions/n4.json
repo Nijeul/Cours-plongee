@@ -1,0 +1,4845 @@
+{
+  "level": "n4",
+  "questions": [
+    {
+      "id": "n4-gaz-001",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "rappel-des-pressions-et-unités",
+      "prompt": "Quelle est la pression absolue à 30 m en eau de mer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 bar"
+        },
+        {
+          "id": "b",
+          "text": "3 bar"
+        },
+        {
+          "id": "c",
+          "text": "30 bar"
+        },
+        {
+          "id": "d",
+          "text": "5 bar"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "$P_{abs}=P_{atm}+profondeur/10=1+30/10=4$ bar. Répondre 3 bar confond pression relative (3 bar) et pression absolue ; l'examinateur sanctionne cette confusion.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-002",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "rappel-des-pressions-et-unités",
+      "prompt": "Combien vaut approximativement 1 bar en pascals ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "$10^5$ Pa"
+        },
+        {
+          "id": "b",
+          "text": "$10^3$ Pa"
+        },
+        {
+          "id": "c",
+          "text": "$10^2$ Pa"
+        },
+        {
+          "id": "d",
+          "text": "$10^7$ Pa"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "1 bar vaut environ $10^5$ pascals, soit la pression exercée par l'atmosphère au niveau de la mer. Chaque tranche de 10 m d'eau ajoute 1 bar, car une colonne d'eau de 10 m sur 1 cm² pèse environ 1 kg.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gaz-003",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-boyle-mariotte-et-sa-démonstration",
+      "prompt": "Une cloche ouverte par le bas contient 12 L d'air à 20 m (3 bar). Quel volume à 40 m (5 bar) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,2 L"
+        },
+        {
+          "id": "b",
+          "text": "20 L"
+        },
+        {
+          "id": "c",
+          "text": "4,8 L"
+        },
+        {
+          "id": "d",
+          "text": "36 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Par Boyle-Mariotte $V_{40}=(P_{20}\\times V_{20})/P_{40}=(3\\times 12)/5=7{,}2$ L. Le gaz se comprime en descendant ; en surface il occuperait $3\\times12/1=36$ L.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-004",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-boyle-mariotte-et-sa-démonstration",
+      "prompt": "La cloche de 12 L d'air à 20 m (3 bar) remonte en surface. Quel volume tend-il à occuper ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36 L"
+        },
+        {
+          "id": "b",
+          "text": "12 L"
+        },
+        {
+          "id": "c",
+          "text": "4 L"
+        },
+        {
+          "id": "d",
+          "text": "24 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En surface (1 bar), $V=(3\\times 12)/1=36$ L : le gaz triple de volume et s'échappe par le bas de la cloche. La détente est maximale près de la surface, zone la plus dangereuse pour un volume gazeux emprisonné.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-005",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-boyle-mariotte-et-sa-démonstration",
+      "prompt": "Dans quelle tranche d'eau la détente d'un volume gazeux emprisonné est-elle la plus violente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De 0 à 10 m"
+        },
+        {
+          "id": "b",
+          "text": "De 30 à 40 m"
+        },
+        {
+          "id": "c",
+          "text": "De 50 à 60 m"
+        },
+        {
+          "id": "d",
+          "text": "Elle est identique partout"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "De 0 à 10 m la pression double (le volume est divisé par deux), alors que de 30 à 40 m elle ne passe que de 4 à 5 bar (+25 %). C'est pourquoi les barotraumatismes et la surpression pulmonaire sont les plus redoutables dans les derniers mètres.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gaz-006",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "compressibilité-gonflage-et-transvasement",
+      "prompt": "Quelle capacité en air a un bloc de 12 L gonflé à 200 bar ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2400 L"
+        },
+        {
+          "id": "b",
+          "text": "200 L"
+        },
+        {
+          "id": "c",
+          "text": "1200 L"
+        },
+        {
+          "id": "d",
+          "text": "2000 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La capacité en air est le produit du volume par la pression : $12\\times 200=2400$ L ramenés à la pression atmosphérique. C'est cette quantité, et non les 12 L de contenance, qui détermine l'autonomie.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-007",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "compressibilité-gonflage-et-transvasement",
+      "prompt": "On relie un bloc de 15 L à 200 bar à un bloc de 10 L vide. Quelle pression d'équilibre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "120 bar"
+        },
+        {
+          "id": "b",
+          "text": "100 bar"
+        },
+        {
+          "id": "c",
+          "text": "200 bar"
+        },
+        {
+          "id": "d",
+          "text": "150 bar"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La quantité totale se conserve et se répartit dans le volume total : $P_{eq}=(200\\times 15+0\\times 10)/(15+10)=3000/25=120$ bar. Ce calcul de conservation de la quantité de gaz est un classique de l'épreuve.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-008",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "compressibilité-gonflage-et-transvasement",
+      "prompt": "Un bloc de 12 L est à 50 bar ; on veut le porter à 200 bar. Quel volume d'air (à la pression atmosphérique) faut-il apporter ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1800 L"
+        },
+        {
+          "id": "b",
+          "text": "2400 L"
+        },
+        {
+          "id": "c",
+          "text": "150 L"
+        },
+        {
+          "id": "d",
+          "text": "600 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Il faut $12\\times(200-50)=1800$ L d'air ramenés à la pression atmosphérique. À un débit de compresseur de 300 L/min, le gonflage dure environ 6 minutes, hors échauffement.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-009",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-dalton-et-les-pressions-partielles",
+      "prompt": "À 40 m (5 bar), quelle est la pression partielle d'azote de l'air (convention 80 % N₂) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 bar"
+        },
+        {
+          "id": "b",
+          "text": "1 bar"
+        },
+        {
+          "id": "c",
+          "text": "0,8 bar"
+        },
+        {
+          "id": "d",
+          "text": "5 bar"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "$P_pN_2=P_{abs}\\times\\%N_2=5\\times 0{,}80=4$ bar. La convention du Niveau 4 pour l'air est 80 % d'azote et 20 % d'oxygène. C'est la pression partielle, non le pourcentage, qui gouverne les effets d'un gaz.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-010",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-dalton-et-les-pressions-partielles",
+      "prompt": "À 40 m (5 bar), quelle est la pression partielle d'oxygène de l'air (convention 20 % O₂) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 bar"
+        },
+        {
+          "id": "b",
+          "text": "0,2 bar"
+        },
+        {
+          "id": "c",
+          "text": "4 bar"
+        },
+        {
+          "id": "d",
+          "text": "5 bar"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "$P_pO_2=5\\times 0{,}20=1$ bar. La somme des pressions partielles ($4+1=5$ bar) reconstitue bien la pression absolue, conformément à la loi de Dalton.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-011",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-dalton-et-les-pressions-partielles",
+      "prompt": "À quelle profondeur à l'air (80/20) atteint-on le seuil d'hyperoxie de $P_pO_2=1{,}6$ bar ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "70 m"
+        },
+        {
+          "id": "b",
+          "text": "60 m"
+        },
+        {
+          "id": "c",
+          "text": "80 m"
+        },
+        {
+          "id": "d",
+          "text": "66 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "$P_{abs}=P_pO_2/\\%O_2=1{,}6/0{,}20=8$ bar, soit $(8-1)\\times 10=70$ m. Comme la plongée à l'air est interdite au-delà de 60 m, la marge avant l'hyperoxie est faible : cela justifie la limite réglementaire.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-012",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-dalton-et-les-pressions-partielles",
+      "prompt": "À quelle profondeur à l'air apparaissent les premiers effets de la narcose ($P_pN_2\\approx 3{,}2$ bar) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 30 m"
+        },
+        {
+          "id": "b",
+          "text": "≈ 10 m"
+        },
+        {
+          "id": "c",
+          "text": "≈ 60 m"
+        },
+        {
+          "id": "d",
+          "text": "≈ 70 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les premiers effets de la narcose apparaissent vers $P_pN_2\\approx 3{,}2$ bar, soit environ 30 m à l'air. Le nitrox, qui ne change pas la teneur en azote à profondeur donnée, ne recule jamais ce seuil.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gaz-013",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "notions-de-nitrox",
+      "prompt": "Pour un nitrox 40 % avec limite $P_pO_2=1{,}6$ bar, quelle est la profondeur maximale d'utilisation (MOD) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 m"
+        },
+        {
+          "id": "b",
+          "text": "40 m"
+        },
+        {
+          "id": "c",
+          "text": "20 m"
+        },
+        {
+          "id": "d",
+          "text": "50 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "$P_{abs}=P_pO_2^{limite}/\\%O_2=1{,}6/0{,}40=4$ bar, soit $(4-1)\\times 10=30$ m. Le nitrox réduit la profondeur admissible mais allonge le temps sans palier en abaissant la $P_pN_2$.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-014",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "notions-de-nitrox",
+      "prompt": "Quel est le meilleur mélange pour 30 m ($P_{abs}=4$ bar) avec une limite $P_pO_2=1{,}4$ bar ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "35 %"
+        },
+        {
+          "id": "b",
+          "text": "40 %"
+        },
+        {
+          "id": "c",
+          "text": "32 %"
+        },
+        {
+          "id": "d",
+          "text": "28 %"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le meilleur mélange atteint tout juste la limite à la profondeur voulue : $\\%O_2=P_pO_2^{limite}/P_{abs}=1{,}4/4=0{,}35$, soit 35 %. Au-delà de cette richesse, la $P_pO_2$ dépasserait la limite à 30 m.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-015",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "notions-de-nitrox",
+      "prompt": "Le nitrox repousse la limite de narcose puisqu'il contient moins d'azote qu'à profondeur maximale.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Faux : à profondeur égale, la $P_pN_2$ du nitrox est certes plus faible qu'à l'air, mais l'intérêt du nitrox est de gagner sur la décompression, pas sur la narcose. La narcose dépend de l'azote respiré à la profondeur atteinte, et le nitrox impose surtout une vigilance accrue sur l'hyperoxie.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-gaz-016",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-henry-et-la-désaturation",
+      "prompt": "Que dit la loi de Henry ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À l'équilibre, la quantité de gaz dissoute dans un liquide est proportionnelle à sa pression partielle au contact"
+        },
+        {
+          "id": "b",
+          "text": "Le volume d'un gaz est inversement proportionnel à sa pression"
+        },
+        {
+          "id": "c",
+          "text": "La somme des pressions partielles égale la pression absolue"
+        },
+        {
+          "id": "d",
+          "text": "La poussée égale le poids du fluide déplacé"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La loi de Henry énonce qu'à température constante et à l'équilibre, la quantité de gaz dissoute est proportionnelle à la pression partielle au contact du liquide. Les autres énoncés sont respectivement Mariotte, Dalton et Archimède.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-gaz-017",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-henry-et-la-désaturation",
+      "prompt": "Un tissu dont la tension d'azote $T$ dépasse la pression partielle ambiante $P_p$ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "En sursaturation, il se décharge (désaturation)"
+        },
+        {
+          "id": "b",
+          "text": "En cours de charge"
+        },
+        {
+          "id": "c",
+          "text": "exactement saturé"
+        },
+        {
+          "id": "d",
+          "text": "insensible à la pression"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Quand $T>P_p$, le tissu est en sursaturation et se décharge : c'est la situation de la remontée. Si $T<P_p$ le tissu se charge (descente, fond) et si $T=P_p$ il est saturé.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gaz-018",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-henry-et-la-désaturation",
+      "prompt": "Une sursaturation excessive fait passer l'azote dissous à l'état de bulles, mécanisme de l'accident de désaturation.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : au-delà d'un rapport critique entre tension du tissu et pression ambiante, l'azote ne peut plus s'évacuer en solution et forme des bulles. Les paliers servent précisément à maintenir le gradient de sursaturation sous le seuil dangereux.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-gaz-019",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "rappel-des-pressions-et-unités",
+      "prompt": "La pression relative (hydrostatique) à 25 m est de 2,5 bar.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : la pression relative est due à la seule colonne d'eau, égale à la profondeur divisée par 10, soit $25/10=2{,}5$ bar. La pression absolue à 25 m serait de $1+2{,}5=3{,}5$ bar.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-gaz-020",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "compressibilité-gonflage-et-transvasement",
+      "prompt": "Deux blocs identiques de 10 L, l'un à 180 bar, l'autre à 40 bar, sont reliés. Quelle pression d'équilibre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "110 bar"
+        },
+        {
+          "id": "b",
+          "text": "220 bar"
+        },
+        {
+          "id": "c",
+          "text": "90 bar"
+        },
+        {
+          "id": "d",
+          "text": "140 bar"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "$P_{eq}=(180\\times 10+40\\times 10)/(10+10)=2200/20=110$ bar. Pour des volumes égaux, la pression d'équilibre est simplement la moyenne des deux pressions.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-021",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "la-loi-de-dalton-et-les-pressions-partielles",
+      "prompt": "À 50 m (6 bar), quelle est la pression partielle d'azote de l'air (80 % N₂) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,8 bar"
+        },
+        {
+          "id": "b",
+          "text": "1,2 bar"
+        },
+        {
+          "id": "c",
+          "text": "6 bar"
+        },
+        {
+          "id": "d",
+          "text": "5 bar"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "$P_pN_2=6\\times 0{,}80=4{,}8$ bar, très au-dessus du seuil de narcose de 3,2 bar. La narcose est donc marquée à 50 m et impose une progressivité rigoureuse.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-gaz-022",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-pressions-gaz",
+      "sectionAnchor": "notions-de-nitrox",
+      "prompt": "Quel est l'avantage principal du nitrox sur la décompression, à profondeur et durée égales ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il abaisse la PpN₂, donc la charge d'azote, et allonge le temps sans palier"
+        },
+        {
+          "id": "b",
+          "text": "Il supprime tout risque d'accident"
+        },
+        {
+          "id": "c",
+          "text": "Il permet de descendre plus profond qu'à l'air"
+        },
+        {
+          "id": "d",
+          "text": "Il élimine la narcose"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En abaissant la fraction d'azote respirée, le nitrox réduit la $P_pN_2$ à profondeur égale : les tissus se chargent moins et le temps sans palier s'allonge. La contrepartie est une profondeur maximale plus faible (hyperoxie).",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-flot-001",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "le-théorème-darchimède",
+      "prompt": "Que dit le théorème d'Archimède ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tout corps immergé subit une poussée verticale vers le haut égale au poids du volume de fluide déplacé"
+        },
+        {
+          "id": "b",
+          "text": "La pression est proportionnelle à la profondeur uniquement"
+        },
+        {
+          "id": "c",
+          "text": "Le volume d'un gaz est inversement proportionnel à la pression"
+        },
+        {
+          "id": "d",
+          "text": "La quantité de gaz dissoute est proportionnelle à la pression partielle"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le théorème d'Archimède énonce qu'un corps immergé subit une poussée verticale, dirigée de bas en haut, égale au poids du volume de fluide déplacé. Les autres énoncés correspondent à Mariotte et Henry.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-flot-002",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "le-théorème-darchimède",
+      "prompt": "Quelle poussée subit un objet de 10 L totalement immergé en eau de mer (1,026 kg/L) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 10,26 kg"
+        },
+        {
+          "id": "b",
+          "text": "10 kg"
+        },
+        {
+          "id": "c",
+          "text": "1,026 kg"
+        },
+        {
+          "id": "d",
+          "text": "≈ 100 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La poussée exprimée en kg vaut le volume immergé multiplié par la masse volumique : $10\\times 1{,}026\\approx 10{,}26$ kg. En eau douce (1 kg/L), la même poussée vaudrait 10 kg.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-flot-003",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "le-théorème-darchimède",
+      "prompt": "Comment définit-on le poids apparent d'un corps immergé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Poids réel moins la poussée"
+        },
+        {
+          "id": "b",
+          "text": "Poids réel plus la poussée"
+        },
+        {
+          "id": "c",
+          "text": "Poussée moins poids réel"
+        },
+        {
+          "id": "d",
+          "text": "Poids réel multiplié par la poussée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le poids apparent est la différence entre le poids réel et la poussée. S'il est positif le corps coule, s'il est nul il reste entre deux eaux, s'il est négatif il flotte.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-flot-004",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "le-théorème-darchimède",
+      "prompt": "Un plongeur flotte légèrement mieux en eau de mer qu'en eau douce.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : la masse volumique de l'eau de mer (≈ 1,026 kg/L) dépasse celle de l'eau douce (1 kg/L), donc la poussée est plus forte en mer. Cela impose un léger surlestage en mer.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-flot-005",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "calculs-de-lestage-et-de-flottabilité",
+      "prompt": "Un plongeur équipé pèse 90 kg et déplace 88 L d'eau de mer (1,026 kg/L). Quel est son poids apparent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ −0,3 kg (il flotte)"
+        },
+        {
+          "id": "b",
+          "text": "≈ +0,3 kg (il coule)"
+        },
+        {
+          "id": "c",
+          "text": "0 kg (équilibré)"
+        },
+        {
+          "id": "d",
+          "text": "≈ −2 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Poussée = $88\\times 1{,}026\\approx 90{,}3$ kg ; poids apparent = $90-90{,}3=-0{,}3$ kg. Le poids apparent négatif signifie qu'il flotte légèrement et devra ajouter un peu de plomb.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-flot-006",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "calculs-de-lestage-et-de-flottabilité",
+      "prompt": "Un plongeur pèse 80 kg et déplace 82 L en eau douce (1 kg/L). Quel lestage pour l'équilibrer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 2 kg"
+        },
+        {
+          "id": "b",
+          "text": "≈ 82 kg"
+        },
+        {
+          "id": "c",
+          "text": "≈ 0 kg"
+        },
+        {
+          "id": "d",
+          "text": "≈ 10 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Poussée = $82\\times 1=82$ kg ; poids apparent = $80-82=-2$ kg : il flotte de 2 kg et doit ajouter environ 2 kg de plomb. En pratique on leste un peu plus pour compenser l'allègement du bloc en fin de plongée.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-flot-007",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "calculs-de-lestage-et-de-flottabilité",
+      "prompt": "Pourquoi un surlestage initial est-il dangereux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il oblige à gonfler beaucoup le gilet, source de remontées incontrôlées"
+        },
+        {
+          "id": "b",
+          "text": "Il améliore la stabilité en profondeur"
+        },
+        {
+          "id": "c",
+          "text": "Il diminue la consommation d'air"
+        },
+        {
+          "id": "d",
+          "text": "Il n'a aucune conséquence"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Un plongeur surlesté doit compenser par un gros volume d'air dans le gilet, qui se dilate à la remontée (Mariotte) et provoque des remontées incontrôlées. Le contrôle de la flottabilité doit rester permanent.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-flot-008",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "relevage-dun-objet-immergé",
+      "prompt": "Une ancre en fonte de 30 kg, volume 4 L, repose à 20 m en eau de mer (1,026 kg/L). Quel est son poids apparent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 25,9 kg"
+        },
+        {
+          "id": "b",
+          "text": "30 kg"
+        },
+        {
+          "id": "c",
+          "text": "≈ 4,1 kg"
+        },
+        {
+          "id": "d",
+          "text": "≈ 34 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Poussée = $4\\times 1{,}026\\approx 4{,}1$ kg ; poids apparent = $30-4{,}1\\approx 25{,}9$ kg. Il faut donc développer une poussée supplémentaire d'au moins 26 kg pour décoller l'ancre.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-flot-009",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "relevage-dun-objet-immergé",
+      "prompt": "Un parachute contient 25 L d'air à 20 m (3 bar). Quel volume tend-il à occuper en surface, sans purge ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "75 L"
+        },
+        {
+          "id": "b",
+          "text": "25 L"
+        },
+        {
+          "id": "c",
+          "text": "50 L"
+        },
+        {
+          "id": "d",
+          "text": "12,5 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Par Mariotte $V=(3\\times 25)/1=75$ L : l'air triple de volume, la poussée augmente et la remontée s'emballe. On purge l'excédent au fur et à mesure et on ne se place jamais au-dessus de la charge.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-flot-010",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "relevage-dun-objet-immergé",
+      "prompt": "Pourquoi un relevage au parachute s'accélère-t-il tout seul ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'air du parachute se dilate à la remontée (Mariotte), augmentant la poussée"
+        },
+        {
+          "id": "b",
+          "text": "La poussée d'Archimède diminue en remontant"
+        },
+        {
+          "id": "c",
+          "text": "Le poids de l'objet augmente"
+        },
+        {
+          "id": "d",
+          "text": "L'eau devient plus dense en surface"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'air injecté suit Mariotte : en remontant il se détend, le volume augmente, donc la poussée augmente et la remontée s'accélère — c'est l'emballement. On purge en continu et on ne reste jamais dans l'axe de la charge.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-flot-011",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "loptique--la-réfraction",
+      "prompt": "Quel est l'effet de la réfraction à l'interface eau-air du masque ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les objets paraissent plus gros (×4/3) et plus proches (≈ ×3/4 de la distance réelle)"
+        },
+        {
+          "id": "b",
+          "text": "Les objets paraissent plus petits et plus loin"
+        },
+        {
+          "id": "c",
+          "text": "Aucun changement de taille ni de distance"
+        },
+        {
+          "id": "d",
+          "text": "Les objets disparaissent"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'eau étant plus réfringente que l'air, les objets paraissent environ un tiers plus gros et à peu près aux trois quarts de leur distance réelle. À la prise d'objet, on tend donc la main un peu plus loin que là où on croit voir la cible.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-flot-012",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "loptique--la-réfraction",
+      "prompt": "Le masque est indispensable car, sans lame d'air devant l'œil, l'image se formerait très loin derrière la rétine et la vision serait extrêmement floue.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : sans masque, l'absence d'interface air-cornée empêche l'œil d'accommoder et la vision devient très floue. Le masque restaure une interface plane compatible avec l'accommodation.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-flot-013",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "champ-visuel-couleurs-et-luminosité",
+      "prompt": "Dans quel ordre les couleurs disparaissent-elles avec la profondeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rouge d'abord (5-10 m), puis orange, jaune, vert ; le bleu persiste"
+        },
+        {
+          "id": "b",
+          "text": "Bleu d'abord, puis vert, jaune, rouge"
+        },
+        {
+          "id": "c",
+          "text": "Toutes en même temps"
+        },
+        {
+          "id": "d",
+          "text": "Le vert d'abord, puis le rouge"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'eau absorbe d'abord les grandes longueurs d'onde : le rouge s'éteint vers 5-10 m, puis l'orange, le jaune, le vert, et le bleu persiste le plus longtemps. D'où la dominante bleu-vert des profondeurs ; une lampe restitue les couleurs.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-flot-014",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "champ-visuel-couleurs-et-luminosité",
+      "prompt": "Le masque réduit le champ visuel, obligeant le plongeur à compenser par des mouvements de tête.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : la vitre et la jupe cachent la périphérie et la réfraction rétrécit l'angle utile, donnant une vision « en tunnel ». C'est un point de sécurité pour le guide qui doit surveiller toute sa palanquée.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-flot-015",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "lacoustique--le-son-sous-leau",
+      "prompt": "À quelle vitesse approximative le son se propage-t-il dans l'eau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 1500 m/s"
+        },
+        {
+          "id": "b",
+          "text": "≈ 340 m/s"
+        },
+        {
+          "id": "c",
+          "text": "≈ 150 m/s"
+        },
+        {
+          "id": "d",
+          "text": "≈ 3000 m/s"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le son se propage à environ 1500 m/s dans l'eau, contre 340 m/s dans l'air, soit un rapport d'environ 4,3. Cette propagation rapide fait que les sons portent loin et fort.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-flot-016",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "lacoustique--le-son-sous-leau",
+      "prompt": "Pourquoi ne peut-on pas localiser une source sonore sous l'eau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le son va si vite qu'il atteint les deux oreilles quasi simultanément, supprimant le décalage utile à la localisation"
+        },
+        {
+          "id": "b",
+          "text": "Le son ne se propage pas dans l'eau"
+        },
+        {
+          "id": "c",
+          "text": "L'oreille ne fonctionne pas sous l'eau"
+        },
+        {
+          "id": "d",
+          "text": "Le son est trop faible"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La localisation dans l'air repose sur le décalage de temps d'arrivée entre les deux oreilles ; sous l'eau, la vitesse du son supprime ce décalage et le son se transmet par les os du crâne. On entend le bateau fort mais sans savoir d'où il vient.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-flot-017",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "lacoustique--le-son-sous-leau",
+      "prompt": "Entendre un bateau sous l'eau renseigne sur sa direction, ce qui permet de l'éviter à la remontée.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Faux : on entend le danger sans pouvoir le localiser. La remontée doit toujours être protégée par un parachute, en tournant sur soi et en levant la tête, sans jamais se fier à l'oreille pour situer un bateau.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-flot-018",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "relevage-dun-objet-immergé",
+      "prompt": "Un objet de 20 kg, volume 3 L, repose en eau douce (1 kg/L). Quel est son poids apparent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17 kg"
+        },
+        {
+          "id": "b",
+          "text": "20 kg"
+        },
+        {
+          "id": "c",
+          "text": "3 kg"
+        },
+        {
+          "id": "d",
+          "text": "23 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Poussée = $3\\times 1=3$ kg ; poids apparent = $20-3=17$ kg. En eau douce, un litre immergé déplace exactement 1 kg, ce qui simplifie le calcul.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-flot-019",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "calculs-de-lestage-et-de-flottabilité",
+      "prompt": "Que devient la flottabilité d'une combinaison néoprène en profondeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle diminue car le néoprène se comprime (Mariotte)"
+        },
+        {
+          "id": "b",
+          "text": "Elle augmente"
+        },
+        {
+          "id": "c",
+          "text": "Elle reste constante"
+        },
+        {
+          "id": "d",
+          "text": "Elle disparaît totalement"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les bulles du néoprène se compriment en profondeur (Mariotte) : la poussée chute, le plongeur équilibré en surface devient lourd au fond et doit gonfler son gilet. À la remontée, l'inverse se produit.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-001",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "anatomie-de-lappareil-respiratoire",
+      "prompt": "Où commence la zone d'échange gazeux de l'appareil respiratoire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aux alvéoles pulmonaires, tapissées de capillaires"
+        },
+        {
+          "id": "b",
+          "text": "Dans la trachée"
+        },
+        {
+          "id": "c",
+          "text": "Dans le larynx"
+        },
+        {
+          "id": "d",
+          "text": "Dans les bronches souches"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La zone d'échange commence aux alvéoles, où la membrane alvéolo-capillaire très fine autorise la diffusion des gaz. Les voies de conduction (trachée, bronches) amènent l'air sans réaliser d'échange.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-002",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "anatomie-de-lappareil-respiratoire",
+      "prompt": "Quel est le principal muscle inspiratoire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le diaphragme"
+        },
+        {
+          "id": "b",
+          "text": "Le cœur"
+        },
+        {
+          "id": "c",
+          "text": "Les abdominaux"
+        },
+        {
+          "id": "d",
+          "text": "Les cordes vocales"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le diaphragme, muscle en forme de coupole séparant le thorax de l'abdomen, est le principal moteur de la ventilation. Sa contraction abaisse le plancher thoracique et fait entrer l'air.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-vent-003",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "anatomie-de-lappareil-respiratoire",
+      "prompt": "Quel est l'ordre de grandeur de la surface d'échange alvéolaire totale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "70 à 100 m²"
+        },
+        {
+          "id": "b",
+          "text": "1 à 2 m²"
+        },
+        {
+          "id": "c",
+          "text": "10 m²"
+        },
+        {
+          "id": "d",
+          "text": "500 m²"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La surface d'échange totale est d'environ 70 à 100 m², l'équivalent d'un court de tennis replié dans le thorax. Cette immense surface permet des échanges gazeux rapides.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-004",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "volumes-et-capacités-pulmonaires",
+      "prompt": "Quelle est la valeur moyenne du volume courant (VC) au repos ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 0,5 L"
+        },
+        {
+          "id": "b",
+          "text": "≈ 4,5 L"
+        },
+        {
+          "id": "c",
+          "text": "≈ 1,2 L"
+        },
+        {
+          "id": "d",
+          "text": "≈ 6 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le volume courant, air mobilisé à chaque cycle au repos, vaut environ 0,5 L. La capacité vitale vaut environ 4,5 L et la capacité pulmonaire totale environ 6 L.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-vent-005",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "volumes-et-capacités-pulmonaires",
+      "prompt": "Que représente le volume résiduel (VR) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'air restant après expiration forcée, jamais expulsable"
+        },
+        {
+          "id": "b",
+          "text": "L'air mobilisé à chaque cycle"
+        },
+        {
+          "id": "c",
+          "text": "La totalité de l'air des poumons"
+        },
+        {
+          "id": "d",
+          "text": "L'air inspirable après une inspiration normale"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le volume résiduel (≈ 1,2 L) est l'air restant après une expiration forcée, qu'on ne peut jamais expulser. Il maintient les poumons partiellement déployés et joue un rôle protecteur en apnée profonde.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-vent-006",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "volumes-et-capacités-pulmonaires",
+      "prompt": "Capacité vitale = VC + VRI + VRE, avec VC ≈ 0,5 L, VRI ≈ 2,5 L, VRE ≈ 1,5 L. Quelle valeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 4,5 L"
+        },
+        {
+          "id": "b",
+          "text": "≈ 6 L"
+        },
+        {
+          "id": "c",
+          "text": "≈ 3 L"
+        },
+        {
+          "id": "d",
+          "text": "≈ 1,2 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Capacité vitale = 0,5 + 2,5 + 1,5 = 4,5 L, l'air mobilisable au maximum. En ajoutant le volume résiduel (≈ 1,2 L), on obtient la capacité pulmonaire totale d'environ 6 L.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-vent-007",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "lespace-mort",
+      "prompt": "Quel est l'ordre de grandeur de l'espace mort anatomique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 150 mL"
+        },
+        {
+          "id": "b",
+          "text": "≈ 500 mL"
+        },
+        {
+          "id": "c",
+          "text": "≈ 1,2 L"
+        },
+        {
+          "id": "d",
+          "text": "≈ 50 mL"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'espace mort anatomique, volume des voies de conduction qui ne participe pas aux échanges, vaut environ 150 mL. Sur les 500 mL d'un cycle de repos, seuls 350 mL environ atteignent réellement les alvéoles.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-008",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "lespace-mort",
+      "prompt": "Une ventilation rapide et superficielle est inefficace car une large part de l'air reste dans l'espace mort.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : en respirant par petits volumes, une grande fraction ne dépasse pas l'espace mort et l'oxygénation chute — c'est le piège de l'essoufflement. La consigne est toujours une ventilation ample avec expiration complète.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-vent-009",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "lespace-mort",
+      "prompt": "Pourquoi un tuba trop long ou de gros diamètre est-il dangereux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il augmente l'espace mort et favorise l'accumulation de CO₂"
+        },
+        {
+          "id": "b",
+          "text": "Il augmente la flottabilité"
+        },
+        {
+          "id": "c",
+          "text": "Il réduit la vision"
+        },
+        {
+          "id": "d",
+          "text": "Il n'a aucun effet"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Un tuba trop volumineux ajoute un espace mort supplémentaire qui rend la ventilation inefficace et favorise l'accumulation de CO₂. C'est pourquoi les tubas ont des dimensions normalisées.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-010",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "la-mécanique-ventilatoire",
+      "prompt": "Comment se déroulent l'inspiration et l'expiration de repos ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inspiration active (diaphragme, intercostaux) ; expiration de repos passive (élasticité)"
+        },
+        {
+          "id": "b",
+          "text": "Inspiration passive ; expiration active"
+        },
+        {
+          "id": "c",
+          "text": "Les deux sont actives"
+        },
+        {
+          "id": "d",
+          "text": "Les deux sont passives"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'inspiration est active : le diaphragme se contracte et les intercostaux soulèvent les côtes. L'expiration de repos est passive, assurée par l'élasticité des poumons et de la cage thoracique.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-011",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "la-mécanique-ventilatoire",
+      "prompt": "En profondeur, l'air plus dense (Mariotte) augmente le travail ventilatoire.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : la densité de l'air augmente avec la profondeur, rendant l'écoulement dans les bronches plus difficile et accroissant le travail respiratoire. Ajouté à la résistance du détendeur, cela explique qu'un effort mal géré au fond mène vite à l'essoufflement.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-vent-012",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "les-échanges-gazeux-et-le-transport-des-gaz",
+      "prompt": "Comment les gaz traversent-ils la membrane alvéolo-capillaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Par diffusion passive, de la forte vers la faible pression partielle"
+        },
+        {
+          "id": "b",
+          "text": "Par transport actif consommant de l'énergie"
+        },
+        {
+          "id": "c",
+          "text": "Par pompage musculaire"
+        },
+        {
+          "id": "d",
+          "text": "Ils ne la traversent pas"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les gaz diffusent passivement de la zone de forte pression partielle vers la faible, jusqu'à l'équilibre. L'oxygène passe de l'alvéole vers le sang veineux, le gaz carbonique fait le trajet inverse.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-013",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "les-échanges-gazeux-et-le-transport-des-gaz",
+      "prompt": "Comment l'oxygène est-il majoritairement transporté dans le sang ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixé à près de 98 % sur l'hémoglobine des globules rouges"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement dissous dans le plasma"
+        },
+        {
+          "id": "c",
+          "text": "Sous forme de bicarbonates"
+        },
+        {
+          "id": "d",
+          "text": "Combiné à l'azote"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'oxygène est transporté à près de 98 % fixé sur l'hémoglobine (oxyhémoglobine), et pour une faible part dissous dans le plasma. C'est pourquoi une intoxication au CO, qui bloque l'hémoglobine, est si grave.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-014",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "la-commande-ventilatoire--le-rôle-du-co",
+      "prompt": "Qu'est-ce qui déclenche principalement l'envie de respirer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'augmentation du gaz carbonique (CO₂) dans le sang"
+        },
+        {
+          "id": "b",
+          "text": "Le manque d'oxygène"
+        },
+        {
+          "id": "c",
+          "text": "L'augmentation de l'azote"
+        },
+        {
+          "id": "d",
+          "text": "La baisse de la température"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Contrairement à l'intuition, c'est l'augmentation de la $P_pCO_2$ sanguine, détectée par des chémorécepteurs, qui commande la ventilation, non le manque d'oxygène. Cette régulation par le CO₂ a des conséquences majeures en plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-015",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "la-commande-ventilatoire--le-rôle-du-co",
+      "prompt": "Pourquoi l'hyperventilation avant une apnée est-elle dangereuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle abaisse le CO₂ et retarde le signal d'alarme, exposant à la syncope hypoxique"
+        },
+        {
+          "id": "b",
+          "text": "Elle augmente le CO₂ et provoque un essoufflement"
+        },
+        {
+          "id": "c",
+          "text": "Elle sature les poumons d'azote"
+        },
+        {
+          "id": "d",
+          "text": "Elle n'a aucun effet"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'hyperventilation abaisse artificiellement le CO₂ : le signal d'alarme est retardé et l'apnéiste peut consommer tout son oxygène et perdre connaissance avant de ressentir le besoin de respirer. C'est la syncope hypoxique.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-016",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "la-commande-ventilatoire--le-rôle-du-co",
+      "prompt": "Quelle est la conduite face à un plongeur qui s'essouffle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cesser tout effort, stabiliser, ralentir et surtout expirer amplement pour évacuer le CO₂"
+        },
+        {
+          "id": "b",
+          "text": "Accélérer la ventilation"
+        },
+        {
+          "id": "c",
+          "text": "Remonter immédiatement en pleine crise"
+        },
+        {
+          "id": "d",
+          "text": "Retenir sa respiration"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'essoufflement est un cercle vicieux d'accumulation de CO₂ : on cesse l'effort, on stabilise et on insiste sur une expiration ample. On n'entame pas une remontée en pleine crise sans avoir stabilisé la ventilation, sauf danger majeur.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-vent-017",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "volumes-et-capacités-pulmonaires",
+      "prompt": "Le volume résiduel peut être entièrement expiré lors d'une expiration forcée.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Faux : le volume résiduel (≈ 1,2 L) n'est jamais expulsé, même lors d'une expiration forcée. C'est justement ce qui le distingue du volume de réserve expiratoire.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-circ-001",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "le-cœur--anatomie-et-fonctionnement",
+      "prompt": "Comment est organisé le cœur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quatre cavités : deux oreillettes et deux ventricules, séparés en cœur droit et cœur gauche"
+        },
+        {
+          "id": "b",
+          "text": "Deux cavités seulement"
+        },
+        {
+          "id": "c",
+          "text": "Une seule cavité musculaire"
+        },
+        {
+          "id": "d",
+          "text": "Trois oreillettes et un ventricule"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le cœur est une pompe à quatre cavités : une oreillette et un ventricule de chaque côté, séparés par une cloison étanche. Le cœur droit propulse le sang veineux, le cœur gauche, plus puissant, le sang artériel.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-circ-002",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "le-cœur--anatomie-et-fonctionnement",
+      "prompt": "Quel est l'ordre de grandeur du débit cardiaque au repos ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 5 L/min"
+        },
+        {
+          "id": "b",
+          "text": "≈ 1 L/min"
+        },
+        {
+          "id": "c",
+          "text": "≈ 20 L/min"
+        },
+        {
+          "id": "d",
+          "text": "≈ 0,5 L/min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le débit cardiaque au repos est d'environ 5 L/min, avec une fréquence de 60 à 80 battements par minute. Il est largement modulable à l'effort.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-circ-003",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "les-deux-circulations",
+      "prompt": "Quel est le trajet de la petite circulation (pulmonaire) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ventricule droit → poumons → oreillette gauche"
+        },
+        {
+          "id": "b",
+          "text": "Ventricule gauche → corps → oreillette droite"
+        },
+        {
+          "id": "c",
+          "text": "Oreillette droite → corps → ventricule gauche"
+        },
+        {
+          "id": "d",
+          "text": "Poumons → cœur droit → corps"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La petite circulation part du ventricule droit, gagne les poumons où le sang se recharge en oxygène, et revient à l'oreillette gauche. La grande circulation, elle, part du ventricule gauche vers le corps et revient au cœur droit.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-circ-004",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "les-deux-circulations",
+      "prompt": "L'artère pulmonaire transporte du sang veineux (pauvre en oxygène).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : l'appellation des vaisseaux suit le sens du flux (partant ou revenant au cœur), pas la richesse en oxygène. L'artère pulmonaire transporte du sang veineux vers les poumons, et les veines pulmonaires du sang artériel vers le cœur gauche.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-circ-005",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "les-deux-circulations",
+      "prompt": "Quel rôle jouent les poumons vis-à-vis des bulles veineuses de désaturation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils agissent comme un filtre qui piège normalement les petites bulles veineuses"
+        },
+        {
+          "id": "b",
+          "text": "Ils produisent les bulles"
+        },
+        {
+          "id": "c",
+          "text": "Ils envoient directement les bulles vers le cerveau"
+        },
+        {
+          "id": "d",
+          "text": "Ils n'ont aucun rôle"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les poumons filtrent normalement les petites bulles veineuses formées à la désaturation, les empêchant de gagner la circulation artérielle. Un foramen ovale perméable peut court-circuiter ce filtre.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-circ-006",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "le-foramen-ovale-perméable",
+      "prompt": "Qu'est-ce que le foramen ovale perméable (FOP) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une communication résiduelle entre les deux oreillettes, présente chez environ un quart de la population"
+        },
+        {
+          "id": "b",
+          "text": "Une malformation des ventricules"
+        },
+        {
+          "id": "c",
+          "text": "Un défaut des valves cardiaques"
+        },
+        {
+          "id": "d",
+          "text": "Une pathologie de l'oreille interne"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le foramen ovale, ouverture fœtale entre les oreillettes, reste partiellement perméable chez environ 25 % des sujets. En temps normal la pression plus élevée à gauche maintient le clapet fermé.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-circ-007",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "le-foramen-ovale-perméable",
+      "prompt": "Comment un FOP peut-il provoquer un ADD neurologique « immérité » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un effort à glotte fermée ouvre le passage et fait shunter des bulles veineuses vers la circulation artérielle"
+        },
+        {
+          "id": "b",
+          "text": "Il augmente la consommation d'oxygène"
+        },
+        {
+          "id": "c",
+          "text": "Il bloque l'hémoglobine"
+        },
+        {
+          "id": "d",
+          "text": "Il comprime la trachée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Lors d'un effort à glotte fermée (Valsalva puissant, port de charge), la pression du cœur droit dépasse celle du gauche et ouvre le passage : les bulles veineuses passent en artériel (shunt droit-gauche) et peuvent gagner cerveau ou moelle. D'où un ADD neurologique malgré une déco respectée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-circ-008",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "le-foramen-ovale-perméable",
+      "prompt": "En prévention d'un FOP, on évite les efforts violents et les Valsalva puissants à la remontée.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : éviter les efforts et Valsalva forts à la remontée limite l'ouverture du shunt, et des procédures de décompression prudentes réduisent la charge en bulles veineuses. La recherche du FOP est proposée après un accident inexpliqué.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-circ-009",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "loreille-externe-et-moyenne",
+      "prompt": "Quelle est la particularité de l'oreille moyenne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est une cavité remplie d'air, reliée au rhinopharynx par la trompe d'Eustache"
+        },
+        {
+          "id": "b",
+          "text": "Elle est remplie de liquide"
+        },
+        {
+          "id": "c",
+          "text": "Elle contient la cochlée"
+        },
+        {
+          "id": "d",
+          "text": "Elle est ouverte sur l'extérieur"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'oreille moyenne est une cavité à air, derrière le tympan, contenant les trois osselets et reliée à l'arrière-nez par la trompe d'Eustache. C'est par cette trompe qu'on fait entrer de l'air pour équilibrer à la descente.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-circ-010",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "loreille-externe-et-moyenne",
+      "prompt": "Quelle est la règle d'équilibrage de l'oreille moyenne à la descente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Équilibrer tôt, souvent et sans forcer, dès les premiers mètres"
+        },
+        {
+          "id": "b",
+          "text": "Attendre la douleur pour équilibrer"
+        },
+        {
+          "id": "c",
+          "text": "Équilibrer une seule fois au fond"
+        },
+        {
+          "id": "d",
+          "text": "Ne jamais équilibrer"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On équilibre tôt, souvent et sans forcer, dès les premiers mètres, car un équilibrage tardif ou violent lèse le tympan. On ne descend jamais enrhumé, la trompe d'Eustache étant alors bouchée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-circ-011",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "loreille-interne--cochlée-et-vestibule",
+      "prompt": "Quels sont les deux organes de l'oreille interne et leurs fonctions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La cochlée (audition) et le vestibule (équilibre)"
+        },
+        {
+          "id": "b",
+          "text": "Le tympan (audition) et les osselets (équilibre)"
+        },
+        {
+          "id": "c",
+          "text": "La trompe d'Eustache (audition) et la cochlée (équilibre)"
+        },
+        {
+          "id": "d",
+          "text": "Le pavillon (équilibre) et le conduit (audition)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'oreille interne, remplie de liquide, abrite la cochlée (limaçon) pour l'audition et le vestibule avec ses canaux semi-circulaires pour l'équilibre. Sous l'eau, privé de repères visuels, le plongeur dépend fortement de son vestibule.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-circ-012",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "loreille-interne--cochlée-et-vestibule",
+      "prompt": "Qu'est-ce que le vertige alterno-barique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un vertige dû à un équilibrage inégal des deux oreilles à la remontée, généralement réversible"
+        },
+        {
+          "id": "b",
+          "text": "Un accident de désaturation de la moelle"
+        },
+        {
+          "id": "c",
+          "text": "Une surpression pulmonaire"
+        },
+        {
+          "id": "d",
+          "text": "Une intoxication au CO"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le vertige alterno-barique survient quand les deux oreilles ne s'équilibrent pas à la même vitesse à la remontée, créant une asymétrie de pression transitoire heureusement réversible. Tout vertige en plongée reste préoccupant car il désoriente et favorise la panique.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-circ-013",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "loreille-interne--cochlée-et-vestibule",
+      "prompt": "Le barotraumatisme de l'oreille interne, survenant lors d'un Valsalva forcé, est une urgence ORL.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : un équilibrage violent ou dissymétrique peut léser les structures de l'oreille interne, entraînant vertiges, acouphènes et baisse d'audition durable — une urgence ORL. On équilibre donc toujours en douceur.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-circ-014",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "loreille-externe-et-moyenne",
+      "prompt": "Que ferme le fond du conduit auditif de l'oreille externe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le tympan"
+        },
+        {
+          "id": "b",
+          "text": "La cochlée"
+        },
+        {
+          "id": "c",
+          "text": "La trompe d'Eustache"
+        },
+        {
+          "id": "d",
+          "text": "L'étrier"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le conduit auditif est fermé au fond par le tympan, membrane qui vibre au passage du son. Le conduit est normalement ouvert sur l'extérieur, donc l'eau y pénètre et la pression s'équilibre seule.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-circ-015",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "le-cœur--anatomie-et-fonctionnement",
+      "prompt": "Le cœur gauche est plus puissant que le cœur droit car il propulse le sang dans tout l'organisme.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : le cœur gauche propulse le sang artériel dans toute la grande circulation, ce qui exige une pression bien plus élevée que celle du cœur droit, limité aux poumons. Sa paroi musculaire est donc plus épaisse.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-circ-016",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-circulation-oreille",
+      "sectionAnchor": "les-deux-circulations",
+      "prompt": "Par quel réseau l'azote dissous est-il distribué aux tissus puis évacué ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La circulation sanguine, chargé aux poumons puis éliminé par eux à la remontée"
+        },
+        {
+          "id": "b",
+          "text": "Le système lymphatique uniquement"
+        },
+        {
+          "id": "c",
+          "text": "Le système nerveux"
+        },
+        {
+          "id": "d",
+          "text": "La trompe d'Eustache"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'azote dissous voyage par la circulation : chargé aux poumons pendant la plongée, distribué aux tissus, puis évacué en sens inverse et éliminé par les poumons à la remontée. C'est aussi par cette voie que circulent les bulles en cas d'accident.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-001",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "laccident-de-désaturation--cinétique-des-bulles",
+      "prompt": "Quel est le mécanisme de l'accident de désaturation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La formation de bulles d'azote quand la sursaturation dépasse le seuil tolérable (Henry)"
+        },
+        {
+          "id": "b",
+          "text": "Le blocage de l'hémoglobine par le CO"
+        },
+        {
+          "id": "c",
+          "text": "La dilatation de l'air pulmonaire à la remontée"
+        },
+        {
+          "id": "d",
+          "text": "Le passage de plasma dans les alvéoles"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'ADD résulte de la formation de bulles d'azote lorsque la sursaturation dépasse le seuil tolérable à la remontée. Si la remontée respecte le gradient critique, l'azote s'évacue en solution ; sinon il change de phase et forme des bulles.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-002",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "laccident-de-désaturation--cinétique-des-bulles",
+      "prompt": "Où naissent d'abord les bulles de désaturation, et que se passe-t-il normalement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans le compartiment veineux ; elles sont généralement silencieuses et filtrées par les poumons"
+        },
+        {
+          "id": "b",
+          "text": "Dans les artères ; elles gagnent aussitôt le cerveau"
+        },
+        {
+          "id": "c",
+          "text": "Dans les poumons ; elles sont expirées"
+        },
+        {
+          "id": "d",
+          "text": "Dans l'estomac ; elles sont éliminées"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les bulles naissent d'abord dans le compartiment veineux, généralement silencieuses et filtrées par les poumons. Elles deviennent pathogènes en grossissant, en bloquant la circulation ou en déclenchant une cascade inflammatoire.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-003",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "add--formes-cliniques-et-symptômes",
+      "prompt": "Quelle forme d'ADD est la plus fréquente en plongée loisir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La forme neurologique médullaire (fourmillements, faiblesse, troubles urinaires)"
+        },
+        {
+          "id": "b",
+          "text": "La forme cutanée bénigne"
+        },
+        {
+          "id": "c",
+          "text": "La forme ostéo-articulaire isolée"
+        },
+        {
+          "id": "d",
+          "text": "La forme respiratoire"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les formes neurologiques médullaires sont les plus fréquentes en plongée loisir : fourmillements, engourdissement, faiblesse ou paralysie, troubles urinaires. C'est une urgence absolue.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-004",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "add--formes-cliniques-et-symptômes",
+      "prompt": "Tout symptôme anormal après une plongée doit être considéré comme un ADD jusqu'à preuve du contraire.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : même léger, même différé, même après une plongée « dans les clous », tout symptôme post-plongée est un ADD jusqu'à preuve médicale du contraire. On met sous oxygène et on alerte sans attendre de voir si « ça passe ».",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-acc-005",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "add--formes-cliniques-et-symptômes",
+      "prompt": "Dans quel délai apparaissent le plus souvent les signes d'un ADD ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le plus souvent dans l'heure suivant la sortie, parfois jusqu'à 24 h"
+        },
+        {
+          "id": "b",
+          "text": "Toujours pendant la plongée"
+        },
+        {
+          "id": "c",
+          "text": "Uniquement plusieurs jours après"
+        },
+        {
+          "id": "d",
+          "text": "Jamais avant une semaine"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les signes surviennent le plus souvent dans l'heure suivant la sortie, parfois immédiatement, parfois différés jusqu'à 24 h. Ce caractère retardé impose une surveillance prolongée après la plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-006",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "la-surpression-pulmonaire--mécanisme-alvéolaire",
+      "prompt": "Quel est le mécanisme de la surpression pulmonaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'air pulmonaire bloqué se dilate à la remontée (Mariotte) et déchire les alvéoles"
+        },
+        {
+          "id": "b",
+          "text": "Des bulles d'azote se forment dans les tissus"
+        },
+        {
+          "id": "c",
+          "text": "Le plasma envahit les alvéoles"
+        },
+        {
+          "id": "d",
+          "text": "L'azote bloque l'hémoglobine"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La surpression pulmonaire relève de Mariotte : à la remontée, l'air pulmonaire se dilate ; s'il ne peut sortir (glotte fermée, zone piégée), le volume emprisonné fait monter la pression et déchire les parois alvéolaires. C'est l'accident mécanique le plus grave.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-007",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "la-surpression-pulmonaire--mécanisme-alvéolaire",
+      "prompt": "Quelle est la forme la plus redoutée de la surpression pulmonaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'aéroembolie cérébrale (bulles gagnant le cerveau par la circulation artérielle)"
+        },
+        {
+          "id": "b",
+          "text": "Un simple emphysème sous-cutané isolé"
+        },
+        {
+          "id": "c",
+          "text": "Une toux passagère"
+        },
+        {
+          "id": "d",
+          "text": "Une douleur d'oreille"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'air passant dans les capillaires pulmonaires déchirés gagne la circulation artérielle et provoque une aéroembolie cérébrale, forme la plus redoutée. La déchirure peut aussi ouvrir sur la plèvre (pneumothorax) ou le médiastin (emphysème sous-cutané).",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-008",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "la-surpression-pulmonaire--mécanisme-alvéolaire",
+      "prompt": "La surpression pulmonaire ne peut survenir qu'en plongée profonde.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Faux : la surpression peut survenir même à faible profondeur, une remontée paniquée de 3 m poumons bloqués suffit. La prévention tient en une règle intangible : ne jamais bloquer sa respiration à la remontée.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-acc-009",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "la-surpression-pulmonaire--mécanisme-alvéolaire",
+      "prompt": "Quelle est la règle de prévention essentielle de la surpression pulmonaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ne jamais bloquer sa respiration à la remontée, expirer, respecter la vitesse"
+        },
+        {
+          "id": "b",
+          "text": "Descendre très vite"
+        },
+        {
+          "id": "c",
+          "text": "Retenir sa respiration au fond"
+        },
+        {
+          "id": "d",
+          "text": "Gonfler ses poumons au maximum avant de remonter"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La prévention repose sur une règle intangible : ne jamais bloquer sa respiration à la remontée, expirer, respecter la vitesse de remontée. Toute pathologie pulmonaire (asthme non contrôlé) écarte de la plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-010",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "lœdème-pulmonaire-dimmersion",
+      "prompt": "Quel est le mécanisme de l'œdème pulmonaire d'immersion (OPI) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redistribution du sang vers le thorax + froid + effort → passage de plasma dans les alvéoles"
+        },
+        {
+          "id": "b",
+          "text": "Dilatation de l'air pulmonaire"
+        },
+        {
+          "id": "c",
+          "text": "Formation de bulles d'azote"
+        },
+        {
+          "id": "d",
+          "text": "Blocage de l'hémoglobine par le CO"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'OPI n'est ni barotraumatique ni lié à l'azote : l'immersion redistribue le sang vers le thorax, le froid provoque une vasoconstriction qui augmente la pression pulmonaire, et du plasma passe dans les alvéoles. Les poumons « se noient » de l'intérieur.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-011",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "lœdème-pulmonaire-dimmersion",
+      "prompt": "Quels signes évoquent un œdème pulmonaire d'immersion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Essoufflement disproportionné, toux, crachats mousseux parfois rosés, oppression"
+        },
+        {
+          "id": "b",
+          "text": "Douleur articulaire isolée"
+        },
+        {
+          "id": "c",
+          "text": "Fourmillements d'un membre"
+        },
+        {
+          "id": "d",
+          "text": "Simple fatigue qui cède au repos"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'OPI se manifeste par un essoufflement inexpliqué et disproportionné, une toux, des crachats mousseux parfois rosés et une oppression qui ne cèdent pas au repos et s'aggravent. C'est une urgence médicale : sortir, oxygène, position demi-assise, réchauffer, alerter.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-012",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "accidents-biochimiques--narcose-hyperoxie-hypercapnie-co",
+      "prompt": "Quel accident biochimique menace au-delà d'une $P_pO_2$ d'environ 1,6 bar ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'hyperoxie, avec risque de crise convulsive"
+        },
+        {
+          "id": "b",
+          "text": "La narcose à l'azote"
+        },
+        {
+          "id": "c",
+          "text": "L'hypercapnie"
+        },
+        {
+          "id": "d",
+          "text": "L'intoxication au CO"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Au-delà d'une $P_pO_2$ d'environ 1,6 bar, l'hyperoxie expose à une crise convulsive de type épileptique, dramatique sous l'eau (noyade, surpression à la remontée). Elle concerne surtout le nitrox mal géré et la plongée à l'air au-delà de 60 m.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-013",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "accidents-biochimiques--narcose-hyperoxie-hypercapnie-co",
+      "prompt": "Quel est l'effet de la narcose à l'azote et sa conduite à tenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Altération du jugement au-delà de ~30 m ; remonter de quelques mètres fait régresser les signes"
+        },
+        {
+          "id": "b",
+          "text": "Déchirure des alvéoles ; expirer"
+        },
+        {
+          "id": "c",
+          "text": "Bulles dans la moelle ; caisson"
+        },
+        {
+          "id": "d",
+          "text": "Blocage de l'hémoglobine ; oxygène"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Au-delà d'une $P_pN_2$ d'environ 3,2 bar (≈ 30 m), l'azote altère le système nerveux (euphorie ou angoisse, troubles du jugement). Le danger est indirect (comportement inadapté) ; remonter de quelques mètres fait régresser les signes rapidement.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-014",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "accidents-biochimiques--narcose-hyperoxie-hypercapnie-co",
+      "prompt": "D'où provient une intoxication au monoxyde de carbone en plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D'un air de gonflage pollué (CO issu d'un moteur près de la prise d'air du compresseur)"
+        },
+        {
+          "id": "b",
+          "text": "De la dilatation des poumons"
+        },
+        {
+          "id": "c",
+          "text": "D'un excès d'azote dissous"
+        },
+        {
+          "id": "d",
+          "text": "Du froid"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le CO provient d'un air de gonflage pollué, lorsque la prise d'air du compresseur aspire des gaz d'échappement. Le CO bloque l'hémoglobine ; la prévention passe par la qualité de l'air, la filtration et le contrôle du compresseur.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-015",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "accidents-biochimiques--narcose-hyperoxie-hypercapnie-co",
+      "prompt": "L'hypercapnie (excès de CO₂) aggrave la narcose et l'hyperoxie.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : l'excès de CO₂, issu d'une ventilation inefficace ou d'un effort, aggrave à la fois la narcose et l'hyperoxie. La prévention passe par une ventilation ample et l'absence d'effort au fond.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-acc-016",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "conduite-à-tenir-et-cadre-réglementaire-du-secours",
+      "prompt": "Quel est le geste qui sauve en priorité face à un accident de désaturation ou de surpression ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'oxygénothérapie normobare à 100 %, le plus tôt possible, au débit maximal (15 L/min)"
+        },
+        {
+          "id": "b",
+          "text": "Faire boire de l'alcool"
+        },
+        {
+          "id": "c",
+          "text": "Réimmerger la victime"
+        },
+        {
+          "id": "d",
+          "text": "La laisser se reposer seule"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'oxygène à 100 % au débit maximal (15 L/min) est le geste qui sauve : il accélère l'élimination de l'azote et oxygène les tissus. Il s'accompagne d'une alerte précoce, ces deux gestes conditionnant le pronostic.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-017",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "conduite-à-tenir-et-cadre-réglementaire-du-secours",
+      "prompt": "Quels numéros alerter en France en cas d'accident de plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le 15 (SAMU) ou le 196 (CROSS pour le secours en mer)"
+        },
+        {
+          "id": "b",
+          "text": "Le 17 uniquement"
+        },
+        {
+          "id": "c",
+          "text": "Le 118"
+        },
+        {
+          "id": "d",
+          "text": "Aucun, on gère seul"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On alerte le 15 (SAMU) ou le 196 (CROSS pour le secours en mer), qui coordonne l'évacuation vers un caisson hyperbare. On transmet le profil de plongée pour orienter la prise en charge.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-018",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "conduite-à-tenir-et-cadre-réglementaire-du-secours",
+      "prompt": "On ne réimmerge jamais un accidenté de plongée.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : la réimmersion est un interdit absolu, elle aggrave l'état de la victime et le risque de noyade. On sort la victime, on oxygène, on allonge, on alerte et on surveille.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-acc-019",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "conduite-à-tenir-et-cadre-réglementaire-du-secours",
+      "prompt": "Que doit contenir le matériel de secours imposé au directeur de plongée par le Code du sport ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moyen d'alerte, oxygénothérapie, eau douce, couverture isothermique, trousse de secours, fiche d'évacuation"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement une trousse de premiers soins"
+        },
+        {
+          "id": "c",
+          "text": "Seulement un téléphone"
+        },
+        {
+          "id": "d",
+          "text": "Rien n'est imposé"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le Code du sport impose un moyen d'alerte et un plan de secours, une oxygénothérapie de capacité adaptée avec masque et détendeur, de l'eau douce non gazeuse, une couverture isothermique, une trousse de secours et une fiche d'évacuation. La rapidité de l'oxygène et de l'alerte conditionne le pronostic.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-020",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "laccident-de-désaturation--cinétique-des-bulles",
+      "prompt": "Quels facteurs favorisent l'accident de désaturation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profondeur/durée, remontée rapide, palier omis, effort, froid, déshydratation, FOP, avion précoce"
+        },
+        {
+          "id": "b",
+          "text": "Une bonne hydratation et un profil prudent"
+        },
+        {
+          "id": "c",
+          "text": "Un palier de principe systématique"
+        },
+        {
+          "id": "d",
+          "text": "Une remontée lente et contrôlée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les facteurs favorisants cumulent leurs effets : profondeur et durée importantes, remontée rapide, paliers écourtés, effort et froid, déshydratation, foramen ovale perméable, avion ou altitude trop tôt. Le guide les réduit en planifiant prudemment.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-acc-021",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "lœdème-pulmonaire-dimmersion",
+      "prompt": "L'œdème pulmonaire d'immersion touche plus volontiers le plongeur d'un certain âge ou hypertendu, en eau froide.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : l'OPI est plus fréquent chez le plongeur âgé ou hypertendu et en eau froide. La prévention passe par un bilan cardiologique au moindre doute, en évitant surlestage et surmenage.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-tables-001",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "cadre-de-validité-et-arrondis",
+      "prompt": "Que représente la DTR d'une plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La durée totale de remontée : remontée + paliers + inter-paliers"
+        },
+        {
+          "id": "b",
+          "text": "La durée de la plongée au fond"
+        },
+        {
+          "id": "c",
+          "text": "La profondeur maximale atteinte"
+        },
+        {
+          "id": "d",
+          "text": "Le groupe de plongée successive"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La DTR est la durée totale de remontée, comprenant la remontée, les paliers et les inter-paliers. Elle sert à calculer l'heure de sortie à partir du début de la remontée.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-tables-002",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "plongée-simple--lecture-complète",
+      "prompt": "Plongée à 28 m pendant 25 min. Quels arrondis de table ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Table 30 m, ligne 25 min"
+        },
+        {
+          "id": "b",
+          "text": "Table 28 m, ligne 25 min"
+        },
+        {
+          "id": "c",
+          "text": "Table 25 m, ligne 25 min"
+        },
+        {
+          "id": "d",
+          "text": "Table 30 m, ligne 30 min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On arrondit toujours au-dessus : 28 m → table 30 m, 25 min reste sur la ligne 25 min. La table 30 m / 25 min donne un palier de 9 min à 3 m et un GPS G.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-tables-003",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "plongée-simple--lecture-complète",
+      "prompt": "Table 30 m / 25 min : palier de 9 min à 3 m, immersion à 10 h 00, remontée à 10 h 25. Heure de sortie approximative ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 10 h 36"
+        },
+        {
+          "id": "b",
+          "text": "≈ 10 h 25"
+        },
+        {
+          "id": "c",
+          "text": "≈ 10 h 45"
+        },
+        {
+          "id": "d",
+          "text": "≈ 11 h 00"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "DTR ≈ remontée de 28 à 3 m (≈ 1,7 min) + 9 min de palier + retour surface (≈ 0,5 min) ≈ 11 min ; heure de sortie = 10 h 25 + 11 min = 10 h 36. On part toujours du début de la remontée pour ajouter la DTR.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-tables-004",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "plongée-simple--lecture-complète",
+      "prompt": "Quel est le GPS d'une plongée à 20 m pendant 30 min ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F"
+        },
+        {
+          "id": "b",
+          "text": "G"
+        },
+        {
+          "id": "c",
+          "text": "H"
+        },
+        {
+          "id": "d",
+          "text": "E"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La table 20 m / 30 min donne un GPS F, sans palier obligatoire. Le GPS code l'azote résiduel utilisé pour une éventuelle plongée successive.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-tables-005",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "cadre-de-validité-et-arrondis",
+      "prompt": "Comment s'arrondissent l'azote résiduel et la profondeur de la seconde plongée au tableau III ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À la valeur immédiatement supérieure"
+        },
+        {
+          "id": "b",
+          "text": "À la valeur immédiatement inférieure"
+        },
+        {
+          "id": "c",
+          "text": "À la valeur la plus proche"
+        },
+        {
+          "id": "d",
+          "text": "On n'arrondit pas"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'azote résiduel et la profondeur de successive s'arrondissent à la valeur immédiatement supérieure du tableau III, dans le sens de la sécurité. Seul l'intervalle de surface s'arrondit vers le bas.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-tables-006",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "plongées-successives--méthode-des-deux-tableaux",
+      "prompt": "Première plongée 30 m / 25 min (GPS G), intervalle 2 h 30. À quel intervalle lit-on le tableau II ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "120 min"
+        },
+        {
+          "id": "b",
+          "text": "150 min"
+        },
+        {
+          "id": "c",
+          "text": "180 min"
+        },
+        {
+          "id": "d",
+          "text": "90 min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "150 min s'arrondit à la valeur immédiatement inférieure du tableau II, soit 120 min. Cet arrondi de l'intervalle vers le bas va dans le sens de la sécurité.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-tables-007",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "plongées-successives--méthode-des-deux-tableaux",
+      "prompt": "GPS G, intervalle 120 min : azote résiduel 0,94. Seconde plongée à 20 m. Quelle majoration au tableau III ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11 min"
+        },
+        {
+          "id": "b",
+          "text": "15 min"
+        },
+        {
+          "id": "c",
+          "text": "6 min"
+        },
+        {
+          "id": "d",
+          "text": "20 min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On arrondit 0,94 à la ligne 0,95 et on croise la profondeur 20 m : majoration = 11 min. Cette majoration, temps fictif, s'ajoute à la durée réelle pour lire la table de la seconde plongée.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-tables-008",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "plongées-successives--méthode-des-deux-tableaux",
+      "prompt": "Seconde plongée à 20 m, durée réelle 30 min, majoration 11 min. Quelle table et quel palier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Table 20 m / 45 min : 4 min à 3 m"
+        },
+        {
+          "id": "b",
+          "text": "Table 20 m / 30 min : aucun palier"
+        },
+        {
+          "id": "c",
+          "text": "Table 20 m / 11 min"
+        },
+        {
+          "id": "d",
+          "text": "Table 20 m / 41 min : 9 min à 3 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Durée fictive = 30 + 11 = 41 min, arrondie à la table 20 m / 45 min : palier de 4 min à 3 m, GPS I. La majoration sert à lire la table, mais ne compte ni dans l'air ni dans l'heure de sortie réelle.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-tables-009",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "plongées-successives--méthode-des-deux-tableaux",
+      "prompt": "Quelle est la bonne séquence de calcul d'une successive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GPS → tableau II (intervalle en dessous) → azote résiduel → tableau III (au-dessus) → majoration → table I (durée réelle + majoration)"
+        },
+        {
+          "id": "b",
+          "text": "Table I directement avec la durée réelle"
+        },
+        {
+          "id": "c",
+          "text": "Tableau III → tableau II → GPS"
+        },
+        {
+          "id": "d",
+          "text": "GPS → majoration soustraite de la durée réelle"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On lit le GPS (table I), l'azote résiduel (tableau II, intervalle arrondi en dessous), la majoration (tableau III, arrondis au-dessus), puis la table I avec la durée réelle plus la majoration. La majoration s'ajoute, elle ne se soustrait jamais.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-tables-010",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "procédures-de-rattrapage",
+      "prompt": "Comment traite-t-on une plongée consécutive (intervalle inférieur à 15 min) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Durée = somme des durées, profondeur = maximale des deux"
+        },
+        {
+          "id": "b",
+          "text": "Comme deux plongées simples"
+        },
+        {
+          "id": "c",
+          "text": "Avec le tableau III"
+        },
+        {
+          "id": "d",
+          "text": "On additionne les profondeurs"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En consécutive, les deux immersions comptent pour une seule : durée = somme des durées, profondeur = maximale des deux. Les tissus n'ayant presque rien restitué en moins de 15 min, on ne passe pas par les tableaux II et III.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-tables-011",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "procédures-de-rattrapage",
+      "prompt": "Plongée à 30 m ; à la 20e minute, remontée incontrôlée en surface, redescente en 1 min à 15 m puis 5 min. Quelle durée et quelle table ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "26 min → table 30 m / 30 min"
+        },
+        {
+          "id": "b",
+          "text": "20 min → table 30 m / 20 min"
+        },
+        {
+          "id": "c",
+          "text": "5 min → table 15 m / 5 min"
+        },
+        {
+          "id": "d",
+          "text": "25 min → table 30 m / 25 min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Durée retenue = 20 + 1 + 5 = 26 min, arrondie à la table 30 m / 30 min : palier de 17 min à 3 m, GPS H. On redescend à la mi-profondeur (15 m) dans les 3 min et on y reste 5 min, toute la palanquée.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-tables-012",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "procédures-de-rattrapage",
+      "prompt": "Que faire d'un palier interrompu (plongeur envoyé en surface) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redescendre dans les 3 min à la profondeur du palier et le recommencer intégralement"
+        },
+        {
+          "id": "b",
+          "text": "Reprendre là où il s'est arrêté"
+        },
+        {
+          "id": "c",
+          "text": "Supprimer le reste du palier"
+        },
+        {
+          "id": "d",
+          "text": "Descendre au fond"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On redescend dans les 3 minutes à la profondeur du palier et on le recommence intégralement, le temps déjà fait étant perdu. Un palier interrompu non rattrapé est une décompression incomplète.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-tables-013",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "procédures-de-rattrapage",
+      "prompt": "En cas de remontée lente, le temps de remontée s'ajoute à la durée de plongée.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : le temps de remontée lente s'ajoute à la durée de plongée jusqu'à la reprise d'une vitesse normale, et la profondeur retenue reste la profondeur maximale. Ignorer ce temps sous-estimerait la charge en azote.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-tables-014",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "la-plongée-en-altitude",
+      "prompt": "Pourquoi la plongée en altitude est-elle plus exigeante en décompression ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La pression de surface est réduite, donc la sursaturation à la sortie est plus forte à profondeur réelle égale"
+        },
+        {
+          "id": "b",
+          "text": "La pression de surface est plus élevée"
+        },
+        {
+          "id": "c",
+          "text": "L'eau est plus dense"
+        },
+        {
+          "id": "d",
+          "text": "L'azote se dissout moins"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En altitude, la pression atmosphérique est inférieure à 1 bar : à la sortie, le gradient de sursaturation est plus grand pour une même profondeur réelle, donc le risque d'ADD augmente. Les tables MN90, bâties pour 1 bar de surface, ne se lisent pas avec la profondeur réelle.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-tables-015",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "la-plongée-en-altitude",
+      "prompt": "À 2000 m d'altitude (P ≈ 0,8 bar), à quelle profondeur fictive correspond une plongée réelle à 20 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 25 m"
+        },
+        {
+          "id": "b",
+          "text": "≈ 16 m"
+        },
+        {
+          "id": "c",
+          "text": "≈ 20 m"
+        },
+        {
+          "id": "d",
+          "text": "≈ 40 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "$profondeur_{fictive}=profondeur_{réelle}\\times P_{mer}/P_{altitude}=20\\times 1/0{,}8=25$ m. On lit alors la table à 25 m, nettement plus exigeante que la lecture directe à 20 m.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-tables-016",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "notions-de-nitrox-et-de-désaturation",
+      "prompt": "Quel est l'effet du nitrox sur la décompression, à profondeur et durée égales ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moins d'azote respiré, donc désaturation facilitée et temps sans palier allongé"
+        },
+        {
+          "id": "b",
+          "text": "Plus d'azote, donc paliers rallongés"
+        },
+        {
+          "id": "c",
+          "text": "Aucun effet sur la décompression"
+        },
+        {
+          "id": "d",
+          "text": "Il supprime tout palier quelle que soit la profondeur"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le nitrox réduit la fraction d'azote respirée : à profondeur égale la $P_pN_2$ est plus faible, les tissus se chargent moins et le temps sans palier s'allonge. La contrepartie est la limite d'hyperoxie qui impose une profondeur maximale.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-tables-017",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "notions-de-nitrox-et-de-désaturation",
+      "prompt": "L'emploi du nitrox relève d'une qualification spécifique.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : les procédures nitrox (tables nitrox ou profondeur équivalente air, limite d'hyperoxie) relèvent d'une qualification spécifique. Le Niveau 4 en retient le principe : moins d'azote respiré, désaturation facilitée, au prix d'une contrainte oxygène.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-tables-018",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "méthode-dexamen--enchaîner-sans-erreur",
+      "prompt": "Quelle discipline évite les erreurs dans un problème d'examen multi-plongées ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Poser un schéma de profil, traiter chaque plongée dans l'ordre, vérifier chaque arrondi, ne pas mélanger durée réelle et fictive"
+        },
+        {
+          "id": "b",
+          "text": "Calculer tout de tête sans écrire"
+        },
+        {
+          "id": "c",
+          "text": "Traiter les plongées dans le désordre"
+        },
+        {
+          "id": "d",
+          "text": "Ignorer les arrondis"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On pose d'abord un schéma de profil, on traite chaque plongée dans l'ordre chronologique en notant profondeur, durée, paliers, DTR, GPS et heures, on vérifie chaque arrondi et on ne mélange jamais durée réelle et durée fictive. C'est sur les arrondis que se perdent les points.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-tables-019",
+      "type": "calcul",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "plongée-simple--lecture-complète",
+      "prompt": "Plongée à 40 m pendant 15 min. Quels paliers donne la table du site ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 min à 3 m"
+        },
+        {
+          "id": "b",
+          "text": "2 min à 3 m"
+        },
+        {
+          "id": "c",
+          "text": "aucun palier"
+        },
+        {
+          "id": "d",
+          "text": "5 min à 6 m et 19 min à 3 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La table 40 m / 15 min donne un palier de 7 min à 3 m, GPS F. À 40 m les paliers apparaissent tôt : dès 10 min il y a déjà 2 min à 3 m.",
+      "difficulty": 3
+    },
+    {
+      "id": "n4-tables-020",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "méthode-dexamen--enchaîner-sans-erreur",
+      "prompt": "La majoration entre dans le calcul de décompression mais ne compte ni dans l'air consommé ni dans l'heure de sortie réelle.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : la majoration est un temps fictif servant uniquement à lire la table de la seconde plongée. Elle ne se comptabilise ni dans l'air réellement consommé ni dans l'heure de sortie.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-tables-021",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "cadre-de-validité-et-arrondis",
+      "prompt": "Combien de plongées par 24 h les tables MN90 autorisent-elles au maximum ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux"
+        },
+        {
+          "id": "b",
+          "text": "Trois"
+        },
+        {
+          "id": "c",
+          "text": "Une seule"
+        },
+        {
+          "id": "d",
+          "text": "Illimité"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les tables MN90 sont valides pour deux plongées par 24 h au maximum, à l'air et au niveau de la mer, jusqu'à 60 m. Au-delà de deux plongées, on sort du cadre de validité des tables.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-001",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "le-cadre--code-du-sport-et-rôles",
+      "prompt": "Quel est le rôle du directeur de plongée (DP) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organiser l'activité, constituer les palanquées, fixer les paramètres, assurer la sécurité surface et déclencher les secours"
+        },
+        {
+          "id": "b",
+          "text": "Guider une seule palanquée en immersion"
+        },
+        {
+          "id": "c",
+          "text": "Enseigner obligatoirement"
+        },
+        {
+          "id": "d",
+          "text": "Piloter le bateau uniquement"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le directeur de plongée organise l'activité, constitue les palanquées, désigne les guides, définit les paramètres, assure la sécurité surface et déclenche les secours. Il est présent sur le site pendant toute l'activité.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-regl-002",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "le-cadre--code-du-sport-et-rôles",
+      "prompt": "Quel est le niveau minimal du directeur de plongée en exploration ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Niveau 5 (ou équivalent)"
+        },
+        {
+          "id": "b",
+          "text": "Niveau 3"
+        },
+        {
+          "id": "c",
+          "text": "Niveau 4"
+        },
+        {
+          "id": "d",
+          "text": "MF1 obligatoirement"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En exploration, le DP est au minimum Niveau 5 (ou équivalent) ; en enseignement, il est au minimum E3 (moniteur). Le DP a autorité sur l'ensemble de la plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-003",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "composition-des-palanquées-et-espaces-dévolution",
+      "prompt": "Combien de plongeurs compte au maximum une palanquée encadrée (hors guide) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Une palanquée encadrée compte au maximum 4 plongeurs encadrés, hors guide. Une palanquée autonome en compte au maximum 3. Le guide adapte toujours à la baisse selon les conditions.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-004",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "composition-des-palanquées-et-espaces-dévolution",
+      "prompt": "Combien de plongeurs compte au maximum une palanquée autonome ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Une palanquée autonome compte au maximum 3 plongeurs. La conformité réglementaire est un plafond, pas un objectif : le guide réduit l'effectif selon la visibilité, le courant ou l'expérience réelle.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-005",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "composition-des-palanquées-et-espaces-dévolution",
+      "prompt": "Quelle est la profondeur maximale de la plongée à l'air en France ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "60 m"
+        },
+        {
+          "id": "b",
+          "text": "40 m"
+        },
+        {
+          "id": "c",
+          "text": "50 m"
+        },
+        {
+          "id": "d",
+          "text": "70 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La profondeur maximale de la plongée à l'air en exploration est de 60 m. Elle correspond à l'espace d'évolution 0-60 m, où les PA60 plongent en autonomie et les PE60 sont encadrés par un moniteur.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-006",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "composition-des-palanquées-et-espaces-dévolution",
+      "prompt": "La composition d'une palanquée dépend des aptitudes de ses membres et de l'espace d'évolution.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : la composition suit les aptitudes (PE, PA suivis de la profondeur) et l'espace d'évolution (0-6, 0-20, 0-40, 0-60 m). Le guide adapte toujours à la baisse aux conditions réelles.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-regl-007",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "documents-obligatoires-et-aptitude-médicale",
+      "prompt": "Quels documents un plongeur doit-il pouvoir justifier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Brevet ou attestation de niveau, licence, certificat médical à jour"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement la licence"
+        },
+        {
+          "id": "c",
+          "text": "Seulement le carnet de plongée"
+        },
+        {
+          "id": "d",
+          "text": "Aucun document"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Chaque plongeur doit justifier de son aptitude (brevet ou attestation de niveau), de sa licence fédérale et d'un certificat médical à jour. Le guide s'assure avant l'immersion que chaque membre dispose des documents requis.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-008",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "matériel-obligatoire-des-plongeurs-et-de-la-sécurité",
+      "prompt": "Quel matériel supplémentaire distingue le plongeur autonome de l'encadré ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux sorties de bloc indépendantes et deux détendeurs complets, plus un parachute par palanquée"
+        },
+        {
+          "id": "b",
+          "text": "Une simple lampe"
+        },
+        {
+          "id": "c",
+          "text": "Un tuba plus long"
+        },
+        {
+          "id": "d",
+          "text": "Aucune différence"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le plongeur autonome doit disposer de deux sorties de bloc indépendantes et de deux détendeurs complets (second étage de secours), et la palanquée d'un parachute de palier. L'encadré n'a pas cette obligation de redondance.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-009",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "matériel-obligatoire-des-plongeurs-et-de-la-sécurité",
+      "prompt": "Que comprend la sécurité surface sous la responsabilité du DP ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plan de secours et moyen d'alerte, trousse, oxygénothérapie, eau douce, couverture isothermique, fiche d'évacuation"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement un téléphone"
+        },
+        {
+          "id": "c",
+          "text": "Seulement une bouée"
+        },
+        {
+          "id": "d",
+          "text": "Rien de particulier"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La sécurité surface comprend un plan de secours et un moyen d'alerte, une trousse de secours, une oxygénothérapie de capacité adaptée, de l'eau douce non gazeuse, une couverture isothermique et une fiche d'évacuation. Ce dispositif conditionne la légalité de la sortie.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-010",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "responsabilité-civile-et-pénale",
+      "prompt": "Que vise la responsabilité civile ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réparer un dommage causé à autrui, via une indemnisation (couverte par l'assurance)"
+        },
+        {
+          "id": "b",
+          "text": "Sanctionner une infraction par une peine"
+        },
+        {
+          "id": "c",
+          "text": "Retirer le brevet"
+        },
+        {
+          "id": "d",
+          "text": "Interdire la plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La responsabilité civile vise à réparer un dommage causé à autrui, par une indemnisation versée en pratique par l'assurance. La licence fédérale inclut une assurance en responsabilité civile.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-regl-011",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "responsabilité-civile-et-pénale",
+      "prompt": "L'assurance ne couvre jamais les sanctions pénales.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : l'assurance prend en charge la réparation civile (indemnisation) mais jamais les sanctions pénales, qui sont personnelles. Assurance n'égale pas irresponsabilité : encadrer impose la rigueur.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-regl-012",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "lobligation-de-moyens",
+      "prompt": "Quelle est la nature de l'obligation qui pèse sur le guide de palanquée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une obligation de moyens : mettre en œuvre tous les moyens raisonnables de sécurité"
+        },
+        {
+          "id": "b",
+          "text": "Une obligation de résultat : garantir qu'aucun accident ne survienne"
+        },
+        {
+          "id": "c",
+          "text": "Aucune obligation"
+        },
+        {
+          "id": "d",
+          "text": "Une obligation de moyens uniquement en enseignement"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le guide est tenu d'une obligation de moyens, non de résultat : il ne garantit pas l'absence d'accident (l'activité comporte des risques), mais il doit mettre en œuvre tous les moyens raisonnables de sécurité. On apprécie la conformité de sa conduite aux règles de l'art.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-013",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "lobligation-de-moyens",
+      "prompt": "Respecter le cadre réglementaire et les bonnes pratiques est à la fois un devoir de sécurité et une protection juridique.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : briefing, vérification du matériel et des niveaux, choix de paramètres adaptés et surveillance continue assurent la sécurité et prouvent la diligence. À l'inverse, une faute caractérisée expose pleinement l'encadrant.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-regl-014",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "le-cadre--code-du-sport-et-rôles",
+      "prompt": "Quel est le niveau minimal du directeur de plongée en enseignement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E3 (moniteur, MF1/BEES1 ou équivalent)"
+        },
+        {
+          "id": "b",
+          "text": "Niveau 4"
+        },
+        {
+          "id": "c",
+          "text": "Niveau 5"
+        },
+        {
+          "id": "d",
+          "text": "Niveau 3"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En enseignement, le DP est au minimum E3 (moniteur : MF1, BEES1 ou équivalent), alors qu'en exploration il est au minimum Niveau 5. Le niveau requis dépend donc de la nature de l'activité.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-regl-015",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "composition-des-palanquées-et-espaces-dévolution",
+      "prompt": "Qu'est-ce qu'une palanquée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un groupe de plongeurs évoluant ensemble, à des paramètres identiques, qui ne se quittent pas"
+        },
+        {
+          "id": "b",
+          "text": "L'ensemble des plongeurs d'un club"
+        },
+        {
+          "id": "c",
+          "text": "Un plongeur seul et son matériel"
+        },
+        {
+          "id": "d",
+          "text": "Le bateau et son équipage"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Une palanquée est un groupe de plongeurs qui évoluent ensemble, à des paramètres identiques, et ne se quittent pas. Sa composition dépend des aptitudes et de l'espace d'évolution.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-regl-016",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "reglementation",
+      "moduleSlug": "n4-reglementation",
+      "sectionAnchor": "responsabilité-civile-et-pénale",
+      "prompt": "Qu'est-ce que la responsabilité pénale sanctionne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une infraction à la loi (mise en danger, blessures ou homicide involontaires), par une peine personnelle"
+        },
+        {
+          "id": "b",
+          "text": "Un dommage réparé par indemnisation"
+        },
+        {
+          "id": "c",
+          "text": "Un simple manquement administratif sans conséquence"
+        },
+        {
+          "id": "d",
+          "text": "La perte de matériel"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La responsabilité pénale sanctionne une infraction (mise en danger d'autrui, blessures ou homicide involontaires) par des peines personnelles (amende, voire emprisonnement). Elle peut viser le guide, le DP ou l'organisateur et n'est pas assurable.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-mat-001",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "le-détendeur--principe-de-la-détente-en-deux-étages",
+      "prompt": "Comment un détendeur réduit-il la pression de l'air ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En deux étages : 1er étage HP bloc → moyenne pression, 2e étage → pression ambiante à la demande"
+        },
+        {
+          "id": "b",
+          "text": "En un seul étage direct"
+        },
+        {
+          "id": "c",
+          "text": "En chauffant l'air"
+        },
+        {
+          "id": "d",
+          "text": "En comprimant l'air"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le premier étage abaisse la haute pression du bloc à une moyenne pression fixe au-dessus de l'ambiante ; le second étage l'abaisse à la pression ambiante, seulement quand le plongeur inspire (détente à la demande). Cette réduction se fait en deux étapes reliées par un tuyau moyenne pression.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-mat-002",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "le-détendeur--principe-de-la-détente-en-deux-étages",
+      "prompt": "À quelle pression le détendeur délivre-t-il l'air au plongeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À la pression ambiante, donc de plus en plus dense en profondeur"
+        },
+        {
+          "id": "b",
+          "text": "À la pression du bloc"
+        },
+        {
+          "id": "c",
+          "text": "À 1 bar constant quelle que soit la profondeur"
+        },
+        {
+          "id": "d",
+          "text": "À la moyenne pression"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le détendeur délivre l'air à la pression ambiante, donc de plus en plus dense en profondeur (Mariotte). L'effort ventilatoire augmente avec la profondeur, d'où l'intérêt d'un détendeur performant pour limiter l'essoufflement.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-mat-003",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "premier-étage--piston-et-membrane",
+      "prompt": "Quel est l'avantage d'un premier étage à membrane sur un premier étage à piston ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La membrane isole le mécanisme de l'eau, protégeant du froid, du sable et de la corrosion"
+        },
+        {
+          "id": "b",
+          "text": "Il est toujours moins cher"
+        },
+        {
+          "id": "c",
+          "text": "Il délivre plus de pression"
+        },
+        {
+          "id": "d",
+          "text": "Il ne nécessite aucun entretien"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le premier étage à membrane interpose une membrane souple entre l'eau et le mécanisme, ce qui protège du froid, du sable et de la corrosion — un atout en eau froide ou chargée. Le piston, lui, est robuste et simple mais expose des pièces au contact de l'eau.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-mat-004",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "compensé-ou-non--leffet-de-la-pression-du-bloc",
+      "prompt": "Quel est l'intérêt d'un premier étage compensé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La moyenne pression reste stable quelle que soit la pression du bloc et la profondeur"
+        },
+        {
+          "id": "b",
+          "text": "Il augmente la pression du bloc"
+        },
+        {
+          "id": "c",
+          "text": "Il supprime le second étage"
+        },
+        {
+          "id": "d",
+          "text": "Il refroidit l'air"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Sur un premier étage compensé, la pression du bloc s'exerce de façon équilibrée sur le clapet : la moyenne pression reste stable du début à la fin de la plongée et à toute profondeur. Le plongeur bénéficie d'un débit et d'un confort constants, précieux en plongée profonde et par froid.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-mat-005",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "compensé-ou-non--leffet-de-la-pression-du-bloc",
+      "prompt": "Sur un premier étage non compensé, le confort respiratoire change entre un bloc plein et un bloc presque vide.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : sur un premier étage non compensé, la haute pression du bloc agit sur le clapet dans un sens qui varie avec la pression du bloc, donc la moyenne pression dérive légèrement à mesure que le bloc se vide. Le compensé supprime cette dérive.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-mat-006",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "bloc-robinetterie-et-réglementation",
+      "prompt": "Quelles obligations réglementaires pèsent sur un bloc de plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Épreuve hydraulique périodique (requalification) et inspection visuelle annuelle par un TIV"
+        },
+        {
+          "id": "b",
+          "text": "Aucune, s'il fonctionne"
+        },
+        {
+          "id": "c",
+          "text": "Un simple rinçage annuel"
+        },
+        {
+          "id": "d",
+          "text": "Un changement de robinet tous les ans"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le bloc est un équipement sous pression soumis à une épreuve hydraulique périodique (requalification par un organisme agréé) et à une inspection visuelle annuelle par un TIV habilité. Un bloc hors validité ne doit pas être gonflé.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-mat-007",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "bloc-robinetterie-et-réglementation",
+      "prompt": "Un bloc dont la validité d'épreuve ou de TIV est dépassée ne doit pas être gonflé.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : un bloc hors validité d'épreuve ou de TIV est interdit au gonflage. Le guide vérifie la validité du bloc avant emploi, et ne plonge jamais avec une robinetterie ou un marquage douteux.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-mat-008",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "compresseur-et-filtration",
+      "prompt": "Pourquoi un compresseur comprime-t-il l'air en plusieurs étages ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que la compression échauffe l'air ; des étages avec refroidisseurs sont plus efficaces et moins chauds qu'une compression unique"
+        },
+        {
+          "id": "b",
+          "text": "Pour aller moins vite"
+        },
+        {
+          "id": "c",
+          "text": "Pour ajouter de l'oxygène"
+        },
+        {
+          "id": "d",
+          "text": "Pour économiser les filtres"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La compression échauffe l'air : on procède par étages successifs, chaque étage suivi d'un refroidisseur et d'un purgeur qui évacue eau et huile condensées. On passe ainsi de la pression atmosphérique à 200-300 bar de façon plus efficace et moins chaude.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-mat-009",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "compresseur-et-filtration",
+      "prompt": "Où doit être placée la prise d'air d'un compresseur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au vent, loin de tout échappement de moteur"
+        },
+        {
+          "id": "b",
+          "text": "Près du moteur pour gagner de la place"
+        },
+        {
+          "id": "c",
+          "text": "Sous le compresseur"
+        },
+        {
+          "id": "d",
+          "text": "Peu importe"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La prise d'air doit être placée au vent, loin de tout échappement, car aspirer des gaz d'échappement contaminerait l'air en monoxyde de carbone — cause d'intoxication grave. Une cartouche de filtration retient eau, huile et vapeurs en fin de chaîne.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-mat-010",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "instruments-et-matériel-obligatoire",
+      "prompt": "Quel instrument permet le contrôle permanent de l'air restant dans le bloc ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le manomètre"
+        },
+        {
+          "id": "b",
+          "text": "La boussole"
+        },
+        {
+          "id": "c",
+          "text": "Le profondimètre"
+        },
+        {
+          "id": "d",
+          "text": "Le parachute de palier"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le manomètre indique la pression restante du bloc, permettant le contrôle permanent de l'air. Le profondimètre et la montre (ou l'ordinateur) gèrent la profondeur, le temps et la décompression.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-mat-011",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "instruments-et-matériel-obligatoire",
+      "prompt": "Le parachute de palier est obligatoire à raison d'un par palanquée en autonomie.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : le parachute de palier, qui signale et sécurise la remontée, est obligatoire à raison d'un par palanquée en autonomie. Le guide vérifie que sa palanquée en est équipée avant l'immersion.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-mat-012",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "materiel",
+      "moduleSlug": "n4-materiel",
+      "sectionAnchor": "le-détendeur--principe-de-la-détente-en-deux-étages",
+      "prompt": "À quoi sert le bouton de surface (ou de purge) du second étage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À ouvrir manuellement le clapet pour libérer de l'air"
+        },
+        {
+          "id": "b",
+          "text": "À gonfler le gilet"
+        },
+        {
+          "id": "c",
+          "text": "À régler la moyenne pression"
+        },
+        {
+          "id": "d",
+          "text": "À mesurer la profondeur"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le bouton de surface (ou de purge) permet d'ouvrir manuellement le clapet du second étage pour libérer de l'air, par exemple pour purger l'eau. En fonctionnement normal, c'est la dépression de l'inspiration qui bascule le levier et ouvre le clapet.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gp-001",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "le-rôle-du-guide-de-palanquée",
+      "prompt": "Quelle est la mission prioritaire du guide de palanquée, dans l'ordre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sécurité, plaisir, découverte"
+        },
+        {
+          "id": "b",
+          "text": "Découverte, plaisir, sécurité"
+        },
+        {
+          "id": "c",
+          "text": "Plaisir, découverte, sécurité"
+        },
+        {
+          "id": "d",
+          "text": "Performance, profondeur, records"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La mission du guide tient en trois mots dans cet ordre : sécurité, plaisir, découverte. Il encadre l'exploration sous l'autorité du directeur de plongée et adapte le projet au plus faible du groupe et aux conditions réelles.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gp-002",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "le-briefing-type",
+      "prompt": "Que couvre un briefing de palanquée complet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site et parcours, paramètres et déco, gestion de l'air, signes, sécurité, binômes, vérification mutuelle du matériel"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement la profondeur maximale"
+        },
+        {
+          "id": "c",
+          "text": "Seulement les points d'intérêt"
+        },
+        {
+          "id": "d",
+          "text": "La météo du lendemain"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Un briefing complet couvre le site et le parcours, les paramètres et la décompression, la gestion de l'air, les signes, la sécurité (perte, assistance, remontée), les binômes et l'organisation. Il se termine par la vérification mutuelle du matériel : on ne se met à l'eau qu'après ce contrôle.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-gp-003",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "gérer-lair-dune-palanquée",
+      "prompt": "Sur quel plongeur le guide raisonne-t-il pour gérer l'air de la palanquée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le plus gros consommateur et le plus petit bloc"
+        },
+        {
+          "id": "b",
+          "text": "Lui-même"
+        },
+        {
+          "id": "c",
+          "text": "Le plus économe"
+        },
+        {
+          "id": "d",
+          "text": "La moyenne du groupe"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le guide raisonne sur le plus gros consommateur et le plus petit bloc, pas sur lui-même. Il fixe une pression de demi-tour pour que chacun rentre avec sa réserve et déclenche le retour sur le premier qui atteint le seuil.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gp-004",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "gérer-lair-dune-palanquée",
+      "prompt": "En quoi consiste la règle des tiers en exploration ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3 de l'air pour l'aller, 1/3 pour le retour, 1/3 de réserve"
+        },
+        {
+          "id": "b",
+          "text": "1/2 aller, 1/2 retour"
+        },
+        {
+          "id": "c",
+          "text": "Tout l'air pour l'exploration"
+        },
+        {
+          "id": "d",
+          "text": "1/3 réserve, 2/3 aller"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La règle des tiers réserve un tiers de l'air pour l'aller, un tiers pour le retour et un tiers de réserve, particulièrement adaptée quand le retour se fait par le même chemin. Le guide déclenche le demi-tour sur le premier qui atteint le seuil.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gp-005",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "orientation-et-surveillance-en-immersion",
+      "prompt": "Quels moyens le guide combine-t-il pour orienter la palanquée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boussole (cap aller/retour), repères naturels, profondeur et temps"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement la chance"
+        },
+        {
+          "id": "c",
+          "text": "Seulement le GPS de surface"
+        },
+        {
+          "id": "d",
+          "text": "La couleur de l'eau"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le guide combine la boussole (cap aller et retour), les repères naturels (relief, sable ridé, tombant, lumière, courant), la profondeur et le temps. Il adapte le parcours pour finir la plongée face au point de sortie, avec l'air et la déco compatibles.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gp-006",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "orientation-et-surveillance-en-immersion",
+      "prompt": "Le guide maintient sa palanquée rassemblée, car un équipier isolé est un équipier en danger.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : le guide surveille en permanence, compte régulièrement ses équipiers et maintient le groupe rassemblé. Il ralentit ou remonte à la moindre difficulté (essoufflement, froid, stress, problème de matériel).",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-gp-007",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "sécurité-surface-et-remontée-protégée",
+      "prompt": "Comment le guide protège-t-il la remontée de sa palanquée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En envoyant un parachute de palier qui signale la palanquée et matérialise l'axe de remontée"
+        },
+        {
+          "id": "b",
+          "text": "En remontant le plus vite possible"
+        },
+        {
+          "id": "c",
+          "text": "En se fiant à l'oreille pour situer les bateaux"
+        },
+        {
+          "id": "d",
+          "text": "En dispersant les plongeurs"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le guide protège la remontée en envoyant un parachute de palier depuis le fond ou le palier, qui signale la palanquée aux embarcations et matérialise l'axe de remontée. On remonte en tournant sur soi et en levant la tête, car sous l'eau on entend un bateau sans pouvoir le localiser.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gp-008",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "sécurité-surface-et-remontée-protégée",
+      "prompt": "Le guide n'est déchargé de sa responsabilité qu'une fois toute la palanquée à bord ou à terre en sécurité.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : les derniers mètres et la surface concentrent les risques (bateaux, houle, fatigue). Le guide regroupe et signale son groupe en surface, compte à nouveau ses équipiers et ne relâche sa vigilance qu'une fois tout le monde en sécurité.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-gp-009",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "matelotage-météo-et-marées",
+      "prompt": "Quand le courant de marée est-il le plus faible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aux étales de pleine mer et de basse mer"
+        },
+        {
+          "id": "b",
+          "text": "À mi-marée"
+        },
+        {
+          "id": "c",
+          "text": "Toujours au maximum"
+        },
+        {
+          "id": "d",
+          "text": "Il ne varie jamais"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le courant de marée est le plus fort à mi-marée et faible aux étales (de pleine mer et de basse mer), moments souvent choisis pour plonger en sécurité. Le coefficient de marée renseigne sur l'amplitude et donc l'intensité des courants.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gp-010",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "matelotage-météo-et-marées",
+      "prompt": "Que signale le pavillon Alpha ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La présence de plongeurs immergés, imposant aux navires de s'écarter et de réduire leur vitesse"
+        },
+        {
+          "id": "b",
+          "text": "Un danger de tempête"
+        },
+        {
+          "id": "c",
+          "text": "La fin de la plongée"
+        },
+        {
+          "id": "d",
+          "text": "Un mouillage interdit"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le pavillon Alpha (ou pavillon de plongée) signale des plongeurs immergés et impose aux navires de s'écarter et de réduire leur vitesse. Le guide connaît cette signalisation liée à la plongée.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-gp-011",
+      "type": "qcm",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "matelotage-météo-et-marées",
+      "prompt": "Comment organiser une plongée dérivante par rapport au courant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Descendre face au courant et revenir porté par lui"
+        },
+        {
+          "id": "b",
+          "text": "Descendre porté et revenir face au courant"
+        },
+        {
+          "id": "c",
+          "text": "Ignorer le courant"
+        },
+        {
+          "id": "d",
+          "text": "Plonger toujours à mi-marée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On organise la plongée pour éviter de lutter contre le courant au retour : descendre face au courant, revenir porté par lui. Lutter contre le courant au retour, fatigué et à court d'air, est un piège classique.",
+      "difficulty": 2
+    },
+    {
+      "id": "n4-gp-012",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "environnement",
+      "moduleSlug": "n4-guide-palanquee",
+      "sectionAnchor": "le-rôle-du-guide-de-palanquée",
+      "prompt": "Le guide de palanquée est un encadrant d'exploration, il n'enseigne pas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : le guide conduit un groupe en exploration, il n'est pas moniteur et n'enseigne pas. Il assure la sécurité, l'orientation, la gestion de l'air et de la décompression du groupe qu'il encadre.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-acc-022",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-accidents",
+      "sectionAnchor": "laccident-de-désaturation--cinétique-des-bulles",
+      "prompt": "Un foramen ovale perméable ou un effort à glotte fermée peut artérialiser les bulles veineuses vers le cerveau ou la moelle.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : les bulles veineuses, normalement filtrées par les poumons, peuvent passer en artériel via un foramen ovale perméable ou un effort à glotte fermée. Elles gagnent alors le cerveau ou la moelle et provoquent un ADD neurologique.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-tables-022",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "tables-deco",
+      "moduleSlug": "n4-tables-tous-cas",
+      "sectionAnchor": "cadre-de-validité-et-arrondis",
+      "prompt": "La durée de plongée retenue court de l'immersion jusqu'au début de la remontée à vitesse normale.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : la durée de plongée va de l'immersion au début de la remontée, et la profondeur retenue est la profondeur maximale atteinte. Ces définitions conditionnent la lecture correcte de la table.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-flot-020",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physique",
+      "moduleSlug": "n4-flottabilite-optique-acoustique",
+      "sectionAnchor": "le-théorème-darchimède",
+      "prompt": "Un corps dont le poids réel est inférieur à la poussée d'Archimède remonte (flottabilité positive).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : si la poussée l'emporte sur le poids réel, le poids apparent est négatif et le corps remonte. S'ils sont égaux il reste entre deux eaux, si le poids l'emporte il coule.",
+      "difficulty": 1
+    },
+    {
+      "id": "n4-vent-018",
+      "type": "vrai-faux",
+      "level": "n4",
+      "domain": "physiologie",
+      "moduleSlug": "n4-anatomie-ventilation",
+      "sectionAnchor": "anatomie-de-lappareil-respiratoire",
+      "prompt": "Les voies aériennes de conduction (trachée, bronches) réchauffent, humidifient et filtrent l'air mais ne réalisent aucun échange gazeux.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Vrai : les voies de conduction amènent l'air en le réchauffant, l'humidifiant et le filtrant, sans réaliser d'échange. Les échanges gazeux ne commencent qu'au niveau des alvéoles.",
+      "difficulty": 1
+    }
+  ]
+}

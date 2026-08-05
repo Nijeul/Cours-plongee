@@ -1,0 +1,4801 @@
+{
+  "level": "n2",
+  "questions": [
+    {
+      "id": "n2-mariotte-001",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "pression-atmosphérique-relative-absolue",
+      "prompt": "Quelle est la pression absolue à 26 m de profondeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,6 bars"
+        },
+        {
+          "id": "b",
+          "text": "3,6 bars"
+        },
+        {
+          "id": "c",
+          "text": "26 bars"
+        },
+        {
+          "id": "d",
+          "text": "4 bars"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La pression relative à 26 m vaut $26/10 = 2{,}6$ bars ; la pression absolue ajoute le bar atmosphérique : $P_{abs} = 1 + 2{,}6 = 3{,}6$ bars. Répondre 2,6 bars est l'erreur d'examen la plus fréquente (oubli de la pression atmosphérique) ; 26 bars confond mètres et bars ; 4 bars correspondrait à 30 m.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-mariotte-002",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "pression-atmosphérique-relative-absolue",
+      "prompt": "Votre profondimètre indique une pression relative de 2,6 bars. À quelle profondeur êtes-vous ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16 m"
+        },
+        {
+          "id": "b",
+          "text": "26 m"
+        },
+        {
+          "id": "c",
+          "text": "36 m"
+        },
+        {
+          "id": "d",
+          "text": "2,6 m"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La règle « 1 bar tous les 10 m » s'inverse : une pression relative de 2,6 bars correspond à $2{,}6 \\times 10 = 26$ m. Attention : le profondimètre mesure la pression relative (il affiche 0 en surface), il ne faut donc pas retrancher le bar atmosphérique — répondre 16 m serait cette erreur-là. La réponse 36 m ajouterait au contraire un bar indûment.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-mariotte-003",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "pression-atmosphérique-relative-absolue",
+      "prompt": "Quelle pression le profondimètre mesure-t-il, et quelle pression utilisent les lois physiques (Mariotte, Dalton) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le profondimètre mesure la pression relative ; les lois physiques utilisent la pression absolue"
+        },
+        {
+          "id": "b",
+          "text": "Le profondimètre mesure la pression absolue ; les lois physiques utilisent la pression relative"
+        },
+        {
+          "id": "c",
+          "text": "Les deux utilisent la pression relative"
+        },
+        {
+          "id": "d",
+          "text": "Les deux utilisent la pression atmosphérique"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le profondimètre mesure la pression relative (le poids de l'eau seule : il affiche 0 en surface), tandis que les lois physiques — Mariotte, Dalton — s'appliquent toujours avec la pression absolue, somme de la pression relative et du bar atmosphérique. L'erreur d'un bar dans un calcul d'examen vient presque toujours de cette confusion : utiliser 2 bars à 20 m au lieu de 3.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-mariotte-004",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "pression-atmosphérique-relative-absolue",
+      "prompt": "Un énoncé indique une pression absolue de 4 bars. À quelle profondeur le plongeur se trouve-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 m"
+        },
+        {
+          "id": "b",
+          "text": "30 m"
+        },
+        {
+          "id": "c",
+          "text": "26 m"
+        },
+        {
+          "id": "d",
+          "text": "20 m"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "On retranche d'abord la pression atmosphérique : $P_{rel} = 4 - 1 = 3$ bars, puis on convertit en profondeur : $3 \\times 10 = 30$ m. Répondre 40 m revient à convertir directement la pression absolue sans retirer le bar d'atmosphère — le piège symétrique de l'oubli habituel. 20 m correspondrait à une pression absolue de 3 bars.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-mariotte-005",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "la-loi-de-boyle-mariotte",
+      "prompt": "Quel est l'énoncé correct de la loi de Boyle-Mariotte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À température constante, le volume d'une masse de gaz est inversement proportionnel à la pression : $P_1 \\times V_1 = P_2 \\times V_2$"
+        },
+        {
+          "id": "b",
+          "text": "La pression d'un gaz est proportionnelle à son volume"
+        },
+        {
+          "id": "c",
+          "text": "Chaque gaz d'un mélange exerce une pression proportionnelle à son pourcentage"
+        },
+        {
+          "id": "d",
+          "text": "La quantité de gaz dissoute dans un liquide est proportionnelle à sa pression partielle"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La loi de Boyle-Mariotte énonce qu'à température constante, le produit pression × volume d'une masse de gaz reste constant : si la pression double, le volume est divisé par deux. La proposition b inverse la relation (elle est inversement, pas directement, proportionnelle) ; la proposition c est la loi de Dalton (pressions partielles) et la proposition d la loi de Henry (dissolution) — trois lois à ne pas confondre à l'examen.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-mariotte-006",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "la-loi-de-boyle-mariotte",
+      "prompt": "Un ballon souple contient 6 L d'air en surface. Quel est son volume à 20 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 L"
+        },
+        {
+          "id": "b",
+          "text": "2 L"
+        },
+        {
+          "id": "c",
+          "text": "18 L"
+        },
+        {
+          "id": "d",
+          "text": "6 L"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "États : $P_1 = 1$ bar, $V_1 = 6$ L en surface ; à 20 m, $P_2 = 1 + 20/10 = 3$ bars. Mariotte : $V_2 = \\dfrac{P_1 \\times V_1}{P_2} = \\dfrac{1 \\times 6}{3} = 2$ L. Répondre 3 L revient à diviser par 2 bars (oubli du bar atmosphérique) ; 18 L multiplierait au lieu de diviser (l'air se comprime à la descente) ; 6 L supposerait un récipient rigide.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-mariotte-007",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "la-loi-de-boyle-mariotte",
+      "prompt": "Un volume de 2 L d'air est pris à 20 m. Quel volume occupe-t-il de retour en surface ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 L"
+        },
+        {
+          "id": "b",
+          "text": "6 L"
+        },
+        {
+          "id": "c",
+          "text": "2 L"
+        },
+        {
+          "id": "d",
+          "text": "0,67 L"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "États : $P_1 = 3$ bars (20 m), $V_1 = 2$ L ; en surface $P_2 = 1$ bar. Mariotte : $V_2 = \\dfrac{3 \\times 2}{1} = 6$ L — le volume triple. Répondre 4 L correspond à un facteur 2 (pression relative au lieu d'absolue) ; 0,67 L inverserait le sens de variation, or un volume augmente toujours à la remontée. C'est exactement le mécanisme qui menace les poumons d'un plongeur qui bloque sa respiration.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-mariotte-008",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "les-volumes-dair-du-plongeur--oreilles-masque-poumons-gilet",
+      "prompt": "Vous injectez 3 L d'air dans votre gilet à 40 m. Sans purge, quel volume cet air occupe-t-il à 10 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,5 L"
+        },
+        {
+          "id": "b",
+          "text": "12 L"
+        },
+        {
+          "id": "c",
+          "text": "6 L"
+        },
+        {
+          "id": "d",
+          "text": "1,2 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "États : $P_1 = 5$ bars (40 m), $V_1 = 3$ L ; à 10 m, $P_2 = 2$ bars. Mariotte : $V_2 = \\dfrac{5 \\times 3}{2} = 7{,}5$ L — le volume a plus que doublé, d'où l'accélération dangereuse de la remontée si l'on ne purge pas. Répondre 12 L appliquerait un facteur 4 erroné (rapport des profondeurs), 6 L un facteur 2 approximatif, et 1,2 L inverse le sens de variation.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-mariotte-009",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "les-volumes-dair-du-plongeur--oreilles-masque-poumons-gilet",
+      "prompt": "Pourquoi la remontée en bloquant sa respiration est-elle si dangereuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'air pulmonaire, délivré à la pression du fond, tend à se dilater et peut déchirer les alvéoles : c'est la surpression pulmonaire"
+        },
+        {
+          "id": "b",
+          "text": "Le manque d'oxygène provoque une syncope immédiate"
+        },
+        {
+          "id": "c",
+          "text": "L'azote se dissout plus vite dans le sang"
+        },
+        {
+          "id": "d",
+          "text": "Le détendeur se bloque si l'on ne respire pas"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le détendeur délivre l'air à la pression ambiante du fond : un plongeur qui inspire à 20 m (3 bars) et remonte en bloquant sa respiration verrait ce volume tendre à tripler avant la surface — les alvéoles se déchirent bien avant : c'est la surpression pulmonaire, l'accident le plus grave de la plongée. La règle absolue : ne jamais bloquer sa respiration à la remontée. La syncope hypoxique concerne l'apnéiste, la dissolution d'azote la descente, et le détendeur ne se bloque pas.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-mariotte-010",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "la-bouteille-retournée--lexpérience-de-la-cloche-à-air",
+      "prompt": "Une bouteille rigide de 1,5 L, retournée ouverture vers le bas et pleine d'air, est descendue à 30 m. Quel volume d'air reste-t-il dans la bouteille ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,375 L"
+        },
+        {
+          "id": "b",
+          "text": "0,5 L"
+        },
+        {
+          "id": "c",
+          "text": "1,5 L"
+        },
+        {
+          "id": "d",
+          "text": "0,25 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "États : $P_1 = 1$ bar, $V_1 = 1{,}5$ L ; à 30 m, $P_2 = 1 + 30/10 = 4$ bars. Mariotte : $V_2 = \\dfrac{1 \\times 1{,}5}{4} = 0{,}375$ L — l'eau a envahi les trois quarts de la bouteille. Répondre 0,5 L divise par 3 bars (oubli du bar atmosphérique), 0,25 L par 6 sans justification, et 1,5 L supposerait que l'eau ne peut pas entrer, alors que l'ouverture la laisse monter à mesure que l'air se comprime.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-mariotte-011",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "le-bloc-de-plongée--de-lair-comprimé-en-grande-quantité",
+      "prompt": "Quelle quantité d'air détendu contient un bloc de 12 L gonflé à 200 bars ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1200 L"
+        },
+        {
+          "id": "b",
+          "text": "2400 L"
+        },
+        {
+          "id": "c",
+          "text": "212 L"
+        },
+        {
+          "id": "d",
+          "text": "24 000 L"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le bloc est une enceinte rigide : Mariotte donne le volume qu'occuperait son air ramené à 1 bar, soit $V_{détendu} = V_{bloc} \\times P_{bloc} = 12 \\times 200 = 2400$ L. La réponse 1200 L correspondrait à un bloc de 6 L ou à une pression de 100 bars, 212 L additionne au lieu de multiplier, et 24 000 L décale d'un facteur 10. Ce calcul est la porte d'entrée de tous les calculs d'autonomie.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-mariotte-012",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "le-bloc-de-plongée--de-lair-comprimé-en-grande-quantité",
+      "prompt": "Il reste 80 bars dans un bloc de 15 L. Quelle quantité d'air détendu contient-il encore ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1200 L"
+        },
+        {
+          "id": "b",
+          "text": "95 L"
+        },
+        {
+          "id": "c",
+          "text": "800 L"
+        },
+        {
+          "id": "d",
+          "text": "3000 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Même principe que pour un bloc plein : $V_{détendu} = 15 \\times 80 = 1200$ L d'air ramené à la pression de surface. La réponse 95 additionne volume et pression, 800 L utiliserait un bloc de 10 L, et 3000 L correspondrait au bloc gonflé à 200 bars. Savoir refaire ce calcul avec la pression restante est indispensable pour estimer son air disponible en cours de plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-mariotte-013",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-pression-mariotte",
+      "sectionAnchor": "méthode-de-résolution-des-calculs-dexamen",
+      "prompt": "Un parachute de relevage contient 10 L d'air à 40 m. On le laisse remonter sans purge. Quel est son volume en surface ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 L"
+        },
+        {
+          "id": "b",
+          "text": "40 L"
+        },
+        {
+          "id": "c",
+          "text": "25 L"
+        },
+        {
+          "id": "d",
+          "text": "14 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À 40 m, $P_1 = 5$ bars et $V_1 = 10$ L, donc $P \\times V = 50$ ; en surface ($P_2 = 1$ bar), $V_2 = 50/1 = 50$ L : le volume quintuple. Répondre 40 L applique le rapport des profondeurs au lieu du rapport des pressions absolues, et 25 L correspond au volume à 10 m ($50/2$), pas en surface. Notez que la moitié de l'expansion se produit dans les 10 derniers mètres : la zone proche de la surface est la plus dangereuse.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-archimede-001",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "le-principe-darchimède",
+      "prompt": "Quel est l'énoncé correct du principe d'Archimède ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tout corps plongé dans un fluide reçoit une poussée verticale, du bas vers le haut, égale au poids du volume de fluide déplacé"
+        },
+        {
+          "id": "b",
+          "text": "Tout corps plongé dans un fluide subit une force égale à son propre poids"
+        },
+        {
+          "id": "c",
+          "text": "Tout corps immergé voit son volume diminuer proportionnellement à la pression"
+        },
+        {
+          "id": "d",
+          "text": "Tout corps immergé flotte si sa masse est inférieure à 100 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le principe d'Archimède : tout corps plongé dans un fluide reçoit une poussée verticale dirigée du bas vers le haut, égale au poids du volume de fluide déplacé — elle résulte de la différence de pression entre la face inférieure et la face supérieure de l'objet. La proposition b confond la poussée avec le poids du corps lui-même, la c décrit la loi de Mariotte appliquée aux gaz, et la d n'a aucun sens physique : c'est le rapport poids/volume qui décide, pas la masse seule.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-archimede-002",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "le-principe-darchimède",
+      "prompt": "Un bloc a un volume extérieur de 14 L. Quelle poussée d'Archimède reçoit-il, entièrement immergé en eau de mer (1,025 kg/L) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14,35 kg"
+        },
+        {
+          "id": "b",
+          "text": "14 kg"
+        },
+        {
+          "id": "c",
+          "text": "13,65 kg"
+        },
+        {
+          "id": "d",
+          "text": "1,025 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La poussée vaut le poids du volume d'eau déplacé : $P_{Arch} = V \\times \\rho = 14 \\times 1{,}025 = 14{,}35$ kg. La réponse 14 kg utilise la masse volumique de l'eau douce (1 kg/L) au lieu de l'eau de mer ; 13,65 kg retranche au lieu de multiplier ; 1,025 kg oublie le volume. C'est le volume extérieur qui compte, pas le volume d'air intérieur du bloc.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-archimede-003",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "poids-réel-poussée-poids-apparent",
+      "prompt": "Une ancre pèse 30 kg pour un volume de 4 L. Quel est son poids apparent en eau de mer (1,025 kg/L) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25,9 kg"
+        },
+        {
+          "id": "b",
+          "text": "34,1 kg"
+        },
+        {
+          "id": "c",
+          "text": "26 kg"
+        },
+        {
+          "id": "d",
+          "text": "30 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Poussée : $P_{Arch} = 4 \\times 1{,}025 = 4{,}1$ kg ; poids apparent : $P_{app} = P_{réel} - P_{Arch} = 30 - 4{,}1 = 25{,}9$ kg. Le poids apparent étant positif, l'ancre coule, mais la soulever sous l'eau ne demande « que » 25,9 kg d'effort. Répondre 34,1 kg additionne la poussée au lieu de la retrancher, 26 kg utilise l'eau douce (poussée 4 kg), et 30 kg ignore complètement la poussée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-archimede-004",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "poids-réel-poussée-poids-apparent",
+      "prompt": "Un corps immergé a un poids apparent négatif. Que fait-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il remonte : sa flottabilité est positive"
+        },
+        {
+          "id": "b",
+          "text": "Il coule : sa flottabilité est négative"
+        },
+        {
+          "id": "c",
+          "text": "Il reste équilibré entre deux eaux"
+        },
+        {
+          "id": "d",
+          "text": "Il tourne sur lui-même"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le poids apparent est $P_{app} = P_{réel} - P_{Arch}$ : s'il est négatif, la poussée d'Archimède dépasse le poids et le corps remonte — flottabilité positive. Le piège d'examen est justement d'associer « négatif » à « qui coule » : c'est l'inverse. Un poids apparent positif fait couler, un poids apparent nul laisse le corps équilibré entre deux eaux.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-archimede-005",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "le-plongeur--un-corps-à-flottabilité-réglable",
+      "prompt": "Quel est le critère d'un bon lestage pour le plongeur Niveau 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pouvoir tenir son palier à 3 m en fin de plongée, bloc presque vide, gilet vide, en respiration normale"
+        },
+        {
+          "id": "b",
+          "text": "Couler rapidement dès la mise à l'eau, gilet vide et poumons pleins"
+        },
+        {
+          "id": "c",
+          "text": "Pouvoir descendre sans jamais gonfler le gilet au fond"
+        },
+        {
+          "id": "d",
+          "text": "Flotter en surface même gilet vide et en expiration complète"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le lestage se vérifie dans la situation la plus défavorable : en fin de plongée, bloc presque vide (donc allégé d'environ 2 kg), le plongeur doit pouvoir tenir son palier à 3 m gilet vide, en respiration normale, sans remonter malgré lui. Couler dès la mise à l'eau poumons pleins signe un surlestage ; ne jamais avoir à gonfler le gilet au fond aussi ; et flotter en surface même en expirant signe un sous-lestage qui rendra le palier intenable.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-archimede-006",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "calculs-de-lestage-pas-à-pas",
+      "prompt": "Un plongeur équipé (sans lest) pèse 80 kg pour un volume total de 82 L. Quel lestage pour l'équilibrer en eau de mer (1,025 kg/L) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Environ 4 kg"
+        },
+        {
+          "id": "b",
+          "text": "Environ 2 kg"
+        },
+        {
+          "id": "c",
+          "text": "Aucun lest : il coule déjà"
+        },
+        {
+          "id": "d",
+          "text": "Environ 6 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Poussée : $82 \\times 1{,}025 = 84{,}05$ kg ; poids apparent sans lest : $80 - 84{,}05 = -4{,}05$ kg, soit une flottabilité positive d'environ 4 kg. Pour l'équilibrer, on ajoute un lest qui annule cette flottabilité (le volume du plomb est négligé) : environ 4 kg. Répondre 2 kg correspond au même plongeur en eau douce (poussée 82 kg) — c'est le piège du milieu ; il ne coule pas puisque la poussée dépasse son poids.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-archimede-007",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "calculs-de-lestage-pas-à-pas",
+      "prompt": "Le même plongeur (80 kg, 82 L) plonge en eau douce (1 kg/L). Quel lestage lui faut-il pour être équilibré ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Environ 2 kg"
+        },
+        {
+          "id": "b",
+          "text": "Environ 4 kg"
+        },
+        {
+          "id": "c",
+          "text": "Environ 8 kg"
+        },
+        {
+          "id": "d",
+          "text": "Aucun lest"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En eau douce, la poussée vaut $82 \\times 1 = 82$ kg et le poids apparent sans lest $80 - 82 = -2$ kg : il faut environ 2 kg de lest pour l'équilibrer. La comparaison avec l'eau de mer (4 kg) illustre la règle pratique : on se leste davantage en mer qu'en lac, car l'eau salée porte plus. Un plongeur qui passe de la carrière à la mer sans réajuster serait sous-lesté et incapable de tenir son palier.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-archimede-008",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "calculs-de-lestage-pas-à-pas",
+      "prompt": "Un plongeur équipé et lesté pèse 92 kg et il est parfaitement équilibré en eau de mer (1,025 kg/L). Quel est son volume ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Environ 89,8 L"
+        },
+        {
+          "id": "b",
+          "text": "Environ 94,3 L"
+        },
+        {
+          "id": "c",
+          "text": "92 L"
+        },
+        {
+          "id": "d",
+          "text": "Environ 82 L"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À l'équilibre, le poids apparent est nul : $P_{réel} = P_{Arch}$, donc $92 = V \\times 1{,}025$, d'où $V = 92 / 1{,}025 \\approx 89{,}8$ L. Répondre 94,3 L multiplie au lieu de diviser, et 92 L suppose une masse volumique de 1 kg/L (eau douce). Cet exercice « inverse » est un classique d'examen : il faut savoir isoler chaque variable de la relation $P_{app} = P_{réel} - V \\times \\rho$.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-archimede-009",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "les-variations-de-flottabilité-pendant-la-plongée",
+      "prompt": "Un plongeur consomme 1500 L d'air détendu pendant sa plongée (masse de l'air : 1,2 g/L). De combien sa flottabilité a-t-elle varié ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il s'est allégé d'environ 1,8 kg : sa flottabilité a augmenté d'autant"
+        },
+        {
+          "id": "b",
+          "text": "Il s'est alourdi de 1,8 kg"
+        },
+        {
+          "id": "c",
+          "text": "Sa flottabilité n'a pas changé, l'air ne pèse rien"
+        },
+        {
+          "id": "d",
+          "text": "Il s'est allégé de 18 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'air a une masse : $1500 \\times 1{,}2 = 1800$ g $= 1{,}8$ kg. Le poids réel du plongeur a diminué de 1,8 kg sans changement de volume : son poids apparent a baissé d'autant, donc sa flottabilité a augmenté — il est devenu « positif » de 1,8 kg et devra purger ou se montrer vigilant au palier. L'idée que « l'air ne pèse rien » est le piège classique, et 18 kg décale d'un facteur 10. C'est la raison pour laquelle le lestage se vérifie bloc presque vide.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-archimede-010",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "les-variations-de-flottabilité-pendant-la-plongée",
+      "prompt": "Pourquoi la flottabilité du plongeur varie-t-elle pendant la plongée ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La combinaison s'écrase avec la profondeur et perd de la poussée"
+        },
+        {
+          "id": "b",
+          "text": "Le bloc s'allège à mesure que l'air est consommé"
+        },
+        {
+          "id": "c",
+          "text": "L'air du gilet se comprime ou se dilate avec la pression"
+        },
+        {
+          "id": "d",
+          "text": "Le poids du plongeur lui-même augmente avec la profondeur"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Trois phénomènes modifient l'équilibre en permanence : les microbulles du néoprène s'écrasent en profondeur (perte de poussée à la descente), le bloc perd la masse de l'air consommé (environ 2 kg entre 200 et 50 bars pour un 12 L), et le volume du gilet suit la loi de Mariotte à chaque changement de profondeur. Le poids du corps du plongeur, lui, ne varie évidemment pas avec la profondeur — la pesanteur ne dépend pas de la pression.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-archimede-011",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-archimede",
+      "sectionAnchor": "archimède-au-service-de-la-sécurité",
+      "prompt": "Pourquoi le palier à 3 m est-il la zone la plus difficile à tenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La combinaison a repris son volume, le bloc est léger, et la moindre variation de profondeur fait fortement varier le volume du gilet"
+        },
+        {
+          "id": "b",
+          "text": "La pression y est la plus forte de la plongée"
+        },
+        {
+          "id": "c",
+          "text": "Le courant y est toujours plus fort qu'au fond"
+        },
+        {
+          "id": "d",
+          "text": "La narcose y est maximale"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À 3 m, tout se cumule : le néoprène a repris presque tout son volume (poussée maximale), le bloc s'est allégé d'environ 2 kg, et l'on se trouve dans la zone où la pression varie proportionnellement le plus vite — le volume du gilet y réagit fortement au moindre écart de profondeur. D'où la stratégie : lestage juste, gilet presque vide au palier et stabilisation au poumon-ballast. La pression est évidemment plus faible qu'au fond, et la narcose concerne les grandes profondeurs.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-dalton-001",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "lair--un-mélange-de-gaz",
+      "prompt": "Quelle est la composition conventionnelle de l'air utilisée pour les calculs de plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80 % d'azote et 20 % d'oxygène"
+        },
+        {
+          "id": "b",
+          "text": "50 % d'azote et 50 % d'oxygène"
+        },
+        {
+          "id": "c",
+          "text": "80 % d'oxygène et 20 % d'azote"
+        },
+        {
+          "id": "d",
+          "text": "100 % d'oxygène"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'air réel contient environ 78 % d'azote, 21 % d'oxygène et 1 % de gaz rares et de CO₂ ; pour les calculs, on utilise la convention simplifiée 80 % de N₂ et 20 % d'O₂, le reste étant négligé. Inverser les deux gaz (réponse c) est l'erreur d'étourderie classique : l'azote est bien le gaz majoritaire. Chaque gaz joue un rôle différent : l'O₂ est consommé, le N₂ se dissout, le CO₂ commande la ventilation.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-dalton-002",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "la-loi-de-dalton--les-pressions-partielles",
+      "prompt": "Comment calcule-t-on la pression partielle d'un gaz dans un mélange ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "$P_p = P_{abs} \\times \\%_{gaz}$, et la somme des pressions partielles vaut la pression absolue"
+        },
+        {
+          "id": "b",
+          "text": "$P_p = P_{rel} \\times \\%_{gaz}$"
+        },
+        {
+          "id": "c",
+          "text": "$P_p = P_{abs} / \\%_{gaz}$"
+        },
+        {
+          "id": "d",
+          "text": "La pression partielle est toujours égale au pourcentage du gaz"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La loi de Dalton : chaque gaz d'un mélange exerce une pression proportionnelle à son pourcentage, comme s'il occupait seul tout le volume, soit $P_p = P_{abs} \\times \\%$ ; la somme des pressions partielles reconstitue la pression absolue. Utiliser la pression relative (réponse b) est le piège habituel de l'oubli du bar atmosphérique, et diviser par le pourcentage n'a pas de sens physique. C'est la pression partielle, pas le pourcentage, qui gouverne les effets d'un gaz sur l'organisme.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-dalton-003",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "la-loi-de-dalton--les-pressions-partielles",
+      "prompt": "Quelle est la pression partielle d'azote (80 %) respirée à 20 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,6 bar"
+        },
+        {
+          "id": "b",
+          "text": "2,4 bars"
+        },
+        {
+          "id": "c",
+          "text": "0,8 bar"
+        },
+        {
+          "id": "d",
+          "text": "3 bars"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "À 20 m, la pression absolue vaut $1 + 20/10 = 3$ bars ; Dalton donne $P_pN_2 = 3 \\times 0{,}80 = 2{,}4$ bars. Répondre 1,6 bar revient à utiliser la pression relative (2 bars) au lieu de l'absolue : c'est l'erreur d'un bar la plus fréquente. 0,8 bar est la valeur en surface, et 3 bars est la pression absolue totale, pas la part de l'azote.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-dalton-004",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "la-loi-de-dalton--les-pressions-partielles",
+      "prompt": "Quelle est la pression partielle d'oxygène (20 %) respirée à 40 m à l'air ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,8 bar"
+        },
+        {
+          "id": "b",
+          "text": "1 bar"
+        },
+        {
+          "id": "c",
+          "text": "4 bars"
+        },
+        {
+          "id": "d",
+          "text": "0,2 bar"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "À 40 m, $P_{abs} = 1 + 40/10 = 5$ bars, donc $P_pO_2 = 5 \\times 0{,}20 = 1$ bar. Répondre 0,8 bar utilise la pression relative (4 bars) : oubli du bar atmosphérique ; 4 bars est la pression partielle d'azote à cette profondeur ; 0,2 bar est la valeur de surface. Retenez la lecture physiologique : à 40 m, chaque inspiration apporte cinq fois plus de molécules de chaque gaz qu'en surface.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-dalton-005",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "la-loi-de-dalton--les-pressions-partielles",
+      "prompt": "Quelle est la pression partielle d'azote (80 %) respirée à 35 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,6 bars"
+        },
+        {
+          "id": "b",
+          "text": "2,8 bars"
+        },
+        {
+          "id": "c",
+          "text": "4,5 bars"
+        },
+        {
+          "id": "d",
+          "text": "3,2 bars"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À 35 m, $P_{abs} = 1 + 35/10 = 4{,}5$ bars, donc $P_pN_2 = 4{,}5 \\times 0{,}80 = 3{,}6$ bars. Répondre 2,8 bars utilise la pression relative (3,5 bars), 4,5 bars est la pression absolue totale, et 3,2 bars est le seuil d'apparition de la narcose — dépassé ici, ce qui confirme qu'à 35 m la narcose est une réalité à anticiper.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-dalton-006",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "la-loi-de-dalton--les-pressions-partielles",
+      "prompt": "À quelle profondeur la pression partielle d'oxygène de l'air (20 %) atteint-elle 1,6 bar ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "70 m"
+        },
+        {
+          "id": "b",
+          "text": "60 m"
+        },
+        {
+          "id": "c",
+          "text": "80 m"
+        },
+        {
+          "id": "d",
+          "text": "16 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On inverse Dalton : $P_{abs} = P_pO_2 / \\%_{O_2} = 1{,}6 / 0{,}20 = 8$ bars, soit une pression relative de 7 bars et donc 70 m. Répondre 80 m oublie de retrancher le bar atmosphérique en convertissant les 8 bars ; 60 m est la limite réglementaire de la plongée à l'air en France (qui garde justement une marge sous ce seuil de toxicité) ; 16 m n'a pas de justification. Cette gymnastique « du seuil vers la profondeur » est un grand classique d'examen.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-dalton-007",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "dalton-appliquée--narcose-toxicité-de-loxygène-essoufflement",
+      "prompt": "La narcose apparaît vers une pression partielle d'azote de 3,2 bars. À quelle profondeur ce seuil est-il atteint à l'air (80 % de N₂) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 m"
+        },
+        {
+          "id": "b",
+          "text": "40 m"
+        },
+        {
+          "id": "c",
+          "text": "22 m"
+        },
+        {
+          "id": "d",
+          "text": "32 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On inverse Dalton : $P_{abs} = 3{,}2 / 0{,}80 = 4$ bars, soit 3 bars de pression relative et donc 30 m. C'est pourquoi les premiers effets narcotiques (ralentissement, euphorie, troubles du raisonnement) apparaissent dans la zone des 30 mètres et s'accentuent au-delà. Répondre 40 m surestime le seuil (la narcose y est déjà bien présente), 32 m confond le seuil en bars avec la profondeur, et 22 m n'a pas de justification.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-dalton-008",
+      "type": "vrai-faux",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "dalton-appliquée--narcose-toxicité-de-loxygène-essoufflement",
+      "prompt": "À 40 m, le pourcentage d'azote dans l'air respiré est plus élevé qu'en surface.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : le pourcentage d'azote reste 80 % à toute profondeur — la composition de l'air ne change pas. Ce qui augmente, c'est la pression partielle (4 bars de N₂ à 40 m contre 0,8 bar en surface), donc la quantité de molécules délivrée à chaque inspiration. Cette nuance est exactement ce que l'examinateur veut entendre : un gaz agit par sa pression partielle, pas par son pourcentage.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-dalton-009",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "la-loi-de-henry--la-dissolution-des-gaz",
+      "prompt": "Quel est l'énoncé correct de la loi de Henry ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À température constante et à saturation, la quantité de gaz dissoute dans un liquide est proportionnelle à la pression partielle de ce gaz au contact du liquide"
+        },
+        {
+          "id": "b",
+          "text": "Le volume d'un gaz est inversement proportionnel à sa pression"
+        },
+        {
+          "id": "c",
+          "text": "Chaque gaz d'un mélange exerce une pression proportionnelle à son pourcentage"
+        },
+        {
+          "id": "d",
+          "text": "Un liquide ne peut jamais dissoudre de gaz"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La loi de Henry décrit la dissolution : à température constante et à saturation, la quantité de gaz dissoute dans un liquide est proportionnelle à la pression partielle de ce gaz au contact du liquide — c'est le fondement de la saturation en azote du plongeur, illustrée par la bouteille d'eau gazeuse. La proposition b est la loi de Boyle-Mariotte et la c la loi de Dalton ; quant à la d, l'eau gazeuse prouve chaque jour le contraire.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-dalton-010",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "la-loi-de-henry--la-dissolution-des-gaz",
+      "prompt": "On appelle T la tension d'azote dissous dans un tissu et Pp la pression partielle d'azote inspiré. Que se passe-t-il quand T est supérieure à Pp ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le tissu se décharge de son azote : c'est la sursaturation, typique de la remontée"
+        },
+        {
+          "id": "b",
+          "text": "Le tissu se charge en azote"
+        },
+        {
+          "id": "c",
+          "text": "Le tissu est à l'équilibre, rien ne se passe"
+        },
+        {
+          "id": "d",
+          "text": "L'azote se transforme en oxygène"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Quand la tension du gaz dissous dépasse la pression partielle inspirée (T > Pp), le gradient s'inverse : le tissu restitue son azote — c'est la sursaturation, situation normale de la remontée et du retour en surface, qui doit rester dans des limites tolérables. T < Pp correspond à la charge (descente et séjour au fond) et T = Pp à la saturation (équilibre). L'azote ne se transforme évidemment jamais en oxygène.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-dalton-011",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "de-henry-à-laccident-de-désaturation",
+      "prompt": "Quelle chaîne logique relie les lois physiques à l'accident de désaturation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dalton : la PpN₂ augmente avec la profondeur → Henry : l'azote se dissout dans les tissus → remontée trop rapide : sursaturation critique → bulles → ADD"
+        },
+        {
+          "id": "b",
+          "text": "Mariotte : l'air se dilate à la remontée → les poumons éclatent → ADD"
+        },
+        {
+          "id": "c",
+          "text": "Henry : l'oxygène devient toxique en profondeur → convulsions → ADD"
+        },
+        {
+          "id": "d",
+          "text": "Dalton : le pourcentage d'azote augmente au fond → intoxication → ADD"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La chaîne complète attendue à l'examen : Dalton (la pression partielle d'azote augmente avec la profondeur) → Henry (l'azote se dissout proportionnellement dans le sang et les tissus) → à la remontée, sursaturation → si elle est trop rapide, l'azote reprend sa forme gazeuse en bulles → accident de désaturation. La proposition b décrit la surpression pulmonaire (accident barotraumatique, pas de désaturation), la c confond avec l'hyperoxie, et la d est fausse : le pourcentage ne change jamais.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-dalton-012",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-dalton-henry",
+      "sectionAnchor": "les-facteurs-qui-modifient-la-dissolution",
+      "prompt": "Quels facteurs dégradent la qualité de la désaturation ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le froid (vasoconstriction en fin de plongée)"
+        },
+        {
+          "id": "b",
+          "text": "La fatigue et la déshydratation"
+        },
+        {
+          "id": "c",
+          "text": "Les plongées répétées (azote résiduel)"
+        },
+        {
+          "id": "d",
+          "text": "Une bonne hydratation avant et après la plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Tous ces facteurs s'expliquent par Henry : le froid ralentit la circulation périphérique par vasoconstriction et freine l'élimination de l'azote, la fatigue et la déshydratation dégradent la qualité de la désaturation, et les plongées répétées ajoutent l'azote résiduel des plongées précédentes (d'où la majoration des successives). Une bonne hydratation est au contraire un facteur protecteur — c'est l'un des conseils systématiques faits au plongeur N2.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-conso-001",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "la-consommation-en-surface--votre-point-de-départ",
+      "prompt": "Un plongeur consomme 30 bars en 10 minutes à 10 m, stabilisé, avec un bloc de 12 L. Quelle est sa consommation équivalente en surface ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18 L/min"
+        },
+        {
+          "id": "b",
+          "text": "36 L/min"
+        },
+        {
+          "id": "c",
+          "text": "12 L/min"
+        },
+        {
+          "id": "d",
+          "text": "20 L/min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Volume consommé : $30 \\times 12 = 360$ L d'air détendu en 10 minutes, soit 36 L/min à 10 m. Or à 10 m la pression absolue est de 2 bars : la consommation équivalente en surface est $36 / 2 = 18$ L/min. Répondre 36 L/min oublie de ramener à la surface, 12 L/min divise par 3 sans justification, et 20 L/min est la valeur conventionnelle des énoncés, pas le résultat de cette mesure.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-conso-002",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "la-consommation-augmente-avec-la-profondeur",
+      "prompt": "Un plongeur consomme 20 L/min en surface. Que consomme-t-il à 40 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80 L/min"
+        },
+        {
+          "id": "b",
+          "text": "100 L/min"
+        },
+        {
+          "id": "c",
+          "text": "40 L/min"
+        },
+        {
+          "id": "d",
+          "text": "20 L/min"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La consommation en litres détendus est multipliée par la pression absolue : $C_{prof} = C_{surface} \\times P_{abs} = 20 \\times 5 = 100$ L/min, car à 40 m $P_{abs} = 1 + 40/10 = 5$ bars. Répondre 80 L/min utilise la pression relative (4 bars) — l'oubli du bar atmosphérique — et 20 L/min supposerait que la profondeur ne change rien, alors que le détendeur délivre l'air comprimé à la pression ambiante.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-conso-003",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "la-consommation-augmente-avec-la-profondeur",
+      "prompt": "Sur une base de 20 L/min en surface, quelle est la consommation à 25 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 L/min"
+        },
+        {
+          "id": "b",
+          "text": "70 L/min"
+        },
+        {
+          "id": "c",
+          "text": "60 L/min"
+        },
+        {
+          "id": "d",
+          "text": "45 L/min"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "À 25 m, $P_{abs} = 1 + 25/10 = 3{,}5$ bars, donc $C = 20 \\times 3{,}5 = 70$ L/min. Répondre 50 L/min utilise la pression relative (2,5 bars), et 60 L/min correspond à 20 m (3 bars) : la formule fonctionne pour toute profondeur, pas seulement pour les valeurs rondes du tableau du cours.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-conso-004",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "la-réserve--50-bars-intouchables",
+      "prompt": "Bloc de 12 L gonflé à 200 bars, réserve de 50 bars. Quel volume d'air détendu est réellement disponible pour la plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2400 L"
+        },
+        {
+          "id": "b",
+          "text": "1800 L"
+        },
+        {
+          "id": "c",
+          "text": "600 L"
+        },
+        {
+          "id": "d",
+          "text": "1500 L"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "On ne planifie jamais sur la totalité du bloc : $V_{disponible} = (P_{bloc} - P_{réserve}) \\times V_{bloc} = (200 - 50) \\times 12 = 1800$ L d'air détendu. Répondre 2400 L compte la réserve dans le calcul — l'erreur à éviter absolument ; 600 L est le volume de la seule réserve ($50 \\times 12$) ; 1500 L correspondrait à un bloc de 10 L.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-conso-005",
+      "type": "vrai-faux",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "la-réserve--50-bars-intouchables",
+      "prompt": "Si la plongée se déroule bien, on peut consommer la réserve de 50 bars pour prolonger le temps au fond.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : la réserve n'est pas un « bonus de fin de plongée » mais une marge de sécurité que l'on ne consomme pas en fonctionnement normal — elle couvre l'imprévu (assistance à un équipier, palier prolongé, recherche du mouillage). La remontée doit être entamée avant d'atteindre la réserve : arriver au bateau à 50 bars est une plongée bien gérée, entamer la remontée à 50 bars est déjà une plongée mal planifiée.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-conso-006",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "la-méthode-complète-de-calcul-dautonomie",
+      "prompt": "Bloc 12 L à 200 bars, réserve 50 bars, consommation 20 L/min en surface. Quelle est l'autonomie théorique à 20 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 minutes"
+        },
+        {
+          "id": "b",
+          "text": "40 minutes"
+        },
+        {
+          "id": "c",
+          "text": "20 minutes"
+        },
+        {
+          "id": "d",
+          "text": "45 minutes"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Méthode en trois étapes : 1) litres disponibles : $(200 - 50) \\times 12 = 1800$ L ; 2) consommation au fond : $P_{abs} = 3$ bars à 20 m, donc $20 \\times 3 = 60$ L/min ; 3) autonomie : $1800 / 60 = 30$ minutes. Répondre 40 minutes revient à compter la réserve ($2400/60$), et 45 minutes à utiliser la pression relative (2 bars, 40 L/min). C'est l'exemple étalon à savoir refaire de tête.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-conso-007",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "la-méthode-complète-de-calcul-dautonomie",
+      "prompt": "Même bloc (12 L, 200 bars, réserve 50 bars, 20 L/min en surface), mais à 40 m. Quelle est l'autonomie théorique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18 minutes"
+        },
+        {
+          "id": "b",
+          "text": "22,5 minutes"
+        },
+        {
+          "id": "c",
+          "text": "30 minutes"
+        },
+        {
+          "id": "d",
+          "text": "9 minutes"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les litres disponibles ne changent pas : 1800 L. À 40 m, $P_{abs} = 5$ bars et la consommation vaut $20 \\times 5 = 100$ L/min, donc l'autonomie tombe à $1800 / 100 = 18$ minutes. Répondre 22,5 minutes utilise la pression relative (4 bars, soit 80 L/min) au lieu de la pression absolue, et 30 minutes est l'autonomie à 20 m : passer de 20 à 40 m ampute le temps au fond de 40 % — c'est tout l'enjeu de la gestion d'air dans l'espace 20-40 m.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-conso-008",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "la-méthode-complète-de-calcul-dautonomie",
+      "prompt": "Bloc de 15 L gonflé à 230 bars, réserve 50 bars, consommation 20 L/min en surface, profondeur 40 m. Quelle est l'autonomie théorique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "27 minutes"
+        },
+        {
+          "id": "b",
+          "text": "34,5 minutes"
+        },
+        {
+          "id": "c",
+          "text": "18 minutes"
+        },
+        {
+          "id": "d",
+          "text": "22 minutes"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "1) Litres disponibles : $(230 - 50) \\times 15 = 2700$ L ; 2) consommation à 40 m : $20 \\times 5 = 100$ L/min ; 3) autonomie : $2700 / 100 = 27$ minutes. Répondre 34,5 minutes compte la réserve ($3450/100$), et 18 minutes est le résultat du bloc de 12 L à 200 bars : le passage à un 15 L bien gonflé fait gagner la moitié du temps au fond, raison pour laquelle on privilégie les grands blocs en plongée profonde.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-conso-009",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "la-méthode-complète-de-calcul-dautonomie",
+      "prompt": "Pourquoi l'autonomie calculée par la méthode des trois étapes est-elle qualifiée de « théorique » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle ne tient pas compte de l'air consommé pendant la descente, la remontée, les paliers ni d'un effort imprévu : c'est un majorant"
+        },
+        {
+          "id": "b",
+          "text": "Parce que les manomètres sont toujours faux"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la loi de Mariotte est une approximation grossière"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'elle ne vaut que pour l'eau douce"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le calcul suppose tout le volume disponible consommé à profondeur constante : il ignore la descente, la remontée, les paliers et les imprévus (effort, assistance). Le résultat est donc un majorant : la durée effective au fond doit être choisie en dessous, et confrontée à la courbe de sécurité ou aux tables. Ni la précision des manomètres, ni la validité de Mariotte, ni la salinité de l'eau ne sont en cause.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-conso-010",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "les-facteurs-qui-font-varier-la-consommation",
+      "prompt": "Quels facteurs augmentent la consommation d'air ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'effort (palmage contre le courant) et le froid"
+        },
+        {
+          "id": "b",
+          "text": "Le stress et l'essoufflement"
+        },
+        {
+          "id": "c",
+          "text": "Le surlestage et un gilet trop gonflé"
+        },
+        {
+          "id": "d",
+          "text": "Une ventilation ample et calme, insistant sur l'expiration"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "La consommation réelle grimpe avec l'effort (elle peut doubler ou tripler), le froid (l'organisme brûle pour se chauffer), le stress (ventilation rapide et superficielle, peu efficace), l'essoufflement (cercle vicieux du CO₂) et un équipement inadapté — surlestage et gilet trop gonflé dégradent l'hydrodynamisme et imposent de lutter. Une ventilation ample et calme insistant sur l'expiration est au contraire la parade : un plongeur détendu descend nettement sous les 20 L/min.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-conso-011",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physique",
+      "moduleSlug": "n2-consommation-autonomie",
+      "sectionAnchor": "gérer-lair-en-palanquée-autonome",
+      "prompt": "En palanquée autonome, sur quel plongeur règle-t-on le profil et les demi-tours ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sur celui qui consomme le plus : c'est sa pression qui déclenche le demi-tour et la remontée"
+        },
+        {
+          "id": "b",
+          "text": "Sur celui qui consomme le moins, pour profiter au maximum"
+        },
+        {
+          "id": "c",
+          "text": "Sur la moyenne des pressions de la palanquée"
+        },
+        {
+          "id": "d",
+          "text": "Sur le plongeur le plus expérimenté, quelle que soit sa pression"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La palanquée autonome règle son profil sur le plongeur qui consomme le plus : dès que sa pression atteint les seuils convenus au briefing (demi-tour, début de remontée, réserve), tout le monde applique. Se caler sur le plus économe ou sur une moyenne laisserait le gros consommateur descendre sous sa réserve — exactement ce que la discipline collective de l'air doit empêcher. L'expérience ne dispense personne de la règle.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-baro-001",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "le-mécanisme-commun--mariotte-appliquée-au-corps-humain",
+      "prompt": "Quelle loi physique explique le mécanisme de tous les barotraumatismes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La loi de Boyle-Mariotte : $P_1 \\times V_1 = P_2 \\times V_2$"
+        },
+        {
+          "id": "b",
+          "text": "La loi de Henry"
+        },
+        {
+          "id": "c",
+          "text": "La loi de Dalton"
+        },
+        {
+          "id": "d",
+          "text": "Le principe d'Archimède"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Tous les barotraumatismes reposent sur la loi de Boyle-Mariotte : quand une cavité aérique ne communique plus avec l'extérieur, la variation de pression comprime son air à la descente (tissus aspirés) ou le dilate à la remontée (parois distendues). La loi de Henry explique la dissolution des gaz (accident de désaturation), Dalton les pressions partielles (narcose, hyperoxie) et Archimède la flottabilité : chaque accident a « sa » loi, et l'examinateur attend cette correspondance.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-baro-002",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "synthèse-et-réflexes-de-prévention",
+      "prompt": "Quels barotraumatismes surviennent typiquement à la **remontée** ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La surpression pulmonaire"
+        },
+        {
+          "id": "b",
+          "text": "Le barotraumatisme digestif (estomac, intestins)"
+        },
+        {
+          "id": "c",
+          "text": "Les dents"
+        },
+        {
+          "id": "d",
+          "text": "Le plaquage de masque"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "À la remontée, l'air enfermé se dilate : poumons (surpression pulmonaire, la plus grave), gaz digestifs (ballonnements, douleurs) et microbulle piégée sous un soin dentaire défectueux (douleur violente, typiquement à la remontée). Le plaquage de masque est au contraire un accident de la descente : l'air du masque se comprime et agit en ventouse — à la remontée, l'excès d'air s'échappe tout seul sous la jupe.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-baro-003",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "loreille--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "Quels facteurs favorisent le barotraumatisme de l'oreille ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un rhume ou une inflammation ORL"
+        },
+        {
+          "id": "b",
+          "text": "Une descente rapide, surtout tête en bas"
+        },
+        {
+          "id": "c",
+          "text": "Une compensation tardive ou brutale"
+        },
+        {
+          "id": "d",
+          "text": "Une compensation douce dès le premier mètre"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le rhume obstrue la trompe d'Eustache et rend l'équilibrage impossible ; une descente rapide (surtout tête en bas, où la pression augmente plus vite qu'on ne compense) et une compensation tardive ou brutale laissent le tympan se déformer. Compenser doucement dès le premier mètre est au contraire la prévention même : tôt, souvent, sans forcer — c'est la règle enseignée dès le Niveau 1 et approfondie au Niveau 2.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-baro-004",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "loreille--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "Pourquoi une rupture du tympan en plongée peut-elle provoquer des vertiges ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'entrée d'eau froide dans l'oreille moyenne stimule brutalement l'oreille interne"
+        },
+        {
+          "id": "b",
+          "text": "La douleur fait perdre connaissance"
+        },
+        {
+          "id": "c",
+          "text": "L'azote se dissout dans le liquide de l'oreille interne"
+        },
+        {
+          "id": "d",
+          "text": "Le tympan sert d'organe de l'équilibre"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Après une déchirure du tympan, l'eau froide envahit l'oreille moyenne et crée une stimulation thermique brutale de l'oreille interne toute proche : le plongeur est pris de vertiges, souvent après une accalmie trompeuse de la douleur. C'est dangereux par la désorientation qu'il provoque en immersion. Le tympan lui-même n'est pas l'organe de l'équilibre (c'est le vestibule de l'oreille interne), et l'azote n'a rien à voir avec ce mécanisme purement thermique et mécanique.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-baro-005",
+      "type": "vrai-faux",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "loreille--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "La manœuvre de Valsalva doit être pratiquée à la descente comme à la remontée.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : le Valsalva est un geste de descente uniquement. À la remontée, l'oreille moyenne est déjà en surpression et l'air s'évacue passivement ; un Valsalva y ajouterait de la pression et pourrait léser l'oreille interne. En cas de gêne à la remontée (vertige alternobarique), la conduite correcte est de redescendre légèrement, déglutir, puis remonter lentement.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-baro-006",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "loreille--le-barotraumatisme-le-plus-fréquent",
+      "prompt": "Après la plongée, une douleur d'oreille persiste avec une baisse d'audition. Que faire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consulter un ORL sans délai et ne pas replonger avant avis médical"
+        },
+        {
+          "id": "b",
+          "text": "Replonger le lendemain pour « rééquilibrer » l'oreille"
+        },
+        {
+          "id": "c",
+          "text": "Mettre des gouttes et replonger si la douleur diminue"
+        },
+        {
+          "id": "d",
+          "text": "Attendre une semaine : cela passe toujours tout seul"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Des symptômes persistants après la plongée (douleur, hypoacousie, vertiges) évoquent une lésion du tympan ou de l'oreille moyenne : la conduite à tenir est une consultation ORL sans délai et l'arrêt de la plongée jusqu'à avis médical. Replonger sur une oreille lésée aggrave les lésions et expose à la rupture ; l'automédication et l'attente exposent à des séquelles auditives évitables.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-baro-007",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "sinus-dents-et-plaquage-de-masque",
+      "prompt": "Pourquoi la seule prévention efficace du barotraumatisme des sinus est-elle de ne pas plonger enrhumé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'il n'existe aucune manœuvre volontaire pour compenser un sinus"
+        },
+        {
+          "id": "b",
+          "text": "Parce que les sinus ne contiennent pas d'air"
+        },
+        {
+          "id": "c",
+          "text": "Parce que le Valsalva compense les sinus mais est interdit"
+        },
+        {
+          "id": "d",
+          "text": "Parce que les sinus ne sont touchés qu'au-delà de 40 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les sinus sains s'équilibrent tout seuls par leurs fins canaux reliés aux fosses nasales : il n'existe aucun geste volontaire pour les « compenser ». Si un canal est obstrué (rhume, sinusite, polype), l'accident est inévitable en cas de descente : la seule prévention est donc de ne pas plonger enrhumé. Les sinus contiennent bien de l'air (c'est tout le problème), et ils peuvent être touchés dès les premiers mètres, pas seulement en profondeur.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-baro-008",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "sinus-dents-et-plaquage-de-masque",
+      "prompt": "Une douleur dentaire violente survient à la remontée. Quelle est la conduite à tenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ralentir la remontée, redescendre légèrement jusqu'à sédation, puis remonter très progressivement ; consultation dentaire ensuite"
+        },
+        {
+          "id": "b",
+          "text": "Remonter le plus vite possible pour sortir de l'eau"
+        },
+        {
+          "id": "c",
+          "text": "Faire un Valsalva puissant"
+        },
+        {
+          "id": "d",
+          "text": "Serrer les dents et terminer la remontée normalement"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La douleur vient d'une microbulle d'air dilatée sous un soin défectueux : redescendre légèrement recomprime cette bulle et calme la douleur, puis on remonte très progressivement pour laisser l'air s'échapper, avant une consultation dentaire. Remonter vite augmente la dilatation et peut aller jusqu'à l'éclatement de la dent ou une syncope douloureuse ; le Valsalva concerne les oreilles et n'a aucun effet sur une dent.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-baro-009",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--laccident-le-plus-grave",
+      "prompt": "À partir de quelle profondeur une surpression pulmonaire est-elle possible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dès 2 à 3 mètres, notamment en piscine"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement au-delà de 20 m"
+        },
+        {
+          "id": "c",
+          "text": "Uniquement au-delà de 40 m"
+        },
+        {
+          "id": "d",
+          "text": "Jamais au-dessus de 10 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Quelques dixièmes de bar d'écart suffisent à distendre puis déchirer les alvéoles : l'accident est possible dès 2 ou 3 mètres, typiquement en piscine ou lors d'un exercice mal maîtrisé — c'est même la zone la plus dangereuse, car les variations relatives de pression y sont maximales. Croire que seule la profondeur crée le risque est le contresens classique : la surpression pulmonaire ne nécessite ni profondeur ni durée, seulement un blocage de la respiration à la remontée.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-baro-010",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--laccident-le-plus-grave",
+      "prompt": "Qu'est-ce que l'aéroembolisme, forme la plus grave de la surpression pulmonaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le passage d'air des alvéoles déchirées vers la circulation, jusqu'aux artères cérébrales"
+        },
+        {
+          "id": "b",
+          "text": "L'accumulation d'air sous la peau du cou"
+        },
+        {
+          "id": "c",
+          "text": "Une infection pulmonaire due à l'air comprimé"
+        },
+        {
+          "id": "d",
+          "text": "La formation de bulles d'azote dans les articulations"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Quand les alvéoles se déchirent, l'air peut gagner les vaisseaux pulmonaires, le cœur gauche puis les artères cérébrales : c'est l'aéroembolisme, forme neurologique gravissime de la surpression pulmonaire (troubles visuels, convulsions, hémiplégie, perte de connaissance). L'air sous la peau du cou est l'emphysème sous-cutané, une autre destination de l'air mais moins dramatique ; les bulles d'azote articulaires relèvent de l'accident de désaturation, mécanisme différent.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-baro-011",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--laccident-le-plus-grave",
+      "prompt": "Quelle est la conduite à tenir devant une suspicion de surpression pulmonaire ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sortir la victime de l'eau et la mettre au repos strict"
+        },
+        {
+          "id": "b",
+          "text": "Oxygène normobare 15 L/min au masque haute concentration"
+        },
+        {
+          "id": "c",
+          "text": "Alerter (CROSS VHF 16 en mer, 15/112 à terre) et organiser l'évacuation vers un centre hyperbare"
+        },
+        {
+          "id": "d",
+          "text": "Réimmerger la victime à 3 m pour recomprimer l'air"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "La conduite à tenir est celle d'un accident grave : sortie de l'eau, repos strict (demi-assise si elle respire, PLS si inconsciente et ventilante, RCP si arrêt), oxygène normobare à 15 L/min en continu, protection thermique, alerte au DP et aux secours, évacuation vers un centre hyperbare. La réimmersion est une interdiction absolue : la recompression ne se fait qu'en caisson, sous contrôle médical — improviser un « palier thérapeutique » aggrave l'accident.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-baro-012",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "la-surpression-pulmonaire--laccident-le-plus-grave",
+      "prompt": "Pourquoi ne faut-il jamais donner de l'air à un apnéiste au fond ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'en remontant après avoir inspiré de l'air comprimé au fond, il risque la surpression pulmonaire"
+        },
+        {
+          "id": "b",
+          "text": "Parce que cela viderait trop vite le bloc"
+        },
+        {
+          "id": "c",
+          "text": "Parce que l'apnéiste n'a pas de détendeur adapté"
+        },
+        {
+          "id": "d",
+          "text": "Parce que l'air comprimé est toxique pour un apnéiste"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'apnéiste descend avec l'air inspiré en surface : son volume pulmonaire se comprime puis se re-dilate exactement à l'identique en remontant. S'il inspire de l'air comprimé au fond, ses poumons sont pleins à la pression du fond : en remontant — réflexe naturel de l'apnéiste qui bloque sa respiration — cet air se dilate et crée les conditions exactes de la surpression pulmonaire. C'est un piège d'examen classique : le danger n'est ni la consommation ni une « toxicité », mais la loi de Mariotte.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-baro-013",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-barotraumatismes",
+      "sectionAnchor": "barotraumatismes-digestifs-et-vertige-alternobarique",
+      "prompt": "Un vertige bref survient à la remontée (vertige alternobarique). Quelle est la conduite à tenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S'arrêter, se stabiliser, déglutir, redescendre d'un mètre ou deux jusqu'à disparition, puis remonter lentement"
+        },
+        {
+          "id": "b",
+          "text": "Accélérer la remontée pour sortir de l'eau au plus vite"
+        },
+        {
+          "id": "c",
+          "text": "Faire un Valsalva énergique pour équilibrer"
+        },
+        {
+          "id": "d",
+          "text": "Fermer les yeux et continuer à remonter au même rythme"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le vertige alternobarique vient d'une asymétrie de pression entre les deux oreilles moyennes à la remontée : on s'arrête, on se stabilise (mouillage ou binôme), on déglutit et on redescend légèrement jusqu'à disparition du vertige, avant de reprendre une remontée lente. Accélérer aggrave l'asymétrie et le risque de panique ou de remontée incontrôlée ; le Valsalva est justement interdit à la remontée ; et continuer désorienté expose à perdre le contrôle de sa profondeur.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-add-001",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "saturation--la-loi-de-henry-appliquée-au-plongeur",
+      "prompt": "Pourquoi parle-t-on de tissus « rapides » et de tissus « lents » pour la saturation en azote ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les tissus très irrigués (sang, cerveau) se chargent et se déchargent vite ; les tissus peu vascularisés ou graisseux (articulations, moelle, graisse) sont lents"
+        },
+        {
+          "id": "b",
+          "text": "Certains tissus absorbent l'oxygène plus vite que d'autres"
+        },
+        {
+          "id": "c",
+          "text": "Les muscles rapides se saturent plus vite que les muscles lents"
+        },
+        {
+          "id": "d",
+          "text": "Cette distinction n'existe pas : tous les tissus se saturent à la même vitesse"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La vitesse de charge et de décharge en azote dépend de la vascularisation : le sang et le cerveau, très irrigués, se saturent et se désaturent vite ; les articulations, la moelle et la graisse, peu vascularisées, sont lentes dans les deux sens. Cette notion de « compartiments » est le fondement même des tables de plongée. Il s'agit bien de l'azote, pas de l'oxygène, et la typologie musculaire (fibres rapides/lentes) n'a aucun rapport.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-add-002",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "saturation--la-loi-de-henry-appliquée-au-plongeur",
+      "prompt": "Combien de temps la désaturation se poursuit-elle après la sortie de l'eau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plusieurs heures"
+        },
+        {
+          "id": "b",
+          "text": "Elle est terminée dès la sortie de l'eau"
+        },
+        {
+          "id": "c",
+          "text": "Quelques secondes"
+        },
+        {
+          "id": "d",
+          "text": "Une semaine entière"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À la sortie de l'eau, les tissus contiennent encore de l'azote excédentaire qui s'élimine progressivement par la ventilation : la désaturation se poursuit pendant plusieurs heures. C'est ce qui justifie les règles d'après-plongée (pas d'effort, pas d'apnée, délai avant l'avion) et explique que la plupart des ADD se déclarent après la sortie. Croire la désaturation « terminée » en surface est l'erreur conceptuelle qui fait négliger ces règles.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-add-003",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "le-mécanisme-de-laccident--la-formation-des-bulles",
+      "prompt": "Dans quelles circonstances l'azote dissous forme-t-il des bulles dans l'organisme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quand la remontée est trop rapide ou les paliers supprimés : la sursaturation devient excessive"
+        },
+        {
+          "id": "b",
+          "text": "À chaque plongée, quelle que soit la remontée"
+        },
+        {
+          "id": "c",
+          "text": "Uniquement pendant la descente"
+        },
+        {
+          "id": "d",
+          "text": "Quand le plongeur respire trop d'oxygène"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Tant que la remontée est lente et les paliers respectés, l'azote reste dissous et s'évacue par la ventilation. Si la pression ambiante chute plus vite que les tissus ne se déchargent, la sursaturation devient critique et l'azote repasse brutalement à l'état gazeux dans le sang et les tissus — comme l'eau gazeuse ouverte brutalement. Les bulles ne se forment pas à la descente (phase de charge), et l'oxygène n'est pas en cause dans l'ADD.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-add-004",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "le-mécanisme-de-laccident--la-formation-des-bulles",
+      "prompt": "Par quels mécanismes les bulles d'azote sont-elles pathogènes ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obstruction mécanique d'un vaisseau (ischémie en aval)"
+        },
+        {
+          "id": "b",
+          "text": "Compression locale des tissus peu extensibles (moelle, articulations)"
+        },
+        {
+          "id": "c",
+          "text": "Réactions sanguines secondaires (agrégation plaquettaire, épaississement du sang)"
+        },
+        {
+          "id": "d",
+          "text": "Transformation chimique de l'azote en gaz toxique"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Les bulles agissent de trois façons : elles bloquent la circulation dans les vaisseaux (mécanisme des atteintes neurologiques), elles compriment les structures voisines dans les tissus peu extensibles, et elles déclenchent au contact du sang des réactions en chaîne qui aggravent l'accident — c'est notamment pourquoi l'hydratation et, selon protocole, l'aspirine figurent dans la conduite à tenir. L'azote reste chimiquement inerte : il n'y a aucune transformation toxique.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-add-005",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "le-mécanisme-de-laccident--la-formation-des-bulles",
+      "prompt": "Quand la majorité des accidents de désaturation se déclarent-ils ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans les minutes à quelques heures après la sortie de l'eau, presque toujours en moins de 24 h"
+        },
+        {
+          "id": "b",
+          "text": "Pendant la descente"
+        },
+        {
+          "id": "c",
+          "text": "Au fond, pendant le séjour"
+        },
+        {
+          "id": "d",
+          "text": "Au moins 48 h après la plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'ADD se prépare silencieusement au fond mais se déclare le plus souvent après la sortie de l'eau : dans les minutes à quelques heures (le plus souvent moins d'une heure), presque toujours en moins de 24 heures. C'est un point d'examen classique et une règle pratique : tout symptôme anormal après une plongée est un ADD jusqu'à preuve du contraire. Il ne survient ni à la descente ni au fond, phases où les tissus se chargent sans buller.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-add-006",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "les-facteurs-favorisants",
+      "prompt": "Quels profils de plongée favorisent l'ADD ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les profils inversés ou en yo-yo (montées-descentes répétées)"
+        },
+        {
+          "id": "b",
+          "text": "Les plongées successives rapprochées"
+        },
+        {
+          "id": "c",
+          "text": "Les remontées rapides et paliers écourtés"
+        },
+        {
+          "id": "d",
+          "text": "Une remontée à 15 m/min avec paliers respectés"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Côté profil, les facteurs favorisants sont les remontées rapides et paliers écourtés ou supprimés, les profils en yo-yo qui brassent l'azote et favorisent le dégazage anarchique, et les plongées successives rapprochées qui cumulent l'azote résiduel. Une remontée à 15 m/min avec paliers respectés est précisément la procédure MN90 correcte — c'est la prévention, pas un facteur de risque.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-add-007",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "les-facteurs-favorisants",
+      "prompt": "Qu'est-ce que le foramen ovale perméable, cité parmi les facteurs favorisants de l'ADD ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une petite communication cardiaque qui permet aux bulles veineuses de passer dans la circulation artérielle"
+        },
+        {
+          "id": "b",
+          "text": "Une malformation des poumons qui retient l'azote"
+        },
+        {
+          "id": "c",
+          "text": "Un rétrécissement des trompes d'Eustache"
+        },
+        {
+          "id": "d",
+          "text": "Une lésion de la moelle épinière préexistante"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le foramen ovale perméable est une petite communication entre les deux oreillettes du cœur, présente chez une partie de la population : elle peut laisser passer des bulles veineuses — normalement filtrées par les poumons — directement dans la circulation artérielle, vers le cerveau. C'est un facteur favorisant individuel de l'ADD, sans rapport avec les poumons eux-mêmes, les trompes d'Eustache (oreilles) ou la moelle épinière (qui est une cible de l'accident, pas sa cause).",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-add-008",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "les-symptômes--formes-de-type-i-et-de-type-ii",
+      "prompt": "Que sont les « bends » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des douleurs articulaires profondes et tenaces (épaule surtout), forme de type I de l'ADD"
+        },
+        {
+          "id": "b",
+          "text": "Des démangeaisons cutanées"
+        },
+        {
+          "id": "c",
+          "text": "Des vertiges rotatoires"
+        },
+        {
+          "id": "d",
+          "text": "Des crampes musculaires dues au froid"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les bends sont la forme ostéo-arthro-musculaire de type I : douleur articulaire profonde, tenace, augmentant progressivement, touchant surtout l'épaule (puis coude, hanche), avec une position antalgique caractéristique. Les démangeaisons correspondent à la forme cutanée (« puces » et « moutons »), les vertiges rotatoires à la forme cochléo-vestibulaire de type II, et les crampes de froid ne sont pas un ADD. Attention : une forme apparemment mineure peut précéder une forme grave — la conduite à tenir est la même.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-add-009",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "les-symptômes--formes-de-type-i-et-de-type-ii",
+      "prompt": "Quels symptômes évoquent un ADD médullaire (moelle épinière), forme de type II ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fourmillements des membres inférieurs"
+        },
+        {
+          "id": "b",
+          "text": "Faiblesse ou paralysie des jambes"
+        },
+        {
+          "id": "c",
+          "text": "Troubles urinaires (envie impérieuse ou impossibilité d'uriner)"
+        },
+        {
+          "id": "d",
+          "text": "Douleur dentaire localisée"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "L'atteinte médullaire associe fourmillements des membres, faiblesse ou paralysie des jambes, troubles urinaires et parfois douleur « en ceinture » : c'est une urgence absolue, le pronostic fonctionnel se jouant dans les premières heures. Un fourmillement « qui va passer » ou une envie d'uriner impossible à satisfaire sont des débuts d'ADD réellement observés — le déni de la victime est fréquent. La douleur dentaire relève du barotraumatisme, pas de l'ADD.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-add-010",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "les-symptômes--formes-de-type-i-et-de-type-ii",
+      "prompt": "Une heure après une plongée, un plongeur présente des vertiges rotatoires intenses avec nausées et sifflements d'oreille. Quelle est l'hypothèse prioritaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un ADD cochléo-vestibulaire (oreille interne), forme de type II : conduite à tenir ADD immédiate"
+        },
+        {
+          "id": "b",
+          "text": "Une simple fatigue passagère"
+        },
+        {
+          "id": "c",
+          "text": "Le mal de mer"
+        },
+        {
+          "id": "d",
+          "text": "Une narcose résiduelle"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Des vertiges rotatoires intenses avec signes cochléaires (sifflements, surdité brusque) survenant après la plongée évoquent en priorité un ADD de l'oreille interne, forme de type II qui impose la conduite à tenir complète (O₂ 15 L/min, alerte, évacuation vers un caisson). Le mal de mer ou la fatigue sont des diagnostics « rassurants » dangereux : tout symptôme anormal après une plongée est un ADD jusqu'à preuve du contraire. La narcose, elle, disparaît dès la remontée et ne persiste jamais en surface.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-add-011",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "les-symptômes--formes-de-type-i-et-de-type-ii",
+      "prompt": "Quels signes d'appel « trompeurs » peuvent annoncer un ADD neurologique ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une fatigue intense et inhabituelle après la plongée"
+        },
+        {
+          "id": "b",
+          "text": "Une anxiété et une pâleur inexpliquées"
+        },
+        {
+          "id": "c",
+          "text": "Une douleur d'épaule attribuée au portage du bloc"
+        },
+        {
+          "id": "d",
+          "text": "Une faim marquée au retour de plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Les signes d'appel de l'ADD sont volontiers banalisés : une fatigue anormalement intense, une anxiété ou une pâleur inexpliquées peuvent annoncer un accident neurologique, et une « simple » douleur d'épaule mise sur le compte du portage est le début typique d'un bend. Le binôme et le DP doivent savoir imposer la prise en charge face au déni de la victime. Avoir faim après l'effort, en revanche, n'a rien d'inquiétant.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-add-012",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "la-conduite-à-tenir--chaque-minute-compte",
+      "prompt": "Quel est le geste qui change le pronostic d'un ADD, à mettre en œuvre immédiatement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'oxygène normobare à 15 L/min au masque haute concentration, en continu"
+        },
+        {
+          "id": "b",
+          "text": "L'aspirine à forte dose"
+        },
+        {
+          "id": "c",
+          "text": "Une douche chaude pour relancer la circulation"
+        },
+        {
+          "id": "d",
+          "text": "La réimmersion à 3 m pour un palier de rattrapage"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'oxygène normobare à 15 L/min au masque à haute concentration, administré immédiatement et sans interruption jusqu'aux secours, accélère l'élimination de l'azote et oxygène les tissus ischémiés : c'est le geste qui change le pronostic. L'aspirine est limitée à 500 mg maximum et conditionnée au protocole ; la douche chaude est déconseillée après la plongée ; et la réimmersion est une interdiction absolue — la recompression ne se fait qu'en caisson.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-add-013",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "la-conduite-à-tenir--chaque-minute-compte",
+      "prompt": "Dans quelles conditions l'aspirine peut-elle être donnée à une victime d'ADD suspecté ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "500 mg maximum en une prise, victime adulte et consciente, sans allergie ni contre-indication, si le protocole de la structure le prévoit"
+        },
+        {
+          "id": "b",
+          "text": "1 g toutes les heures jusqu'à l'arrivée des secours"
+        },
+        {
+          "id": "c",
+          "text": "Toujours, même si la victime est inconsciente"
+        },
+        {
+          "id": "d",
+          "text": "Jamais : l'aspirine est strictement interdite en plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le protocole classique : 500 mg maximum en une seule prise, chez l'adulte conscient, en l'absence d'allergie, de contre-indication ou de saignement, et si le plan de secours de la structure le prévoit — dans le doute, on suit l'avis des secours médicalisés. On ne dépasse jamais cette dose et on ne donne rien d'autre. Donner un médicament à une victime inconsciente est un interdit absolu (fausse route), et l'aspirine n'est pas « interdite » : elle est encadrée.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-add-014",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "la-conduite-à-tenir--chaque-minute-compte",
+      "prompt": "Pourquoi la réimmersion d'une victime d'ADD pour un « palier de rattrapage » est-elle formellement interdite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La recompression ne se fait qu'en caisson sous contrôle médical : réimmerger aggrave l'état (froid, impossibilité de surveiller, nouvelle charge d'azote)"
+        },
+        {
+          "id": "b",
+          "text": "Parce que cela coûte trop d'air"
+        },
+        {
+          "id": "c",
+          "text": "Elle est autorisée si la victime se sent capable de replonger"
+        },
+        {
+          "id": "d",
+          "text": "Parce que les tables ne prévoient pas de palier à 3 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Une victime d'ADD a besoin d'une recompression longue, contrôlée et médicalisée, avec de l'oxygène : seul un caisson hyperbare le permet. La réimmerger l'expose au froid, à l'impossibilité de la surveiller et de la traiter, à une nouvelle charge d'azote et à la noyade en cas d'aggravation — le tout en retardant l'évacuation. Le ressenti de la victime ne change rien (le déni est fréquent), et la question de l'air ou du contenu des tables est hors sujet : c'est un interdit médical absolu.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-add-015",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-add",
+      "sectionAnchor": "la-prévention--avant-pendant-après",
+      "prompt": "Comment alerter les secours en mer pour un accident de plongée, et quel délai respecter avant l'avion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CROSS par VHF canal 16 (ou 196 par téléphone) ; avion : 12 à 24 h d'attente, 24 h après plongées multiples"
+        },
+        {
+          "id": "b",
+          "text": "Appeler le 18 uniquement ; avion possible dès le soir même"
+        },
+        {
+          "id": "c",
+          "text": "VHF canal 9 ; avion : une semaine d'attente"
+        },
+        {
+          "id": "d",
+          "text": "Aucune alerte nécessaire si les symptômes régressent sous oxygène"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En mer, l'alerte passe par le CROSS sur VHF canal 16 (ou le 196 par téléphone) ; à terre, le 15 ou le 112 — en transmettant lieu, symptômes, profil de plongée et heure de sortie. Côté prévention, on attend 12 à 24 h avant l'avion ou l'altitude, et 24 h après des plongées multiples : la baisse de pression en cabine relance la formation de bulles. Enfin, l'amélioration sous oxygène ne dispense jamais de l'alerte et de l'évacuation : elle peut masquer une aggravation secondaire.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-accidents-001",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "la-narcose-à-lazote",
+      "prompt": "À partir de quelle profondeur les premiers effets de la narcose peuvent-ils apparaître à l'air ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vers 30 m, avec une sensibilité très variable selon les individus et les jours"
+        },
+        {
+          "id": "b",
+          "text": "Dès 10 m chez tous les plongeurs"
+        },
+        {
+          "id": "c",
+          "text": "Uniquement au-delà de 60 m"
+        },
+        {
+          "id": "d",
+          "text": "La narcose n'existe pas à l'air"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les premiers effets mesurables de la narcose apparaissent vers 30 m — profondeur où la pression partielle d'azote atteint environ 3,2 bars — avec une sensibilité très variable d'un plongeur à l'autre et, chez le même plongeur, d'un jour à l'autre. À 40 m, limite de l'espace PE40 du N2, c'est une réalité à anticiper. Elle ne survient pas à 10 m et n'attend pas 60 m ; et elle existe bel et bien à l'air, l'azote en étant le responsable.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-accidents-002",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "la-narcose-à-lazote",
+      "prompt": "Quels signes peuvent trahir une narcose chez un équipier ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponses lentes ou anarchiques aux signes"
+        },
+        {
+          "id": "b",
+          "text": "Regard fixe, comportement inhabituel"
+        },
+        {
+          "id": "c",
+          "text": "Difficulté à lire ses instruments ou à faire un calcul simple"
+        },
+        {
+          "id": "d",
+          "text": "Douleur thoracique violente"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "La narcose ressemble à une ivresse : ralentissement des gestes et du raisonnement, euphorie ou angoisse, difficulté à lire ses instruments, réponses lentes aux signes, comportement inhabituel — et le plongeur narcosé ne s'en rend généralement pas compte lui-même : c'est le binôme ou le guide qui détecte. La douleur thoracique n'est pas un signe de narcose : elle évoque une surpression pulmonaire ou un ADD pulmonaire, accidents tout autres.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-accidents-003",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "la-narcose-à-lazote",
+      "prompt": "Quelle est la conduite à tenir face à une narcose ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remonter de quelques mètres à vitesse normale : les signes disparaissent rapidement, sans séquelle"
+        },
+        {
+          "id": "b",
+          "text": "Descendre pour s'habituer à la profondeur"
+        },
+        {
+          "id": "c",
+          "text": "Administrer de l'oxygène au fond"
+        },
+        {
+          "id": "d",
+          "text": "Attendre sur place que cela passe"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La narcose est totalement réversible par la remontée : dès les premiers signes, on interrompt la descente et on remonte de quelques mètres à vitesse normale, en restant en contact avec l'équipier — les symptômes régressent rapidement et sans séquelle, puis on réévalue la plongée. Descendre aggrave la narcose (la PpN₂ augmente), il n'existe pas d'« accoutumance » en cours de plongée, attendre sur place laisse le trouble s'installer, et l'oxygénothérapie n'a aucun sens sous l'eau ici.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-accidents-004",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "lessoufflement-et-le-cercle-vicieux-du-co",
+      "prompt": "Pourquoi une ventilation rapide et superficielle aggrave-t-elle l'essoufflement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle ne renouvelle que l'espace mort et n'élimine pas le CO₂, qui continue de monter"
+        },
+        {
+          "id": "b",
+          "text": "Elle consomme trop d'oxygène"
+        },
+        {
+          "id": "c",
+          "text": "Elle refroidit les poumons"
+        },
+        {
+          "id": "d",
+          "text": "Elle augmente la pression partielle d'azote"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Une ventilation courte et rapide fait surtout circuler l'air de l'espace mort (le volume qui fait l'aller-retour sans atteindre les alvéoles) : le CO₂ n'est pas éliminé, sa pression partielle monte, la commande respiratoire s'emballe encore — c'est le cercle vicieux de l'essoufflement, que seule l'expiration longue et forcée peut casser. Le problème n'est ni la consommation d'oxygène, ni la température, ni l'azote : c'est un accident du CO₂.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-accidents-005",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "lessoufflement-et-le-cercle-vicieux-du-co",
+      "prompt": "Votre équipier s'essouffle à 20 m. Que faites-vous ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stopper son effort : le saisir, le stabiliser"
+        },
+        {
+          "id": "b",
+          "text": "Le rassurer par le contact et le regard, l'inciter à expirer amplement"
+        },
+        {
+          "id": "c",
+          "text": "Remonter doucement de quelques mètres puis mettre fin à la plongée en respectant la procédure"
+        },
+        {
+          "id": "d",
+          "text": "Le laisser gérer seul pour ne pas le stresser davantage"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Pour l'équipier : stopper l'effort de la victime en la saisissant et en la stabilisant, la rassurer par le contact et le regard, l'inciter à expirer par un geste ample, puis remonter doucement de quelques mètres — l'air moins dense y facilite la ventilation — et mettre fin à la plongée en respectant la procédure de remontée. Le laisser seul est l'inverse de la bonne conduite : l'essoufflement non pris en charge mène à la panique, à la surpression pulmonaire ou à la noyade.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-accidents-006",
+      "type": "vrai-faux",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "lessoufflement-et-le-cercle-vicieux-du-co",
+      "prompt": "L'essoufflement est un accident d'inspiration : il faut inspirer plus fort pour le vaincre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : l'essoufflement est un accident d'expiration. Le réflexe naturel — inspirer plus fort et plus vite — aggrave le phénomène car il rend la ventilation superficielle et laisse le CO₂ s'accumuler. La seule issue est de stopper tout effort et de forcer l'expiration, longue et profonde, pour éliminer le CO₂. C'est aussi un facteur déclenchant majeur d'accidents graves : surpression pulmonaire en cas de remontée panique, et noyade.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-accidents-007",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "hyperoxie-et-hypoxie--loxygène-ni-trop-ni-trop-peu",
+      "prompt": "À quelle profondeur l'oxygène pur (100 %) atteint-il le seuil de toxicité de 1,6 bar de PpO₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 m"
+        },
+        {
+          "id": "b",
+          "text": "16 m"
+        },
+        {
+          "id": "c",
+          "text": "66 m"
+        },
+        {
+          "id": "d",
+          "text": "1,6 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Avec de l'oxygène pur, $P_pO_2 = P_{abs} \\times 1$ : le seuil de 1,6 bar est atteint quand la pression absolue vaut 1,6 bar, soit une pression relative de 0,6 bar et donc 6 m de profondeur. C'est pourquoi l'oxygène pur est dangereux dès 6 m (risque de crise convulsive type effet Paul Bert). Les 66 m correspondent au seuil à l'air (21 % d'O₂), et 16 m ou 1,6 m confondent bars et mètres.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-accidents-008",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "hyperoxie-et-hypoxie--loxygène-ni-trop-ni-trop-peu",
+      "prompt": "Pourquoi l'hyperventilation avant une apnée est-elle dangereuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle abaisse le CO₂ (signal d'alarme de la ventilation) sans augmenter notablement l'O₂ : l'apnéiste peut perdre connaissance sans ressentir le besoin de respirer"
+        },
+        {
+          "id": "b",
+          "text": "Elle sature le sang en azote"
+        },
+        {
+          "id": "c",
+          "text": "Elle fatigue les muscles respiratoires avant l'effort"
+        },
+        {
+          "id": "d",
+          "text": "Elle augmente la pression partielle d'oxygène jusqu'au seuil toxique"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'envie de respirer est déclenchée par la montée du CO₂ : l'hyperventilation abaisse ce signal d'alarme sans augmenter notablement la réserve d'oxygène. L'apnéiste dépasse alors ses limites sans alerte et perd connaissance — typiquement à la remontée, quand la PpO₂ chute avec la pression : c'est la syncope hypoxique, sans prodrome. D'où les règles : jamais d'hyperventilation, jamais d'apnée seul, jamais d'apnée après une plongée bouteille. L'azote et le seuil hyperoxique ne sont pas en cause ici.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-accidents-009",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "le-froid",
+      "prompt": "Quel signe indique que le froid devient une hypothermie débutante, donc une situation grave ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les frissons cessent alors que le froid persiste, avec apathie et troubles du jugement"
+        },
+        {
+          "id": "b",
+          "text": "L'apparition de la chair de poule"
+        },
+        {
+          "id": "c",
+          "text": "Une envie d'uriner"
+        },
+        {
+          "id": "d",
+          "text": "Des frissons de plus en plus intenses"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le frisson est un mécanisme actif de lutte contre le froid : quand il cesse alors que le froid persiste, c'est que l'organisme n'a plus les ressources pour lutter — apathie, désintérêt et troubles du jugement signent l'hypothermie débutante, une situation grave (oxygène, alerte, évacuation si la conscience s'altère). Chair de poule et envie d'uriner sont les premiers signes bénins, et des frissons intenses montrent au contraire que la lutte est encore active.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-accidents-010",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "le-froid",
+      "prompt": "Comment réchauffer correctement un plongeur qui a eu froid ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sécher, couvrir (bonnet compris) et mettre des vêtements chauds"
+        },
+        {
+          "id": "b",
+          "text": "Donner une boisson chaude sucrée non alcoolisée"
+        },
+        {
+          "id": "c",
+          "text": "Réchauffer progressivement, jamais brutalement"
+        },
+        {
+          "id": "d",
+          "text": "Proposer un alcool fort et une douche brûlante"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le réchauffement est progressif : sécher, couvrir en incluant la tête (grande zone de perte de chaleur), vêtements chauds et boisson chaude sucrée non alcoolisée. L'alcool et la douche brûlante sont les deux pièges classiques : ils provoquent une vasodilatation périphérique qui accélère en réalité le refroidissement du noyau central et peuvent aggraver l'état — sans compter que le réchauffement brutal est déconseillé après la plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-accidents-011",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "hydrocution-et-noyade",
+      "prompt": "Quels facteurs favorisent l'hydrocution (choc thermo-différentiel) ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une exposition prolongée au soleil avant la mise à l'eau"
+        },
+        {
+          "id": "b",
+          "text": "Un repas copieux ou de l'alcool avant de plonger"
+        },
+        {
+          "id": "c",
+          "text": "Une mise à l'eau brutale dans une eau froide"
+        },
+        {
+          "id": "d",
+          "text": "Une mise à l'eau progressive en se mouillant la nuque et le visage"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "L'hydrocution résulte d'un écart thermique brutal entre un corps surchauffé et une eau froide : l'exposition au soleil (pont du bateau, combinaison enfilée trop tôt), l'effort et la transpiration, la digestion d'un repas copieux, l'alcool et l'entrée brutale dans l'eau en sont les facteurs favorisants — la réaction réflexe peut aller jusqu'à la syncope, donc à la noyade. La mise à l'eau progressive en se mouillant la nuque et le visage est précisément la prévention, pas un facteur de risque.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-accidents-012",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "physiologie",
+      "moduleSlug": "n2-autres-accidents",
+      "sectionAnchor": "hydrocution-et-noyade",
+      "prompt": "Pourquoi dit-on qu'en plongée la noyade est presque toujours un accident « secondaire » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est l'aboutissement d'un autre problème : panique, essoufflement, syncope, narcose profonde, panne d'air mal gérée"
+        },
+        {
+          "id": "b",
+          "text": "Elle ne survient qu'à la deuxième plongée de la journée"
+        },
+        {
+          "id": "c",
+          "text": "Elle est moins grave que les autres accidents"
+        },
+        {
+          "id": "d",
+          "text": "Elle ne touche que les plongeurs de niveau secondaire"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "En scaphandre, on ne se noie pas « spontanément » : la noyade est presque toujours la conséquence finale d'un autre accident — panique, essoufflement, syncope (hydrocution, hypoxie de l'apnéiste, crise hyperoxique), narcose profonde ou panne d'air mal gérée. La prévenir, c'est donc casser la chaîne au premier maillon. Elle n'a rien d'anodin : la conduite à tenir impose sortie rapide de l'eau, oxygène 15 L/min, RCP si besoin, alerte et hospitalisation systématique, même si la victime semble récupérer.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-001",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "doù-viennent-les-tables-mn90-et-quand-sappliquent-elles",
+      "prompt": "Dans quelles conditions les tables MN90 sont-elles valables ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plongée à l'air, au niveau de la mer"
+        },
+        {
+          "id": "b",
+          "text": "Deux plongées maximum par 24 heures"
+        },
+        {
+          "id": "c",
+          "text": "Profondeur maximale de 60 m"
+        },
+        {
+          "id": "d",
+          "text": "Plongée au nitrox en altitude"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Les tables MN90 ont été validées pour un cadre précis : plongée à l'air au niveau de la mer, profondeur maximale de 60 m (limite de la plongée à l'air en France), deux plongées maximum par 24 heures, vitesse de remontée de 15 à 17 m/min et effort modéré. En dehors de ce cadre — nitrox, altitude — elles ne garantissent plus rien : des procédures spécifiques existent pour ces situations, hors programme N2.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-002",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "doù-viennent-les-tables-mn90-et-quand-sappliquent-elles",
+      "prompt": "Quelles sont les vitesses de remontée prévues par les tables MN90 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 à 17 m/min du fond au premier palier, puis 6 m/min entre les paliers et vers la surface"
+        },
+        {
+          "id": "b",
+          "text": "6 m/min du fond au premier palier, puis 15 à 17 m/min ensuite"
+        },
+        {
+          "id": "c",
+          "text": "30 m/min sur toute la remontée"
+        },
+        {
+          "id": "d",
+          "text": "10 m/min sur toute la remontée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La procédure MN90 : remontée du fond au premier palier à 15-17 m/min, puis 6 m/min entre les paliers et du dernier palier à la surface. Inverser les deux vitesses (réponse b) est le piège classique : c'est bien près de la surface, là où les variations relatives de pression sont maximales, que l'on ralentit le plus. Une remontée à 30 m/min est une remontée rapide, qui impose une procédure de rattrapage.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-tables-003",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "doù-viennent-les-tables-mn90-et-quand-sappliquent-elles",
+      "prompt": "Comment la « durée de plongée » est-elle définie pour l'entrée dans les tables MN90 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De l'immersion au début de la remontée à vitesse normale"
+        },
+        {
+          "id": "b",
+          "text": "De l'immersion au retour en surface"
+        },
+        {
+          "id": "c",
+          "text": "Du départ du fond à la fin du dernier palier"
+        },
+        {
+          "id": "d",
+          "text": "Le temps passé à la profondeur maximale uniquement"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La durée de plongée court de l'immersion au début de la remontée à vitesse normale (15-17 m/min) ; la profondeur retenue est la profondeur maximale atteinte, même brièvement. Compter jusqu'au retour en surface ajouterait la remontée et les paliers (c'est la DTR, une autre notion), et ne compter que le temps au fond sous-estimerait la charge en azote de la descente et des évolutions intermédiaires.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-004",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "doù-viennent-les-tables-mn90-et-quand-sappliquent-elles",
+      "prompt": "Qu'est-ce que le GPS dans le vocabulaire des tables MN90 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le groupe de plongée successive : une lettre de A à P qui code la charge d'azote résiduelle en fin de plongée"
+        },
+        {
+          "id": "b",
+          "text": "Le système de géolocalisation du bateau"
+        },
+        {
+          "id": "c",
+          "text": "La profondeur maximale autorisée du jour"
+        },
+        {
+          "id": "d",
+          "text": "La durée totale de remontée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le GPS (groupe de plongée successive) est la lettre de A à P lue dans le tableau I à la fin d'une plongée : elle code la quantité d'azote résiduel emportée en surface, et sert d'entrée au tableau II en cas de plongée successive. Rien à voir avec la géolocalisation. La durée totale de remontée est la DTR, et la profondeur maximale du jour est fixée par le directeur de plongée.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-tables-005",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "les-deux-règles-dor-de-la-lecture--arrondir-vers-la-sécurité",
+      "prompt": "Vos paramètres (profondeur, durée) ne figurent pas exactement dans la table. Comment les arrondir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profondeur et durée à la valeur immédiatement supérieure"
+        },
+        {
+          "id": "b",
+          "text": "Profondeur et durée à la valeur immédiatement inférieure"
+        },
+        {
+          "id": "c",
+          "text": "Profondeur au-dessus, durée en dessous"
+        },
+        {
+          "id": "d",
+          "text": "À la valeur la plus proche, comme en mathématiques"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La règle d'or de la lecture du tableau I : profondeur et durée s'arrondissent toujours à la valeur immédiatement supérieure, jamais l'inférieure — entre deux lignes, on choisit celle qui décompresse le plus. L'arrondi « au plus proche » des mathématiques est exactement ce qu'il ne faut pas faire : les tables s'arrondissent toujours dans le sens de la sécurité. Seul l'intervalle de surface (tableau II) s'arrondit vers le bas, pour la même raison conservatrice.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-tables-006",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "les-deux-règles-dor-de-la-lecture--arrondir-vers-la-sécurité",
+      "prompt": "Votre profondeur maximale a été de 17,5 m. Quelle table de profondeur utilisez-vous ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La table 20 m"
+        },
+        {
+          "id": "b",
+          "text": "La table 15 m"
+        },
+        {
+          "id": "c",
+          "text": "La table 18 m"
+        },
+        {
+          "id": "d",
+          "text": "La moyenne des tables 15 et 20 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "17,5 m ne figure pas dans les profondeurs de table : on prend la valeur immédiatement supérieure, soit la table 20 m, qui impose une décompression au moins aussi prudente que la profondeur réelle. Lire la table 15 m sous-estimerait la charge d'azote (arrondi dangereux), la table « 18 m » n'existe pas, et on n'interpole jamais entre deux tables.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-tables-007",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "lire-une-plongée-simple-pas-à-pas",
+      "prompt": "Plongée simple : 20 m pendant 40 min. Que donne la lecture de la table MN90 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun palier obligatoire, GPS H"
+        },
+        {
+          "id": "b",
+          "text": "4 min à 3 m, GPS I"
+        },
+        {
+          "id": "c",
+          "text": "9 min à 3 m, GPS I"
+        },
+        {
+          "id": "d",
+          "text": "3 min à 3 m, GPS G"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les paramètres 20 m et 40 min figurent exactement dans la table : ligne 40 min de la table 20 m → aucun palier obligatoire, GPS H. C'est la dernière ligne de la courbe de sécurité pour 20 m. La lecture « 4 min à 3 m, GPS I » correspond à la ligne 45 min, et « 9 min à 3 m » à la ligne 50 min : arrondir au-delà du nécessaire pénalise inutilement. Le palier « de principe » de 3 min à 3 m reste recommandé, mais il n'est pas obligatoire ici.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-tables-008",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "lire-une-plongée-simple-pas-à-pas",
+      "prompt": "Plongée simple : profondeur maximale 17 m, durée 48 min. Quels paliers et quel GPS ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 min à 3 m, GPS I"
+        },
+        {
+          "id": "b",
+          "text": "4 min à 3 m, GPS I"
+        },
+        {
+          "id": "c",
+          "text": "Aucun palier, GPS H"
+        },
+        {
+          "id": "d",
+          "text": "13 min à 3 m, GPS J"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Arrondis vers la sécurité : 17 m → table 20 m ; 48 min → ligne 50 min. Lecture : palier de 9 min à 3 m, GPS I. Répondre « 4 min à 3 m » lirait la ligne 45 min (arrondi de la durée vers le bas, interdit), « aucun palier » la ligne 40 min, et « 13 min, GPS J » la ligne 55 min, au-delà du nécessaire. La double règle d'arrondi supérieur sur la profondeur ET la durée est le cœur de la lecture du tableau I.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-009",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "lire-une-plongée-simple-pas-à-pas",
+      "prompt": "Plongée simple : 32 m pendant 27 min. Quels paliers et quel GPS ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 min à 6 m puis 22 min à 3 m, GPS I"
+        },
+        {
+          "id": "b",
+          "text": "17 min à 3 m, GPS H"
+        },
+        {
+          "id": "c",
+          "text": "2 min à 6 m et 23 min à 3 m, GPS I"
+        },
+        {
+          "id": "d",
+          "text": "9 min à 3 m, GPS G"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Arrondis : 32 m → table 35 m ; 27 min → ligne 30 min. Lecture : paliers de 5 min à 6 m puis 22 min à 3 m, GPS I. La réponse « 17 min à 3 m, GPS H » correspond à la table 30 m ligne 30 min : c'est l'erreur d'arrondi de profondeur vers le bas, dangereuse. « 2 min à 6 m et 23 min à 3 m » est la ligne 35 min de la table 30 m — mauvaise table — et « 9 min à 3 m » la ligne 25 min de la table 30 m. On remonte du fond au palier de 6 m à 15-17 m/min, puis à 6 m/min.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-010",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "lire-une-plongée-simple-pas-à-pas",
+      "prompt": "Plongée simple : 28 m pendant 28 min. Quels paliers et quel GPS ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17 min à 3 m, GPS H"
+        },
+        {
+          "id": "b",
+          "text": "9 min à 3 m, GPS G"
+        },
+        {
+          "id": "c",
+          "text": "6 min à 3 m, GPS G"
+        },
+        {
+          "id": "d",
+          "text": "2 min à 6 m et 23 min à 3 m, GPS I"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Arrondis : 28 m → table 30 m ; 28 min → ligne 30 min. Lecture : palier de 17 min à 3 m, GPS H. Répondre « 9 min à 3 m, GPS G » lirait la ligne 25 min (durée arrondie vers le bas, interdit) ; « 6 min à 3 m » vient de la table 25 m ligne 30 min (profondeur arrondie vers le bas) ; et « 2 min à 6 m + 23 min à 3 m » est la ligne 35 min, au-delà du nécessaire.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-011",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "lire-une-plongée-simple-pas-à-pas",
+      "prompt": "Plongée simple : 21 m pendant 33 min. Quels paliers et quel GPS ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 min à 3 m, GPS H"
+        },
+        {
+          "id": "b",
+          "text": "6 min à 3 m, GPS G"
+        },
+        {
+          "id": "c",
+          "text": "Aucun palier, GPS G"
+        },
+        {
+          "id": "d",
+          "text": "19 min à 3 m, GPS I"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Arrondis : 21 m → table 25 m ; 33 min → ligne 35 min. Lecture : palier de 12 min à 3 m, GPS H. Répondre « 6 min à 3 m, GPS G » lirait la ligne 30 min (durée vers le bas), « aucun palier » viendrait de la table 20 m (profondeur vers le bas — à 20 m/35 min il n'y a pas de palier), et « 19 min à 3 m » est la ligne 40 min de la table 25 m. Un mètre au-delà de 20 m suffit à changer de table : la profondeur max se lit sur l'instrument, pas « au jugé ».",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-012",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "lire-une-plongée-simple-pas-à-pas",
+      "prompt": "Plongée simple : 38 m pendant 22 min. Quels paliers et quel GPS ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 min à 6 m puis 19 min à 3 m, GPS I"
+        },
+        {
+          "id": "b",
+          "text": "2 min à 6 m puis 13 min à 3 m, GPS G"
+        },
+        {
+          "id": "c",
+          "text": "10 min à 3 m, GPS G"
+        },
+        {
+          "id": "d",
+          "text": "9 min à 6 m puis 26 min à 3 m, GPS J"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Arrondis : 38 m → table 40 m ; 22 min → ligne 25 min. Lecture : paliers de 5 min à 6 m puis 19 min à 3 m, GPS I. La réponse « 2 min à 6 m + 13 min à 3 m, GPS G » est la ligne 20 min (durée arrondie vers le bas, interdit), « 10 min à 3 m » vient de la table 35 m ligne 20 min (double arrondi vers le bas), et « 9 min à 6 m + 26 min à 3 m » est la ligne 30 min, au-delà du nécessaire.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-tables-013",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "lire-une-plongée-simple-pas-à-pas",
+      "prompt": "Plongée simple : 24 m pendant 18 min. Que donne la lecture de la table ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun palier obligatoire, GPS E"
+        },
+        {
+          "id": "b",
+          "text": "2 min à 3 m, GPS F"
+        },
+        {
+          "id": "c",
+          "text": "Aucun palier, GPS D"
+        },
+        {
+          "id": "d",
+          "text": "6 min à 3 m, GPS G"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Arrondis : 24 m → table 25 m ; 18 min → ligne 20 min. Lecture : aucun palier obligatoire, GPS E — la plongée est dans la courbe de sécurité (20 min à 25 m). La réponse « 2 min à 3 m, GPS F » correspond à la ligne 25 min, « GPS D » à la ligne 15 min (durée vers le bas, interdit), et « 6 min à 3 m, GPS G » à la ligne 30 min. Même sans palier obligatoire, le palier de principe de 3 min à 3 m reste recommandé.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-014",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "lire-une-plongée-simple-pas-à-pas",
+      "prompt": "Plongée à 17 m pendant 48 min (lecture : table 20 m, 50 min → 9 min à 3 m). Quelle est la DTR (durée totale de remontée) approximative ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Environ 11 min"
+        },
+        {
+          "id": "b",
+          "text": "Environ 9 min"
+        },
+        {
+          "id": "c",
+          "text": "Environ 20 min"
+        },
+        {
+          "id": "d",
+          "text": "Environ 2 min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La DTR cumule tout : remontée de 17 m à 3 m, soit 14 m à 15 m/min ≈ 1 min ; palier de 9 min ; puis 3 m à 6 m/min ≈ 0,5 min. Total ≈ 10,5 min, arrondi à 11 min. Répondre 9 min ne compte que le palier en oubliant les trajets, 2 min ne compte que les trajets sans le palier, et 20 min n'a pas de justification. La DTR sert au chronométrage de l'heure de sortie, systématiquement demandé à l'examen.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-tables-015",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "lire-une-plongée-simple-pas-à-pas",
+      "prompt": "Immersion à 9 h 00, durée de plongée 48 min, DTR 11 min. Quelle est l'heure de sortie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 h 59"
+        },
+        {
+          "id": "b",
+          "text": "9 h 48"
+        },
+        {
+          "id": "c",
+          "text": "10 h 11"
+        },
+        {
+          "id": "d",
+          "text": "9 h 55"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Heure de sortie = heure d'immersion + durée de plongée + DTR : 9 h 00 + 48 min = 9 h 48 (début de la remontée), puis + 11 min de DTR = 9 h 59. Répondre 9 h 48 oublie la DTR (c'est l'heure du début de remontée), et 10 h 11 ajouterait la DTR deux fois ou confondrait les composantes. Ce petit chronométrage est systématiquement demandé dans les exercices d'examen.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-tables-016",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-courbe-de-sécurité",
+      "prompt": "Qu'est-ce que la courbe de sécurité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'ensemble des couples profondeur-durée pour lesquels aucun palier n'est obligatoire"
+        },
+        {
+          "id": "b",
+          "text": "La trajectoire idéale de la remontée"
+        },
+        {
+          "id": "c",
+          "text": "La limite de profondeur de chaque niveau de plongeur"
+        },
+        {
+          "id": "d",
+          "text": "Le graphique de consommation d'air en fonction de la profondeur"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Pour chaque profondeur, il existe une durée maximale au-delà de laquelle un palier devient obligatoire : l'ensemble de ces couples profondeur-durée forme la courbe de sécurité. Rester à l'intérieur, c'est conserver la possibilité de remonter directement (à vitesse contrôlée) sans palier obligatoire — une marge de sécurité considérable. Ce n'est ni une trajectoire de remontée, ni une limite de prérogatives, ni une courbe de consommation.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-tables-017",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-courbe-de-sécurité",
+      "prompt": "Quelle est la durée maximale sans palier obligatoire à 20 m (courbe de sécurité) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 min"
+        },
+        {
+          "id": "b",
+          "text": "20 min"
+        },
+        {
+          "id": "c",
+          "text": "1 h 15"
+        },
+        {
+          "id": "d",
+          "text": "10 min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À 20 m, la table autorise 40 min sans palier obligatoire : c'est l'un des couples de la courbe de sécurité à connaître par cœur (12 m : 2 h 15 ; 15 m : 1 h 15 ; 20 m : 40 min ; 25 m : 20 min ; 30 m : 10 min ; 35 m : 5 min). Les 20 min correspondent à 25 m, 1 h 15 à 15 m et 10 min à 30 m. Remarquez la chute rapide de ces durées avec la profondeur — et même dans la courbe, le palier de principe reste recommandé.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-tables-018",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-courbe-de-sécurité",
+      "prompt": "Quelle est la durée maximale sans palier obligatoire à 30 m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 min"
+        },
+        {
+          "id": "b",
+          "text": "20 min"
+        },
+        {
+          "id": "c",
+          "text": "5 min"
+        },
+        {
+          "id": "d",
+          "text": "15 min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "À 30 m, la courbe de sécurité n'accorde que 10 min : au-delà, un palier devient obligatoire (à 15 min, la table impose déjà 2 min à 3 m). Les 20 min correspondent à 25 m et les 5 min à 35-40 m. La comparaison est parlante : à 20 m on dispose de 40 minutes, à 30 m de 10 minutes seulement — la marge sans palier fond très vite avec la profondeur.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-019",
+      "type": "vrai-faux",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-courbe-de-sécurité",
+      "prompt": "À 25 m, on peut rester 20 minutes sans palier obligatoire.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "C'est vrai : le couple 25 m / 20 min appartient à la courbe de sécurité — la table 25 m, ligne 20 min, n'impose aucun palier (GPS E). Dès la ligne suivante (25 min), un palier de 2 min à 3 m apparaît. Ces valeurs sont à connaître par cœur pour l'examen et à vérifier sur la table officielle ; même dans la courbe, le palier de principe de 3 min à 3 m reste recommandé.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-020",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Quand une plongée est-elle dite « successive » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quand elle débute entre 15 minutes et 12 heures après la précédente"
+        },
+        {
+          "id": "b",
+          "text": "Quand elle débute moins de 15 minutes après la précédente"
+        },
+        {
+          "id": "c",
+          "text": "Quand elle débute plus de 12 heures après la précédente"
+        },
+        {
+          "id": "d",
+          "text": "Quand elle a lieu le même mois que la précédente"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Une plongée successive débute entre 15 minutes et 12 heures après la précédente : l'azote résiduel de la première s'ajoute à la charge de la seconde, et il faut le comptabiliser via les tableaux II et III. Moins de 15 minutes, c'est une plongée consécutive (considérée comme la même plongée) ; plus de 12 heures, l'azote est revenu au niveau de base et la plongée redevient simple.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-tables-021",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Quel est l'ordre correct de la procédure de plongée successive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GPS de la 1ʳᵉ plongée → tableau II (azote résiduel) → tableau III (majoration) → durée fictive = durée réelle + majoration dans le tableau I"
+        },
+        {
+          "id": "b",
+          "text": "Tableau III → tableau II → GPS → tableau I"
+        },
+        {
+          "id": "c",
+          "text": "On ajoute simplement les durées des deux plongées"
+        },
+        {
+          "id": "d",
+          "text": "On lit directement le tableau I avec la profondeur cumulée des deux plongées"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La procédure se déroule toujours dans le même ordre : 1) noter le GPS de la première plongée ; 2) croiser GPS et intervalle de surface dans le tableau II pour lire l'azote résiduel ; 3) croiser azote résiduel et profondeur prévue dans le tableau III pour lire la majoration ; 4) entrer dans le tableau I avec la profondeur réelle et la durée fictive (durée réelle + majoration). Additionner les durées est la procédure de la plongée consécutive (moins de 15 min), pas de la successive, et les profondeurs ne s'additionnent jamais.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-022",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Dans la procédure de plongée successive, dans quels sens s'effectuent les arrondis ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Intervalle de surface vers le bas ; azote résiduel et profondeur du tableau III vers le haut"
+        },
+        {
+          "id": "b",
+          "text": "Tous les arrondis vers le haut"
+        },
+        {
+          "id": "c",
+          "text": "Tous les arrondis vers le bas"
+        },
+        {
+          "id": "d",
+          "text": "Intervalle vers le haut ; azote résiduel vers le bas"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Trois arrondis, tous conservateurs : l'intervalle de surface s'arrondit à la valeur immédiatement inférieure du tableau II (moins de temps en surface = plus d'azote résiduel retenu), tandis que l'azote résiduel et la profondeur s'arrondissent aux valeurs immédiatement supérieures dans le tableau III (majoration plus grande). Le principe unificateur : chaque arrondi se fait dans le sens de la sécurité, jamais dans le sens qui allégerait la décompression.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-023",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Première plongée : GPS H. Intervalle de surface : 2 h (120 min). Quel azote résiduel lit-on dans le tableau II ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,97"
+        },
+        {
+          "id": "b",
+          "text": "1,01"
+        },
+        {
+          "id": "c",
+          "text": "1,06"
+        },
+        {
+          "id": "d",
+          "text": "0,89"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'intervalle de 120 min figure exactement dans le tableau II : ligne H, colonne 120 min → azote résiduel 0,97. La valeur 1,01 correspond à la colonne 90 min (arrondi excessif), 1,06 à la ligne H colonne 60 min, et 0,89 à la ligne H colonne 240 min : un intervalle mal reporté fausse toute la suite du calcul. Cette lecture est la deuxième étape de la procédure de successive, avant le tableau III.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-024",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Première plongée : GPS I. Intervalle de surface : 3 h (180 min). Quel azote résiduel lit-on dans le tableau II ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,94"
+        },
+        {
+          "id": "b",
+          "text": "1,00"
+        },
+        {
+          "id": "c",
+          "text": "0,90"
+        },
+        {
+          "id": "d",
+          "text": "1,04"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Ligne I du tableau II, colonne 180 min → azote résiduel 0,94. La valeur 1,00 est la lecture de la ligne I à 120 min, 1,04 celle à 90 min, et 0,90 correspond à la ligne I à 240 min : il faut croiser précisément la bonne ligne (GPS) et la bonne colonne (intervalle), l'intervalle s'arrondissant à la valeur inférieure s'il ne figure pas dans le tableau.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-025",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Azote résiduel lu : 0,97. Seconde plongée prévue à 20 m. Quelle majoration lit-on dans le tableau III ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16 min"
+        },
+        {
+          "id": "b",
+          "text": "11 min"
+        },
+        {
+          "id": "c",
+          "text": "21 min"
+        },
+        {
+          "id": "d",
+          "text": "29 min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Dans le tableau III, on prend l'azote immédiatement supérieur à 0,97, soit la ligne 1,01, croisée avec la profondeur 20 m → majoration de 16 min. Répondre 11 min lirait la ligne 0,95 (arrondi de l'azote vers le bas, interdit), 21 min la ligne 1,07, et 29 min la colonne 12 m de la ligne 1,01 : il faut croiser la bonne ligne d'azote ET la bonne colonne de profondeur, toutes deux arrondies vers le haut.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-tables-026",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Majoration : 16 min. La seconde plongée dure réellement 25 min à 20 m. Que donne la lecture finale du tableau I ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Durée fictive 41 min → table 20 m, ligne 45 min : 4 min à 3 m, GPS I"
+        },
+        {
+          "id": "b",
+          "text": "Durée fictive 41 min → table 20 m, ligne 40 min : aucun palier, GPS H"
+        },
+        {
+          "id": "c",
+          "text": "On lit 25 min : aucun palier, GPS E"
+        },
+        {
+          "id": "d",
+          "text": "Durée fictive 41 min → table 20 m, ligne 50 min : 9 min à 3 m, GPS I"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Durée fictive = durée réelle + majoration = $25 + 16 = 41$ min ; on entre dans la table 20 m avec 41 min, arrondi à la ligne supérieure 45 min → palier de 4 min à 3 m, GPS I. Tout se passe comme si la plongée avait commencé 16 minutes avant l'immersion réelle. Lire la ligne 40 min arrondirait la durée vers le bas (interdit), ignorer la majoration (réponse c) est l'erreur la plus grave, et la ligne 50 min pénalise au-delà du nécessaire.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-tables-027",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Première plongée : GPS J. Intervalle de surface : 50 min. Quel azote résiduel retenir (tableau II) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,17 (lecture à l'intervalle 45 min)"
+        },
+        {
+          "id": "b",
+          "text": "1,13 (lecture à l'intervalle 60 min)"
+        },
+        {
+          "id": "c",
+          "text": "1,22 (lecture à l'intervalle 30 min)"
+        },
+        {
+          "id": "d",
+          "text": "1,15 (interpolation entre 45 et 60 min)"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "50 min ne figure pas dans les intervalles du tableau II (15, 30, 45, 60, 90...) : on arrondit à la valeur immédiatement inférieure, soit 45 min — ligne J → azote résiduel 1,17. Lire 60 min (1,13) arrondirait l'intervalle vers le haut, ce qui sous-estimerait l'azote restant : c'est l'arrondi interdit. On n'interpole jamais entre deux colonnes, et 1,22 correspond à 30 min, arrondi inutilement pénalisant.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-tables-028",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Première plongée : GPS G, intervalle 1 h (60 min), seconde plongée prévue à 20 m. Quelle majoration retenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "21 min"
+        },
+        {
+          "id": "b",
+          "text": "16 min"
+        },
+        {
+          "id": "c",
+          "text": "27 min"
+        },
+        {
+          "id": "d",
+          "text": "11 min"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Tableau II : ligne G, colonne 60 min → azote résiduel 1,02. Tableau III : azote immédiatement supérieur = ligne 1,07, croisée avec 20 m → majoration de 21 min. Répondre 16 min lirait la ligne 1,01 alors que 1,02 la dépasse (l'arrondi de l'azote se fait vers le haut), 27 min correspond à la ligne 1,13 (20 m), et 11 min à la ligne 0,95. La chaîne complète tableau II puis tableau III doit être déroulée sans sauter d'étape.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-tables-029",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-successive--intervalle-azote-résiduel-majoration",
+      "prompt": "Plus de 12 heures se sont écoulées depuis la plongée précédente. Comment traiter la nouvelle plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comme une plongée simple : l'azote résiduel est revenu au niveau de base"
+        },
+        {
+          "id": "b",
+          "text": "Comme une successive avec la majoration maximale"
+        },
+        {
+          "id": "c",
+          "text": "Comme une consécutive"
+        },
+        {
+          "id": "d",
+          "text": "Elle est interdite avant 24 heures"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Au-delà de 12 heures d'intervalle, les tables considèrent que l'azote résiduel est revenu au niveau de base (0,81 bar) : la plongée redevient simple et se lit directement dans le tableau I, sans majoration. La successive concerne les intervalles de 15 min à 12 h, la consécutive les intervalles de moins de 15 min. Aucune interdiction de replonger après 12 h — c'est au contraire la situation la plus favorable.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-tables-030",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-consécutive--moins-de-15-minutes-dintervalle",
+      "prompt": "Comment traite-t-on une plongée consécutive (ré-immersion moins de 15 minutes après la sortie) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comme une seule plongée : durées additionnées, profondeur maximale des deux plongées"
+        },
+        {
+          "id": "b",
+          "text": "Avec la procédure des tableaux II et III"
+        },
+        {
+          "id": "c",
+          "text": "Comme deux plongées simples indépendantes"
+        },
+        {
+          "id": "d",
+          "text": "En additionnant les profondeurs des deux plongées"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Moins de 15 minutes après la sortie, les tables considèrent qu'il s'agit de la même plongée : durée retenue = somme des durées des deux plongées, profondeur retenue = profondeur maximale atteinte au cours des deux. Les tableaux II et III ne servent que pour la successive (15 min à 12 h), traiter les plongées comme indépendantes sous-estimerait gravement la charge d'azote, et les profondeurs ne s'additionnent jamais — cas typique : redescendre décrocher un mouillage juste après la plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-031",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "la-plongée-consécutive--moins-de-15-minutes-dintervalle",
+      "prompt": "Plongée à 18 m pendant 30 min, sortie, puis ré-immersion 10 min plus tard à 15 m pendant 20 min. Quelle lecture de table pour la fin de la seconde plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Table 20 m, 50 min → 9 min à 3 m, GPS I"
+        },
+        {
+          "id": "b",
+          "text": "Table 15 m, 20 min → aucun palier, GPS B"
+        },
+        {
+          "id": "c",
+          "text": "Table 20 m, 30 min → aucun palier, GPS F"
+        },
+        {
+          "id": "d",
+          "text": "Table 35 m (18 + 15 arrondi), 50 min → paliers profonds"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'intervalle de 10 min (< 15 min) fait de la seconde plongée une consécutive : durée cumulée $30 + 20 = 50$ min, profondeur maximale 18 m → table 20 m, ligne 50 min → palier de 9 min à 3 m (à faire à la fin de la seconde plongée), GPS I. Lire la seule seconde plongée (réponse b) ou la seule première (réponse c) ignore le cumul, et additionner les profondeurs (réponse d) est un contresens : on retient le maximum, jamais la somme.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-tables-032",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "les-remontées-anormales--lente-et-rapide",
+      "prompt": "Comment les tables MN90 traitent-elles une remontée lente (moins de 15 m/min, par exemple en suivant un tombant) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le temps de remontée lente s'ajoute à la durée de plongée ; la profondeur retenue reste la profondeur maximale"
+        },
+        {
+          "id": "b",
+          "text": "La remontée lente est interdite par les tables"
+        },
+        {
+          "id": "c",
+          "text": "On retranche le temps de remontée lente de la durée de plongée"
+        },
+        {
+          "id": "d",
+          "text": "On lit la table à la profondeur moyenne de la remontée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La règle MN90 : la durée de plongée est comptée jusqu'au moment où l'on entame la remontée à vitesse normale (15-17 m/min). Une remontée lente en exploration reste donc un temps de charge pour les tissus lents : elle s'ajoute à la durée de plongée, la profondeur retenue restant la profondeur maximale. Exemple du cours : 20 min à 25 m + 10 min de remontée lente → lecture 25 m / 30 min. On ne retranche jamais ce temps et on n'utilise jamais de profondeur moyenne.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-033",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "les-remontées-anormales--lente-et-rapide",
+      "prompt": "Quelle est la procédure de rattrapage après une remontée rapide (plus de 17 m/min) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redescendre dans les 3 minutes à la moitié de la profondeur maximale, y rester 5 minutes, puis remonter en effectuant les paliers recalculés (minimum 2 min à 3 m)"
+        },
+        {
+          "id": "b",
+          "text": "Rester en surface et surveiller les symptômes, rien d'autre"
+        },
+        {
+          "id": "c",
+          "text": "Redescendre à la profondeur maximale et refaire toute la plongée"
+        },
+        {
+          "id": "d",
+          "text": "Faire un palier de 3 min à 3 m et considérer l'incident clos"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La procédure, à connaître par cœur : redescendre dans les 3 minutes à la moitié de la profondeur maximale, y rester 5 minutes, puis remonter à vitesse normale en effectuant les paliers recalculés (durée comptée de l'immersion à la fin du palier à mi-profondeur, profondeur = maximale), avec au minimum 2 min à 3 m ; ensuite, surveillance de toute la palanquée et pas de nouvelle immersion. Redescendre au fond aggraverait la charge, et un simple palier de principe ne compense pas le dégazage anarchique. Si la redescente est impossible ou hors délai : conduite à tenir ADD.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-tables-034",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "les-remontées-anormales--lente-et-rapide",
+      "prompt": "Plongée à 30 m ; au bout de 17 min, remontée rapide accidentelle. La palanquée redescend en 2 min à 15 m et y reste 5 min. Quelle lecture de table pour les paliers ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Durée 17 + 2 + 5 = 24 min → table 30 m, ligne 25 min : 9 min à 3 m, GPS G"
+        },
+        {
+          "id": "b",
+          "text": "Durée 17 min → table 30 m, ligne 20 min : 4 min à 3 m, GPS F"
+        },
+        {
+          "id": "c",
+          "text": "Durée 24 min → table 15 m : aucun palier"
+        },
+        {
+          "id": "d",
+          "text": "Durée 22 min → table 30 m, ligne 25 min : 9 min à 3 m"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La durée à retenir court de l'immersion à la fin du palier à mi-profondeur : $17 + 2 + 5 = 24$ min, avec la profondeur maximale (30 m) → table 30 m, ligne 25 min → palier de 9 min à 3 m, GPS G. Ne compter que les 17 min initiales (réponse b) ignore la redescente ; lire la table 15 m (réponse c) confond mi-profondeur et profondeur de lecture ; et 22 min (réponse d) oublie la redescente de 2 min — le résultat est ici identique par l'arrondi, mais la méthode est fausse et peut coûter cher sur d'autres valeurs.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-tables-035",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "tables-deco",
+      "moduleSlug": "n2-tables-mn90",
+      "sectionAnchor": "le-palier-interrompu",
+      "prompt": "Votre palier de 9 min à 3 m est interrompu à la 6ᵉ minute (vous êtes remonté accidentellement en surface). Que faites-vous ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redescendre à 3 m en moins de 3 minutes et refaire le palier de 9 minutes en entier"
+        },
+        {
+          "id": "b",
+          "text": "Redescendre et faire uniquement les 3 minutes restantes"
+        },
+        {
+          "id": "c",
+          "text": "Rester en surface : 6 minutes suffisent"
+        },
+        {
+          "id": "d",
+          "text": "Redescendre à 6 m et refaire tous les paliers de la plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La règle du palier interrompu : redescendre à la profondeur du palier dans les 3 minutes et le refaire en entier — 9 minutes complètes, pas seulement le temps restant, car l'interruption a relancé un dégazage anarchique. Les paliers plus profonds déjà effectués n'ont pas à être refaits. Si la redescente est impossible dans les 3 minutes, ou au moindre symptôme : conduite à tenir ADD (oxygène, alerte), jamais de ré-immersion improvisée plus tard.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-materiel-001",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "le-détendeur--principe-des-deux-étages",
+      "prompt": "À quelle pression le premier étage du détendeur délivre-t-il la moyenne pression (MP) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Environ 8 à 10 bars au-dessus de la pression ambiante"
+        },
+        {
+          "id": "b",
+          "text": "Exactement 8 à 10 bars absolus, quelle que soit la profondeur"
+        },
+        {
+          "id": "c",
+          "text": "À la pression ambiante"
+        },
+        {
+          "id": "d",
+          "text": "À 200 bars"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le premier étage abaisse la haute pression du bloc à une moyenne pression asservie à la pression ambiante : environ 8 à 10 bars **au-dessus** de celle-ci, car sa chambre humide communique avec l'eau. C'est ce qui permet au deuxième étage de délivrer un air facile à inspirer à toute profondeur. Une MP fixe en valeur absolue (réponse b) rendrait l'inspiration de plus en plus dure en descendant ; la pression ambiante seule est le rôle du deuxième étage ; et 200 bars est la pression du bloc.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-materiel-002",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "le-détendeur--principe-des-deux-étages",
+      "prompt": "Sur quelles sorties du premier étage branche-t-on le manomètre, l'octopus et le direct system du gilet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Manomètre sur une sortie HP ; octopus et direct system sur des sorties MP"
+        },
+        {
+          "id": "b",
+          "text": "Manomètre sur une sortie MP ; octopus sur une sortie HP"
+        },
+        {
+          "id": "c",
+          "text": "Tous sur des sorties HP"
+        },
+        {
+          "id": "d",
+          "text": "Tous sur des sorties MP"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le manomètre doit lire la pression du bloc : il se branche sur une sortie haute pression (HP). L'octopus (deuxième étage de secours) et le direct system du gilet ont besoin d'air à moyenne pression : ils se branchent sur des sorties MP. Brancher un deuxième étage sur une sortie HP est dangereux (l'appareil n'est pas conçu pour 200 bars) et les filetages sont d'ailleurs différenciés pour l'empêcher.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-materiel-003",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "pannes-du-détendeur-et-conduite-à-tenir",
+      "prompt": "Pourquoi dit-on que le détendeur tombe en panne « du bon côté » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En cas de défaillance, il passe en débit continu (trop d'air) plutôt qu'en blocage (plus d'air), et l'on peut respirer sur un détendeur en débit continu"
+        },
+        {
+          "id": "b",
+          "text": "Il ne tombe jamais en panne"
+        },
+        {
+          "id": "c",
+          "text": "Il se coupe automatiquement pour économiser l'air"
+        },
+        {
+          "id": "d",
+          "text": "Il prévient par une alarme sonore"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le détendeur est conçu pour défaillir en s'ouvrant : givrage, impureté sous le clapet ou joint usé provoquent un débit continu — il fournit trop d'air, pas zéro. On peut respirer sur un détendeur en débit continu (embout non serré, l'excédent fuit), signaler la panne, passer sur le secours de l'équipier et remonter, car la réserve fond très vite. Aucun détendeur ne se « coupe » ni ne sonne : la vraie panne d'air est presque toujours une panne de gestion, un manomètre non consulté.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-materiel-004",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "pannes-du-détendeur-et-conduite-à-tenir",
+      "prompt": "Quels comportements favorisent le givrage du détendeur en eau froide ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Purger longuement le détendeur en surface par temps froid"
+        },
+        {
+          "id": "b",
+          "text": "Respirer sur le détendeur hors de l'eau avant la mise à l'eau en hiver"
+        },
+        {
+          "id": "c",
+          "text": "Solliciter un débit important (essoufflement, gonflage du gilet en respirant fort)"
+        },
+        {
+          "id": "d",
+          "text": "Utiliser un détendeur à membrane compensée adapté à l'eau froide"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "La détente de l'air refroidit fortement le premier étage : tout ce qui augmente le débit (purge prolongée, respiration forte, essoufflement, gonflage simultané du gilet) accentue ce refroidissement et peut geler le mécanisme, provoquant un débit continu. Respirer sur le détendeur à l'air libre par temps froid introduit en plus de l'humidité qui gèlera. Le détendeur à membrane compensée adapté à l'eau froide est au contraire la prévention : son mécanisme est isolé de l'eau.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-materiel-005",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "le-bloc--fabrication-et-marquages",
+      "prompt": "Que signifient les marquages PS et PE gravés sur un bloc ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PS : pression de service (gonflage maximal) ; PE : pression d'épreuve, égale à 1,5 fois la PS"
+        },
+        {
+          "id": "b",
+          "text": "PS : pression de sécurité ; PE : pression d'entrée"
+        },
+        {
+          "id": "c",
+          "text": "PS : poids sec ; PE : poids en eau"
+        },
+        {
+          "id": "d",
+          "text": "PS : pression de sortie ; PE : pression d'équilibre"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La PS (pression de service) est la pression maximale de gonflage, par exemple 200 ou 230 bars : un bloc ne doit jamais être gonflé au-dessus. La PE (pression d'épreuve) est la pression du test hydraulique réalisé lors des requalifications, égale à 1,5 fois la PS — soit 300 bars pour une PS de 200 bars. Ces marquages gravés, avec le numéro de série, le volume et les poinçons d'épreuve, constituent la carte d'identité réglementaire du bloc.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-materiel-006",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "le-bloc--fabrication-et-marquages",
+      "prompt": "Quelle différence de comportement en flottabilité existe-t-il entre un bloc acier et un bloc aluminium ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le bloc aluminium, plus léger à volume égal, peut devenir positif en fin de plongée"
+        },
+        {
+          "id": "b",
+          "text": "Le bloc acier flotte toujours, même plein"
+        },
+        {
+          "id": "c",
+          "text": "Il n'y a aucune différence entre les deux matériaux"
+        },
+        {
+          "id": "d",
+          "text": "Le bloc aluminium est toujours plus lourd que l'acier"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'aluminium est moins dense que l'acier : à volume égal, le bloc alu est plus léger (avec des parois plus épaisses) et sa flottabilité peut devenir positive en fin de plongée, une fois l'air consommé — ce qui modifie l'équilibrage et se compense au lestage. Le bloc acier, plus lourd, reste négatif ; il est en revanche plus sensible à la corrosion. La différence de matériau a donc des conséquences très concrètes sur le lestage du plongeur.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-materiel-007",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "la-réglementation-des-blocs--inspections-et-requalifications",
+      "prompt": "Quel est le régime réglementaire de suivi des blocs de plongée en France ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inspection visuelle annuelle (TIV en club) ; requalification tous les 2 ans, portée à 6 ans pour les blocs suivis en cadre fédéral avec TIV annuel"
+        },
+        {
+          "id": "b",
+          "text": "Une simple vérification tous les 10 ans"
+        },
+        {
+          "id": "c",
+          "text": "Aucun contrôle si le bloc est utilisé en eau douce"
+        },
+        {
+          "id": "d",
+          "text": "Requalification tous les 6 mois pour tous les blocs"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le suivi comprend l'inspection visuelle annuelle — réalisée en structure fédérale par un TIV (Technicien en Inspection Visuelle), avec autocollant daté — et la requalification périodique par un organisme habilité, incluant l'épreuve hydraulique à 1,5 fois la PS : périodicité de droit commun de 2 ans, portée à 6 ans en régime dérogatoire fédéral avec TIV annuel (valeurs à vérifier dans les textes en vigueur). Un bloc choqué, corrodé ou vidé complètement en immersion doit être présenté sans attendre l'échéance. Le milieu d'utilisation ne dispense d'aucun contrôle.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-materiel-008",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "la-réglementation-des-blocs--inspections-et-requalifications",
+      "prompt": "Pourquoi ne faut-il jamais stocker un bloc complètement vide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sans pression résiduelle, l'humidité peut entrer et corroder l'intérieur du bloc"
+        },
+        {
+          "id": "b",
+          "text": "Un bloc vide risque d'imploser"
+        },
+        {
+          "id": "c",
+          "text": "C'est interdit uniquement pour les blocs en aluminium"
+        },
+        {
+          "id": "d",
+          "text": "Un bloc vide perd son marquage de conformité"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Une pression résiduelle maintient le bloc « en surpression » par rapport à l'extérieur : rien ne peut y entrer. Complètement vide, l'air humide ambiant peut pénétrer et amorcer une corrosion interne, invisible de l'extérieur et redoutable pour un équipement sous pression — un bloc vidé en immersion doit d'ailleurs être présenté à l'inspection. Un bloc ne risque pas d'imploser à pression atmosphérique, la règle vaut pour tous les matériaux, et le marquage gravé ne disparaît évidemment pas.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-materiel-009",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "le-gilet-stabilisateur",
+      "prompt": "Par où l'air s'évacue-t-il quand on purge un gilet stabilisateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Par la purge située au point le plus haut du gilet dans la position du moment"
+        },
+        {
+          "id": "b",
+          "text": "Par n'importe quelle purge, quelle que soit la position"
+        },
+        {
+          "id": "c",
+          "text": "Toujours par la purge basse"
+        },
+        {
+          "id": "d",
+          "text": "Par le détendeur"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'air monte : il ne peut s'évacuer que par une purge située au point haut du gilet dans la position du moment — purge haute en position verticale, purge basse en position tête en bas. Purger avec la mauvaise purge ne vide rien et fait perdre de précieuses secondes lors d'une remontée qui s'emballe. Il faut connaître l'emplacement de toutes les purges de son gilet et de celui de son équipier (assistance), et ne jamais utiliser le gilet comme ascenseur.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-materiel-010",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "materiel",
+      "moduleSlug": "n2-materiel",
+      "sectionAnchor": "les-instruments-du-plongeur-autonome",
+      "prompt": "Quel équipement spécifique le plongeur autonome PA20 doit-il posséder ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux détendeurs complets, montés sur deux sorties indépendantes quand la robinetterie le permet"
+        },
+        {
+          "id": "b",
+          "text": "Un moyen de contrôler la plongée et la remontée (ordinateur, ou tables + profondimètre + montre)"
+        },
+        {
+          "id": "c",
+          "text": "Un parachute de palier au minimum par palanquée"
+        },
+        {
+          "id": "d",
+          "text": "Un scooter sous-marin"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "L'équipement du plongeur autonome comprend deux détendeurs complets sur deux sorties indépendantes (pour donner de l'air sans partager son embout), un manomètre, un moyen de contrôler la plongée et la remontée (ordinateur, ou tables avec profondimètre et montre) et, par palanquée, au moins un parachute de palier qui signale la position en surface et sécurise le palier dans le bleu. Le scooter est un équipement de loisir, en rien obligatoire.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-regl-001",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "le-cadre--le-code-du-sport-et-la-ffessm",
+      "prompt": "Quelle est la différence entre un brevet et une aptitude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le brevet est une certification acquise à vie ; l'aptitude (PE40, PA20...) est ce que le Code du sport autorise en structure, selon le brevet, l'expérience récente et la décision du DP"
+        },
+        {
+          "id": "b",
+          "text": "Ce sont deux mots pour la même chose"
+        },
+        {
+          "id": "c",
+          "text": "L'aptitude est acquise à vie, le brevet expire chaque année"
+        },
+        {
+          "id": "d",
+          "text": "Le brevet ne vaut qu'en France, l'aptitude qu'à l'étranger"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le brevet (ex. Niveau 2 FFESSM) est une certification de compétences acquise à vie ; les aptitudes (PE40, PA20...) sont le vocabulaire du Code du sport : ce que vous êtes autorisé à faire dans une structure, en fonction de votre brevet, de votre expérience récente et de la décision du directeur de plongée. Cette distinction permet de faire correspondre les brevets des différentes écoles. Ni le brevet n'expire, ni l'aptitude n'est automatique : elle s'apprécie plongée par plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-regl-002",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "les-prérogatives-du-niveau-2--pa20-et-pe40",
+      "prompt": "Quelles sont les conditions de l'aptitude PA20 du plongeur Niveau 2 ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Être majeur"
+        },
+        {
+          "id": "b",
+          "text": "Une palanquée de 2 ou 3 plongeurs autonomes"
+        },
+        {
+          "id": "c",
+          "text": "L'autorisation du directeur de plongée"
+        },
+        {
+          "id": "d",
+          "text": "La présence d'un guide de palanquée dans l'eau"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le PA20 (Plongeur Autonome à 20 m) exige de réunir toutes les conditions : majorité, palanquée de 2 ou 3 plongeurs autonomes, équipement conforme et décision du directeur de plongée — qui accorde l'autonomie plongée par plongée, au vu des conditions du jour et de l'expérience de chacun. La présence d'un guide dans l'eau est précisément ce qui distingue la plongée encadrée (PE40) de l'autonomie : en PA20, il n'y a pas de guide.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-regl-003",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "les-prérogatives-du-niveau-2--pa20-et-pe40",
+      "prompt": "Que signifie l'aptitude PE40 du plongeur Niveau 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plongeur Encadré jusqu'à 40 m, en palanquée conduite par un guide de palanquée"
+        },
+        {
+          "id": "b",
+          "text": "Plongeur Autonome jusqu'à 40 m"
+        },
+        {
+          "id": "c",
+          "text": "Plongée limitée à 40 minutes"
+        },
+        {
+          "id": "d",
+          "text": "Plongeur Encadrant de 40 élèves"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "PE40 signifie « Plongeur Encadré à 40 mètres » : dans l'espace 0-40 m, le Niveau 2 évolue sous la responsabilité d'un guide de palanquée qui conduit la plongée. L'autonomie du N2 est limitée à 20 m (PA20) : il n'existe pas de « PA40 » pour ce niveau — l'autonomie à 40 m est une prérogative du Niveau 3. Le sigle n'a rien à voir avec une durée ni avec de l'encadrement d'élèves.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-regl-004",
+      "type": "vrai-faux",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "les-prérogatives-du-niveau-2--pa20-et-pe40",
+      "prompt": "Un plongeur Niveau 2 mineur peut plonger en autonomie à 20 m si le directeur de plongée l'y autorise.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est faux : l'autonomie exige la majorité, sans dérogation possible — même le directeur de plongée ne peut pas l'accorder à un mineur. Un Niveau 2 mineur plonge uniquement encadré (PE40) jusqu'à sa majorité. C'est l'une des conditions cumulatives de l'autonomie : brevet, majorité, décision du DP et équipement conforme ; il suffit qu'une seule manque pour que la plongée soit irrégulière.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-regl-005",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "les-prérogatives-du-niveau-2--pa20-et-pe40",
+      "prompt": "Quels sont les espaces d'évolution définis par le Code du sport ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0-6 m, 0-12 m, 0-20 m, 0-40 m et 0-60 m"
+        },
+        {
+          "id": "b",
+          "text": "0-10 m, 0-30 m et 0-50 m"
+        },
+        {
+          "id": "c",
+          "text": "0-15 m, 0-35 m et 0-55 m"
+        },
+        {
+          "id": "d",
+          "text": "Ils sont librement fixés par chaque club"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le Code du sport définit les espaces d'évolution 0-6 m, 0-12 m, 0-20 m, 0-40 m et 0-60 m, qui servent de vocabulaire commun aux aptitudes (PE20, PA12, PA20, PE40...) ; la profondeur maximale de la plongée à l'air en exploration est fixée à 60 m. Ces bornes sont réglementaires et identiques pour tous : aucun club ne peut définir ses propres espaces.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-regl-006",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "la-palanquée-et-le-directeur-de-plongée",
+      "prompt": "Quels sont les effectifs maximaux d'une palanquée selon le Code du sport ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Palanquée autonome : 3 plongeurs max ; palanquée encadrée : 4 plongeurs encadrés max, plus le guide"
+        },
+        {
+          "id": "b",
+          "text": "Palanquée autonome : 4 plongeurs ; palanquée encadrée : 3 plus le guide"
+        },
+        {
+          "id": "c",
+          "text": "5 plongeurs dans tous les cas"
+        },
+        {
+          "id": "d",
+          "text": "2 plongeurs maximum, autonomes ou encadrés"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le piège d'examen classique : la palanquée autonome compte au maximum 3 plongeurs (sans guide), la palanquée encadrée 4 plongeurs encadrés plus le guide de palanquée (et éventuellement un plongeur supplémentaire apte selon les cas prévus par les textes). Inverser les deux chiffres (réponse b) est l'erreur la plus fréquente. Ces effectifs correspondent à ce qu'un guide peut surveiller et à ce qu'une équipe autonome peut gérer en assistance mutuelle.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-regl-007",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "la-palanquée-et-le-directeur-de-plongée",
+      "prompt": "Quelles missions relèvent du directeur de plongée ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixer les caractéristiques de la plongée et constituer les palanquées"
+        },
+        {
+          "id": "b",
+          "text": "Autoriser (ou non) l'autonomie des plongeurs qui y prétendent"
+        },
+        {
+          "id": "c",
+          "text": "Remplir la fiche de sécurité et organiser la sécurité surface"
+        },
+        {
+          "id": "d",
+          "text": "Conduire chaque palanquée sous l'eau"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le DP fixe site, profondeur maximale, durée et consignes, constitue les palanquées selon les aptitudes, décide de l'autonomie, s'assure du matériel de secours, organise la sécurité surface, remplit la fiche de sécurité et déclenche le plan de secours en cas d'accident. Il ne conduit pas chaque palanquée sous l'eau : c'est le rôle des guides de palanquée — le DP organise et supervise l'activité depuis la surface.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-regl-008",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "le-matériel-obligatoire",
+      "prompt": "Quel matériel de secours doit être présent sur le site, sous la responsabilité du DP ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une oxygénothérapie (bouteille d'O₂ avec détendeur et masque)"
+        },
+        {
+          "id": "b",
+          "text": "Un plan de secours et un moyen de communication pour alerter"
+        },
+        {
+          "id": "c",
+          "text": "Une trousse de secours, de l'eau douce non gazeuse, une couverture isothermique et une fiche d'évacuation"
+        },
+        {
+          "id": "d",
+          "text": "Un caisson hyperbare portable"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Sur le site doivent se trouver les moyens du plan de secours : oxygénothérapie de capacité adaptée, moyen d'alerte, trousse de secours, eau douce non gazeuse, couverture isothermique et fiche d'évacuation. Le plongeur n'en est pas responsable mais doit savoir où ils se trouvent et comment les utiliser. Le caisson hyperbare, lui, est une installation médicale hospitalière vers laquelle on évacue : il n'existe pas de version « portable » réglementaire sur les bateaux de plongée.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-regl-009",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "les-documents-du-plongeur",
+      "prompt": "Quel document atteste votre niveau de plongée auprès de toute structure, en France comme à l'étranger ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La carte de certification (carte brevet double face FFESSM/CMAS)"
+        },
+        {
+          "id": "b",
+          "text": "La licence fédérale"
+        },
+        {
+          "id": "c",
+          "text": "Le certificat médical"
+        },
+        {
+          "id": "d",
+          "text": "La fiche de sécurité"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La carte de certification — dite « carte CMAS » pour la reconnaissance internationale — atteste votre niveau auprès de toute structure. La licence matérialise l'adhésion fédérale et l'assurance en responsabilité civile, le certificat médical atteste l'absence de contre-indication, et la fiche de sécurité est le document d'organisation tenu par le DP : chacun de ces documents a un rôle distinct, et le DP s'appuie en plus sur le carnet de plongée pour évaluer l'expérience récente.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-regl-010",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "reglementation",
+      "moduleSlug": "n2-reglementation",
+      "sectionAnchor": "devoirs-et-responsabilités-du-plongeur-autonome",
+      "prompt": "En autonomie, votre palanquée perd le contact avec un équipier. Quelle est la procédure convenue classique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se chercher environ une minute, puis remonter en respectant la procédure de désaturation et se retrouver en surface"
+        },
+        {
+          "id": "b",
+          "text": "Continuer la plongée : il finira par revenir"
+        },
+        {
+          "id": "c",
+          "text": "Se disperser dans toutes les directions pour le retrouver au fond"
+        },
+        {
+          "id": "d",
+          "text": "Remonter en urgence sans paliers"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La conduite en cas de perte de contact fait partie de la planification que la palanquée autonome convient avant l'immersion : se chercher environ une minute, puis remonter en respectant la procédure de désaturation et se retrouver en surface. Continuer la plongée abandonne l'équipier, se disperser multiplie les perdus, et remonter sans paliers troque un problème d'organisation contre un risque d'accident de désaturation.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-milieu-001",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "environnement",
+      "moduleSlug": "n2-orientation-milieu",
+      "sectionAnchor": "sorienter--une-compétence-de-sécurité",
+      "prompt": "Quand le travail d'orientation d'une plongée commence-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avant la mise à l'eau, au briefing : topographie du site, sens du courant, position du mouillage, plan de la plongée"
+        },
+        {
+          "id": "b",
+          "text": "Une fois arrivé au fond"
+        },
+        {
+          "id": "c",
+          "text": "Uniquement quand on est perdu"
+        },
+        {
+          "id": "d",
+          "text": "Au moment de la remontée"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "L'orientation commence au briefing : écouter la description du site (profondeur, topographie, courant, position du mouillage), mémoriser le plan de plongée et noter le cap général, puis prendre des repères de surface (position du bateau, soleil) avant l'immersion. Attendre d'être au fond — ou pire, d'être perdu — pour s'en préoccuper conduit aux remontées dans le bleu, à la dérive en surface et au palmage épuisant tout équipé.",
+      "difficulty": 1
+    },
+    {
+      "id": "n2-milieu-002",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "environnement",
+      "moduleSlug": "n2-orientation-milieu",
+      "sectionAnchor": "lorientation-sans-instruments",
+      "prompt": "Comment les rides de sable (ripple marks) aident-elles à s'orienter ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Formées par la houle, elles sont parallèles à la côte : les traverser perpendiculairement mène vers le large ou vers la terre"
+        },
+        {
+          "id": "b",
+          "text": "Elles pointent toujours vers le nord"
+        },
+        {
+          "id": "c",
+          "text": "Elles indiquent la position du bateau"
+        },
+        {
+          "id": "d",
+          "text": "Elles suivent la direction du courant de fond"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Les rides de sable sont créées par le va-et-vient de la houle : elles s'alignent parallèlement à la côte. Les traverser perpendiculairement fait donc gagner ou perdre de la distance à la terre — un repère naturel précieux sur les fonds sableux sans relief. Elles n'ont aucun lien avec le nord magnétique (c'est le rôle du compas), ni avec la position du bateau, et c'est la houle, pas le courant, qui les façonne.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-milieu-003",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "environnement",
+      "moduleSlug": "n2-orientation-milieu",
+      "sectionAnchor": "lorientation-sans-instruments",
+      "prompt": "Quels repères naturels servent à s'orienter sans instrument ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La position du soleil, stable à l'échelle d'une plongée"
+        },
+        {
+          "id": "b",
+          "text": "La pente du fond (un fond qui descend à l'aller remonte au retour)"
+        },
+        {
+          "id": "c",
+          "text": "Le courant noté au départ et des « balises » visuelles mémorisées (roche remarquable, herbier...)"
+        },
+        {
+          "id": "d",
+          "text": "Le sens de nage des poissons, qui vont toujours vers la côte"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Le milieu fournit des repères fiables : le soleil (partir avec le soleil dans le dos, revenir face à lui), la pente et les isobathes (suivre une ligne de sonde permet de refaire le trajet en sens inverse), le courant noté au départ et trois ou quatre balises visuelles mémorisées le long du trajet. Le « sens de nage des poissons » n'est pas un repère : les anthias se tiennent face au courant, mais les poissons ne « vont » certainement pas tous vers la côte.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-milieu-004",
+      "type": "calcul",
+      "level": "n2",
+      "domain": "environnement",
+      "moduleSlug": "n2-orientation-milieu",
+      "sectionAnchor": "lorientation-avec-instruments--le-compas",
+      "prompt": "Vous avez suivi un cap 300° à l'aller. Quel cap inverse prendre pour revenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "120°"
+        },
+        {
+          "id": "b",
+          "text": "480°"
+        },
+        {
+          "id": "c",
+          "text": "60°"
+        },
+        {
+          "id": "d",
+          "text": "240°"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le cap inverse s'obtient en ajoutant ou retranchant 180° : $300 - 180 = 120°$. On retranche ici car $300 + 180 = 480$ dépasse 360° (la réponse 480° n'existe pas sur un compas). Les réponses 60° et 240° correspondent à des erreurs de calcul mental courantes ; l'astuce pratique : si le cap est supérieur à 180°, on retranche 180 ; s'il est inférieur, on ajoute 180.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-milieu-005",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "environnement",
+      "moduleSlug": "n2-orientation-milieu",
+      "sectionAnchor": "lorientation-avec-instruments--le-compas",
+      "prompt": "Quels pièges faussent l'utilisation du compas en plongée ? Plusieurs réponses possibles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les masses métalliques proches (bloc, lampe, épave) qui dévient l'aiguille"
+        },
+        {
+          "id": "b",
+          "text": "L'inclinaison du compas, qui bloque l'aiguille"
+        },
+        {
+          "id": "c",
+          "text": "Le courant, qui fait dériver la trajectoire même si le cap est bien tenu"
+        },
+        {
+          "id": "d",
+          "text": "La profondeur, qui inverse le nord magnétique"
+        }
+      ],
+      "correctOptionIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Trois pièges classiques : les masses métalliques (bloc, lampe, épave) dévient l'aiguille — il faut écarter le compas des objets ferreux ; un compas incliné voit son aiguille frotter et se bloquer — il se tient horizontal, dans l'axe du corps ; et le courant fait « crabe » : la trajectoire dérive même à cap constant, d'où l'intérêt de combiner compas, profondeur et repères naturels. La profondeur, en revanche, n'a aucun effet sur le champ magnétique terrestre.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-milieu-006",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "environnement",
+      "moduleSlug": "n2-orientation-milieu",
+      "sectionAnchor": "matelotage--les-nœuds-et-le-mouillage",
+      "prompt": "Quel nœud réalise une boucle fixe qui ne serre pas et se défait facilement même après une forte tension ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le nœud de chaise"
+        },
+        {
+          "id": "b",
+          "text": "Le nœud plat"
+        },
+        {
+          "id": "c",
+          "text": "Le nœud en huit"
+        },
+        {
+          "id": "d",
+          "text": "Le nœud de cabestan"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le nœud de chaise forme une boucle fixe en bout de cordage — pour amarrer, hisser ou saisir un anneau — qui ne serre pas sous charge et se défait facilement même après une forte tension : c'est le nœud emblématique du matelotage. Le nœud plat sert à réunir deux bouts de même diamètre, le nœud en huit est un nœud d'arrêt en extrémité, et le cabestan sert à frapper un bout sur une barre ou un anneau.",
+      "difficulty": 2
+    },
+    {
+      "id": "n2-milieu-007",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "environnement",
+      "moduleSlug": "n2-orientation-milieu",
+      "sectionAnchor": "matelotage--les-nœuds-et-le-mouillage",
+      "prompt": "Quelle longueur de mouillage file-t-on au minimum, et pourquoi le plongeur ne doit-il pas remonter l'ancre juste après sa plongée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au moins 3 fois la hauteur d'eau ; remonter l'ancre est un effort violent qui favorise l'ADD après la plongée"
+        },
+        {
+          "id": "b",
+          "text": "Exactement la hauteur d'eau ; l'ancre est trop sale pour un plongeur"
+        },
+        {
+          "id": "c",
+          "text": "10 fois la hauteur d'eau ; l'ancre est trop lourde réglementairement"
+        },
+        {
+          "id": "d",
+          "text": "La longueur importe peu si l'ancre est lourde"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On file au moins trois fois la hauteur d'eau (davantage par vent fort) : l'ancre tient par son crochage et par le poids de la chaîne qui travaille à l'horizontale — un mouillage trop court tire l'ancre vers le haut et la fait déraper. Quant à remonter l'ancre, c'est un effort intense : juste après une plongée, l'effort favorise la formation de bulles d'azote (facteur d'ADD) — cette tâche revient à ceux qui n'ont pas plongé, ou attend.",
+      "difficulty": 3
+    },
+    {
+      "id": "n2-milieu-008",
+      "type": "qcm",
+      "level": "n2",
+      "domain": "environnement",
+      "moduleSlug": "n2-orientation-milieu",
+      "sectionAnchor": "le-milieu-vivant--méditerranée-et-atlantique",
+      "prompt": "Qu'est-ce que la posidonie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une plante à fleurs protégée qui forme les grands herbiers de Méditerranée, nurserie et poumon de la mer"
+        },
+        {
+          "id": "b",
+          "text": "Une algue brune des côtes atlantiques"
+        },
+        {
+          "id": "c",
+          "text": "Un corail des tombants profonds"
+        },
+        {
+          "id": "d",
+          "text": "Une méduse urticante"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La posidonie est une plante à fleurs — et non une algue — qui forme les vastes herbiers de Méditerranée jusqu'à 30-40 m : véritable poumon et nurserie de la mer, elle est protégée (interdiction d'y mouiller pour les bateaux équipés, interdiction d'arracher ou de dégrader). Les grandes algues brunes des fonds atlantiques sont les laminaires, son « équivalent » comme zone de vie ; le coralligène désigne les concrétions calcaires des tombants méditerranéens.",
+      "difficulty": 2
+    }
+  ]
+}

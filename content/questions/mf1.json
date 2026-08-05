@@ -1,0 +1,3037 @@
+{
+  "level": "mf1",
+  "questions": [
+    {
+      "id": "mf1-deco-001",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "les-compartiments-et-la-saturation-exponentielle",
+      "prompt": "La **période** (temps de demi-saturation) d'un compartiment est le temps au bout duquel il comble la moitié de l'écart restant entre sa tension actuelle et la tension qu'il atteindrait à saturation complète.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "C'est la définition exacte de la période dans le modèle de Haldane : à chaque période, le compartiment comble la moitié du gradient restant, jamais un pourcentage fixe. Un compartiment court (5 min) atteint donc vite l'équilibre, un compartiment long (120 min) le fait lentement.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-deco-002",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "les-compartiments-et-la-saturation-exponentielle",
+      "prompt": "Selon la lecture par périodes successives du modèle de Haldane, quel pourcentage du gradient un compartiment a-t-il comblé après **3 périodes** ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "75 %"
+        },
+        {
+          "id": "b",
+          "text": "87,5 %"
+        },
+        {
+          "id": "c",
+          "text": "93,75 %"
+        },
+        {
+          "id": "d",
+          "text": "99 %"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Après chaque période on comble la moitié du chemin restant : 50 % (1 période), 75 % (2), puis 87,5 % (3). La valeur 93,75 % correspond à 4 périodes et 99 % à environ 6 périodes, seuil de saturation pratiquement complète.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-deco-003",
+      "type": "calcul",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "les-compartiments-et-la-saturation-exponentielle",
+      "prompt": "Un plongeur stabilise à 20 m ; la pression partielle d'azote respirée passe d'environ $0{,}8$ bar (surface) à $2{,}4$ bars. Pour le compartiment de **période 20 min**, quelle est la tension d'azote après **40 minutes** (2 périodes) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,60 bar"
+        },
+        {
+          "id": "b",
+          "text": "2,00 bars"
+        },
+        {
+          "id": "c",
+          "text": "2,20 bars"
+        },
+        {
+          "id": "d",
+          "text": "2,40 bars"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le gradient à combler est $2{,}4 - 0{,}8 = 1{,}6$ bar. Après 2 périodes, 75 % du gradient est comblé : $T = 0{,}8 + 0{,}75 \\times 1{,}6 = 2{,}00$ bars. La réponse 1,60 bar correspond à 1 période (50 %), 2,20 bars à 3 périodes (87,5 %) et 2,40 bars à la saturation complète, non atteinte en 40 min.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-deco-004",
+      "type": "calcul",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "les-compartiments-et-la-saturation-exponentielle",
+      "prompt": "Même situation (compartiment période 20 min, tension initiale $0{,}8$ bar, tension imposée $2{,}4$ bars). Quelle est la tension après **20 minutes** (1 période) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,20 bar"
+        },
+        {
+          "id": "b",
+          "text": "1,60 bar"
+        },
+        {
+          "id": "c",
+          "text": "2,00 bars"
+        },
+        {
+          "id": "d",
+          "text": "2,40 bars"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Après 1 période, le compartiment comble 50 % du gradient de $1{,}6$ bar : $T = 0{,}8 + 0{,}50 \\times 1{,}6 = 1{,}60$ bar. On n'ajoute jamais un pourcentage fixe à la tension : on comble la moitié de l'écart restant à chaque période, ce qui donne une progression exponentielle vers 2,40 bars.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-deco-005",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "le-gradient-et-le-coefficient-de-sursaturation-critique",
+      "prompt": "La condition de remontée admissible d'un compartiment s'écrit $T_{N_2} \\le Sc \\times P_{abs}$. Que représente le coefficient $Sc$ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La période du compartiment"
+        },
+        {
+          "id": "b",
+          "text": "Le coefficient de sursaturation critique, propre à chaque compartiment"
+        },
+        {
+          "id": "c",
+          "text": "La vitesse de remontée en m/min"
+        },
+        {
+          "id": "d",
+          "text": "La durée totale de remontée (DTR)"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "$Sc$ est le coefficient de sursaturation critique : il fixe la tension d'azote maximale tolérée par un compartiment pour une pression absolue donnée. Il est propre à chaque compartiment (les tissus rapides tolèrent une sursaturation plus forte que les tissus lents), ce qui distingue les modèles modernes du rapport unique 2:1 de Haldane.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-deco-006",
+      "type": "calcul",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "le-gradient-et-le-coefficient-de-sursaturation-critique",
+      "prompt": "Un compartiment présente une tension d'azote $T_{N_2} = 2{,}4$ bars et un coefficient $Sc = 2{,}0$. Quelle est la **pression absolue minimale** ($P_{abs}^{\\min}$) qu'il autorise, et à quelle profondeur cela correspond-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,2 bar, soit 2 m"
+        },
+        {
+          "id": "b",
+          "text": "1,2 bar, soit 12 m"
+        },
+        {
+          "id": "c",
+          "text": "4,8 bars, soit 38 m"
+        },
+        {
+          "id": "d",
+          "text": "0,4 bar, soit la surface"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "On applique $P_{abs}^{\\min} = T_{N_2} / Sc = 2{,}4 / 2{,}0 = 1{,}2$ bar. La profondeur correspondante est $(1{,}2 - 1) \\times 10 = 2$ m : le compartiment n'autorise donc pas encore la surface, d'où un palier. Le distracteur « 12 m » confond pression relative et profondeur (il faut retrancher la pression atmosphérique avant de convertir).",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-deco-007",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "compartiment-directeur-et-construction-dune-table",
+      "prompt": "Qu'appelle-t-on le **compartiment directeur** (ou pilote) à un instant donné de la remontée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le compartiment de plus longue période"
+        },
+        {
+          "id": "b",
+          "text": "Le compartiment le plus contraignant, qui impose la remontée la moins profonde"
+        },
+        {
+          "id": "c",
+          "text": "Le compartiment le plus rapide à se désaturer"
+        },
+        {
+          "id": "d",
+          "text": "Le compartiment dont la tension est la plus faible"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le compartiment directeur est celui qui, à cet instant, exige la pression absolue minimale la plus élevée : c'est lui qui commande le palier le plus profond ou le plus long. Ce n'est pas toujours le plus lent : il change au cours de la plongée (tissus rapides pour les plongées courtes et profondes, tissus lents pour les plongées longues).",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-deco-008",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "compartiment-directeur-et-construction-dune-table",
+      "prompt": "Pour une plongée courte et profonde, ce sont les **tissus lents** (60, 80, 120 min) qui jouent le rôle de compartiment directeur et imposent les paliers.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est l'inverse : une plongée courte et profonde charge surtout les tissus rapides (5, 10, 20 min), qui deviennent directeurs et imposent les premiers paliers. Les tissus lents prennent le relais pour les plongées longues, ce qui explique que deux profils de charge en azote différents ne donnent pas les mêmes paliers.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-deco-009",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "le-gradient-et-le-coefficient-de-sursaturation-critique",
+      "prompt": "Dans sa formulation d'origine, Haldane exprimait la sursaturation tolérée par un **rapport critique**. Quel était ce rapport approximatif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1:1"
+        },
+        {
+          "id": "b",
+          "text": "2:1"
+        },
+        {
+          "id": "c",
+          "text": "3:1"
+        },
+        {
+          "id": "d",
+          "text": "1,6:1"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Haldane admettait qu'un compartiment tolérait une tension d'azote jusqu'à environ **deux fois** la pression absolue ambiante, soit un rapport 2:1. Les modèles ultérieurs ont remplacé ce rapport unique par un coefficient $Sc$ propre à chaque compartiment. Le distracteur 1,6:1 évoque le seuil d'hyperoxie ($P_pO_2 = 1{,}6$), sans rapport avec la décompression.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-deco-010",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "limites-du-modèle-et-apports-modernes",
+      "prompt": "Les **M-values** (Workman, puis Bühlmann avec les séries ZH-L), utilisées par la plupart des ordinateurs, remplacent le rapport critique unique par :",
+      "options": [
+        {
+          "id": "a",
+          "text": "une constante identique pour tous les compartiments"
+        },
+        {
+          "id": "b",
+          "text": "une droite reliant la tension tolérée à la pression ambiante, propre à chaque compartiment ($T_{tol}=a+P_{abs}/b$)"
+        },
+        {
+          "id": "c",
+          "text": "l'interdiction de toute sursaturation"
+        },
+        {
+          "id": "d",
+          "text": "un calcul fondé uniquement sur la profondeur maximale atteinte"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Les M-values expriment la tension tolérée comme une fonction affine de la pression ambiante, $T_{tol} = a + P_{abs}/b$, avec des coefficients propres à chaque compartiment. C'est la formulation retenue par la plupart des ordinateurs de plongée. Interdire toute sursaturation serait faux : la sursaturation modérée est normale et constitue même le moteur de la désaturation.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-deco-011",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "limites-du-modèle-et-apports-modernes",
+      "prompt": "Le modèle haldanien est un modèle de gaz dissous : il suppose qu'aucune bulle ne se forme tant que la sursaturation critique n'est pas franchie, hypothèse commode mais prise en défaut par les **bulles circulantes silencieuses** observées même après des plongées respectant les tables.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le modèle de gaz dissous ignore la formation de micro-bulles tant que le seuil critique n'est pas atteint, alors que des bulles silencieuses apparaissent en pratique même après une plongée conforme. Il néglige aussi l'asymétrie charge/décharge et des facteurs individuels (froid, effort, FOP), ce qui rappelle que les tables restent une approche statistique prudente, non une garantie.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-deco-012",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "enseigner-la-désaturation",
+      "prompt": "Pour expliquer la désaturation à un public **N2**, quel niveau d'abstraction le moniteur privilégie-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La formule exponentielle complète $T(t)=T_f+(T_0-T_f)e^{-t\\ln2/T}$"
+        },
+        {
+          "id": "b",
+          "text": "L'image concrète (l'azote dissous comme le gaz d'un soda, remonter doucement et faire les paliers)"
+        },
+        {
+          "id": "c",
+          "text": "Le calcul des M-values compartiment par compartiment"
+        },
+        {
+          "id": "d",
+          "text": "La démonstration du compartiment directeur avec toutes les périodes"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "À un N2, on reste sur l'image : l'azote se dissout comme le gaz d'une bouteille de soda et il faut remonter lentement pour le laisser s'échapper sans faire mousser. Les compartiments, périodes et la lecture par moitiés successives sont réservés au N4, et les M-values au niveau expert : adapter l'abstraction au public est le cœur du geste pédagogique.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-deco-013",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "tables-deco",
+      "moduleSlug": "mf1-decompression",
+      "sectionAnchor": "le-problème-posé-par-la-désaturation",
+      "prompt": "Pourquoi un bon modèle de décompression doit-il représenter **plusieurs compartiments** de vitesses différentes plutôt qu'un tissu unique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que l'azote se dissout plus vite que l'oxygène"
+        },
+        {
+          "id": "b",
+          "text": "Parce que les tissus de l'organisme n'échangent pas l'azote à la même vitesse selon leur vascularisation"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la pression varie pendant la plongée"
+        },
+        {
+          "id": "d",
+          "text": "Parce que la température du corps n'est pas homogène"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'organisme n'est pas homogène : un tissu très vascularisé (sang, cerveau) sature et désature vite, un tissu peu irrigué (graisses, articulations) le fait lentement. Un modèle à compartiments multiples reproduit cette diversité et prédit, à chaque instant, si la remontée reste tolérable pour le tissu le plus contraignant.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-physio-001",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "la-régulation-de-la-ventilation",
+      "prompt": "Quel est le **stimulus principal** qui règle la ventilation via les centres respiratoires du tronc cérébral ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La baisse de la pression partielle d'oxygène"
+        },
+        {
+          "id": "b",
+          "text": "L'élévation de la pression partielle de gaz carbonique (CO₂)"
+        },
+        {
+          "id": "c",
+          "text": "La fréquence cardiaque"
+        },
+        {
+          "id": "d",
+          "text": "La température du sang"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Ce sont les chémorécepteurs centraux sensibles au CO₂ et au pH qui déclenchent l'augmentation de la ventilation dès que la $P_pCO_2$ s'élève ; l'oxygène n'est un stimulus déterminant qu'en hypoxie marquée. Cette hiérarchie explique l'essoufflement : c'est l'accumulation de CO₂, non le manque d'O₂, qui emballe la ventilation.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-physio-002",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "la-régulation-de-la-ventilation",
+      "prompt": "L'essoufflement du plongeur est d'abord un problème d'**inspiration** insuffisante ; le bon réflexe est donc d'inspirer plus fort et plus vite.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'essoufflement est un problème d'**expiration** insuffisante : une ventilation superficielle ne renouvelle que l'espace mort et n'élimine plus assez de CO₂. Inspirer plus fort et plus vite aggrave la rétention de CO₂ et entretient le cercle vicieux ; la correction est de souffler longuement, ralentir, voire s'immobiliser et faire signe.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-physio-003",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "circulation-shunts-et-foramen-ovale-perméable",
+      "prompt": "Quel rôle le **poumon** joue-t-il vis-à-vis des micro-bulles d'azote formées au retour veineux pendant la décompression ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il les amplifie et les envoie vers le cerveau"
+        },
+        {
+          "id": "b",
+          "text": "Il les filtre et permet leur élimination avant qu'elles ne gagnent la circulation artérielle"
+        },
+        {
+          "id": "c",
+          "text": "Il n'a aucun effet sur les bulles"
+        },
+        {
+          "id": "d",
+          "text": "Il les transforme en oxygène"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le filtre pulmonaire piège normalement les micro-bulles veineuses et permet d'éliminer l'azote par la ventilation ; tant qu'elles restent du côté veineux, elles sont le plus souvent silencieuses. C'est précisément ce filtre qu'un shunt droite-gauche (comme le foramen ovale perméable) court-circuite, faisant passer les bulles en artériel.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-physio-004",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "circulation-shunts-et-foramen-ovale-perméable",
+      "prompt": "Le **foramen ovale perméable (FOP)** est reconnu comme mécanisme d'accidents de désaturation immérités. Quelle proportion d'adultes est concernée par une perméabilité résiduelle, et par quel geste s'ouvre-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Environ 1 adulte sur 4 ; un effort à glotte fermée (Valsalva, port de charge)"
+        },
+        {
+          "id": "b",
+          "text": "Environ 1 adulte sur 100 ; un simple mouvement de palmage"
+        },
+        {
+          "id": "c",
+          "text": "La totalité des adultes ; l'expiration normale"
+        },
+        {
+          "id": "d",
+          "text": "Environ 1 adulte sur 4 ; il reste toujours ouvert au repos"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le FOP reste partiellement perméable chez environ un adulte sur quatre ; au repos il est fermé par la différence de pression entre oreillettes. Un effort à glotte fermée (Valsalva, port de charge, toux) inverse transitoirement le gradient et peut l'ouvrir, laissant passer des micro-bulles veineuses en artériel — d'où la consigne d'éviter tout effort violent après la plongée.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-physio-005",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "le-système-nerveux-et-la-plongée",
+      "prompt": "Quel est le mécanisme de la **narcose à l'azote** et sa caractéristique clé pour la conduite à tenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une lésion définitive des neurones par les bulles ; irréversible"
+        },
+        {
+          "id": "b",
+          "text": "Une action des gaz inertes dissous sur les membranes nerveuses, ralentissant la transmission ; totalement réversible à la remontée"
+        },
+        {
+          "id": "c",
+          "text": "Un manque d'oxygène au cerveau ; corrigé par l'apnée"
+        },
+        {
+          "id": "d",
+          "text": "Une intoxication au CO₂ ; corrigée en accélérant la ventilation"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La narcose résulte de l'action des gaz inertes dissous sur les membranes des cellules nerveuses, ralentissant la transmission synaptique ; elle apparaît au-delà de 30 m et s'aggrave avec la profondeur, le froid et le stress. Elle est **totalement réversible** : son danger tient au comportement inadapté qu'elle induit, d'où la consigne de remonter de quelques mètres au moindre signe.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-physio-006",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "le-système-nerveux-et-la-plongée",
+      "prompt": "Tout signe neurologique apparaissant après une plongée (trouble moteur, sensitif, visuel, vertige, confusion) doit être considéré comme une **urgence** jusqu'à preuve du contraire.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le tissu nerveux récupère mal, ce qui rend tout signe neurologique post-plongée potentiellement grave : on ne « laisse pas passer » un symptôme. La conduite associe oxygène normobare à 100 %, alerte et surveillance, qu'il s'agisse d'un ADD neurologique ou d'une aéroembolie par surpression pulmonaire.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-physio-007",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "loreille-interne-en-détail",
+      "prompt": "Quelle structure de l'oreille contient la **cochlée** (audition) et le **vestibule** (équilibre), et communique avec l'oreille moyenne par les fenêtres ovale et ronde ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'oreille externe"
+        },
+        {
+          "id": "b",
+          "text": "L'oreille moyenne"
+        },
+        {
+          "id": "c",
+          "text": "L'oreille interne"
+        },
+        {
+          "id": "d",
+          "text": "La trompe d'Eustache"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "La cochlée et le vestibule (avec ses canaux semi-circulaires) sont logés dans l'oreille interne, au sein du rocher, remplis de liquide. L'oreille moyenne, cavité aérienne équilibrée par la trompe d'Eustache, en est séparée par les deux fenêtres membraneuses ; c'est la rupture d'une de ces fenêtres qui provoque un barotraumatisme de l'oreille interne.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-physio-008",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "loreille-interne-en-détail",
+      "prompt": "Comment distinguer un **vertige alternobarique** d'un **accident de désaturation de l'oreille interne** ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le premier est d'origine bullaire, le second barotraumatique"
+        },
+        {
+          "id": "b",
+          "text": "Le premier vient d'un déséquilibre de pression entre les deux oreilles (barotraumatique, transitoire), le second est d'origine bullaire (désaturation)"
+        },
+        {
+          "id": "c",
+          "text": "Les deux sont strictement identiques"
+        },
+        {
+          "id": "d",
+          "text": "Le premier survient uniquement à la descente, le second jamais en plongée"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le vertige alternobarique naît d'une trompe qui « passe » et l'autre non, créant un déséquilibre de pression entre les deux oreilles : il est barotraumatique et transitoire. L'ADD de l'oreille interne est d'origine bullaire (et non barotraumatique) et associe vertiges, acouphènes et surdité après une plongée avec décompression : distinguer les deux oriente l'urgence et la conduite à tenir.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-physio-009",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "loreille-interne-en-détail",
+      "prompt": "Un Valsalva trop violent sur une trompe d'Eustache bloquée peut provoquer une **rupture de fenêtre** (fistule périlymphatique) avec vertiges et surdité brutale, constituant une urgence ORL.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "C'est un barotraumatisme de l'oreille interne : la surpression transmise par un Valsalva forcé sur une trompe bloquée peut rompre la fenêtre ovale ou ronde, provoquant une fistule périlymphatique. Le tableau associe vertiges et surdité brutale, ce qui en fait une urgence ORL ; d'où la consigne d'équilibrer tôt et doucement, sans jamais forcer.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-physio-010",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "des-physiopathologies-au-message-pédagogique",
+      "prompt": "Pour un moniteur, quelle traduction pédagogique correspond correctement à chaque notion physiologique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Essoufflement → inspirer plus fort ; FOP → forcer le Valsalva après la plongée"
+        },
+        {
+          "id": "b",
+          "text": "Essoufflement → expiration ample ; FOP/ADD immérité → pas d'effort après la plongée et humilité face aux tables ; oreille → équilibrage précoce"
+        },
+        {
+          "id": "c",
+          "text": "Narcose → accélérer la remontée sans limite ; oreille → plonger même enrhumé"
+        },
+        {
+          "id": "d",
+          "text": "ADD neurologique → attendre la disparition spontanée des signes"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La valeur d'un moniteur est de relier mécanisme, prévention et geste : l'essoufflement renvoie à l'expiration, le FOP et l'ADD immérité aux efforts post-plongée et à l'humilité face aux tables, l'oreille à l'équilibrage précoce et au renoncement en cas de rhume. Les autres propositions inversent les consignes de sécurité (forcer le Valsalva, plonger enrhumé, attendre devant un signe neurologique) et sont dangereuses.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-physio-011",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "la-régulation-de-la-ventilation",
+      "prompt": "Un phénomène d'**hypercapnie** en plongée peut être favorisé par :",
+      "options": [
+        {
+          "id": "a",
+          "text": "une expiration trop ample"
+        },
+        {
+          "id": "b",
+          "text": "un espace mort ajouté (tuba trop long) ou une rétention volontaire de CO₂"
+        },
+        {
+          "id": "c",
+          "text": "une descente trop lente"
+        },
+        {
+          "id": "d",
+          "text": "une hydratation excessive"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'hypercapnie (excès de CO₂) est favorisée par un espace mort ajouté — tuba trop long, mauvaise ventilation — ou par une rétention volontaire de CO₂ chez le « profond respirateur ». L'air dense en profondeur augmente aussi le travail respiratoire ; la prévention repose sur une ventilation ample et complète plutôt que superficielle.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-physio-012",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physiologie",
+      "moduleSlug": "mf1-physiologie",
+      "sectionAnchor": "le-système-nerveux-et-la-plongée",
+      "prompt": "La **surpression pulmonaire** peut provoquer un tableau neurologique brutal dès la sortie de l'eau. Par quel mécanisme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une accumulation de CO₂ dans les alvéoles"
+        },
+        {
+          "id": "b",
+          "text": "Le passage de bulles d'air dans la circulation cérébrale (aéroembolie)"
+        },
+        {
+          "id": "c",
+          "text": "Une narcose résiduelle à l'azote"
+        },
+        {
+          "id": "d",
+          "text": "Un spasme des artères coronaires"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La surpression pulmonaire projette des bulles d'air dans la circulation, notamment cérébrale : c'est l'aéroembolie, responsable d'un tableau neurologique brutal survenant dès la sortie de l'eau. Le moniteur relie ce mécanisme à l'ADD neurologique par une même chaîne de secours : reconnaître vite, oxygène 100 % à 15 L/min, alerte et position adaptée.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-phys-001",
+      "type": "calcul",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "pression--la-confusion-fondatrice",
+      "prompt": "Un élève affirme : « à 20 m, la pression est de 2 bars ». Quelle est la **pression absolue** réelle à 20 m, et quelle est l'erreur commise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 bars ; aucune erreur"
+        },
+        {
+          "id": "b",
+          "text": "3 bars ; l'élève a donné la pression relative au lieu de l'absolue"
+        },
+        {
+          "id": "c",
+          "text": "2 bars ; il a oublié la pression relative"
+        },
+        {
+          "id": "d",
+          "text": "1 bar ; il a confondu profondeur et pression"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La pression absolue vaut $P_{abs} = 1 + \\frac{profondeur}{10} = 1 + \\frac{20}{10} = 3$ bars. L'élève a donné les 2 bars **relatifs** (la seule colonne d'eau) en oubliant la pression atmosphérique : c'est la confusion relative/absolue, à l'origine de la majorité des erreurs de calcul. Tout calcul de gaz (Mariotte, Dalton, Henry) utilise l'absolue.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-phys-002",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "pression--la-confusion-fondatrice",
+      "prompt": "Comment démontre-t-on simplement la règle du « 1 bar par 10 m d'eau » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Par la loi de Dalton sur les pressions partielles"
+        },
+        {
+          "id": "b",
+          "text": "Par le poids d'une colonne d'eau : 10 m d'eau sur 1 cm² pèsent environ 1 kg, soit ≈ 1 bar"
+        },
+        {
+          "id": "c",
+          "text": "Par la poussée d'Archimède"
+        },
+        {
+          "id": "d",
+          "text": "Par la compressibilité de l'air"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Une colonne de 10 m d'eau sur une base de 1 cm² pèse environ 1 kg, ce qui exerce une pression d'environ 1 bar : d'où l'ajout d'1 bar tous les 10 m. Cette démonstration par le poids d'eau est indépendante des lois des gaz et sert de socle concret pour introduire la notion de pression absolue en cours.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-phys-003",
+      "type": "calcul",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "boyle-mariotte--démonstration-et-cas-limites",
+      "prompt": "Quelle est la **capacité en air** (volume détendu à la pression atmosphérique) d'un bloc de 12 L gonflé à 200 bars, selon Boyle-Mariotte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "212 L"
+        },
+        {
+          "id": "b",
+          "text": "1 200 L"
+        },
+        {
+          "id": "c",
+          "text": "2 400 L"
+        },
+        {
+          "id": "d",
+          "text": "24 000 L"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "La capacité est le produit volume × pression : $12 \\times 200 = 2\\,400$ L d'air ramené à 1 bar. On néglige ici la fraction déjà présente à 1 bar dans le bloc, convention d'enseignement usuelle ; le distracteur 1 200 L correspond à une pression de 100 bars, et 24 000 L à une erreur d'un facteur 10.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-phys-004",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "boyle-mariotte--démonstration-et-cas-limites",
+      "prompt": "Selon Boyle-Mariotte, où la **détente volumique** d'une bulle d'air est-elle la plus importante, ce qui fonde la dangerosité de la surpression pulmonaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans les derniers mètres, près de la surface"
+        },
+        {
+          "id": "b",
+          "text": "À la profondeur maximale"
+        },
+        {
+          "id": "c",
+          "text": "Entre 40 m et 30 m"
+        },
+        {
+          "id": "d",
+          "text": "Elle est identique à toute profondeur"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "De 10 m à la surface, la pression absolue est divisée par deux (2 bars → 1 bar), donc le volume double : la détente est maximale près de la surface. De 40 m à 30 m (5 bars → 4 bars), le volume ne varie que d'un quart. C'est pourquoi les derniers mètres sont les plus dangereux pour la surpression pulmonaire et qu'il faut y expirer et ralentir.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-phys-005",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "boyle-mariotte--démonstration-et-cas-limites",
+      "prompt": "La loi de Boyle-Mariotte suppose une **température constante** ; un bloc gonflé qui chauffe verra donc sa pression lue à chaud surestimer le remplissage réel une fois refroidi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Mariotte ($P_1V_1 = P_2V_2$) n'est valable qu'à température constante : le gonflage échauffe l'air, et la pression lue à chaud est plus élevée que celle observée après refroidissement. C'est un cas limite classique — oublier cette condition conduit à croire un bloc « plein » alors qu'il perdra de la pression en refroidissant.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-phys-006",
+      "type": "calcul",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "dalton--pressions-partielles-et-démonstration",
+      "prompt": "À 40 m ($P_{abs} = 5$ bars), avec de l'air ($F_{O_2} \\approx 21\\,\\%$), quelle est la **pression partielle d'oxygène** $P_pO_2$ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,21 bar"
+        },
+        {
+          "id": "b",
+          "text": "1,05 bar"
+        },
+        {
+          "id": "c",
+          "text": "3,95 bars"
+        },
+        {
+          "id": "d",
+          "text": "5 bars"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "On applique Dalton : $P_pO_2 = P_{abs} \\times F_{O_2} = 5 \\times 0{,}21 = 1{,}05$ bar. La valeur 0,21 bar correspond à la surface (1 bar), et 3,95 bars est la pression partielle d'azote ($5 \\times 0{,}79$). On raisonne toujours sur la pression **absolue**, jamais la relative.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-phys-007",
+      "type": "calcul",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "dalton--pressions-partielles-et-démonstration",
+      "prompt": "En raisonnant par calcul inverse, à quelle **profondeur** l'oxygène de l'air atteint-il le seuil d'hyperoxie $P_pO_2 = 1{,}6$ bar ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "environ 30 m"
+        },
+        {
+          "id": "b",
+          "text": "environ 66 m"
+        },
+        {
+          "id": "c",
+          "text": "environ 76 m"
+        },
+        {
+          "id": "d",
+          "text": "environ 160 m"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "On cherche d'abord la pression absolue : $P_{abs} = 1{,}6 / 0{,}21 \\approx 7{,}6$ bars, soit une profondeur de $(7{,}6 - 1) \\times 10 \\approx 66$ m. C'est ce calcul qui justifie la limite réglementaire de 60 m à l'air, avec une marge. Le distracteur 76 m oublie de retrancher la pression atmosphérique, et 30 m correspond au nitrox 40 %.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-phys-008",
+      "type": "calcul",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "dalton--pressions-partielles-et-démonstration",
+      "prompt": "Quelle est la **profondeur maximale d'utilisation (MOD)** d'un nitrox 40 % au seuil $P_pO_2 = 1{,}6$ bar ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 m"
+        },
+        {
+          "id": "b",
+          "text": "30 m"
+        },
+        {
+          "id": "c",
+          "text": "40 m"
+        },
+        {
+          "id": "d",
+          "text": "66 m"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "On calcule la pression absolue admissible : $P_{abs} = 1{,}6 / 0{,}40 = 4$ bars, soit une profondeur de $(4 - 1) \\times 10 = 30$ m. Plus la fraction d'oxygène est élevée, plus la profondeur limite est faible : le nitrox 40 % ne dépasse pas 30 m au seuil de 1,6 bar. Le distracteur 66 m correspond à l'air, dont la fraction d'O₂ est bien plus basse.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-phys-009",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "henry--dissolution-saturation-gradient",
+      "prompt": "Un élève croit que la dissolution de l'azote dans les tissus est **instantanée**. Quelle est la correction exacte à apporter ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est vrai, Henry décrit une dissolution immédiate"
+        },
+        {
+          "id": "b",
+          "text": "Henry décrit l'état d'équilibre, pas la vitesse pour l'atteindre, qui dépend des tissus (modèle de Haldane)"
+        },
+        {
+          "id": "c",
+          "text": "La dissolution ne dépend que de la température"
+        },
+        {
+          "id": "d",
+          "text": "L'azote ne se dissout pas dans les tissus"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La loi de Henry décrit la quantité de gaz dissous **à l'équilibre**, proportionnelle à la pression partielle, mais ne dit rien de la vitesse pour l'atteindre. Cette vitesse dépend des tissus et fait l'objet du modèle de Haldane (compartiments, périodes) : confondre équilibre et cinétique est une erreur classique à corriger sur la cause, pas seulement sur le résultat.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-phys-010",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "henry--dissolution-saturation-gradient",
+      "prompt": "Le terme « sursaturation » signifie nécessairement qu'un accident de désaturation est en train de se produire.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La sursaturation est normale et tolérée dans une certaine limite : c'est même elle qui crée le gradient moteur de la désaturation à la remontée. C'est son **excès**, au-delà du coefficient critique, qui provoque la formation de bulles et l'accident ; assimiler sursaturation et accident est une confusion à lever.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-phys-011",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "archimède--démonstration-et-lestage",
+      "prompt": "Pourquoi un plongeur en combinaison humide **s'alourdit-il en descendant**, ce qui impose d'ajuster le gilet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que l'eau devient plus dense en profondeur"
+        },
+        {
+          "id": "b",
+          "text": "Parce que la combinaison se comprime : son volume diminue, la poussée d'Archimède baisse"
+        },
+        {
+          "id": "c",
+          "text": "Parce que son poids réel augmente avec la pression"
+        },
+        {
+          "id": "d",
+          "text": "Parce que l'azote dissous alourdit les tissus"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La poussée d'Archimède égale le poids du volume déplacé ; en descendant, la combinaison se comprime, son volume diminue, donc la poussée baisse et le plongeur devient plus lourd. Le poids réel ne change pas (seul le volume varie), d'où la nécessité d'ajouter de l'air au gilet en descendant et d'en retirer en remontant.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-phys-012",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "archimède--démonstration-et-lestage",
+      "prompt": "Un objet a une masse de 15 kg et un volume de 5 L. Immergé en eau de mer (masse volumique ≈ 1,03 kg/L), son **poids apparent** est approximativement :",
+      "options": [
+        {
+          "id": "a",
+          "text": "négatif d'environ 9,85 kg (il coule)"
+        },
+        {
+          "id": "b",
+          "text": "positif d'environ 5 kg (il flotte)"
+        },
+        {
+          "id": "c",
+          "text": "nul"
+        },
+        {
+          "id": "d",
+          "text": "négatif d'environ 15 kg"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La poussée d'Archimède vaut le poids du volume d'eau déplacé : $5 \\times 1{,}03 \\approx 5{,}15$ kg. Le poids apparent est le poids réel moins la poussée : $15 - 5{,}15 \\approx 9{,}85$ kg dans le sens du fond, donc l'objet coule. Confondre masse et poids, ou négliger la masse volumique de l'eau de mer, fausse ce type de calcul de lestage.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-phys-013",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "physique",
+      "moduleSlug": "mf1-physique-expert",
+      "sectionAnchor": "le-catalogue-des-erreurs-et-la-posture-du-moniteur",
+      "prompt": "Face à un élève qui se trompe régulièrement en physique, quelle **posture** le moniteur adopte-t-il en priorité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Donner directement la bonne réponse pour gagner du temps"
+        },
+        {
+          "id": "b",
+          "text": "Faire verbaliser le raisonnement de l'élève, corriger la cause (souvent conceptuelle) puis proposer un exercice de même famille"
+        },
+        {
+          "id": "c",
+          "text": "Multiplier les formules à mémoriser"
+        },
+        {
+          "id": "d",
+          "text": "Changer de sujet pour éviter de le décourager"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'approche diagnostique consiste à faire verbaliser le raisonnement pour localiser la faute, corriger sa **cause** (souvent une confusion conceptuelle comme relative/absolue) et non seulement le résultat, puis ancrer par un exercice de même famille. Un élève qui comprend pourquoi il s'est trompé ne refait pas l'erreur, contrairement à celui à qui l'on a seulement donné la bonne réponse.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-mat-001",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "le-détendeur--rappel-du-principe-à-deux-étages",
+      "prompt": "Dans un détendeur à deux étages, quel est le rôle du **premier étage** ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Délivrer l'air à la pression ambiante, à la demande"
+        },
+        {
+          "id": "b",
+          "text": "Abaisser la haute pression du bloc à une moyenne pression (typiquement 8 à 12 bars au-dessus de l'ambiante)"
+        },
+        {
+          "id": "c",
+          "text": "Mesurer la pression restante dans le bloc"
+        },
+        {
+          "id": "d",
+          "text": "Gonfler le gilet stabilisateur"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le premier étage, fixé au robinet, réduit la haute pression (200-300 bars) à une moyenne pression d'environ 8 à 12 bars au-dessus de l'ambiante. C'est le deuxième étage, tenu en bouche, qui délivre ensuite l'air à la pression ambiante exacte, à la demande, quand le plongeur inspire.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-mat-002",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "détendeurs-compensés-et-surcompensés",
+      "prompt": "Qu'apporte la **compensation** d'un premier étage de détendeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La moyenne pression reste constante quelle que soit la pression restante dans le bloc"
+        },
+        {
+          "id": "b",
+          "text": "Le bloc se vide plus lentement"
+        },
+        {
+          "id": "c",
+          "text": "L'air délivré est plus chaud"
+        },
+        {
+          "id": "d",
+          "text": "La réserve mécanique se déclenche automatiquement"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Dans un premier étage compensé, la haute pression du bloc n'agit pas sur le clapet (surface équilibrée par un piston creux ou une chambre de compensation) : la moyenne pression reste constante que le bloc soit à 200 ou à 60 bars, donc le confort respiratoire ne se dégrade pas quand le bloc se vide. Un premier étage non compensé, lui, durcit l'inspiration à mesure que la pression chute.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-mat-003",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "détendeurs-compensés-et-surcompensés",
+      "prompt": "En quoi un détendeur **surcompensé** se distingue-t-il d'un simple détendeur compensé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il fonctionne sans premier étage"
+        },
+        {
+          "id": "b",
+          "text": "Sa moyenne pression augmente un peu plus vite que la pression ambiante en profondeur, facilitant l'inspiration là où l'air est le plus dense"
+        },
+        {
+          "id": "c",
+          "text": "Il supprime totalement le travail respiratoire"
+        },
+        {
+          "id": "d",
+          "text": "Il n'a pas besoin d'être asservi à l'ambiante"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le surcompensé est agencé pour que la moyenne pression monte légèrement plus vite que la pression ambiante à la descente : la surpression disponible au deuxième étage est accrue en profondeur. Cela compense l'augmentation de densité de l'air (Mariotte) et facilite l'inspiration profonde, là où le travail respiratoire devient limitant.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-mat-004",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "le-givrage--mécanisme-et-prévention",
+      "prompt": "Quel phénomène physique est à l'origine du **givrage** d'un détendeur en eau froide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La compression de l'air, qui le réchauffe"
+        },
+        {
+          "id": "b",
+          "text": "La détente du gaz, qui refroidit le mécanisme (effet Joule-Thomson) et gèle l'humidité présente"
+        },
+        {
+          "id": "c",
+          "text": "La corrosion des pièces métalliques"
+        },
+        {
+          "id": "d",
+          "text": "L'électrolyse de l'eau de mer"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La détente d'un gaz s'accompagne d'un refroidissement (effet Joule-Thomson) : au premier étage, la chute de plusieurs centaines de bars refroidit fortement le mécanisme, et en eau froide ce froid gèle l'humidité présente. Le givre peut alors bloquer le clapet, le plus souvent en position ouverte.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-mat-005",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "le-givrage--mécanisme-et-prévention",
+      "prompt": "Quand le givre bloque le clapet en position ouverte, le détendeur part en **débit continu**. Quelle est la conduite à tenir correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lâcher immédiatement l'embout et remonter seul en urgence"
+        },
+        {
+          "id": "b",
+          "text": "Garder le détendeur en bouche, respirer sur le débit, signaler et remonter avec la palanquée"
+        },
+        {
+          "id": "c",
+          "text": "Fermer définitivement le robinet et rester au fond"
+        },
+        {
+          "id": "d",
+          "text": "Purger le deuxième étage jusqu'à vider le bloc"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le givrage produit une fuite continue d'air, pas une coupure : l'air reste respirable. Le réflexe correct est donc de garder l'embout, respirer sur le débit, signaler et remonter avec la palanquée en mettant fin à la plongée — éventuellement en fermant/rouvrant le robinet. C'est un incident géré, pas une privation d'air ; lâcher l'embout ou paniquer serait dangereux.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-mat-006",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "le-givrage--mécanisme-et-prévention",
+      "prompt": "Pour prévenir le givrage, il faut utiliser un air sec et propre, employer des détendeurs spécifiés eau froide et éviter de purger inutilement le détendeur à sec par grand froid.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La prévention du givrage est multiple : air sec et propre (compresseur bien entretenu, filtres), détendeurs à membrane/chambres sèches spécifiés eau froide, et ne pas purger ni respirer le détendeur à l'air libre par grand froid. On évite aussi les débits importants prolongés, comme gonfler le gilet et inspirer profondément simultanément.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-mat-007",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "les-recycleurs-notions",
+      "prompt": "Dans un recycleur, comment est traité le **CO₂** du gaz expiré ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est rejeté sous forme de bulles"
+        },
+        {
+          "id": "b",
+          "text": "Il est absorbé par une cartouche de chaux sodée"
+        },
+        {
+          "id": "c",
+          "text": "Il est reconverti en oxygène par les cellules O₂"
+        },
+        {
+          "id": "d",
+          "text": "Il est comprimé dans une bouteille dédiée"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le recycleur recycle le gaz expiré : le CO₂ est capté par une cartouche de **chaux sodée**, tandis que l'oxygène consommé est réinjecté. Si la chaux est saturée ou mal montée, le CO₂ n'est plus absorbé, ce qui provoque une hypercapnie — l'un des risques spécifiques justifiant une formation dédiée.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-mat-008",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "les-recycleurs-notions",
+      "prompt": "Quels sont les **risques spécifiques** d'un recycleur qui justifient une formation dédiée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement le froid"
+        },
+        {
+          "id": "b",
+          "text": "Hypoxie ou hyperoxie si la régulation de l'O₂ défaille, et hypercapnie si la chaux est saturée"
+        },
+        {
+          "id": "c",
+          "text": "Une autonomie réduite"
+        },
+        {
+          "id": "d",
+          "text": "L'impossibilité de plonger en eau douce"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Les recycleurs exposent à l'hypoxie ou l'hyperoxie en cas de défaillance de la régulation de l'oxygène, et à l'hypercapnie si la chaux sodée est saturée ou mal montée. S'y ajoutent la complexité technique et la dépendance à l'électronique. Le MF1 en retient le principe et les dangers, sans prétendre les enseigner : cette pratique relève de qualifications spécialisées.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-mat-009",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "blocs-tiv-et-requalification--la-réglementation-précise",
+      "prompt": "Qu'est-ce que le **TIV** dans la réglementation des blocs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une épreuve hydraulique réalisée par un organisme agréé"
+        },
+        {
+          "id": "b",
+          "text": "Une inspection visuelle annuelle réalisée par un technicien qualifié en club (FFESSM)"
+        },
+        {
+          "id": "c",
+          "text": "Le marquage poinçonné du fabricant"
+        },
+        {
+          "id": "d",
+          "text": "La pression de service de la bouteille"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le TIV (Technicien d'Inspection Visuelle) est une inspection **visuelle annuelle**, organisée par la FFESSM et réalisée en club : on ouvre le bloc, on examine l'intérieur et l'extérieur (corrosion, chocs, col, robinet), et une pastille atteste l'inspection. L'épreuve hydraulique par organisme agréé relève, elle, de la requalification périodique, dispositif complémentaire et distinct.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-mat-010",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "blocs-tiv-et-requalification--la-réglementation-précise",
+      "prompt": "En quoi consiste la **requalification périodique** (anciennement « réépreuve hydraulique ») d'un bloc ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un simple contrôle visuel annuel en club"
+        },
+        {
+          "id": "b",
+          "text": "Un contrôle réglementaire par un organisme agréé, incluant une épreuve hydraulique à la pression d'épreuve et une inspection approfondie"
+        },
+        {
+          "id": "c",
+          "text": "Le rinçage du bloc à l'eau douce"
+        },
+        {
+          "id": "d",
+          "text": "Le remplacement obligatoire du robinet"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La requalification est un contrôle **réglementaire** effectué par un organisme agréé : elle comprend une épreuve hydraulique (mise en pression à la pression d'épreuve, supérieure à la pression de service) et une inspection approfondie, avec poinçonnage de la date sur le col. Elle est complémentaire du TIV (inspection visuelle annuelle fédérale) ; un bloc hors date ne doit pas être gonflé.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-mat-011",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "blocs-tiv-et-requalification--la-réglementation-précise",
+      "prompt": "Il est recommandé de vider complètement un bloc après la plongée afin de préserver le robinet.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Au contraire, il ne faut **jamais** vider complètement un bloc : on garde une pression résiduelle pour empêcher l'entrée d'humidité et la corrosion interne. Le message d'entretien à transmettre inclut aussi le rinçage à l'eau douce, la révision périodique des détendeurs et la vérification des dates de validité (TIV et requalification).",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-mat-012",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "materiel",
+      "moduleSlug": "mf1-materiel-avance",
+      "sectionAnchor": "du-technique-au-pédagogique",
+      "prompt": "Comment un moniteur adapte-t-il l'enseignement du matériel selon le public (un N2 par rapport à un futur N4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il donne exactement le même niveau de détail à tous"
+        },
+        {
+          "id": "b",
+          "text": "Il retient l'essentiel pour un N2 (« détendeur compensé = confort stable », « bloc à jour de TIV ») et approfondit les mécanismes pour un futur N4, tout en maîtrisant lui-même l'ensemble"
+        },
+        {
+          "id": "c",
+          "text": "Il n'enseigne le matériel qu'aux futurs moniteurs"
+        },
+        {
+          "id": "d",
+          "text": "Il évite les consignes de sécurité pour ne pas inquiéter"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La technicité n'a d'intérêt pédagogique que reliée à une consigne enseignable, adaptée au niveau : un N2 retient des messages simples (compensé = confort stable, bloc à jour de TIV), un futur N4 approfondit les mécanismes. Le moniteur maîtrise, lui, l'ensemble pour répondre à toute question et transmettre le bon geste, sans jamais faire l'impasse sur la sécurité.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-regl-001",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "lorganisation-de-la-ffessm",
+      "prompt": "Quel est le rôle de la **Commission Technique Nationale (CTN)** de la FFESSM ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixer uniquement les règles d'aptitude médicale"
+        },
+        {
+          "id": "b",
+          "text": "Définir les cursus, les contenus de formation (MFT), les prérogatives et les modalités d'examen des brevets"
+        },
+        {
+          "id": "c",
+          "text": "Organiser matériellement chaque examen dans les régions"
+        },
+        {
+          "id": "d",
+          "text": "Délivrer les licences aux clubs"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La CTN est au cœur de l'enseignement : elle définit les cursus, les contenus (le Manuel de Formation Technique), les prérogatives et les modalités d'examen. Son déclinaison régionale, la CTR, organise concrètement formations et examens et désigne les jurys ; l'aptitude médicale relève, elle, de la Commission Médicale et de Prévention (CMPN).",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-regl-002",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "lorganisation-de-la-ffessm",
+      "prompt": "Qui organise concrètement les **examens de MF1 et de N4** à l'échelle d'un comité régional ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La CTN"
+        },
+        {
+          "id": "b",
+          "text": "La CTR (Commission Technique Régionale)"
+        },
+        {
+          "id": "c",
+          "text": "La CMPN"
+        },
+        {
+          "id": "d",
+          "text": "Le club du candidat"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est la Commission Technique Régionale (CTR) qui organise les formations et examens à l'échelle du comité régional et désigne les jurys, dont ceux de N4 et de MF1. La CTN définit le cadre national (cursus, contenus, prérogatives), mais la mise en œuvre concrète relève de la CTR.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-regl-003",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "licence-certificat-médical-et-assurances",
+      "prompt": "La licence fédérale inclut une assurance en **responsabilité civile** qui couvre les dommages que le licencié pourrait causer à autrui, mais pas les dommages qu'il subit lui-même.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La licence atteste l'affiliation et inclut une assurance en responsabilité civile couvrant les dommages causés à autrui. Elle ne couvre en revanche pas les dommages corporels subis par le plongeur lui-même ni l'assistance-rapatriement, qui relèvent d'une assurance individuelle accident complémentaire, vivement recommandée.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-regl-004",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "licence-certificat-médical-et-assurances",
+      "prompt": "Quels sont les **trois documents** indissociables du pratiquant, dont l'un est facultatif mais fortement recommandé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Licence, carte de niveau, carnet de plongée"
+        },
+        {
+          "id": "b",
+          "text": "Licence (affiliation + RC), certificat médical de non-contre-indication, et assurance individuelle accident (recommandée)"
+        },
+        {
+          "id": "c",
+          "text": "Passeport, licence, contrat d'assurance habitation"
+        },
+        {
+          "id": "d",
+          "text": "Certificat médical, TIV du bloc, carte d'identité"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le trio est : la licence (affiliation + responsabilité civile), le certificat médical de non-contre-indication (aptitude, règles CMPN) et — fortement recommandée mais facultative — une assurance individuelle accident couvrant les dommages subis par soi-même. La RC de la licence protège contre les dommages causés à autrui, pas ceux qu'on subit.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-regl-005",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "le-cadre-réglementaire-de-lenseignement",
+      "prompt": "Le **MF1** est un diplôme fédéral. Quelle est sa principale limite en matière d'enseignement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il ne permet pas de participer aux jurys"
+        },
+        {
+          "id": "b",
+          "text": "Il autorise l'enseignement bénévole en club mais pas, à lui seul, l'enseignement contre rémunération"
+        },
+        {
+          "id": "c",
+          "text": "Il n'autorise pas à préparer des candidats aux brevets"
+        },
+        {
+          "id": "d",
+          "text": "Il ne permet d'encadrer qu'en piscine"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le MF1 est un diplôme **fédéral** : il autorise à enseigner et encadrer **bénévolement** dans le cadre associatif de la FFESSM, à préparer des candidats aux brevets et à participer aux jurys. Il ne permet pas, à lui seul, d'enseigner contre rémunération : cela exige un diplôme professionnel (BPJEPS, DEJEPS).",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-regl-006",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "le-cadre-réglementaire-de-lenseignement",
+      "prompt": "Quel est le rôle du **directeur de plongée** défini par le Code du sport ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il délivre les licences"
+        },
+        {
+          "id": "b",
+          "text": "Il est responsable de l'organisation et de la sécurité sur le site de plongée"
+        },
+        {
+          "id": "c",
+          "text": "Il effectue le TIV des blocs"
+        },
+        {
+          "id": "d",
+          "text": "Il fixe les règles d'aptitude médicale"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le directeur de plongée est responsable de l'organisation et de la sécurité sur le site : il fixe les paramètres, veille au matériel obligatoire et aux moyens de secours (oxygène, plan de secours, moyen d'alerte). Le moniteur, souvent directeur de plongée en club, engage à ce titre sa responsabilité, d'où l'importance de respecter les procédures.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-regl-007",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "le-cadre-réglementaire-de-lenseignement",
+      "prompt": "Sur le plan juridique, quelles responsabilités l'encadrant peut-il engager ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement une responsabilité morale"
+        },
+        {
+          "id": "b",
+          "text": "Une responsabilité civile (réparer un dommage) et, en cas de faute, une responsabilité pénale"
+        },
+        {
+          "id": "c",
+          "text": "Aucune, la licence l'exonère de tout"
+        },
+        {
+          "id": "d",
+          "text": "Seulement une responsabilité pénale"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'encadrant engage une responsabilité **civile** (réparer un dommage causé) et peut engager une responsabilité **pénale** en cas de faute (mise en danger, blessure involontaire). C'est pourquoi le respect des procédures et la traçabilité de l'organisation sont essentiels ; la licence couvre la RC mais n'exonère jamais de la responsabilité pénale.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-regl-008",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "lorganisation-des-examens-n4-et-mf1",
+      "prompt": "Aux épreuves écrites du **Niveau 4 / Guide de Palanquée**, qu'appelle-t-on une note « éliminatoire » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une note supérieure à la moyenne dans un domaine"
+        },
+        {
+          "id": "b",
+          "text": "Une note basse (typiquement en dessous de 5/20) dans un domaine, qui fait échouer malgré la moyenne"
+        },
+        {
+          "id": "c",
+          "text": "La note attribuée par le seul président du jury"
+        },
+        {
+          "id": "d",
+          "text": "Une note qui double automatiquement le score"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Aux écrits du N4, chaque domaine est noté séparément et une note trop basse (typiquement en dessous de 5/20) est éliminatoire : elle fait échouer le candidat même si la moyenne générale est atteinte. C'est pourquoi le moniteur repère et travaille le domaine faible avant l'échéance, par des examens blancs dans les conditions réelles.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-regl-009",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "lorganisation-des-examens-n4-et-mf1",
+      "prompt": "Quelles épreuves sont **caractéristiques** de l'examen MF1, en plus des épreuves théoriques et techniques ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement un examen écrit de physique"
+        },
+        {
+          "id": "b",
+          "text": "Des épreuves pédagogiques en situation : pédagogie préparatoire, pratique et organisationnelle"
+        },
+        {
+          "id": "c",
+          "text": "Une épreuve de natation avec palmes seulement"
+        },
+        {
+          "id": "d",
+          "text": "Un entretien sur la biologie marine"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le MF1 est un examen de **cadre** centré sur les compétences pédagogiques : on y trouve une pédagogie préparatoire (préparer et conduire un cours théorique), une pédagogie pratique (conduire un atelier en milieu naturel) et une pédagogie organisationnelle, en plus des épreuves techniques et théoriques. La réussite atteste que le candidat sait préparer, conduire et évaluer un enseignement en sécurité.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-regl-010",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "lorganisation-des-examens-n4-et-mf1",
+      "prompt": "Le jury d'un examen MF1 est composé de cadres (MF2, instructeurs), désignés par la CTR ou la CTN selon le niveau de l'examen.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le jury du MF1 réunit des cadres de niveau supérieur — MF2, instructeurs — désignés par la CTR ou la CTN selon le niveau de l'examen. La composition exacte des épreuves et du jury est fixée par le Manuel de Formation Technique en vigueur, qui peut évoluer.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-regl-011",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "cursus-fédéral-et-cursus-professionnel-notions",
+      "prompt": "Pour enseigner la plongée **contre rémunération**, quel type de diplôme faut-il, à la différence du MF1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un second MF1"
+        },
+        {
+          "id": "b",
+          "text": "Un diplôme professionnel d'État : BPJEPS puis, à un niveau supérieur, DEJEPS"
+        },
+        {
+          "id": "c",
+          "text": "Uniquement une licence à jour"
+        },
+        {
+          "id": "d",
+          "text": "Un certificat médical spécial"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le MF1 est fédéral et bénévole ; l'enseignement rémunéré relève de diplômes d'État inscrits au Code du sport : le BPJEPS mention plongée subaquatique (premier niveau professionnel) puis le DEJEPS (niveau supérieur, prérogatives élargies). Des équivalences existent entre cursus fédéral et professionnel, définies par les textes.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-regl-012",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "lorganisation-de-la-ffessm",
+      "prompt": "Comment est structurée la FFESSM, de la base au sommet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clubs/SCA → Comités départementaux → Comités régionaux → Comité directeur national"
+        },
+        {
+          "id": "b",
+          "text": "Comité national → régions → clubs, sans échelon départemental"
+        },
+        {
+          "id": "c",
+          "text": "Uniquement des structures commerciales agréées"
+        },
+        {
+          "id": "d",
+          "text": "Clubs → CTN → CMPN"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La FFESSM, fédération délégataire, s'organise en clubs (associations) et structures commerciales agréées (SCA), regroupés en comités départementaux, puis régionaux (interdépartementaux), coiffés par le Comité directeur national. Les commissions thématiques (technique, médicale, biologie…) traversent cette structure ; la CTN et ses CTR pilotent l'enseignement.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-regl-013",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "reglementation",
+      "moduleSlug": "mf1-reglementation-structures",
+      "sectionAnchor": "cursus-fédéral-et-cursus-professionnel-notions",
+      "prompt": "La voie fédérale bénévole conduit du MF1 au MF2 puis aux instructeurs, dans le cadre associatif.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La voie fédérale (bénévole) mène du MF1 au MF2 (moniteur fédéral 2ᵉ degré) puis aux instructeurs, au sein du cadre associatif. La voie professionnelle (rémunérée), distincte, repose sur le BPJEPS et le DEJEPS ; le MF1 doit expliquer clairement cette distinction aux élèves qui envisagent d'en faire leur métier.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-pedp-001",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "analyser-la-tâche-avant-de-préparer",
+      "prompt": "Par quoi commence la préparation d'un cours théorique, selon la pédagogie par objectifs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Par la réalisation des diapositives"
+        },
+        {
+          "id": "b",
+          "text": "Par l'analyse de la tâche : public, prérequis, contenu délimité, difficultés attendues"
+        },
+        {
+          "id": "c",
+          "text": "Par le choix de la salle"
+        },
+        {
+          "id": "d",
+          "text": "Par la rédaction de l'examen final"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La préparation ne commence jamais par les supports mais par l'**analyse de la tâche** : à qui s'adresse-t-on (public, prérequis), quel contenu réel transmettre (ni trop, ni trop peu) et quelles difficultés anticiper. Cette analyse débouche sur une hiérarchisation — indispensable, utile, accessoire — qui rend le cours priorisé plutôt qu'exhaustif.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-pedp-002",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "analyser-la-tâche-avant-de-préparer",
+      "prompt": "Un bon cours doit être exhaustif : le moniteur y aborde tout ce qu'il sait sur le sujet.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Un bon cours n'est pas exhaustif, il est **priorisé** : l'analyse de la tâche débouche sur une hiérarchisation entre ce qui est indispensable, utile et accessoire. Vouloir tout dire provoque une surcharge cognitive ; le moniteur transmet l'essentiel dans le temps imparti et renvoie le reste à plus tard.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-pedp-003",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "formuler-des-objectifs-opérationnels",
+      "prompt": "Quels sont les **trois éléments** d'un objectif opérationnel bien formulé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une accroche, un exemple, une synthèse"
+        },
+        {
+          "id": "b",
+          "text": "Une performance (verbe d'action observable), une condition (contexte) et un critère de réussite"
+        },
+        {
+          "id": "c",
+          "text": "Un titre, une durée, un support"
+        },
+        {
+          "id": "d",
+          "text": "Un prérequis, un contenu, une évaluation"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Un objectif opérationnel comporte une **performance** (verbe d'action observable : calculer, identifier…), une **condition** (le contexte : « à partir des tables MN90 ») et un **critère de réussite** (le niveau attendu : « sans erreur d'arrondi »). Ces trois éléments rendent l'objectif mesurable, ce qui permet de vérifier son atteinte par un exercice.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedp-004",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "formuler-des-objectifs-opérationnels",
+      "prompt": "Quels verbes faut-il **bannir** dans la formulation d'un objectif opérationnel, car non observables ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer, citer, expliquer"
+        },
+        {
+          "id": "b",
+          "text": "Comprendre, connaître, savoir"
+        },
+        {
+          "id": "c",
+          "text": "Résoudre, distinguer, appliquer"
+        },
+        {
+          "id": "d",
+          "text": "Identifier, énoncer, corriger"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Les verbes « comprendre », « connaître », « savoir » désignent des états mentaux qu'on ne peut ni voir ni évaluer directement : ils sont à bannir. On leur préfère des verbes d'action observables — citer, calculer, expliquer, résoudre, distinguer, appliquer — dont on peut constater la réalisation par une tâche concrète.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedp-005",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "formuler-des-objectifs-opérationnels",
+      "prompt": "Parmi ces formulations, laquelle est un **objectif opérationnel** correct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« L'élève comprendra les plongées successives »"
+        },
+        {
+          "id": "b",
+          "text": "« L'élève connaîtra les tables MN90 »"
+        },
+        {
+          "id": "c",
+          "text": "« À l'issue de la séance, l'élève sera capable de calculer la majoration d'une successive à partir des tables MN90, sans erreur d'arrondi »"
+        },
+        {
+          "id": "d",
+          "text": "« L'élève sera sensibilisé à la décompression »"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Seule la proposition c est opérationnelle : elle énonce une performance (calculer la majoration), une condition (à partir des tables MN90) et un critère (sans erreur d'arrondi), ce qui la rend vérifiable par un exercice. Les autres reposent sur des verbes non observables (comprendre, connaître, être sensibilisé) qu'on ne peut pas évaluer objectivement.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-pedp-006",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "structurer-la-séance--les-quatre-temps",
+      "prompt": "Quelle est la structure en **quatre temps** d'une séance théorique efficace ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accroche, monologue, questions, examen"
+        },
+        {
+          "id": "b",
+          "text": "Introduction, développement, synthèse, évaluation"
+        },
+        {
+          "id": "c",
+          "text": "Théorie, fosse, milieu naturel, débriefing"
+        },
+        {
+          "id": "d",
+          "text": "Prérequis, objectifs, supports, jury"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La séance suit quatre temps : l'introduction (accroche, rappel des prérequis, annonce de l'objectif), le développement (du simple au complexe, apport + exemple + application), la synthèse (reformulation par les élèves, points clés, fiche) et l'évaluation (vérifier l'atteinte de l'objectif). Cette architecture crée l'intention d'apprendre puis vérifie l'acquisition.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-pedp-007",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "structurer-la-séance--les-quatre-temps",
+      "prompt": "Dans le développement, il suffit que le moniteur expose clairement la matière ; l'application par l'élève peut être reportée à la toute fin de la séance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le développement n'est pas un déversement : un adulte décroche après quelques minutes d'écoute passive. Il faut rythmer par des questions et des applications toutes les cinq à dix minutes, en alternant apport et application, pour vérifier la compréhension **en continu** et non seulement à la fin.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedp-008",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "structurer-la-séance--les-quatre-temps",
+      "prompt": "Quel est le rôle de l'**évaluation** dans la structure d'une séance théorique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sanctionner et classer les élèves"
+        },
+        {
+          "id": "b",
+          "text": "Vérifier l'atteinte des objectifs de façon formative, pour ajuster ou reprendre un point mal compris"
+        },
+        {
+          "id": "c",
+          "text": "Occuper le temps restant"
+        },
+        {
+          "id": "d",
+          "text": "Remplacer la synthèse"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "En fin de séance, l'évaluation vérifie l'atteinte des objectifs par quelques questions, un exercice ou un QCM ; elle est ici **formative**, informant l'élève et le moniteur sur ce qui est acquis. Elle permet d'ajuster ou de reprendre un point avant de clore, et non de sanctionner : c'est un outil de régulation de l'apprentissage.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedp-009",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "choisir-les-supports",
+      "prompt": "Quelle est la règle d'or dans le choix d'un support pédagogique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le support remplace le discours du moniteur"
+        },
+        {
+          "id": "b",
+          "text": "Le support sert le message : lisible, un message par support, cohérent avec le discours, manipulable si possible"
+        },
+        {
+          "id": "c",
+          "text": "Plus un support est chargé, plus il est complet"
+        },
+        {
+          "id": "d",
+          "text": "Multiplier les effets visuels pour capter l'attention"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le support **sert** le message, il ne le remplace pas : il doit être lisible (peu de texte), porter un seul message, rester cohérent avec le discours et être manipulable quand c'est possible (vraies tables, détendeur démonté). On évite la diapositive surchargée qu'on lit au lieu de l'expliquer ; le meilleur support laisse à l'élève une trace (fiche, schéma).",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedp-010",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "choisir-les-supports",
+      "prompt": "Pour enseigner un **mécanisme dynamique** (saturation, fonctionnement d'un détendeur), quel support est le plus adapté ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un long texte à lire"
+        },
+        {
+          "id": "b",
+          "text": "Une animation simple, ou un tableau construit en direct qui suit le rythme du raisonnement"
+        },
+        {
+          "id": "c",
+          "text": "Une seule photographie fixe"
+        },
+        {
+          "id": "d",
+          "text": "Un tableau de chiffres"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Un mécanisme dynamique se prête à une animation simple ou à un tableau blanc construit **en direct** avec les élèves, car il suit le rythme du raisonnement. Un schéma ou une coupe conviennent mieux à l'anatomie ou au matériel, un tableau/profil aux tables : on choisit le support selon l'objectif, en gardant un message par support.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-pedp-011",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "un-plan-de-cours-n2-complet",
+      "prompt": "Dans le plan de cours N2 sur les successives, à quoi sert l'**accroche** de l'introduction (« Vous enchaînez deux plongées — pourquoi la seconde est-elle plus contraignante ? ») ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À évaluer les élèves d'emblée"
+        },
+        {
+          "id": "b",
+          "text": "À capter l'attention et créer l'intention d'apprendre avant d'annoncer l'objectif"
+        },
+        {
+          "id": "c",
+          "text": "À remplir le temps d'installation"
+        },
+        {
+          "id": "d",
+          "text": "À noter la participation"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'accroche capte l'attention et motive : une question concrète crée l'intention d'apprendre, car un élève qui sait où il va et pourquoi apprend mieux. Elle précède le rappel des prérequis (l'azote résiduel reste dans les tissus) et l'annonce de l'objectif, complétant les trois fonctions de l'introduction.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedp-012",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-preparatoire",
+      "sectionAnchor": "un-plan-de-cours-n2-complet",
+      "prompt": "Dans un plan de cours structuré, la synthèse doit faire **reformuler** l'essentiel par les élèves eux-mêmes, et pas seulement par le moniteur.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "La synthèse récapitule l'essentiel en faisant reformuler par les élèves — pas seulement par le moniteur — ce qui vérifie et consolide l'acquisition. Elle dégage les points clés et la méthode, fournit un support de mémorisation (fiche, schéma) et relie la séance à la suivante ; dans le plan N2, les élèves reformulent la méthode en quatre étapes.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedpra-001",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "décomposer-le-geste--la-notion-déducatif",
+      "prompt": "Qu'est-ce qu'un **éducatif** en pédagogie pratique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le geste technique complet réalisé d'emblée"
+        },
+        {
+          "id": "b",
+          "text": "Un exercice intermédiaire qui isole une composante du geste et la fait réussir avant de passer à la suivante"
+        },
+        {
+          "id": "c",
+          "text": "Une évaluation certificative"
+        },
+        {
+          "id": "d",
+          "text": "Un briefing de sécurité en surface"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Un éducatif est un exercice intermédiaire qui isole une **composante** du geste, la fait maîtriser, puis on assemble. On construit ainsi une progression du plus simple au geste complet, en validant chaque étape avant la suivante : décomposer rend franchissable ce qui paraissait impossible.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-pedpra-002",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "décomposer-le-geste--la-notion-déducatif",
+      "prompt": "On peut demander un vidage de masque complet à un élève qui n'accepte pas encore l'eau sur le visage, pour le mettre plus vite en situation.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La règle d'or est un éducatif à la fois, du plus facile au plus complet, en validant chaque étape : on ne demande jamais un vidage complet à un élève qui n'accepte pas encore l'eau sur le visage. Brûler les étapes expose à l'échec et à la panique ; la progressivité conditionne la réussite et la sécurité.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-pedpra-003",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "des-critères-de-réussite-observables",
+      "prompt": "Qu'est-ce qui distingue un bon **critère de réussite** observable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« L'élève est à l'aise »"
+        },
+        {
+          "id": "b",
+          "text": "Un fait visible et objectif, binaire ou quasi-binaire, relié à l'objectif de l'éducatif"
+        },
+        {
+          "id": "c",
+          "text": "L'impression générale du moniteur"
+        },
+        {
+          "id": "d",
+          "text": "Le ressenti déclaré par l'élève"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Un bon critère est directement **observable** par l'encadrant, binaire ou quasi-binaire (réussi / non réussi) et relié à l'objectif de l'éducatif ; « L'élève est à l'aise » n'en est pas un, car ce n'est pas observable. « Il garde le détendeur en bouche et expire des bulles pendant que l'eau entre » en est un : on le définit à l'avance pour éviter de juger « au ressenti ».",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-pedpra-004",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "la-progression-complète-du-vidage-de-masque",
+      "prompt": "Dans la progression du vidage de masque, quel est le geste **moteur clé** enseigné à l'étape 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retirer complètement le masque"
+        },
+        {
+          "id": "b",
+          "text": "Expirer par le nez, tête légèrement en arrière, en appuyant sur le haut du masque"
+        },
+        {
+          "id": "c",
+          "text": "Inspirer par le nez pour chasser l'eau"
+        },
+        {
+          "id": "d",
+          "text": "Retenir sa respiration"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le geste moteur clé est l'expiration nasale franche et continue, tête légèrement en arrière, avec appui sur le **haut** de la jupe du masque : c'est ce qui chasse l'eau. Inspirer par le nez ferait entrer l'eau et provoquerait une fausse route ; on peut d'abord entraîner ce geste masque vide avant de l'appliquer masque rempli.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedpra-005",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "diagnostiquer-et-remédier-aux-difficultés-types",
+      "prompt": "Un élève **inspire par le nez** au lieu d'expirer pendant le vidage de masque et avale de l'eau. Quelle remédiation est adaptée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insister pour qu'il recommence immédiatement le vidage complet"
+        },
+        {
+          "id": "b",
+          "text": "Revenir à l'étape 3 masque vide, faire sentir la différence inspiration/expiration nasale, ralentir et rassurer"
+        },
+        {
+          "id": "c",
+          "text": "Augmenter la profondeur de travail"
+        },
+        {
+          "id": "d",
+          "text": "Lui demander de retenir sa respiration plus longtemps"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La cause est souvent la panique : la remédiation consiste à revenir à l'étape 3 masque vide, faire sentir la différence entre inspirer et expirer par le nez, ralentir et rassurer. On agit sur la **cause**, pas en répétant la consigne ; insister ou augmenter la difficulté aggraverait la gêne et le risque.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-pedpra-006",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "diagnostiquer-et-remédier-aux-difficultés-types",
+      "prompt": "Le masque d'un élève **ne se vide pas** malgré une expiration nasale. Quelle est la cause la plus probable et la remédiation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il souffle trop fort ; lui demander de souffler moins"
+        },
+        {
+          "id": "b",
+          "text": "Mauvais appui : l'eau rentre par le haut ; corriger la position (tête en arrière, appui sur le haut de la jupe)"
+        },
+        {
+          "id": "c",
+          "text": "Le masque est défectueux ; le remplacer systématiquement"
+        },
+        {
+          "id": "d",
+          "text": "Il manque d'air ; remonter en urgence"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Si l'expiration est correcte mais que le masque ne se vide pas, l'eau rentre par le haut faute d'appui : la remédiation est de corriger la position (tête en arrière, appui sur le **haut** de la jupe) et de montrer où presser. Le diagnostic porte sur le geste, pas sur le matériel ni sur la ventilation ; on identifie pourquoi ça ne marche pas avant d'agir.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-pedpra-007",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "diagnostiquer-et-remédier-aux-difficultés-types",
+      "prompt": "Face à un élève en blocage psychologique sur un exercice aquatique, la bonne réponse est d'insister fermement pour qu'il surmonte sa peur le jour même.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Il ne faut **jamais** forcer un élève en blocage : un élève contraint peut paniquer, remonter en catastrophe (risque de surpression pulmonaire) ou développer une aversion durable. La bonne réponse est de **redescendre d'une étape**, dédramatiser, progresser lentement et valoriser chaque micro-progrès ; la sécurité prime toujours sur la progression du jour.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedpra-008",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "la-progression-complète-du-vidage-de-masque",
+      "prompt": "Quel cycle le moniteur applique-t-il à chaque étape d'un apprentissage moteur en milieu naturel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expliquer longuement, puis évaluer"
+        },
+        {
+          "id": "b",
+          "text": "Démontrer → faire faire → observer le critère → corriger"
+        },
+        {
+          "id": "c",
+          "text": "Noter → classer → sanctionner"
+        },
+        {
+          "id": "d",
+          "text": "Faire faire → attendre → recommencer sans correction"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le cycle est : démontrer le geste (l'élève voit ce qu'on attend), faire exécuter, observer le critère de réussite, puis corriger. En plongée on ne parle pas : la communication est gestuelle et se prépare en surface au briefing ; une démonstration muette bien placée vaut mieux qu'une longue explication.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedpra-009",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "sécurité-et-organisation-de-latelier",
+      "prompt": "Sous l'eau, comment le moniteur doit-il se **placer** pendant un atelier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Derrière le groupe, pour surveiller les retardataires"
+        },
+        {
+          "id": "b",
+          "text": "De façon à voir tous ses élèves, à portée d'intervention immédiate de celui qui travaille, sans tourner le dos aux autres"
+        },
+        {
+          "id": "c",
+          "text": "Au fond, à distance, pour laisser de l'autonomie"
+        },
+        {
+          "id": "d",
+          "text": "En surface, en observant depuis le bateau"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le placement de l'encadrant est décisif : il se positionne pour voir **tous** ses élèves, à portée d'intervention immédiate de celui qui travaille, sans jamais tourner le dos aux autres. Il maîtrise la profondeur, surveille l'air et le temps, et garde la capacité de stopper l'atelier à tout moment : ce sont des compétences pédagogiques évaluées à l'examen.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedpra-010",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "sécurité-et-organisation-de-latelier",
+      "prompt": "Pourquoi travaille-t-on les **gestes anxiogènes** (vidage de masque, lâcher d'embout) d'abord à faible profondeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour économiser l'air"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'une remontée reste possible sans danger si l'élève panique"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la visibilité y est meilleure"
+        },
+        {
+          "id": "d",
+          "text": "Parce que la réglementation l'impose à tout niveau"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "On travaille les gestes anxiogènes à faible profondeur d'abord parce qu'une remontée y reste possible sans danger si l'élève panique. Cela réduit le risque de surpression pulmonaire lié à une remontée réflexe ; on augmente la profondeur seulement une fois le geste maîtrisé et l'élève en confiance.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedpra-011",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "sécurité-et-organisation-de-latelier",
+      "prompt": "L'effectif d'un atelier en milieu naturel doit rester compatible à la fois avec la capacité de surveillance du moniteur et avec les prérogatives réglementaires d'encadrement.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "a"
+      ],
+      "explanation": "Le nombre d'élèves d'un atelier doit être compatible avec la capacité de surveillance de l'encadrant **et** avec les prérogatives réglementaires d'encadrement. Le moniteur choisit aussi un site adapté (profondeur maîtrisée, fond visible, à l'abri du courant) et fait un briefing clair : sécurité, placement et communication sont des compétences pédagogiques à part entière.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-pedpra-012",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-pratique",
+      "sectionAnchor": "diagnostiquer-et-remédier-aux-difficultés-types",
+      "prompt": "Quelle est la posture générale de **remédiation** attendue d'un moniteur face à l'échec d'un élève ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Répéter la consigne à l'identique, plus fort"
+        },
+        {
+          "id": "b",
+          "text": "Diagnostiquer pourquoi ça ne marche pas, agir sur la cause, revenir en arrière sans dramatiser"
+        },
+        {
+          "id": "c",
+          "text": "Passer immédiatement à l'élève suivant"
+        },
+        {
+          "id": "d",
+          "text": "Retirer l'élève de la formation"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La remédiation est bienveillante et **diagnostique** : on identifie pourquoi ça ne marche pas, on agit sur la cause et l'on revient en arrière sans dramatiser. Répéter la même consigne ne corrige pas la cause ; forcer un élève en difficulté est contre-productif et dangereux, la progressivité est la clé.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedo-001",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "organiser-une-formation-sur-une-saison",
+      "prompt": "Comment planifie-t-on une formation de niveau sur une saison, selon le principe exposé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En improvisant séance après séance"
+        },
+        {
+          "id": "b",
+          "text": "À rebours : partir des prérogatives visées, décomposer en séances respectant les prérequis, articuler théorie/fosse/milieu naturel"
+        },
+        {
+          "id": "c",
+          "text": "En commençant par l'autonomie avant les fondamentaux"
+        },
+        {
+          "id": "d",
+          "text": "En traitant toute la théorie avant toute pratique"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "On planifie **à rebours** : on part des objectifs de fin de formation (les prérogatives du niveau visé), qu'on décompose en séances successives du simple au complexe en respectant les prérequis. On articule les trois milieux (théorie, fosse, milieu naturel), on garde des marges pour rattrapages et météo, et on ajuste grâce à un suivi régulier des acquis.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedo-002",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "organiser-une-formation-sur-une-saison",
+      "prompt": "Une progression de formation, une fois établie, ne doit plus être modifiée en cours de saison.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Une progression n'est jamais figée : on évalue régulièrement pour ajuster au rythme réel du groupe. Le moniteur tient un suivi de chaque élève (acquis, points à retravailler) qui guide la suite, et garde des marges pour les rattrapages et les aléas météo.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-pedo-003",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "gérer-un-groupe-hétérogène",
+      "prompt": "Qu'est-ce que la **différenciation pédagogique** face à un groupe hétérogène ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Caler le cours sur l'élève le plus lent"
+        },
+        {
+          "id": "b",
+          "text": "Adapter l'enseignement à la diversité des niveaux et rythmes sans laisser personne de côté ni freiner les plus rapides"
+        },
+        {
+          "id": "c",
+          "text": "Exclure les élèves les plus faibles"
+        },
+        {
+          "id": "d",
+          "text": "Ne s'adresser qu'aux plus rapides"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La différenciation adapte l'enseignement à la diversité des élèves : varier les modalités, proposer des tâches de difficulté graduée, constituer des sous-groupes ou favoriser le tutorat entre pairs, ajuster le temps. Caler le cours sur le plus lent ennuie les autres, le caler sur le plus rapide en fait décrocher : on vise l'essentiel commun puis on différencie les approfondissements.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedo-004",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "gérer-un-groupe-hétérogène",
+      "prompt": "Comment le moniteur entretient-il la **motivation** des élèves les plus fragiles dans un groupe hétérogène ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En comparant chacun au meilleur du groupe"
+        },
+        {
+          "id": "b",
+          "text": "En valorisant les progrès de chacun par rapport à lui-même, non par comparaison au groupe"
+        },
+        {
+          "id": "c",
+          "text": "En supprimant toute évaluation"
+        },
+        {
+          "id": "d",
+          "text": "En accélérant le rythme pour tous"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le moniteur valorise les progrès de chacun **par rapport à lui-même**, et non par comparaison au groupe, ce qui entretient la motivation des plus fragiles. Comparer au meilleur découragerait ; gérer l'hétérogénéité est une compétence de moniteur à part entière, souvent révélatrice de sa maîtrise pédagogique.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedo-005",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "trois-fonctions-de-lévaluation",
+      "prompt": "Quelle est la fonction de l'**évaluation formative** ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Délivrer un brevet officiel"
+        },
+        {
+          "id": "b",
+          "text": "Informer élève et moniteur pendant l'apprentissage sur ce qui est acquis, pour réguler la progression, sans sanctionner"
+        },
+        {
+          "id": "c",
+          "text": "Faire le bilan final d'une séquence"
+        },
+        {
+          "id": "d",
+          "text": "Classer les élèves entre eux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'évaluation formative a lieu **pendant** l'apprentissage : elle informe l'élève et le moniteur sur ce qui est acquis et ce qui reste à travailler, pour réguler la progression. Elle n'est pas sanctionnante — c'est un outil d'apprentissage (exercice corrigé ensemble, question en séance) — et c'est la plus utile au quotidien.",
+      "difficulty": 1
+    },
+    {
+      "id": "mf1-pedo-006",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "trois-fonctions-de-lévaluation",
+      "prompt": "Comment distingue-t-on l'évaluation **sommative** de l'évaluation **certificative** ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles sont identiques"
+        },
+        {
+          "id": "b",
+          "text": "La sommative fait le bilan d'une séquence ; la certificative est une sommative particulière qui délivre un brevet ou une qualification"
+        },
+        {
+          "id": "c",
+          "text": "La sommative délivre le brevet, la certificative régule l'apprentissage"
+        },
+        {
+          "id": "d",
+          "text": "La certificative n'a pas de barème"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "L'évaluation sommative fait le **bilan** d'une séquence (test de fin de module, examen blanc) et situe l'élève par rapport aux objectifs. L'évaluation certificative est une sommative particulière qui **délivre un brevet** : c'est l'examen officiel, avec jury, barème et note éliminatoire, où le moniteur engage sa responsabilité de certificateur.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-pedo-007",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "la-taxonomie-de-bloom-appliquée",
+      "prompt": "La **taxonomie de Bloom** hiérarchise les opérations mentales du plus simple au plus complexe. Quel est l'ordre correct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Créer → évaluer → analyser → appliquer → comprendre → mémoriser"
+        },
+        {
+          "id": "b",
+          "text": "Mémoriser → comprendre → appliquer → analyser → évaluer → créer"
+        },
+        {
+          "id": "c",
+          "text": "Comprendre → mémoriser → créer → appliquer → analyser → évaluer"
+        },
+        {
+          "id": "d",
+          "text": "Appliquer → mémoriser → comprendre → créer → analyser → évaluer"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "La taxonomie de Bloom va du plus simple au plus complexe : mémoriser (restituer), comprendre (expliquer avec ses mots), appliquer (utiliser une règle), analyser (décomposer, distinguer), évaluer (juger, critiquer), créer (produire du nouveau). Cet ordre sert à calibrer objectifs et questions au bon niveau cognitif.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedo-008",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "la-taxonomie-de-bloom-appliquée",
+      "prompt": "En appliquant Bloom, à quel niveau cognitif situe-t-on typiquement les objectifs d'un **N1**, et à quel niveau ceux d'un **MF1** ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N1 : créer ; MF1 : mémoriser"
+        },
+        {
+          "id": "b",
+          "text": "N1 : surtout mémoriser/comprendre/appliquer ; MF1 : jusqu'à créer (concevoir une séance)"
+        },
+        {
+          "id": "c",
+          "text": "N1 et MF1 : uniquement mémoriser"
+        },
+        {
+          "id": "d",
+          "text": "N1 : évaluer ; MF1 : appliquer"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Un N1 se situe surtout sur mémoriser/comprendre/appliquer (citer les barotraumatismes, expliquer l'équilibrage, appliquer une consigne), un N4 monte vers analyser et évaluer, et un MF1 va jusqu'à **créer** (concevoir une séance). Calibrer le niveau évite de demander à un débutant une opération mentale hors de portée ou de sous-évaluer un cadre.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-pedo-009",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "grilles-dévaluation-et-biais",
+      "prompt": "Quel est l'intérêt d'une **grille d'évaluation** construite à partir de critères observables ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle accélère la notation sans justification"
+        },
+        {
+          "id": "b",
+          "text": "Elle rend l'évaluation transparente, reproductible et juste (deux évaluateurs aboutissent au même résultat)"
+        },
+        {
+          "id": "c",
+          "text": "Elle permet de noter au ressenti"
+        },
+        {
+          "id": "d",
+          "text": "Elle dispense de définir des objectifs"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Une grille liste les critères attendus, chacun observable, avec un barème ou des niveaux de maîtrise : elle rend l'évaluation transparente (l'élève sait ce qui est attendu), reproductible (deux évaluateurs aboutissent au même résultat) et juste (on évalue les mêmes choses pour tous). Elle découle directement des objectifs opérationnels et de leurs critères de réussite.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedo-010",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "grilles-dévaluation-et-biais",
+      "prompt": "Un examinateur laisse une bonne impression générale sur un candidat déteindre sur tous les critères qu'il évalue. De quel **biais** s'agit-il, et quel est le remède ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Effet de contraste ; changer de candidat"
+        },
+        {
+          "id": "b",
+          "text": "Effet de halo ; évaluer chaque critère séparément"
+        },
+        {
+          "id": "c",
+          "text": "Effet de fatigue ; faire une pause"
+        },
+        {
+          "id": "d",
+          "text": "Biais de stéréotype ; s'étalonner"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "C'est l'**effet de halo** : une impression générale (bonne ou mauvaise) déteint sur l'ensemble des critères. Le remède est d'évaluer chaque critère **séparément**, en revenant à la grille. Les autres biais (contraste, complaisance/sévérité, stéréotype, ordre/fatigue) appellent leurs propres remèdes : retour à la grille, étalonnage, faits observables, pauses.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-pedo-011",
+      "type": "vrai-faux",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "grilles-dévaluation-et-biais",
+      "prompt": "Lors d'une évaluation certificative, la bienveillance peut justifier de délivrer le brevet à un candidat qui ne maîtrise pas encore toutes ses prérogatives.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vrai"
+        },
+        {
+          "id": "b",
+          "text": "Faux"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Une évaluation certificative engage la **sécurité** : délivrer un brevet à un candidat qui ne maîtrise pas ses prérogatives, c'est l'autoriser à se mettre en danger. La bienveillance ne doit jamais conduire à la complaisance ; on s'en tient aux critères et aux faits observables, avec la grille comme garde-fou contre les biais.",
+      "difficulty": 2
+    },
+    {
+      "id": "mf1-pedo-012",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "trois-fonctions-de-lévaluation",
+      "prompt": "Une même notion de tables peut être évaluée aux trois fonctions. Laquelle correspond à l'**épreuve de tables de l'examen N4** ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Formative"
+        },
+        {
+          "id": "b",
+          "text": "Sommative simple de module"
+        },
+        {
+          "id": "c",
+          "text": "Certificative"
+        },
+        {
+          "id": "d",
+          "text": "Aucune, ce n'est pas une évaluation"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "L'épreuve de tables de l'examen N4 est **certificative** : elle participe à la délivrance du brevet. La même notion peut être évaluée en formative (exercice corrigé en séance pour voir où en est l'élève) et en sommative (test de validation du module) : le moniteur choisit la fonction selon son intention — réguler, faire le bilan ou certifier.",
+      "difficulty": 3
+    },
+    {
+      "id": "mf1-pedo-013",
+      "type": "qcm",
+      "level": "mf1",
+      "domain": "pedagogie",
+      "moduleSlug": "mf1-pedagogie-organisation",
+      "sectionAnchor": "synthèse--le-moniteur-organisateur-et-évaluateur",
+      "prompt": "Selon la synthèse du module, qu'est-ce qui définit avant tout le moniteur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La performance sur une épreuve isolée"
+        },
+        {
+          "id": "b",
+          "text": "La cohérence d'ensemble : préparer, conduire, organiser et évaluer pour rendre l'élève capable de pratiquer en sécurité et pouvoir le démontrer"
+        },
+        {
+          "id": "c",
+          "text": "Le seul niveau technique en plongée"
+        },
+        {
+          "id": "d",
+          "text": "La quantité de connaissances théoriques accumulées"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Le moniteur ne se contente pas de préparer et conduire une séance : il inscrit son enseignement dans la durée (progression, suivi, différenciation) et le valide avec rigueur (fonctions d'évaluation, taxonomie, grilles, vigilance aux biais). C'est cette **cohérence d'ensemble** — rendre l'élève capable de pratiquer en sécurité et pouvoir le démontrer objectivement — plus qu'une épreuve isolée, qui le définit.",
+      "difficulty": 3
+    }
+  ]
+}

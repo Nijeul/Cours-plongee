@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "status": "A_VERIFIER",
+    "warning": "JEU DE DONNÉES D'AMORÇAGE — recopié de mémoire, NON vérifié sur un exemplaire officiel des tables MN90. À remplir/valider intégralement avant tout usage réel. Le moteur de calcul refuse tout cas non couvert par ce fichier.",
+    "source": "Tables de plongée à l'air MN90 (Marine Nationale 1990), édition FFESSM",
+    "updated": "2026-08-05",
+    "ascentSpeedMeters": { "min": 15, "max": 17 },
+    "interStopSpeed": 6
+  },
+  "tableI": {
+    "description": "Plongée simple à l'air. stops : minutes de palier par profondeur de palier (m). gps : groupe de plongée successive.",
+    "entries": [
+      {
+        "depth": 12,
+        "rows": [
+          { "duration": 15, "stops": {}, "gps": "A" },
+          { "duration": 30, "stops": {}, "gps": "B" },
+          { "duration": 45, "stops": {}, "gps": "C" },
+          { "duration": 60, "stops": {}, "gps": "D" },
+          { "duration": 75, "stops": {}, "gps": "E" },
+          { "duration": 90, "stops": {}, "gps": "F" },
+          { "duration": 105, "stops": {}, "gps": "G" },
+          { "duration": 120, "stops": {}, "gps": "H" },
+          { "duration": 135, "stops": {}, "gps": "H" },
+          { "duration": 150, "stops": { "3": 3 }, "gps": "I" },
+          { "duration": 165, "stops": { "3": 6 }, "gps": "I" },
+          { "duration": 180, "stops": { "3": 9 }, "gps": "J" }
+        ]
+      },
+      {
+        "depth": 15,
+        "rows": [
+          { "duration": 15, "stops": {}, "gps": "B" },
+          { "duration": 30, "stops": {}, "gps": "C" },
+          { "duration": 45, "stops": {}, "gps": "D" },
+          { "duration": 60, "stops": {}, "gps": "F" },
+          { "duration": 75, "stops": {}, "gps": "G" },
+          { "duration": 80, "stops": { "3": 2 }, "gps": "G" },
+          { "duration": 90, "stops": { "3": 6 }, "gps": "H" },
+          { "duration": 100, "stops": { "3": 12 }, "gps": "I" },
+          { "duration": 110, "stops": { "3": 18 }, "gps": "J" },
+          { "duration": 120, "stops": { "3": 25 }, "gps": "K" }
+        ]
+      },
+      {
+        "depth": 20,
+        "rows": [
+          { "duration": 10, "stops": {}, "gps": "B" },
+          { "duration": 15, "stops": {}, "gps": "C" },
+          { "duration": 20, "stops": {}, "gps": "D" },
+          { "duration": 25, "stops": {}, "gps": "E" },
+          { "duration": 30, "stops": {}, "gps": "F" },
+          { "duration": 35, "stops": {}, "gps": "G" },
+          { "duration": 40, "stops": {}, "gps": "H" },
+          { "duration": 45, "stops": { "3": 4 }, "gps": "I" },
+          { "duration": 50, "stops": { "3": 9 }, "gps": "I" },
+          { "duration": 55, "stops": { "3": 13 }, "gps": "J" },
+          { "duration": 60, "stops": { "3": 18 }, "gps": "K" },
+          { "duration": 65, "stops": { "3": 23 }, "gps": "K" },
+          { "duration": 70, "stops": { "3": 28 }, "gps": "L" }
+        ]
+      },
+      {
+        "depth": 25,
+        "rows": [
+          { "duration": 10, "stops": {}, "gps": "C" },
+          { "duration": 15, "stops": {}, "gps": "D" },
+          { "duration": 20, "stops": {}, "gps": "E" },
+          { "duration": 25, "stops": { "3": 2 }, "gps": "F" },
+          { "duration": 30, "stops": { "3": 6 }, "gps": "G" },
+          { "duration": 35, "stops": { "3": 12 }, "gps": "H" },
+          { "duration": 40, "stops": { "3": 19 }, "gps": "I" },
+          { "duration": 45, "stops": { "3": 25 }, "gps": "J" },
+          { "duration": 50, "stops": { "6": 2, "3": 30 }, "gps": "K" }
+        ]
+      },
+      {
+        "depth": 30,
+        "rows": [
+          { "duration": 10, "stops": {}, "gps": "C" },
+          { "duration": 15, "stops": { "3": 2 }, "gps": "E" },
+          { "duration": 20, "stops": { "3": 4 }, "gps": "F" },
+          { "duration": 25, "stops": { "3": 9 }, "gps": "G" },
+          { "duration": 30, "stops": { "3": 17 }, "gps": "H" },
+          { "duration": 35, "stops": { "6": 2, "3": 23 }, "gps": "I" },
+          { "duration": 40, "stops": { "6": 4, "3": 29 }, "gps": "J" },
+          { "duration": 45, "stops": { "6": 7, "3": 34 }, "gps": "K" }
+        ]
+      },
+      {
+        "depth": 35,
+        "rows": [
+          { "duration": 5, "stops": {}, "gps": "B" },
+          { "duration": 10, "stops": { "3": 1 }, "gps": "D" },
+          { "duration": 15, "stops": { "3": 4 }, "gps": "E" },
+          { "duration": 20, "stops": { "3": 10 }, "gps": "G" },
+          { "duration": 25, "stops": { "6": 2, "3": 16 }, "gps": "H" },
+          { "duration": 30, "stops": { "6": 5, "3": 22 }, "gps": "I" },
+          { "duration": 35, "stops": { "6": 9, "3": 28 }, "gps": "J" },
+          { "duration": 40, "stops": { "9": 2, "6": 12, "3": 33 }, "gps": "K" }
+        ]
+      },
+      {
+        "depth": 40,
+        "rows": [
+          { "duration": 5, "stops": {}, "gps": "C" },
+          { "duration": 10, "stops": { "3": 2 }, "gps": "D" },
+          { "duration": 15, "stops": { "3": 7 }, "gps": "F" },
+          { "duration": 20, "stops": { "6": 2, "3": 13 }, "gps": "G" },
+          { "duration": 25, "stops": { "6": 5, "3": 19 }, "gps": "I" },
+          { "duration": 30, "stops": { "6": 9, "3": 26 }, "gps": "J" },
+          { "duration": 35, "stops": { "9": 3, "6": 12, "3": 31 }, "gps": "K" }
+        ]
+      },
+      {
+        "depth": 45,
+        "rows": [
+          { "duration": 5, "stops": {}, "gps": "C" },
+          { "duration": 10, "stops": { "3": 4 }, "gps": "E" },
+          { "duration": 15, "stops": { "6": 2, "3": 10 }, "gps": "F" },
+          { "duration": 20, "stops": { "6": 5, "3": 17 }, "gps": "H" },
+          { "duration": 25, "stops": { "9": 2, "6": 8, "3": 24 }, "gps": "I" },
+          { "duration": 30, "stops": { "9": 5, "6": 12, "3": 30 }, "gps": "K" }
+        ]
+      },
+      {
+        "depth": 50,
+        "rows": [
+          { "duration": 5, "stops": {}, "gps": "C" },
+          { "duration": 10, "stops": { "3": 6 }, "gps": "E" },
+          { "duration": 15, "stops": { "6": 4, "3": 13 }, "gps": "G" },
+          { "duration": 20, "stops": { "9": 2, "6": 8, "3": 21 }, "gps": "H" },
+          { "duration": 25, "stops": { "9": 5, "6": 12, "3": 28 }, "gps": "J" }
+        ]
+      },
+      {
+        "depth": 55,
+        "rows": [
+          { "duration": 5, "stops": { "3": 1 }, "gps": "C" },
+          { "duration": 10, "stops": { "6": 2, "3": 8 }, "gps": "F" },
+          { "duration": 15, "stops": { "6": 6, "3": 16 }, "gps": "G" },
+          { "duration": 20, "stops": { "9": 4, "6": 10, "3": 24 }, "gps": "I" }
+        ]
+      },
+      {
+        "depth": 60,
+        "rows": [
+          { "duration": 5, "stops": { "3": 2 }, "gps": "D" },
+          { "duration": 10, "stops": { "6": 3, "3": 10 }, "gps": "F" },
+          { "duration": 15, "stops": { "9": 2, "6": 8, "3": 19 }, "gps": "H" },
+          { "duration": 20, "stops": { "9": 6, "6": 12, "3": 26 }, "gps": "J" }
+        ]
+      }
+    ]
+  },
+  "tableII": {
+    "description": "Azote résiduel en fonction du GPS et de l'intervalle de surface (minutes). Au-delà de 720 min (12 h), plongée simple (azote résiduel 0,81).",
+    "intervals": [15, 30, 45, 60, 90, 120, 180, 240, 360, 480, 720],
+    "residualNitrogen": {
+      "A": [0.84, 0.83, 0.83, 0.82, 0.82, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81],
+      "B": [0.88, 0.87, 0.86, 0.85, 0.84, 0.83, 0.82, 0.81, 0.81, 0.81, 0.81],
+      "C": [0.92, 0.91, 0.89, 0.88, 0.86, 0.85, 0.83, 0.82, 0.81, 0.81, 0.81],
+      "D": [0.97, 0.95, 0.93, 0.91, 0.89, 0.87, 0.85, 0.83, 0.82, 0.81, 0.81],
+      "E": [1.02, 0.99, 0.97, 0.95, 0.92, 0.89, 0.86, 0.84, 0.82, 0.81, 0.81],
+      "F": [1.07, 1.04, 1.01, 0.98, 0.95, 0.92, 0.88, 0.86, 0.83, 0.82, 0.81],
+      "G": [1.12, 1.08, 1.05, 1.02, 0.98, 0.94, 0.90, 0.87, 0.84, 0.82, 0.81],
+      "H": [1.17, 1.13, 1.09, 1.06, 1.01, 0.97, 0.92, 0.89, 0.85, 0.83, 0.81],
+      "I": [1.22, 1.17, 1.13, 1.10, 1.04, 1.00, 0.94, 0.90, 0.86, 0.83, 0.82],
+      "J": [1.27, 1.22, 1.17, 1.13, 1.07, 1.03, 0.96, 0.92, 0.87, 0.84, 0.82],
+      "K": [1.32, 1.26, 1.21, 1.17, 1.11, 1.05, 0.99, 0.94, 0.88, 0.85, 0.82],
+      "L": [1.37, 1.31, 1.25, 1.20, 1.14, 1.08, 1.01, 0.96, 0.90, 0.86, 0.83],
+      "M": [1.42, 1.35, 1.29, 1.24, 1.17, 1.11, 1.03, 0.98, 0.91, 0.87, 0.83],
+      "N": [1.47, 1.40, 1.33, 1.28, 1.20, 1.14, 1.06, 1.00, 0.92, 0.88, 0.84],
+      "O": [1.52, 1.44, 1.37, 1.31, 1.23, 1.16, 1.08, 1.02, 0.94, 0.89, 0.84],
+      "P": [1.57, 1.49, 1.41, 1.35, 1.26, 1.19, 1.10, 1.04, 0.95, 0.90, 0.85]
+    }
+  },
+  "tableIII": {
+    "description": "Majoration (minutes) en fonction de l'azote résiduel et de la profondeur de la plongée successive. Lecture : niveau d'azote immédiatement supérieur, profondeur immédiatement supérieure.",
+    "nitrogenLevels": [0.84, 0.89, 0.95, 1.01, 1.07, 1.13, 1.2, 1.29, 1.38, 1.45, 1.57],
+    "depths": [12, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60],
+    "majorations": [
+      [4, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1],
+      [11, 8, 6, 5, 4, 3, 3, 3, 2, 2, 2],
+      [20, 15, 11, 9, 7, 6, 5, 5, 4, 4, 4],
+      [29, 22, 16, 13, 11, 9, 8, 7, 6, 6, 5],
+      [39, 30, 21, 17, 14, 12, 10, 9, 8, 8, 7],
+      [50, 38, 27, 22, 18, 15, 13, 12, 10, 10, 9],
+      [64, 47, 34, 27, 22, 19, 16, 14, 13, 12, 11],
+      [81, 59, 42, 33, 27, 23, 20, 17, 15, 14, 13],
+      [100, 72, 50, 40, 32, 27, 23, 21, 18, 17, 15],
+      [116, 82, 57, 45, 36, 31, 26, 23, 21, 19, 17],
+      [999, 101, 69, 54, 43, 36, 31, 27, 24, 22, 20]
+    ]
+  }
+}
