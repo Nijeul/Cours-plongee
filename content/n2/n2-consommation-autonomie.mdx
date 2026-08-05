@@ -1,0 +1,153 @@
+---
+slug: n2-consommation-autonomie
+title: "Consommation et autonomie en air"
+level: n2
+domain: physique
+description: "Calculer sa consommation et son autonomie selon la profondeur, la réserve et le bloc utilisé."
+objectives:
+  - "Calculer le volume d'air détendu disponible dans un bloc en tenant compte de la réserve"
+  - "Calculer la consommation à une profondeur donnée à partir de la consommation en surface"
+  - "Dérouler la méthode complète de calcul d'autonomie et l'appliquer à un cas chiffré"
+  - "Citer les facteurs qui augmentent la consommation et leurs parades"
+  - "Planifier la gestion de l'air en palanquée autonome : annonces, seuils, réserve de 50 bars"
+durationMinutes: 45
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+  - "Illustra-Pack physique plongée, Commission Technique Nationale FFESSM"
+---
+
+« On se retrouve à 100 bars, on entame la remontée à 70, réserve à 50. » Ces phrases du briefing prennent tout leur sens quand on sait les traduire en minutes. Le plongeur autonome doit être capable de répondre avant de s'immerger à la question : combien de temps mon bloc me permet-il de rester à cette profondeur ? Ce module donne la méthode complète, directement issue de la loi de Boyle-Mariotte.
+
+## La consommation en surface : votre point de départ
+
+La consommation d'un plongeur se mesure en **litres d'air détendu par minute** (L/min) : c'est le volume d'air, ramené à la pression atmosphérique, que vous ventilez chaque minute. Elle varie selon le gabarit, l'entraînement, l'effort et le stress. Pour les calculs d'examen, on utilise couramment une valeur de référence de **20 L/min en surface**, au repos ou en effort léger — l'énoncé la précise toujours.
+
+Vous pouvez mesurer votre consommation réelle : plongez à profondeur constante et stable, notez la pression consommée pendant un temps donné, puis ramenez le tout en surface. Par exemple, si vous consommez 30 bars en 10 minutes à 10 m avec un bloc de 12 L : volume consommé $30 \times 12 = 360$ L, soit 36 L/min à 10 m (2 bars), donc $36 / 2 = 18$ L/min en équivalent surface. Connaître sa propre consommation est la marque d'un plongeur autonome sérieux.
+
+## La consommation augmente avec la profondeur
+
+Le détendeur délivre l'air à la pression ambiante. À 20 m, chaque litre inspiré est à 3 bars : il « coûte » trois litres d'air détendu du bloc. La loi de Boyle-Mariotte donne donc directement :
+
+$$C_{prof} = C_{surface} \times P_{abs}$$
+
+| Profondeur | $P_{abs}$ | Consommation (base 20 L/min) |
+|---|---|---|
+| Surface | 1 bar | 20 L/min |
+| 10 m | 2 bars | 40 L/min |
+| 20 m | 3 bars | 60 L/min |
+| 40 m | 5 bars | 100 L/min |
+
+À 40 m, vous videz votre bloc **cinq fois plus vite** qu'en surface. Cette simple ligne de tableau explique pourquoi la gestion d'air devient un enjeu majeur dans l'espace 20-40 m, et pourquoi le manomètre se consulte souvent.
+
+<ARetenir>
+
+Votre ventilation ne change pas : vous inspirez le même volume à chaque cycle. Mais cet air est délivré **comprimé à la pression ambiante** : en litres détendus prélevés sur le bloc, la consommation est multipliée par la pression absolue.
+
+</ARetenir>
+
+## La réserve : 50 bars intouchables
+
+On ne planifie jamais une plongée sur la totalité du bloc. Par convention d'enseignement et de sécurité, une **réserve de 50 bars** reste hors calcul : elle couvre l'imprévu (assistance à un équipier, palier prolongé, recherche du mouillage) et garantit que le détendeur reste alimenté correctement jusqu'à la sortie. La remontée doit donc être **entamée avant** d'atteindre la réserve, pour arriver en surface avec ces 50 bars encore présents ou à peine entamés.
+
+Le volume réellement disponible pour la plongée se calcule ainsi :
+
+$$V_{disponible} = (P_{bloc} - P_{r\text{é}serve}) \times V_{bloc}$$
+
+**Exemple.** Bloc de 12 L gonflé à 200 bars, réserve 50 bars : $V_{disponible} = (200 - 50) \times 12 = 1800$ L d'air détendu.
+
+<Attention>
+
+La réserve n'est pas un « bonus de fin de plongée » : c'est une marge de sécurité que l'on ne consomme pas en fonctionnement normal. Arriver au bateau à 50 bars, c'est une plongée bien gérée ; entamer la remontée à 50 bars, c'est déjà une plongée mal planifiée.
+
+</Attention>
+
+## La méthode complète de calcul d'autonomie
+
+L'exercice type de l'examen N2 enchaîne trois calculs. Apprenez la méthode dans l'ordre, elle se déroule toujours de la même façon :
+
+1. **Litres disponibles** : $V_{disponible} = (P_{bloc} - P_{r\text{é}serve}) \times V_{bloc}$.
+2. **Consommation au fond** : $C_{prof} = C_{surface} \times P_{abs}$, avec $P_{abs} = 1 + \text{prof}/10$.
+3. **Autonomie** : $t = \dfrac{V_{disponible}}{C_{prof}}$ (en minutes).
+
+**Exemple corrigé n° 1 — plongée à 20 m.** Bloc 12 L à 200 bars, réserve 50 bars, consommation 20 L/min en surface, profondeur 20 m.
+
+1. Litres disponibles : $(200 - 50) \times 12 = 1800$ L.
+2. Pression absolue à 20 m : $1 + 20/10 = 3$ bars. Consommation au fond : $20 \times 3 = 60$ L/min.
+3. Autonomie : $1800 / 60 = $ **30 minutes**.
+
+**Exemple corrigé n° 2 — le même bloc à 40 m.** Profondeur 40 m, mêmes données.
+
+1. Litres disponibles : 1800 L (inchangé).
+2. $P_{abs} = 5$ bars ; consommation : $20 \times 5 = 100$ L/min.
+3. Autonomie : $1800 / 100 = $ **18 minutes**.
+
+**Exemple corrigé n° 3 — bloc 15 L.** Un bloc de 15 L gonflé à 230 bars, réserve 50 bars, consommation 20 L/min, à 40 m : disponibles $(230 - 50) \times 15 = 2700$ L ; consommation 100 L/min ; autonomie $2700 / 100 = 27$ minutes. Le passage d'un 12 L à un 15 L bien gonflé fait gagner la moitié du temps au fond — c'est pourquoi les blocs de plus grande capacité sont privilégiés pour les plongées profondes.
+
+Ces résultats sont des **autonomies théoriques au fond** : elles ne tiennent pas compte de l'air consommé pendant la descente, la remontée et les paliers, ni d'un effort imprévu. En planification réelle, elles constituent un majorant : la durée effective au fond doit être choisie en dessous, et confrontée aux durées de la courbe de sécurité ou des tables (module suivant).
+
+<EnPratique>
+
+Entraînez-vous en faisant varier les paramètres dans le simulateur ci-dessous : volume du bloc, pression, réserve, consommation et profondeur. Vérifiez à chaque fois les trois étapes de calcul avant d'afficher la correction.
+
+</EnPratique>
+
+<SimAutonomie />
+
+## Les facteurs qui font varier la consommation
+
+La valeur de 20 L/min est une base de calcul, pas une constante physiologique. Votre consommation réelle augmente avec :
+
+- **l'effort** : palmage contre le courant, port de matériel — la consommation peut doubler ou tripler ;
+- **le froid** : l'organisme brûle davantage pour maintenir sa température ;
+- **le stress et l'inconfort** : une ventilation rapide et superficielle consomme beaucoup pour une efficacité médiocre ;
+- **l'essoufflement** : cercle vicieux du CO₂ (voir le module Dalton-Henry), qui peut faire exploser la consommation ;
+- **un équipement inadapté** : surlestage, gilet trop gonflé, mauvaise position hydrodynamique ;
+- **le manque d'entraînement** et la mauvaise technique de palmage.
+
+Les parades sont les mêmes que pour la prévention de l'essoufflement : se stabiliser correctement, limiter les efforts au fond, adopter une ventilation ample et calme en insistant sur l'expiration, et s'équiper d'un lestage juste. Un plongeur détendu et bien équilibré peut descendre nettement sous les 20 L/min ; un plongeur essoufflé peut dépasser 50 L/min en surface équivalente.
+
+## Gérer l'air en palanquée autonome
+
+L'autonomie (PA20) se gagne aussi dans l'organisation. Avant la plongée, le briefing fixe les **seuils de pression** : pression de demi-tour ou de retour vers le mouillage, pression de début de remontée, réserve. En immersion :
+
+- **consultez votre manomètre régulièrement** — d'autant plus souvent que vous êtes profond ;
+- **annoncez votre pression** à la palanquée aux seuils convenus et à la demande (signe interrogatif sur le manomètre) ;
+- la palanquée règle son profil sur le plongeur **qui consomme le plus** : c'est sa pression qui déclenche le demi-tour et la remontée ;
+- prévoyez l'air de la **remontée et du palier** : à titre d'ordre de grandeur, une remontée depuis 20 m avec un palier de principe de 3 minutes à 3 m consomme environ $3 \times 26 \approx 80$ L au palier (26 L/min à 1,3 bar) plus l'air de la remontée elle-même — d'où l'importance d'entamer la remontée bien avant la réserve.
+
+Cette discipline collective est exactement ce que les prérogatives PA20 supposent acquis : savoir calculer avant, surveiller pendant, et décider à temps.
+
+<Memo>
+
+### La méthode en 3 étapes
+
+1. **Litres disponibles** : $V = (P_{bloc} - P_{r\text{é}serve}) \times V_{bloc}$.
+2. **Conso au fond** : $C = C_{surface} \times P_{abs}$, avec $P_{abs} = 1 + \text{prof}/10$.
+3. **Autonomie** : $t = V / C$ (minutes).
+
+### Valeurs de référence
+
+| Donnée | Valeur usuelle |
+|---|---|
+| Consommation surface (calculs) | 20 L/min |
+| Réserve | **50 bars** |
+| Conso à 20 m | 60 L/min |
+| Conso à 40 m | 100 L/min |
+
+### Exemple étalon (à refaire de tête)
+
+12 L à 200 bars, réserve 50, conso 20 L/min :
+- disponibles : 150 × 12 = 1800 L ;
+- à 20 m : 1800 / 60 = **30 min** ;
+- à 40 m : 1800 / 100 = **18 min**.
+
+### Réflexes du plongeur autonome
+
+- Autonomie théorique = majorant : ne couvre ni descente, ni remontée, ni paliers, ni imprévu.
+- Entamer la remontée **avant** la réserve ; sortir avec ≈ 50 bars.
+- Manomètre consulté souvent, pression annoncée aux seuils du briefing.
+- Le profil de la palanquée suit le plus gros consommateur.
+- Conso aggravée par : effort, froid, stress, essoufflement, surlestage.
+
+</Memo>

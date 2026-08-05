@@ -1,0 +1,152 @@
+---
+slug: n2-archimede
+title: "La poussée d'Archimède"
+level: n2
+domain: physique
+description: "Flottabilité, poids apparent, lestage : la loi d'Archimède et ses calculs appliqués au plongeur."
+objectives:
+  - "Énoncer le principe d'Archimède et calculer la poussée subie par un corps immergé"
+  - "Calculer un poids apparent et en déduire si un corps flotte, coule ou reste équilibré"
+  - "Déterminer par le calcul le lestage nécessaire pour équilibrer un plongeur en eau douce ou en eau de mer"
+  - "Expliquer les variations de flottabilité au cours d'une plongée : combinaison, gilet, bloc qui se vide, poumons"
+  - "Adapter son lestage et sa ventilation pour tenir un palier stable à faible profondeur"
+durationMinutes: 45
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+  - "Illustra-Pack physique plongée, Commission Technique Nationale FFESSM"
+---
+
+Pourquoi ce plongeur reste-t-il parfaitement immobile à 3 m pendant son palier, alors que vous oscillez entre le fond et la surface ? La réponse tient dans une loi vieille de vingt-trois siècles et dans trois calculs simples. Au Niveau 2, la poussée d'Archimède n'est plus une intuition : c'est un outil de calcul qui vous permet de déterminer votre lestage et de comprendre chaque variation de votre flottabilité.
+
+## Le principe d'Archimède
+
+**Tout corps plongé dans un fluide reçoit une poussée verticale, dirigée du bas vers le haut, égale au poids du volume de fluide déplacé.** Cette poussée existe parce que la pression de l'eau augmente avec la profondeur : la face inférieure d'un objet immergé subit une pression légèrement supérieure à celle de sa face supérieure, et la résultante de ces forces pousse l'objet vers le haut.
+
+En pratique, la poussée d'Archimède se calcule ainsi :
+
+$$P_{Arch} = V_{immerg\text{é}} \times \rho_{fluide}$$
+
+avec le volume immergé en litres et la masse volumique du fluide en kilogrammes par litre. Le résultat s'exprime en kilogrammes-force, ce qui permet de le comparer directement au poids de l'objet. Deux valeurs de masse volumique sont à connaître :
+
+| Fluide | Masse volumique |
+|---|---|
+| Eau douce | 1 kg/L |
+| Eau de mer | environ 1,025 kg/L |
+
+**Exemple corrigé.** Un bloc de 12 L en acier a un volume extérieur de 14 L. Immergé en eau de mer, il reçoit une poussée de $14 \times 1{,}025 = 14{,}35$ kg. Son poids réel (bloc plein, environ 19 kg) étant supérieur, il coule : c'est ce qu'exprime le poids apparent, objet de la section suivante.
+
+## Poids réel, poussée, poids apparent
+
+Un corps immergé est soumis à deux forces verticales opposées : son **poids réel** ($P_{r\text{é}el}$, vers le bas) et la **poussée d'Archimède** (vers le haut). Le bilan de ces deux forces s'appelle le **poids apparent** :
+
+$$P_{app} = P_{r\text{é}el} - P_{Arch}$$
+
+Trois cas se présentent :
+
+- $P_{app}$ positif (poids supérieur à la poussée) : le corps **coule** — flottabilité négative ;
+- $P_{app}$ nul : le corps est **équilibré**, il reste entre deux eaux — flottabilité neutre ;
+- $P_{app}$ négatif (poussée supérieure au poids) : le corps **remonte** — flottabilité positive.
+
+**Exemple corrigé.** Une ancre de 30 kg a un volume de 4 L. En eau de mer : $P_{Arch} = 4 \times 1{,}025 = 4{,}1$ kg, donc $P_{app} = 30 - 4{,}1 = 25{,}9$ kg. L'ancre coule, et pour la soulever sous l'eau il « suffit » de vaincre 25,9 kg au lieu de 30 : l'eau vous aide, mais pas assez pour la remonter sans parachute de levage.
+
+<ARetenir>
+
+Le trio à mémoriser : $P_{Arch} = V \times \rho$ et $P_{app} = P_{r\text{é}el} - P_{Arch}$. Le signe du poids apparent donne le comportement : positif → coule, nul → équilibré, négatif → flotte.
+
+</ARetenir>
+
+## Le plongeur : un corps à flottabilité réglable
+
+Contrairement à l'ancre, le plongeur peut modifier à la fois son poids réel (lestage) et son volume (gilet, poumons, combinaison). C'est ce qui rend la flottabilité pilotable — et les calculs intéressants.
+
+Le **poids réel** du plongeur équipé comprend son propre poids, sa combinaison, son bloc, son détendeur, son gilet et son lest. Son **volume** comprend le corps, le néoprène (rempli de microbulles de gaz, donc très porteur), le volume du bloc et l'air contenu dans le gilet et les poumons.
+
+L'objectif du plongeur Niveau 2 est une **flottabilité légèrement négative en début de plongée, gilet vide**, de façon à pouvoir s'immerger sans effort, puis un équilibre ajusté au gilet pendant toute la plongée. Le critère d'un bon lestage se vérifie en fin de plongée, bloc presque vide : à 3 m, gilet vide, poumons en respiration normale, vous devez pouvoir tenir votre palier sans remonter.
+
+<EnPratique>
+
+Test de lestage classique en surface : gilet vide, bloquez une inspiration normale ; correctement lesté, vous devez flotter au niveau des yeux, et descendre lentement à l'expiration. Si vous coulez gilet vide poumons pleins, vous êtes surlesté ; si vous ne parvenez pas à vous immerger en expirant, vous êtes sous-lesté.
+
+</EnPratique>
+
+## Calculs de lestage pas à pas
+
+Le calcul de lestage est l'exercice emblématique de ce chapitre. La méthode tient en trois étapes : calculer la poussée, calculer le poids apparent sans lest, puis ajouter le lest qui annule la différence (on néglige le volume du plomb, très faible).
+
+**Exemple corrigé n° 1 — eau de mer.** Un plongeur équipé (sans lest) pèse 80 kg pour un volume total de 82 L. Quel lestage pour être équilibré en eau de mer ?
+
+1. Poussée : $P_{Arch} = 82 \times 1{,}025 = 84{,}05$ kg.
+2. Poids apparent sans lest : $P_{app} = 80 - 84{,}05 = -4{,}05$ kg → flottabilité positive de 4,05 kg : il flotte.
+3. Pour l'équilibrer, il faut ajouter un poids égal à cette flottabilité : **environ 4 kg de lest**.
+
+**Exemple corrigé n° 2 — le même plongeur en eau douce.**
+
+1. Poussée : $P_{Arch} = 82 \times 1 = 82$ kg.
+2. Poids apparent sans lest : $80 - 82 = -2$ kg.
+3. Lestage nécessaire : **environ 2 kg**.
+
+La comparaison des deux exemples donne une règle pratique à retenir : **on se leste davantage en mer qu'en lac** (ici 2 kg d'écart), car l'eau salée, plus dense, porte davantage. Un plongeur qui passe de la carrière à la Méditerranée sans réajuster son lest se retrouvera sous-lesté, incapable de tenir son palier.
+
+**Exemple corrigé n° 3 — retrouver un volume.** Un plongeur équipé et lesté pèse 92 kg et est parfaitement équilibré en eau de mer. Quel est son volume ? À l'équilibre, $P_{r\text{é}el} = P_{Arch}$, donc $92 = V \times 1{,}025$, soit $V = 92 / 1{,}025 \approx 89{,}8$ L.
+
+<Attention>
+
+En examen, lisez bien l'énoncé : « plongeur équipé » inclut ou non le lest selon les cas, et l'eau est douce ou salée. Ces deux détails changent le résultat. Enfin, un poids apparent **négatif** signifie que le corps flotte : ne concluez pas à l'inverse.
+
+</Attention>
+
+## Les variations de flottabilité pendant la plongée
+
+Votre équilibrage n'est jamais acquis une fois pour toutes : trois phénomènes le modifient en permanence.
+
+**La combinaison s'écrase avec la profondeur.** Le néoprène contient des microbulles de gaz qui obéissent à la loi de Boyle-Mariotte : à 30 m, la combinaison a perdu une grande partie de son volume, donc de sa poussée. Vous devenez plus lourd en descendant — c'est pourquoi on compense au gilet au fur et à mesure de la descente.
+
+**Le bloc s'allège en se vidant.** L'air a une masse : environ 1,2 g par litre à pression atmosphérique. Un bloc de 12 L à 200 bars contient 2400 L d'air détendu, soit près de $2400 \times 1{,}2 = 2880$ g ≈ **3 kg d'air**. En fin de plongée, à 50 bars, vous avez consommé environ 1800 L, soit un allègement d'environ 2,2 kg : votre flottabilité a augmenté d'autant. C'est la raison pour laquelle le lestage se vérifie **en fin de plongée** : équilibré au départ bloc plein, vous seriez trop léger au palier.
+
+**Le gilet et les poumons varient avec la pression.** L'air du gilet se dilate à la remontée et se comprime à la descente (voir le module sur la loi de Boyle-Mariotte) : toute variation de profondeur demande une correction. Les poumons, enfin, sont votre réglage fin : une inspiration ample vous fait monter de quelques dizaines de centimètres, une expiration prolongée vous fait descendre. C'est le **poumon-ballast**, l'outil du palier stable.
+
+**Exemple corrigé.** Un plongeur est équilibré à 20 m. Il consomme 1500 L d'air pendant sa plongée. De combien sa flottabilité a-t-elle varié ? Masse d'air consommée : $1500 \times 1{,}2 = 1800$ g = 1,8 kg. Son poids réel a diminué de 1,8 kg sans changement de volume : il est devenu positif de 1,8 kg et devra purger son gilet ou se faire plus attentif au palier.
+
+## Archimède au service de la sécurité
+
+Cette loi n'est pas qu'un sujet d'examen : elle structure plusieurs règles de sécurité du plongeur autonome.
+
+**Le palier de 3 m** est la zone la plus difficile à tenir : la combinaison a repris presque tout son volume, le bloc est léger, et la moindre variation de profondeur fait varier fortement le volume du gilet (nous sommes dans la zone où la pression varie proportionnellement le plus vite). D'où l'intérêt d'un lestage juste — ni trop, ni trop peu — et d'un gilet presque vide au palier, la stabilisation se faisant au poumon-ballast.
+
+**Le canard et l'immersion** : en début de plongée, bloc plein et gilet vide, votre légère flottabilité négative facilite la descente. Un plongeur surlesté, lui, devra gonfler exagérément son gilet au fond, subira des variations de volume plus fortes et consommera davantage : le surlestage est une cause classique d'essoufflement et de mauvaise stabilisation.
+
+**Le parachute de palier**, obligatoire par palanquée en autonomie, illustre lui aussi Archimède : gonflé à quelques litres, il tire vers le haut avec une force égale au poids de l'eau déplacée et signale votre position en surface.
+
+<Memo>
+
+### Formules
+
+- Poussée d'Archimède : $P_{Arch} = V_{immerg\text{é}} \times \rho$ (V en litres, ρ en kg/L, résultat en kg).
+- Poids apparent : $P_{app} = P_{r\text{é}el} - P_{Arch}$.
+- $P_{app}$ positif → coule ; nul → équilibré ; négatif → flotte.
+
+### Valeurs clés
+
+| Donnée | Valeur |
+|---|---|
+| Eau douce | 1 kg/L |
+| Eau de mer | ≈ 1,025 kg/L |
+| Masse de l'air | ≈ 1,2 g/L détendu |
+| Allègement d'un bloc 12 L de 200 à 50 bars | ≈ 2,2 kg |
+
+### Méthode du calcul de lestage
+
+1. Poussée : $V \times \rho$.
+2. Poids apparent sans lest : $P_{r\text{é}el} - P_{Arch}$.
+3. Lest = flottabilité à annuler (volume du plomb négligé).
+4. Se lester **plus en eau de mer qu'en eau douce**.
+
+### Variations en plongée
+
+- Descente : combinaison écrasée → plus lourd → gonfler le gilet.
+- Remontée : gilet et néoprène se dilatent → purger.
+- Fin de plongée : bloc plus léger (≈ 2 kg) → vérifier son lestage à 3 m, bloc à 50 bars.
+- Réglage fin au **poumon-ballast** ; gilet presque vide au palier.
+
+</Memo>

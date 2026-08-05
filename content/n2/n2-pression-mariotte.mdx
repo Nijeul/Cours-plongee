@@ -1,0 +1,176 @@
+---
+slug: n2-pression-mariotte
+title: "Pressions et loi de Boyle-Mariotte"
+level: n2
+domain: physique
+description: "Pression absolue et relative, compressibilité des gaz et applications directes en plongée (calculs)."
+objectives:
+  - "Calculer la pression absolue, relative ou la profondeur à partir de la règle du 1 bar tous les 10 mètres"
+  - "Énoncer la loi de Boyle-Mariotte et l'appliquer à un calcul de volume ou de pression"
+  - "Prévoir l'évolution d'un volume d'air (gilet, masque, oreilles, bouteille retournée) à la descente et à la remontée"
+  - "Calculer la quantité d'air détendu contenue dans un bloc à partir de son volume et de sa pression"
+  - "Relier la loi de Boyle-Mariotte aux barotraumatismes et aux règles de sécurité de la remontée"
+durationMinutes: 50
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+  - "Illustra-Pack physique plongée, Commission Technique Nationale FFESSM"
+---
+
+Au Niveau 1, vous avez découvert la pression de manière intuitive. Au Niveau 2, vous devenez autonome : vous devez savoir la calculer, car elle commande tout ce qui vous arrive sous l'eau — vos oreilles, votre gilet, votre consommation d'air et votre décompression. Ce module pose les deux outils fondamentaux du plongeur autonome : la pression absolue et la loi de Boyle-Mariotte, avec des calculs corrigés pas à pas.
+
+## Pression atmosphérique, relative, absolue
+
+La pression est une force exercée sur une surface. En plongée, on la mesure en **bars**, et trois pressions se combinent :
+
+- la **pression atmosphérique** ($P_{atm}$) : le poids de la colonne d'air au-dessus de nous. Au niveau de la mer, elle vaut environ **1 bar** ;
+- la **pression relative** ou hydrostatique ($P_{rel}$) : le poids de la colonne d'eau au-dessus du plongeur. L'eau étant bien plus dense que l'air, elle augmente de **1 bar tous les 10 mètres** ;
+- la **pression absolue** ($P_{abs}$) : la pression totale réellement subie par le plongeur, somme des deux précédentes.
+
+$$P_{abs} = P_{atm} + P_{rel} \qquad \text{avec} \qquad P_{rel} = \frac{\text{profondeur (m)}}{10}\ \text{bar}$$
+
+Appliquons cette formule aux trois profondeurs repères du plongeur Niveau 2 :
+
+| Profondeur | Pression relative | Pression absolue |
+|---|---|---|
+| Surface | 0 bar | 1 bar |
+| 10 m | 1 bar | 2 bars |
+| 20 m | 2 bars | 3 bars |
+| 40 m | 4 bars | 5 bars |
+
+La formule fonctionne aussi en sens inverse. Si votre profondimètre indique une pression relative de 2,6 bars, vous êtes à 26 m. Si un énoncé vous donne une pression absolue de 4 bars, la pression relative est de 3 bars, donc la profondeur de 30 m.
+
+<Attention>
+
+Ne confondez jamais pression relative et pression absolue. Le profondimètre mesure la pression **relative** (il affiche 0 en surface). Les lois physiques (Mariotte, Dalton) utilisent toujours la pression **absolue**. Une erreur d'un bar dans un calcul d'examen vient presque toujours de cet oubli du bar atmosphérique.
+
+</Attention>
+
+Remarquez enfin que la variation **proportionnelle** de pression est maximale près de la surface : de 0 à 10 m, la pression absolue double (elle passe de 1 à 2 bars, soit +100 %), alors que de 30 à 40 m elle ne gagne que 25 %. C'est donc dans la zone des 10 premiers mètres que les volumes d'air varient le plus vite, et que les incidents de type barotraumatisme sont les plus fréquents.
+
+## La loi de Boyle-Mariotte
+
+Un gaz est compressible : ses molécules sont éloignées les unes des autres et l'on peut les rapprocher en augmentant la pression. Boyle et Mariotte ont montré qu'**à température constante, le volume d'une masse de gaz est inversement proportionnel à la pression qu'il subit** :
+
+$$P_1 \times V_1 = P_2 \times V_2 = \text{constante}$$
+
+Autrement dit, si la pression double, le volume est divisé par deux ; si la pression est divisée par trois, le volume triple. La quantité de gaz (le nombre de molécules) ne change pas : c'est seulement son volume qui s'adapte.
+
+**Exemple corrigé.** Un ballon souple contient 6 litres d'air en surface. Quel est son volume à 20 m ?
+
+1. Pression de départ : $P_1 = 1$ bar ; volume de départ : $V_1 = 6$ L.
+2. Pression à 20 m : $P_2 = 1 + 20/10 = 3$ bars.
+3. Loi de Mariotte : $V_2 = \dfrac{P_1 \times V_1}{P_2} = \dfrac{1 \times 6}{3} = 2$ L.
+
+À 20 m, le ballon ne fait plus que 2 litres. À la remontée, le phénomène s'inverse exactement : un volume de 2 L pris à 20 m redevient 6 L en surface. Retenez la logique avant la formule : **à la descente, l'air se comprime ; à la remontée, il se dilate**.
+
+<ARetenir>
+
+$P \times V = \text{constante}$ (à température constante). Le produit pression × volume ne change pas. Pour tout calcul : identifier $P_1$, $V_1$, $P_2$, toujours en pression **absolue**, puis en déduire $V_2$.
+
+</ARetenir>
+
+## Les volumes d'air du plongeur : oreilles, masque, poumons, gilet
+
+Le corps du plongeur et son équipement contiennent des volumes d'air qui obéissent tous à Mariotte.
+
+**L'oreille moyenne** est une cavité rigide fermée par le tympan. À la descente, la pression extérieure augmente, l'air de l'oreille moyenne tend à se comprimer et le tympan se déforme vers l'intérieur : douleur, puis lésion si l'on insiste. La manœuvre de Valsalva réinjecte de l'air par la trompe d'Eustache pour rééquilibrer les pressions. Même mécanisme pour les **sinus** et, en creux, pour le **masque** (d'où le plaquage de masque, compensé en soufflant par le nez).
+
+**Les poumons** sont le volume critique de la remontée. Un plongeur qui inspire à fond à 20 m (pression 3 bars) et remonte en bloquant sa respiration verrait son volume pulmonaire tendre à tripler avant la surface : c'est la **surpression pulmonaire**, l'accident le plus grave de la plongée. La règle absolue : **ne jamais bloquer sa respiration à la remontée**, expirer en continu.
+
+**Le gilet stabilisateur** illustre Mariotte à chaque instant. L'air injecté à 40 m (5 bars) voit son volume multiplié par 5 en arrivant en surface. Un gilet correctement équilibré au fond devient donc de plus en plus porteur pendant la remontée : il faut **purger régulièrement** pour garder une vitesse contrôlée. Inversement, à la descente, le volume du gilet diminue et la flottabilité s'effondre : on réinjecte de petites quantités d'air pour se stabiliser.
+
+**Exemple corrigé.** Vous injectez 3 L d'air dans votre gilet à 40 m. Quel volume cet air occuperait-il à 10 m si vous ne purgez pas ?
+
+1. $P_1 = 5$ bars (40 m), $V_1 = 3$ L, $P_2 = 2$ bars (10 m).
+2. $V_2 = \dfrac{5 \times 3}{2} = 7{,}5$ L.
+
+Le volume a plus que doublé : sans purge, la remontée s'accélère dangereusement. C'est exactement pour cela que la purge est un geste technique central du Niveau 2.
+
+## La bouteille retournée : l'expérience de la cloche à air
+
+Un exercice classique d'examen consiste à immerger un récipient retourné, ouverture vers le bas — une bouteille, un verre ou un seau — rempli d'air en surface. L'eau ne peut pas entrer tant que l'air occupe tout le volume, mais en descendant, la pression comprime l'air : l'eau monte dans le récipient et l'air n'occupe plus qu'une fraction du volume.
+
+**Exemple corrigé.** Une bouteille rigide de 1,5 L, retournée et pleine d'air, est descendue à 30 m. Quel volume d'air reste-t-il dans la bouteille ?
+
+1. $P_1 = 1$ bar, $V_1 = 1{,}5$ L.
+2. À 30 m : $P_2 = 4$ bars.
+3. $V_2 = \dfrac{1 \times 1{,}5}{4} = 0{,}375$ L.
+
+L'air n'occupe plus que 0,375 L : l'eau a envahi les trois quarts de la bouteille. Remontée en surface, l'air reprend exactement 1,5 L. Cette expérience de la « cloche à air » modélise aussi bien l'oreille moyenne que le gilet : tout volume gazeux en communication avec l'eau se comprime à la descente et se dilate à la remontée.
+
+<EnPratique>
+
+Vous pouvez visualiser toutes ces situations en faisant varier la profondeur dans le simulateur ci-dessous : observez comment le volume évolue à l'inverse de la pression absolue.
+
+</EnPratique>
+
+<SimLoisPhysiques />
+
+## Le bloc de plongée : de l'air comprimé en grande quantité
+
+Le bloc est le seul volume qui ne varie pas : c'est une enceinte rigide. La pression y est très supérieure à la pression ambiante (typiquement 200 bars au gonflage), et Mariotte permet de calculer la **quantité d'air détendu** qu'il contient, c'est-à-dire le volume qu'occuperait cet air ramené à la pression de la surface :
+
+$$V_{d\text{é}tendu} = V_{bloc} \times P_{bloc}$$
+
+**Exemple corrigé.** Un bloc de 12 L gonflé à 200 bars contient $12 \times 200 = 2400$ L d'air détendu. S'il ne reste que 80 bars, il contient $12 \times 80 = 960$ L.
+
+Ce calcul est la porte d'entrée du module « Consommation et autonomie » : c'est en litres détendus que l'on compte l'air réellement disponible. Notez au passage que le détendeur porte bien son nom : il ramène l'air du bloc de la haute pression à la pression **ambiante** (celle de la profondeur), afin que vos poumons puissent l'inspirer sans effort.
+
+Un point de vocabulaire utile pour l'examen : la température modifie aussi la pression d'un bloc (un bloc gonflé à 200 bars au soleil verra sa pression monter). La loi de Boyle-Mariotte suppose la température constante ; les variations de température expliquent qu'un bloc gonflé « à chaud » affiche quelques bars de moins une fois plongé dans une eau fraîche. Au Niveau 2, retenez simplement le phénomène qualitativement.
+
+## Méthode de résolution des calculs d'examen
+
+Tous les exercices de ce chapitre se résolvent avec la même démarche en quatre étapes :
+
+1. **Traduire les profondeurs en pressions absolues** : $P_{abs} = 1 + \text{prof}/10$.
+2. **Identifier l'état initial** ($P_1$, $V_1$) **et l'état final** ($P_2$ ou $V_2$).
+3. **Appliquer** $P_1 V_1 = P_2 V_2$ et isoler l'inconnue.
+4. **Vérifier la cohérence** : le volume doit diminuer si l'on descend, augmenter si l'on remonte.
+
+**Exemple de synthèse corrigé.** Un ballon de parachute de relevage contient 10 L d'air à 40 m. On le laisse remonter sans purge. Quel est son volume à 20 m, puis à 10 m, puis en surface ?
+
+- À 40 m : $P = 5$ bars, $V = 10$ L, donc $P \times V = 50$.
+- À 20 m : $P = 3$ bars, $V = 50/3 \approx 16{,}7$ L.
+- À 10 m : $P = 2$ bars, $V = 50/2 = 25$ L.
+- En surface : $P = 1$ bar, $V = 50$ L.
+
+Le volume quintuple entre 40 m et la surface, et la moitié de cette expansion se produit dans les 10 derniers mètres. Vous retrouvez la conclusion de la première section : **la zone proche de la surface est la zone de tous les dangers**, pour le parachute comme pour vos poumons.
+
+<Attention>
+
+Deux pièges reviennent sans cesse en examen : oublier le bar atmosphérique (utiliser 2 bars à 20 m au lieu de 3) et inverser le sens de variation (un volume qui grossit à la descente est forcément une erreur). Prenez cinq secondes pour vérifier ces deux points avant de rendre votre copie.
+
+</Attention>
+
+<Memo>
+
+### Pressions
+
+- $P_{abs} = P_{atm} + P_{rel}$, avec $P_{atm} \approx 1$ bar au niveau de la mer.
+- $P_{rel} = \text{profondeur} / 10$ (en bars) : 1 bar tous les 10 m.
+- 10 m → 2 bars ; 20 m → 3 bars ; 40 m → 5 bars.
+- Profondimètre : pression relative. Calculs physiques : pression **absolue**.
+
+### Loi de Boyle-Mariotte
+
+- À température constante : $P_1 \times V_1 = P_2 \times V_2$.
+- Descente : l'air se comprime. Remontée : l'air se dilate.
+- Variations proportionnelles maximales près de la surface (le volume double entre 10 m et la surface).
+
+### Valeurs et applications clés
+
+| Situation | Conséquence | Geste |
+|---|---|---|
+| Oreille moyenne à la descente | tympan déformé, douleur | Valsalva, jamais en force |
+| Masque à la descente | plaquage | souffler par le nez |
+| Poumons à la remontée | surpression pulmonaire | ne jamais bloquer sa respiration, expirer |
+| Gilet à la remontée | dilatation, remontée accélérée | purger régulièrement |
+| Gilet à la descente | écrasement, chute | réinjecter de l'air |
+
+### Bloc
+
+- Air détendu disponible : $V_{d\text{é}tendu} = V_{bloc} \times P_{bloc}$.
+- Exemple : 12 L × 200 bars = 2400 L d'air en surface équivalente.
+
+</Memo>

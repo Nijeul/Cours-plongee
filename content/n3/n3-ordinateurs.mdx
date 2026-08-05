@@ -1,0 +1,130 @@
+---
+slug: n3-ordinateurs
+title: "Les ordinateurs de plongée"
+level: n3
+domain: tables-deco
+description: "Principes de calcul, modèles, limites d'utilisation et gestion des plongées successives à l'ordinateur."
+objectives:
+  - "Expliquer le principe du calcul de décompression en temps réel par compartiments"
+  - "Distinguer la logique d'un ordinateur de celle des tables (profil réel contre profil carré)"
+  - "Définir en notion les gradient factors et leur effet sur le conservatisme"
+  - "Gérer les plongées successives, la désaturation résiduelle et le délai avant avion à l'ordinateur"
+  - "Énoncer les limites d'emploi et la conduite à tenir en cas de panne d'ordinateur"
+durationMinutes: 45
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+  - "Notices techniques des fabricants d'ordinateurs de plongée"
+---
+
+L'ordinateur est aujourd'hui l'instrument de décompression de la quasi-totalité des plongeurs autonomes. Il ne dispense pourtant d'aucune connaissance : le Niveau 3 doit comprendre ce que calcule son ordinateur, pourquoi deux modèles affichent des résultats différents, et où s'arrête la confiance qu'on peut lui accorder. Un ordinateur mal compris est un faux ami ; bien compris, c'est un outil remarquablement plus fin que les tables.
+
+## Ce que calcule un ordinateur : la décompression en temps réel
+
+Un ordinateur mesure en permanence la pression ambiante (donc la profondeur) et le temps. À partir de ces mesures, il simule la charge en azote d'un jeu de **compartiments théoriques** — des tissus fictifs qui saturent et désaturent à des vitesses différentes, caractérisées par leur **période** (temps pour absorber la moitié de l'écart de saturation, de quelques minutes pour le sang à plusieurs heures pour les graisses et articulations). À chaque instant, l'ordinateur en déduit :
+
+- la **durée restante sans palier** à la profondeur courante (temps de courbe de sécurité restant) ;
+- sinon, les **paliers requis** et leur durée, réactualisés en continu ;
+- la **vitesse de remontée**, comparée à la consigne du modèle ;
+- après la plongée, la **désaturation résiduelle** et les délais associés (interdiction de vol, nouvelle plongée).
+
+La différence fondamentale avec les tables tient au profil pris en compte. Les tables raisonnent en **profil carré** : toute la plongée est réputée passée à la profondeur maximale. L'ordinateur intègre le **profil réel**, minute par minute : une plongée qui touche 40 m trois minutes puis évolue à 20 m est créditée d'une charge bien moindre que « 40 m tout du long ». C'est ce qui explique ses durées sans palier souvent plus généreuses — et c'est aussi ce qui rend toute comparaison directe table/ordinateur hasardeuse.
+
+## Des modèles, pas des mesures : Bühlmann, RGBM et les autres
+
+Un ordinateur ne mesure pas l'azote dans votre corps : il exécute un **modèle mathématique**, c'est-à-dire une représentation simplifiée et prudente de la physiologie moyenne. Les grandes familles :
+
+- **Modèles haldéens** (dissous), dont le **Bühlmann ZHL-16** est le plus répandu : 16 compartiments, chacun doté d'une sursaturation maximale tolérée ; la remontée est pilotée pour qu'aucun compartiment ne dépasse son seuil.
+- **Modèles à bulles** (RGBM, VPM) : ils intègrent en plus la mécanique des micro-bulles et tendent à imposer des paliers plus profonds et des remontées plus lentes sur certains profils.
+- La plupart des machines ajoutent des **facteurs correctifs** : eau froide, effort (mesuré via la consommation sur les modèles à gestion d'air), altitude, réglages personnels de conservatisme.
+
+Conséquence pratique : **deux ordinateurs de modèles différents affichent des résultats différents sur la même plongée** — c'est normal, et ce n'est pas un défaut. Au sein d'une palanquée, on plonge sur **l'ordinateur le plus contraignant** du moment, jamais sur le plus permissif.
+
+<ARetenir>
+
+Un ordinateur exécute un modèle (Bühlmann ZHL-16, RGBM...), il ne mesure rien de votre physiologie. Deux modèles diffèrent légitimement ; la palanquée suit toujours l'affichage le plus pénalisant.
+
+</ARetenir>
+
+## Les gradient factors, en notion
+
+Sur les ordinateurs de type Bühlmann, le conservatisme se règle souvent par les **gradient factors** (GF), deux pourcentages notés par exemple GF 40/85 :
+
+- le **GF bas** (40) fixe la fraction de la sursaturation maximale tolérée au **premier palier** : plus il est bas, plus les paliers commencent profond ;
+- le **GF haut** (85) fixe la fraction admise **à l'arrivée en surface** : plus il est bas, plus les derniers paliers s'allongent.
+
+GF 100/100 reviendrait au modèle Bühlmann sans marge ; GF 30/70 donne une décompression nettement plus prudente et plus longue. Au Niveau 3, il suffit de retenir l'idée : **les GF sont des curseurs de marge de sécurité** appliqués au modèle. Ne modifiez ces réglages que si vous comprenez leur effet, ne les relâchez jamais pour « gagner du temps de fond », et durcissez-les (ou choisissez un mode conservateur) en cas de fatigue, de froid, de plongées répétées ou de facteurs personnels.
+
+## Ordinateur et tables : deux logiques à ne pas mélanger
+
+| Aspect | Tables MN90 | Ordinateur |
+|---|---|---|
+| Profil pris en compte | Carré (profondeur max × durée totale) | Réel, échantillonné en continu |
+| Successives | Tableaux II et III, majoration manuelle | Automatique (mémoire de la charge résiduelle) |
+| Vitesse de remontée | 15-17 m/min puis 6 m/min | Consigne propre au modèle (souvent 9 à 12 m/min), contrôlée en temps réel |
+| Erreur de procédure | Rattrapages codifiés | Mode dégradé ou verrouillage (mode « SOS ») |
+| Personnalisation | Aucune | Conservatisme, GF, altitude, gaz |
+
+Règle d'or : **on ne panache pas les moyens de décompression**. Une plongée commencée à l'ordinateur se termine à l'ordinateur ; on ne « repasse » pas aux tables en cours de plongée (le profil réel n'est plus reconstituable de tête), et inversement un jeu tables + profondimètre + montre se suit intégralement. De même, un ordinateur est **strictement personnel** : il mémorise VOTRE historique de saturation. Prêter son ordinateur entre deux plongées, ou en emprunter un « vierge » de votre première plongée, fausse tout le calcul de successive.
+
+<Attention>
+
+Ordinateur au poignet ne signifie pas cerveau en veille : planifiez la plongée avant la mise à l'eau (profondeur, durée, air — les modules précédents), et servez-vous de l'ordinateur pour **exécuter** le plan, pas pour le découvrir au fond.
+
+</Attention>
+
+## Successives, désaturation résiduelle et avion
+
+Après la plongée, l'ordinateur continue de calculer la désaturation et affiche typiquement :
+
+- le **temps de désaturation** restant : durée avant retour à la saturation de surface ;
+- le **temps d'interdiction de vol** : tant qu'il court, pas d'avion ni de séjour en altitude — la baisse de pression en cabine (équivalente à 1800-2400 m d'altitude) relancerait le dégazage. En complément des affichages, la recommandation prudente reste d'attendre **au moins 12 h après une plongée unique sans palier, et 24 h après des plongées multiples, profondes ou avec paliers** ;
+- pour une replongée, la **planification successive** : l'ordinateur intègre automatiquement l'azote résiduel et réduit les durées sans palier affichées. Consultez le mode planification avant la seconde plongée au lieu de le découvrir en immersion.
+
+Les bonnes pratiques des tables restent valables à l'ordinateur : plongée la plus profonde en premier, pas de profil yo-yo, intervalle de surface généreux, palier de principe, hydratation. Le modèle calcule une moyenne statistique ; vos marges couvrent votre écart à cette moyenne.
+
+<EnPratique>
+
+Le simulateur de désaturation ci-dessous montre la charge et la décharge des compartiments au fil d'un profil : visualisez pourquoi un compartiment rapide sature à la descente quand un compartiment lent continue de se charger pendant la remontée.
+
+</EnPratique>
+
+<SimDesaturation />
+
+## Limites, pannes et conduite à tenir
+
+Un ordinateur reste un appareil : pile, capteur de pression, électronique. Le Niveau 3 doit avoir prévu la panne **avant** qu'elle survienne :
+
+- **Prévention** : vérifier pile et état avant la plongée, connaître son instrument (menus, alarmes) au sec, ne jamais partir avec un ordinateur affichant une désaturation d'origine inconnue.
+- **Panne en plongée** : la plongée est terminée. Remonter avec son équipier en suivant **son** instrument, à vitesse contrôlée, avec un palier de sécurité prolongé si la situation le permet. Sans aucun moyen de décompression fiable dans la palanquée, remontée prudente, palier de principe allongé, puis **24 h sans plonger**.
+- **Après une violation** (palier manqué, remontée trop rapide) : beaucoup d'ordinateurs passent en mode dégradé ou se verrouillent. Ne cherchez pas à « ruser » avec l'appareil : appliquez la logique des procédures MN90 (surveillance, oxygène et alerte au moindre signe, pas de replongée) — le verrouillage n'est pas le problème, la décompression écourtée l'est.
+- **Redondance** : en autonomie profonde, un second moyen de décompression (second ordinateur, ou tables + profondimètre + montre) est un investissement raisonnable ; le Code du sport impose en autonomie que chaque plongeur dispose des moyens de contrôler personnellement les caractéristiques de sa plongée et de sa remontée.
+
+<Memo>
+
+### Principe
+
+- Mesure pression + temps → simulation de compartiments (périodes courtes à longues) → durée sans palier, paliers, vitesse, désaturation en temps réel.
+- Profil **réel** intégré en continu, contre profil **carré** des tables.
+- Modèles : Bühlmann ZHL-16 (haldéen, 16 compartiments), RGBM/VPM (bulles). Modèles différents → affichages différents : suivre le plus contraignant.
+
+### Gradient factors (notion)
+
+- GF bas = marge au premier palier (bas → paliers plus profonds).
+- GF haut = marge à l'arrivée en surface (bas → derniers paliers plus longs).
+- Curseurs de conservatisme : on les durcit avec la fatigue, le froid, la répétition ; on ne les relâche jamais pour gagner du fond.
+
+### Règles d'emploi
+
+- Instrument **personnel** : jamais prêté, jamais échangé entre deux plongées.
+- Pas de panachage tables/ordinateur en cours de plongée.
+- Successives : gérées automatiquement — utiliser le mode planification avant de replonger.
+- Avion : respecter le compte à rebours ; prudence : 12 h minimum (plongée unique sans palier), 24 h (plongées multiples ou avec paliers).
+
+### Panne
+
+- Panne en plongée : fin de plongée, remontée sur l'instrument de l'équipier, palier de sécurité prolongé.
+- Sans moyen fiable : remontée prudente, puis 24 h sans plonger.
+- Violation/verrouillage : surveillance, O₂ et alerte au moindre signe ; ne pas replonger.
+
+</Memo>

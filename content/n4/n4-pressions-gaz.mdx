@@ -1,0 +1,126 @@
+---
+slug: n4-pressions-gaz
+title: "Pressions et étude des gaz"
+level: n4
+domain: physique
+description: "Mariotte, Dalton, Henry et leurs calculs d'examen : compressibilité, pressions partielles, dissolution."
+objectives:
+  - "Démontrer et appliquer la loi de Boyle-Mariotte à des calculs de compressibilité et de volume d'air disponible"
+  - "Calculer toute pression partielle et retrouver par le calcul inverse les profondeurs seuils (narcose, hyperoxie, nitrox)"
+  - "Énoncer la loi de Henry et décrire quantitativement saturation, sursaturation et gradient de désaturation"
+  - "Résoudre un exercice complet de gonflage et de transvasement de blocs"
+  - "Situer les notions de nitrox (PpO2, MOD, meilleur mélange) dans le cadre physique de Dalton"
+durationMinutes: 70
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+  - "Publications de la Commission Médicale et de Prévention Nationale FFESSM"
+---
+
+L'épreuve écrite de physique du Niveau 4 exige davantage qu'une application mécanique de formules : elle demande de démontrer les lois, d'enchaîner plusieurs relations dans un même problème et de commenter physiologiquement les résultats. Ce module reprend Mariotte, Dalton et Henry au niveau de rigueur attendu d'un candidat guide de palanquée, avec des calculs types corrigés pas à pas.
+
+## Rappel des pressions et unités
+
+La pression est une force répartie sur une surface : $P = F / S$. En plongée on l'exprime en bars ; 1 bar vaut approximativement $10^5$ pascals, soit la pression exercée par l'atmosphère au niveau de la mer. La règle fondamentale du milieu aquatique est que **chaque tranche de 10 m d'eau ajoute 1 bar** de pression, car une colonne d'eau de 10 m de hauteur et de 1 cm² de section pèse environ 1 kg.
+
+On distingue trois pressions à ne jamais confondre :
+
+- la **pression atmosphérique** $P_{atm}$, exercée par l'air au-dessus de la surface, soit 1 bar au niveau de la mer ;
+- la **pression relative** (ou hydrostatique) $P_{rel}$, due à la seule colonne d'eau, égale à la profondeur divisée par 10 ;
+- la **pression absolue** $P_{abs}$, subie réellement par le plongeur : $P_{abs} = P_{atm} + P_{rel}$.
+
+$$P_{abs} = P_{atm} + \frac{profondeur}{10}$$
+
+Ainsi à 30 m : $P_{abs} = 1 + 30/10 = 4$ bars. À 40 m : 5 bars. À 60 m : 7 bars. Cette conversion instantanée profondeur vers pression absolue est le socle de tous les calculs qui suivent ; l'examinateur la suppose acquise et sanctionne toute confusion entre relative et absolue.
+
+## La loi de Boyle-Mariotte et sa démonstration
+
+À température constante, **pour une masse de gaz donnée, le produit de la pression par le volume est constant** : $P \times V = \text{constante}$, soit $P_1 V_1 = P_2 V_2$. La démonstration expérimentale historique consiste à comprimer un volume de gaz enfermé et à constater que le volume varie en raison inverse de la pression appliquée : doubler la pression réduit le volume de moitié.
+
+Conséquence directe en plongée : un volume d'air fermé (poumons pleins, air d'un gilet, bulle dans un sinus) se comprime à la descente et se dilate à la remontée. La variation relative de volume est la plus violente près de la surface, où la pression varie proportionnellement le plus vite : de 0 à 10 m la pression **double** (le volume est divisé par deux), alors que de 30 à 40 m elle ne passe que de 4 à 5 bars (variation de 25 %). C'est pourquoi les barotraumatismes et la surpression pulmonaire sont les plus redoutables dans les tout derniers mètres.
+
+**Exemple corrigé.** Une cloche ouverte par le bas contient 12 L d'air à 20 m. Quel volume à 40 m puis en surface ? À 20 m, $P_{abs} = 3$ bars ; à 40 m, 5 bars ; en surface, 1 bar.
+$V_{40} = \dfrac{P_{20} \times V_{20}}{P_{40}} = \dfrac{3 \times 12}{5} = 7{,}2$ L. En surface : $V = \dfrac{3 \times 12}{1} = 36$ L. Le gaz remonté triple de volume : l'air chassé s'échappe par le bas de la cloche.
+
+<ARetenir>
+
+$P \times V$ constant à température fixe. La détente est maximale près de la surface : c'est la zone des 0 à 10 m qui est la plus dangereuse pour tout volume gazeux emprisonné.
+
+</ARetenir>
+
+## Compressibilité, gonflage et transvasement
+
+Un bloc de plongée illustre Mariotte à l'envers : on y comprime beaucoup d'air dans un petit volume. La **capacité en air** d'un bloc est le produit de son volume interne par sa pression : un bloc de 12 L gonflé à 200 bars contient $12 \times 200 = 2400$ litres d'air ramenés à la pression atmosphérique. C'est cette quantité, et non les 12 L de contenance, qui détermine l'autonomie.
+
+**Exemple corrigé — transvasement (équilibrage de deux blocs).** On relie un bloc de 15 L gonflé à 200 bars à un bloc de 10 L vide (0 bar). Quelle pression d'équilibre ? La quantité d'air totale se conserve et se répartit dans le volume total :
+$$P_{eq} = \frac{P_1 V_1 + P_2 V_2}{V_1 + V_2} = \frac{200 \times 15 + 0 \times 10}{15 + 10} = \frac{3000}{25} = 120 \text{ bars}.$$
+Les deux blocs s'équilibrent à 120 bars. Ce calcul de conservation de la quantité de gaz est un classique de l'épreuve.
+
+**Exemple corrigé — appoint au compresseur.** Un bloc de 12 L est à 50 bars ; on veut le porter à 200 bars. Il faut lui apporter $12 \times (200 - 50) = 1800$ litres d'air à la pression atmosphérique. À un débit de compresseur de 300 L/min, le gonflage dure environ 6 minutes (hors échauffement, qui fausse la lecture à chaud).
+
+## La loi de Dalton et les pressions partielles
+
+**Dans un mélange gazeux, chaque gaz exerce une pression proportionnelle à sa fraction dans le mélange, comme s'il était seul** : $P_p = P_{abs} \times \%_{gaz}$, et la somme des pressions partielles reconstitue la pression absolue. Pour l'air on retient la convention 80 % d'azote, 20 % d'oxygène.
+
+À 40 m ($P_{abs} = 5$ bars) : $P_pN_2 = 5 \times 0{,}80 = 4$ bars, $P_pO_2 = 5 \times 0{,}20 = 1$ bar. C'est la **pression partielle**, non le pourcentage, qui gouverne les effets d'un gaz. Les seuils à mémoriser et à savoir retrouver par le calcul inverse $profondeur = (P_p / \% - 1) \times 10$ :
+
+| Effet | Seuil de PpO2 ou PpN2 | Profondeur à l'air |
+|---|---|---|
+| Narcose à l'azote (premiers effets) | PpN2 ≈ 3,2 bars | ≈ 30 m |
+| Toxicité de l'oxygène (hyperoxie) | PpO2 ≈ 1,6 bar | 70 m |
+| Limite de sécurité nitrox | PpO2 = 1,4 à 1,6 bar | selon mélange |
+
+<EnPratique>
+
+Retrouvez la profondeur seuil d'hyperoxie à l'air : $P_{abs} = 1{,}6 / 0{,}20 = 8$ bars, soit $(8-1) \times 10 = 70$ m. Au-delà de 60 m, la plongée à l'air est interdite en France : la marge avant l'hyperoxie est faible, ce qui justifie la limite réglementaire.
+
+</EnPratique>
+
+## Notions de nitrox
+
+Le nitrox est un mélange suroxygéné (par exemple 32 % ou 40 % d'oxygène). Deux notions d'examen en découlent directement de Dalton. La **profondeur maximale d'utilisation** (MOD) est la profondeur où la $P_pO_2$ atteint la limite choisie : pour un nitrox 40 % avec une limite de 1,6 bar, $P_{abs} = 1{,}6 / 0{,}40 = 4$ bars, soit **30 m**. Le nitrox réduit donc la profondeur admissible mais, en abaissant la $P_pN_2$ à profondeur égale, il diminue la charge d'azote et allonge la durée sans palier. Le **meilleur mélange** pour une profondeur donnée est celui dont la $P_pO_2$ atteint tout juste la limite à cette profondeur : à 30 m ($P_{abs}=4$), pour 1,4 bar, $\% = 1{,}4/4 = 35$ %.
+
+<Attention>
+
+Le nitrox ne repousse jamais la limite de narcose (celle-ci dépend de l'azote) et impose une vigilance accrue sur l'hyperoxie : un mélange trop riche mené trop profond expose à la crise hyperoxique, brutale et souvent mortelle sous l'eau. Les prérogatives nitrox relèvent d'une qualification spécifique.
+
+</Attention>
+
+## La loi de Henry et la désaturation
+
+**À température constante et à l'équilibre, la quantité de gaz dissoute dans un liquide est proportionnelle à la pression partielle de ce gaz au contact du liquide.** Le liquide concerné est le sang, puis l'ensemble des tissus. En descente, la $P_pN_2$ inspirée augmente (Dalton) : le sang dissout davantage d'azote et le distribue — c'est la **saturation**. On nomme **tension** $T$ la pression du gaz dissous dans un tissu :
+
+- $T$ inférieure à $P_p$ : le tissu se charge (descente, séjour au fond) ;
+- $T = P_p$ : équilibre, tissu saturé ;
+- $T$ supérieure à $P_p$ : le tissu se décharge, il est en **sursaturation** (remontée).
+
+La désaturation n'est sûre que tant que la sursaturation reste modérée : au-delà d'un rapport critique entre tension du tissu et pression ambiante, l'azote dissous ne peut plus s'évacuer en solution et forme des **bulles** — c'est le mécanisme de l'accident de désaturation. Les paliers servent précisément à maintenir le gradient de sursaturation sous le seuil dangereux pendant que l'azote quitte les tissus. La vitesse de désaturation dépend du gradient (différence entre $T$ et $P_p$) : c'est le fondement physique des modèles de compartiments étudiés au MF1.
+
+<SimLoisPhysiques />
+
+<Memo>
+
+### Conversions de pression
+
+- $P_{abs} = P_{atm} + profondeur/10$. À 10 m : 2 bars ; 20 m : 3 ; 30 m : 4 ; 40 m : 5 ; 60 m : 7.
+- Zone la plus dangereuse pour un volume gazeux : 0 à 10 m (la pression y double).
+
+### Mariotte
+
+- $P_1 V_1 = P_2 V_2$ (température constante).
+- Capacité en air d'un bloc : $V_{bloc} \times P$. Ex. : 12 L à 200 bars = 2400 L.
+- Équilibre de deux blocs : $P_{eq} = \dfrac{P_1 V_1 + P_2 V_2}{V_1 + V_2}$.
+
+### Dalton
+
+- $P_p = P_{abs} \times \%$. Air : 80 % N₂, 20 % O₂.
+- Narcose : PpN₂ ≈ 3,2 bars (≈ 30 m). Hyperoxie : PpO₂ ≈ 1,6 bar (70 m à l'air).
+- Nitrox — MOD : $P_{abs} = P_pO_2^{limite}/\%O_2$. Meilleur mélange : $\%O_2 = P_pO_2^{limite}/P_{abs}$.
+
+### Henry
+
+- Gaz dissous proportionnel à la pression partielle au contact.
+- Tension $T$ : $T < P_p$ charge, $T = P_p$ saturation, $T > P_p$ sursaturation (désaturation).
+- Sursaturation excessive → bulles → ADD. Les paliers limitent le gradient.
+
+</Memo>

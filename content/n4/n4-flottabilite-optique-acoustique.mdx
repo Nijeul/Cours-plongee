@@ -1,0 +1,120 @@
+---
+slug: n4-flottabilite-optique-acoustique
+title: "Archimède, optique et acoustique"
+level: n4
+domain: physique
+description: "Calculs complets de flottabilité, vision et audition sous l'eau : tout le programme physique de l'examen."
+objectives:
+  - "Énoncer le théorème d'Archimède et calculer un poids apparent, un lestage et un volume de flotteur"
+  - "Résoudre un problème de relevage d'objet immergé avec parachute"
+  - "Expliquer la réfraction et ses conséquences sur la vision (grossissement, rapprochement, champ visuel)"
+  - "Décrire l'absorption des couleurs et la baisse de luminosité avec la profondeur"
+  - "Expliquer la propagation du son sous l'eau et l'impossibilité de localiser une source"
+durationMinutes: 60
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+  - "Publications de la Commission Médicale et de Prévention Nationale FFESSM"
+---
+
+La flottabilité, la vision et l'audition sous l'eau forment le second bloc de physique de l'examen. Le théorème d'Archimède donne lieu à des exercices chiffrés complets (lestage, relevage) ; l'optique et l'acoustique appellent des explications précises des phénomènes et de leurs conséquences pratiques pour le guide de palanquée. Ce module traite les trois avec le degré de rigueur attendu.
+
+## Le théorème d'Archimède
+
+**Tout corps plongé dans un fluide subit une poussée verticale, dirigée de bas en haut, égale au poids du volume de fluide déplacé.** Cette poussée $\Pi$ vaut :
+
+$$\Pi = \rho_{eau} \times V_{immergé} \times g$$
+
+En pratique d'enseignement, on raisonne en kilogrammes-force : la poussée exprimée en kg est égale au volume immergé en litres multiplié par la masse volumique de l'eau. En **eau douce** $\rho = 1$ kg/L : 1 L immergé déplace 1 kg. En **eau de mer** $\rho \approx 1{,}026$ kg/L : 1 L déplace environ 1,026 kg. Un plongeur flotte donc légèrement mieux en mer qu'en eau douce, ce qui impose un léger surlestage en mer.
+
+Le **poids apparent** d'un corps immergé est la différence entre son poids réel et la poussée :
+
+$$P_{apparent} = P_{réel} - \Pi$$
+
+Trois cas : si le poids réel dépasse la poussée, le corps coule (flottabilité négative) ; s'ils sont égaux, il reste entre deux eaux (flottabilité nulle) ; si la poussée l'emporte, le corps remonte (flottabilité positive). Tout l'art du lestage consiste à obtenir une flottabilité **nulle** à la profondeur du palier, poumons en position moyenne.
+
+<ARetenir>
+
+Poussée = poids du volume d'eau déplacé. Poids apparent = poids réel − poussée. Eau douce : 1 L = 1 kg ; eau de mer : 1 L ≈ 1,026 kg.
+
+</ARetenir>
+
+## Calculs de lestage et de flottabilité
+
+**Exemple corrigé — lestage.** Un plongeur équipé (corps, combinaison, bloc, gilet vide) pèse 90 kg et déplace 88 L d'eau de mer. Quelle est sa flottabilité, et quel lestage pour l'annuler ?
+Poussée : $88 \times 1{,}026 \approx 90{,}3$ kg. Poids apparent : $90 - 90{,}3 = -0{,}3$ kg : il flotte de 0,3 kg. Pour équilibrer, il doit ajouter un plomb dont le poids apparent vaut 0,3 kg. Le plomb (densité ≈ 11) a une poussée négligeable devant son poids : environ 0,3 à 0,4 kg de plomb suffit. En réalité on lestera un peu plus pour compenser la remontée de flottabilité en fin de plongée (bloc allégé, combinaison qui se détend).
+
+**Exemple corrigé — combinaison compressible.** Une combinaison en néoprène de 6 L de volume à 3 m se comprime en profondeur (Mariotte s'applique aux bulles du néoprène). À 30 m sa poussée peut chuter de plus de moitié : le plongeur, équilibré en surface, devient lourd au fond et doit gonfler son gilet ; à la remontée, l'inverse. C'est pourquoi le contrôle de la flottabilité est permanent et pourquoi un surlestage initial est dangereux : il oblige à gonfler beaucoup le gilet, source de remontées incontrôlées.
+
+## Relevage d'un objet immergé
+
+Le relevage à l'aide d'un parachute est l'exercice de synthèse par excellence : il combine Archimède et Mariotte.
+
+**Exemple corrigé.** On veut remonter une ancre en fonte de 30 kg reposant à 20 m en eau de mer. Son volume est de 4 L (fonte, densité ≈ 7,5).
+1. Poids apparent de l'ancre : poussée $= 4 \times 1{,}026 \approx 4{,}1$ kg ; poids apparent $= 30 - 4{,}1 \approx 25{,}9$ kg. Il faut donc développer une poussée supplémentaire d'au moins 26 kg pour décoller l'ancre.
+2. Volume d'air à injecter dans le parachute à 20 m : pour 26 kg de poussée en mer, $V \approx 26 / 1{,}026 \approx 25{,}3$ L d'air à la pression de 20 m.
+3. **Danger de la remontée.** Cet air suit Mariotte : à mesure que le parachute remonte, il se détend, la poussée augmente, la remontée s'accélère — emballement. À 10 m les 25 L deviennent $25 \times 3 / 2 \approx 38$ L ; en surface, $25 \times 3 / 1 = 75$ L. On purge donc l'excédent au fur et à mesure et on ne se place jamais au-dessus de la charge.
+
+<Attention>
+
+Un relevage s'accélère tout seul : l'air du parachute se dilate à la remontée (Mariotte), augmentant la poussée. Ne jamais gonfler à la flottabilité positive dès le fond, ne jamais rester au-dessus ou dans l'axe de la charge, toujours pouvoir larguer.
+
+</Attention>
+
+## L'optique : la réfraction
+
+À l'interface eau-air du masque, la lumière change de milieu et se courbe : c'est la **réfraction**. L'eau étant plus réfringente que l'air, les rayons issus d'un objet parviennent à l'œil sous un angle modifié, et le cerveau, qui suppose une propagation rectiligne dans l'air, situe l'objet au mauvais endroit. Deux conséquences majeures et une troisième.
+
+- **Grossissement apparent** : les objets paraissent environ **4/3 plus gros** (grossis d'un tiers) qu'en réalité.
+- **Rapprochement apparent** : ils paraissent **plus proches**, à environ les trois quarts de leur distance réelle. Un objet à 4 m semble à 3 m.
+- Ces deux effets se conjuguent : un poisson paraît plus gros et plus près. À la prise d'objet, on tend la main un peu plus loin que là où on croit voir la cible.
+
+La réfraction explique aussi que le masque soit indispensable : sans lame d'air devant l'œil, l'image se formerait très loin derrière la rétine et la vision serait extrêmement floue. Le masque restaure une interface plane air-cornée compatible avec l'accommodation de l'œil.
+
+## Champ visuel, couleurs et luminosité
+
+Le masque réduit le **champ visuel** : la vitre et la jupe cachent la périphérie, et la réfraction rétrécit encore l'angle utile. Le plongeur voit « comme dans un tunnel » et doit compenser par des mouvements de tête — un point de sécurité pour le guide qui surveille sa palanquée.
+
+L'eau **absorbe la lumière** de façon sélective et croissante avec la profondeur. Les grandes longueurs d'onde disparaissent les premières : le **rouge** s'éteint vers 5 à 10 m, l'**orange** puis le **jaune** ensuite, le **vert** plus profond, le **bleu** persiste le plus longtemps — d'où la dominante bleu-vert des profondeurs. Une combinaison rouge paraît brune puis grise en profondeur ; une lampe restitue les couleurs en rapprochant la source de l'objet. La **luminosité globale** décroît aussi : diffusion par les particules en suspension, réflexion d'une partie de la lumière à la surface (d'autant plus qu'elle est agitée ou que le soleil est bas), turbidité. À profondeur égale, il fait plus sombre par mer agitée, ciel couvert ou eau chargée.
+
+<EnPratique>
+
+Un objet perdu paraît plus gros, plus proche et sa couleur est faussée : pour le décrire à un équipier ou le retrouver, fiez-vous à la forme et à la position plus qu'à la couleur, et corrigez mentalement distance et taille.
+
+</EnPratique>
+
+## L'acoustique : le son sous l'eau
+
+Le son se propage dans l'eau **beaucoup plus vite que dans l'air** : environ **1500 m/s** contre 340 m/s, soit un rapport d'environ **4,3**. Cette propagation rapide et efficace a deux conséquences pour le plongeur.
+
+Premièrement, les sons portent **loin et fort** : le bruit d'un moteur de bateau, un rappel frappé sur le bloc s'entendent à grande distance. C'est un atout pour signaler (rappel au parpaing, pétard de rappel) mais aussi un danger, car un bateau peut être proche sans qu'on puisse le situer.
+
+Deuxièmement, et c'est le point d'examen, **il est impossible de localiser une source sonore sous l'eau**. La localisation dans l'air repose sur le minuscule décalage de temps d'arrivée du son entre les deux oreilles. Sous l'eau, le son va si vite qu'il atteint les deux oreilles quasiment en même temps ; de plus il se transmet directement par les os du crâne. Le cerveau perd la référence du décalage : on entend le son fort mais on ne sait pas d'où il vient. Conséquence de sécurité capitale : entendre un bateau ne renseigne pas sur sa direction ; à la remontée, on tourne sur soi-même, on lève la tête et on protège sa remontée par un parachute, sans jamais se fier à l'oreille pour éviter un danger de surface.
+
+<Attention>
+
+Sous l'eau, on entend le danger (bateau) mais on ne peut pas le localiser : la vitesse du son (≈ 1500 m/s, soit ×4,3) supprime le décalage entre les deux oreilles. Remontée toujours protégée par un parachute et en tournant sur soi.
+
+</Attention>
+
+<Memo>
+
+### Archimède
+
+- Poussée = poids du volume d'eau déplacé. Eau douce 1 L = 1 kg ; eau de mer 1 L ≈ 1,026 kg.
+- Poids apparent = poids réel − poussée. Négatif : coule ; nul : entre deux eaux ; positif : flotte.
+- Relevage : poussée à créer ≈ poids apparent de l'objet ; l'air injecté se dilate à la remontée (Mariotte) → purger, ne jamais rester au-dessus de la charge.
+
+### Optique (réfraction)
+
+- Objets grossis d'environ 1/3 (×4/3) et rapprochés (≈ ×3/4 de la distance réelle).
+- Champ visuel réduit par le masque (vision « en tunnel »).
+- Couleurs absorbées avec la profondeur : rouge (5-10 m) → orange → jaune → vert → bleu (persiste). Luminosité décroissante (diffusion, turbidité, réflexion de surface).
+
+### Acoustique
+
+- Vitesse du son dans l'eau ≈ 1500 m/s, soit ≈ 4,3 fois l'air (340 m/s).
+- Sons portant loin et fort ; **impossible de localiser une source** (pas de décalage entre les deux oreilles + transmission osseuse).
+- Sécurité : remontée protégée par parachute, tourner sur soi, ne pas se fier à l'oreille pour situer un bateau.
+
+</Memo>

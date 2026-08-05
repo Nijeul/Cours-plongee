@@ -1,0 +1,186 @@
+---
+slug: n2-tables-mn90
+title: "Les tables MN90"
+level: n2
+domain: tables-deco
+description: "Lire les tables, planifier une plongée simple ou successive, gérer paliers, remontées anormales et majorations."
+objectives:
+  - "Déterminer paliers, DTR et GPS d'une plongée simple en appliquant les règles d'arrondi des tables MN90"
+  - "Citer les principaux couples profondeur-durée de la courbe de sécurité"
+  - "Calculer la majoration d'une plongée successive à l'aide des tableaux II et III"
+  - "Appliquer la procédure de la plongée consécutive (intervalle inférieur à 15 minutes)"
+  - "Décrire les procédures de rattrapage : remontée lente, remontée rapide, palier interrompu"
+durationMinutes: 70
+sources:
+  - "Tables de plongée à l'air MN90, édition FFESSM"
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+---
+
+Les modules précédents ont expliqué pourquoi il faut gérer sa désaturation (Dalton, Henry) ; celui-ci explique **comment**. Les tables MN90 traduisent les modèles de décompression en un outil de terrain : deux paramètres d'entrée — profondeur et durée — et trois résultats — paliers, durée de remontée, groupe de plongée successive. Ce module vous apprend à les lire pas à pas, puis à traiter tous les cas au programme du Niveau 2 : successive, consécutive, remontées anormales et palier interrompu.
+
+<Attention>
+
+Les valeurs de tables citées dans ce module et utilisées par les simulateurs du site proviennent d'un **jeu de données d'amorçage non vérifié** : elles servent à apprendre la méthode de lecture, pas à planifier une vraie plongée. Avant toute plongée réelle ou tout examen, vérifiez chaque valeur sur un exemplaire officiel des tables MN90 (édition FFESSM).
+
+</Attention>
+
+## D'où viennent les tables MN90 et quand s'appliquent-elles
+
+Les tables MN90 (« Marine Nationale 1990 ») ont été élaborées pour les plongeurs militaires français, puis adoptées par la FFESSM comme outil d'enseignement de la décompression. Elles reposent sur un modèle de désaturation par compartiments et ont été validées pour des conditions précises, qu'il faut connaître car en dehors de ce cadre les tables ne garantissent plus rien :
+
+- plongée **à l'air**, au niveau de la mer ;
+- profondeur maximale de 60 m (profondeur limite de la plongée à l'air en France) ;
+- **deux plongées maximum par 24 heures** ;
+- vitesse de remontée du fond de **15 à 17 m/min**, puis **6 m/min** entre les paliers et du dernier palier à la surface ;
+- effort modéré, plongeur en bonne condition physique.
+
+Le vocabulaire de base : la **durée de plongée** court de l'immersion au début de la remontée à vitesse normale ; la **profondeur** retenue est la profondeur **maximale** atteinte, même brièvement ; la **DTR** (durée totale de remontée) cumule la remontée, les paliers et les trajets entre paliers ; le **GPS** (groupe de plongée successive) est une lettre de A à P qui code la charge d'azote résiduelle en fin de plongée.
+
+## Les deux règles d'or de la lecture : arrondir vers la sécurité
+
+Les tables sont discrètes : elles ne proposent que certaines profondeurs (12, 15, 20, 25 m...) et certaines durées. Si vos paramètres ne figurent pas exactement dans la table, la règle est toujours la même : **prendre la valeur immédiatement supérieure**, jamais l'inférieure.
+
+- Profondeur maximale de 17,5 m → lire la table **20 m**.
+- Durée de plongée de 27 min → lire la ligne **30 min** (si la table propose 25 puis 30).
+
+Cette majoration systématique est volontaire : entre deux lignes, on choisit toujours celle qui décompresse le plus. La même logique s'appliquera plus loin en sens conservateur pour l'intervalle de surface (arrondi à la valeur **inférieure**) : dans tous les cas, l'arrondi se fait **dans le sens de la sécurité**.
+
+<ARetenir>
+
+Profondeur lue = profondeur max arrondie **au-dessus**. Durée lue = durée de plongée arrondie **au-dessus**. En cas d'hésitation entre deux lectures, prendre celle qui donne le plus de paliers.
+
+</ARetenir>
+
+## Lire une plongée simple pas à pas
+
+**Exemple corrigé n° 1 — plongée dans la courbe.** Immersion à 20 m pendant 40 min. La table 20 m, ligne 40 min, n'impose **aucun palier** et donne le GPS **H**. La remontée se fait à 15-17 m/min, avec un palier dit « de principe » de 3 min à 3 m, facultatif selon la table mais fortement recommandé en pratique.
+
+**Exemple corrigé n° 2 — plongée avec palier.** Profondeur maximale 17 m, durée 48 min. Arrondis : table **20 m**, ligne **50 min** → palier de **9 min à 3 m**, GPS **I**. Déroulé de la remontée : du fond à 3 m à 15-17 m/min, 9 min de palier, puis 3 m à la surface à 6 m/min.
+
+**Exemple corrigé n° 3 — plongée profonde.** Profondeur 32 m, durée 27 min. Arrondis : table **35 m**, ligne **30 min** → paliers de **5 min à 6 m** puis **22 min à 3 m**, GPS **I**. On remonte du fond au palier de 6 m à 15-17 m/min, puis on passe de 6 m à 3 m et de 3 m à la surface à 6 m/min.
+
+**Calcul de la DTR et de l'heure de sortie.** Reprenons l'exemple n° 2 : remontée de 17 m à 3 m, soit 14 m à 15 m/min ≈ 1 min ; palier 9 min ; puis 3 m à 6 m/min ≈ 0,5 min. DTR ≈ 10,5 min, arrondie à **11 min**. Si l'immersion a eu lieu à 9 h 00, début de remontée à 9 h 48, heure de sortie ≈ 9 h 59. À l'examen, ce petit chronométrage (immersion + durée + DTR = heure de sortie) est systématiquement demandé.
+
+<EnPratique>
+
+Entraînez-vous à la lecture avec le simulateur de tables ci-dessous : entrez profondeur et durée, faites la lecture vous-même (arrondis compris), puis comparez avec le résultat.
+
+</EnPratique>
+
+<SimTables />
+
+## La courbe de sécurité
+
+Pour chaque profondeur, il existe une durée maximale sans palier obligatoire : l'ensemble de ces couples forme la **courbe de sécurité**. Rester à l'intérieur, c'est garder la possibilité de remonter directement (à vitesse contrôlée) sans palier obligatoire — un confort et une marge de sécurité considérables.
+
+| Profondeur | Durée max sans palier |
+|---|---|
+| 12 m | 2 h 15 |
+| 15 m | 1 h 15 |
+| 20 m | 40 min |
+| 25 m | 20 min |
+| 30 m | 10 min |
+| 35 m | 5 min |
+| 40 m | 5 min |
+
+Ces valeurs sont à connaître par cœur pour l'examen — et à vérifier sur la table officielle. Remarquez la chute rapide : à 20 m on dispose de 40 minutes, à 30 m de 10 minutes seulement. Même dans la courbe, le palier de principe de 3 min à 3 m reste recommandé.
+
+## La plongée successive : intervalle, azote résiduel, majoration
+
+Une plongée est **successive** quand elle débute entre **15 minutes et 12 heures** après la précédente. L'azote résiduel de la première plongée s'ajoute à la charge de la seconde : il faut le comptabiliser, et c'est le rôle des tableaux II et III des tables.
+
+La procédure complète, à dérouler dans l'ordre :
+
+1. **GPS** : noter la lettre obtenue à la fin de la première plongée (tableau I).
+2. **Tableau II** : croiser le GPS avec l'**intervalle de surface** (arrondi à la valeur immédiatement **inférieure** s'il ne figure pas dans le tableau) pour lire le **coefficient d'azote résiduel**.
+3. **Tableau III** : croiser cet azote résiduel (valeur immédiatement **supérieure**) avec la profondeur prévue de la seconde plongée (valeur immédiatement **supérieure**) pour lire la **majoration** en minutes.
+4. **Durée fictive** : ajouter la majoration à la durée réelle de la seconde plongée, puis entrer dans le tableau I avec la profondeur réelle maximale et cette durée fictive.
+
+**Exemple corrigé complet.** Première plongée : 20 m, 40 min → GPS **H**. Intervalle de surface : 2 h (120 min, valeur présente dans le tableau II). Seconde plongée prévue à 20 m.
+
+1. GPS = H.
+2. Tableau II, ligne H, colonne 120 min → azote résiduel **0,97**.
+3. Tableau III : azote 0,97 → colonne immédiatement supérieure **1,01** ; profondeur 20 m → majoration **16 min**.
+4. La seconde plongée dure réellement 25 min à 20 m : durée fictive $25 + 16 = 41$ min → table 20 m, ligne **45 min** → palier de **4 min à 3 m**, GPS **I**.
+
+Tout se passe comme si la seconde plongée avait commencé 16 minutes avant l'immersion réelle : la majoration matérialise l'azote encore dissous dans les tissus. Notez les trois sens d'arrondi, tous conservateurs : intervalle vers le **bas**, azote résiduel et profondeur vers le **haut**. Au-delà de 12 heures d'intervalle, l'azote résiduel est revenu au niveau de base : la plongée redevient **simple**.
+
+<Attention>
+
+La majoration se calcule avec la profondeur **prévue** de la seconde plongée, mais l'entrée finale dans le tableau I se fait avec la profondeur **réellement atteinte**. Si vous descendez plus profond que prévu, la majoration calculée n'est plus valable : recalculez avec la profondeur réelle (à l'examen) et retenez qu'en pratique on planifie la successive **moins profonde** que la première.
+
+</Attention>
+
+## La plongée consécutive : moins de 15 minutes d'intervalle
+
+Si vous vous ré-immergez **moins de 15 minutes** après être sorti, les tables considèrent qu'il s'agit de la **même plongée** : c'est la plongée consécutive. La procédure est simple :
+
+- durée retenue = **somme des durées** des deux plongées ;
+- profondeur retenue = **profondeur maximale** atteinte au cours des deux plongées.
+
+**Exemple corrigé.** Plongée à 18 m pendant 30 min, sortie, puis ré-immersion 10 min plus tard à 15 m pendant 20 min. Lecture : profondeur max 18 m → table **20 m** ; durée cumulée $30 + 20 = 50$ min → ligne 50 min → palier de **9 min à 3 m** à effectuer à la fin de la seconde plongée, GPS **I**. Cas typique : redescendre décrocher un mouillage juste après la plongée — la « petite redescente » compte intégralement.
+
+## Les remontées anormales : lente et rapide
+
+**Remontée lente** (vitesse inférieure à 15 m/min, par exemple en suivant un tombant en exploration) : le temps passé à remonter lentement reste un temps de charge pour les tissus lents. La règle MN90 : la durée de plongée est comptée **jusqu'au moment où l'on entame la remontée à vitesse normale**. La remontée lente s'ajoute donc à la durée de plongée, la profondeur retenue restant la profondeur maximale.
+
+**Exemple corrigé.** Descente à 25 m, 20 min sur le fond, puis remontée en exploration le long du récif jusqu'à 12 m en 10 min, et de là remontée normale. Durée retenue : $20 + 10 = 30$ min à 25 m → table 25 m, 30 min → palier de **6 min à 3 m**, GPS **G**.
+
+**Remontée rapide** (vitesse supérieure à 17 m/min : panique, gilet non purgé, parachute entraîné...) : c'est une situation à risque d'ADD qui impose une procédure de rattrapage stricte, à connaître par cœur :
+
+1. **Redescendre dans les 3 minutes** à la **moitié de la profondeur maximale** de la plongée ;
+2. y rester **5 minutes** ;
+3. remonter à vitesse normale et effectuer les **paliers recalculés** : durée de plongée comptée **de l'immersion à la fin du palier à mi-profondeur**, profondeur = profondeur maximale ;
+4. faire au minimum un palier de 2 min à 3 m si la table n'en impose pas ;
+5. après la sortie : surveillance attentive de toute la palanquée (signes d'ADD), pas de nouvelle immersion, alerte au moindre symptôme.
+
+**Exemple corrigé.** Plongée à 30 m ; au bout de 17 min, remontée rapide accidentelle. La palanquée redescend en 2 min à 15 m (moitié de 30 m) et y reste 5 min. Durée à retenir : $17 + 2 + 5 = 24$ min → table 30 m, ligne **25 min** → palier de **9 min à 3 m**, GPS **G**. Si la redescente est impossible (mer, air, état du plongeur) ou au-delà des 3 minutes : pas d'improvisation, on applique la conduite à tenir ADD — oxygène, alerte, évacuation.
+
+## Le palier interrompu
+
+Un palier peut être interrompu malgré vous : panne d'air, houle qui vous soulève, perte du parachute. La règle est du même esprit que la remontée rapide : **redescendre à la profondeur du palier interrompu dans les 3 minutes et refaire ce palier en entier** (pas seulement le temps restant). Les paliers plus profonds déjà effectués n'ont pas à être refaits.
+
+**Exemple corrigé.** Votre table impose 9 min à 3 m ; à la 6ᵉ minute, vous êtes accidentellement remonté en surface. Vous redescendez à 3 m en moins de 3 minutes et effectuez **9 minutes complètes**. Si la redescente n'est pas possible dans les 3 minutes : surveillance ADD, oxygène et alerte au moindre signe, pas de ré-immersion improvisée plus tard.
+
+Dans tous les cas anormaux (remontée rapide, palier interrompu), le réflexe fondamental est le même : la procédure de rattrapage n'est valable que **dans les 3 minutes** et **en l'absence de symptôme**. Au-delà, ou au moindre signe suspect, on bascule sur la conduite à tenir de l'accident de désaturation.
+
+<EnPratique>
+
+Générez des exercices complets (plongées simples, successives, cas anormaux) et entraînez-vous en conditions d'examen avec le générateur ci-dessous.
+
+</EnPratique>
+
+<SimGenerateur niveau="n2" />
+
+<Memo>
+
+### Règles de lecture
+
+- Profondeur : max atteinte, arrondie **au-dessus**. Durée : immersion → début de remontée normale, arrondie **au-dessus**.
+- Intervalle de surface (tableau II) : arrondi **en dessous**. Azote résiduel et profondeur (tableau III) : arrondis **au-dessus**.
+- Vitesses : fond → 1ᵉʳ palier : **15 à 17 m/min** ; entre paliers et vers la surface : **6 m/min**.
+- Heure de sortie = heure d'immersion + durée de plongée + DTR.
+
+### Courbe de sécurité (à vérifier sur table officielle)
+
+| 12 m | 15 m | 20 m | 25 m | 30 m | 35 m | 40 m |
+|---|---|---|---|---|---|---|
+| 2 h 15 | 1 h 15 | 40 min | 20 min | 10 min | 5 min | 5 min |
+
+### Types de plongée
+
+- **Simple** : plus de 12 h après la précédente.
+- **Successive** : entre 15 min et 12 h → GPS + tableau II (azote résiduel) + tableau III (majoration) ; durée fictive = durée réelle + majoration.
+- **Consécutive** : moins de 15 min → une seule plongée : durées additionnées, profondeur max des deux.
+
+### Procédures de rattrapage
+
+| Situation | Procédure |
+|---|---|
+| Remontée lente (moins de 15 m/min) | temps de remontée lente ajouté à la durée de plongée |
+| Remontée rapide (plus de 17 m/min) | dans les **3 min** : redescendre à **mi-profondeur**, **5 min**, paliers recalculés (durée jusqu'à la fin du palier à mi-profondeur), minimum 2 min à 3 m, surveillance ADD |
+| Palier interrompu | dans les **3 min** : redescendre au palier et le **refaire en entier** |
+| Hors délai ou symptômes | conduite à tenir ADD : O₂, alerte, évacuation |
+
+</Memo>

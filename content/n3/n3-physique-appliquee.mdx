@@ -1,0 +1,173 @@
+---
+slug: n3-physique-appliquee
+title: "Physique appliquée et calculs"
+level: n3
+domain: physique
+description: "Maîtriser toutes les lois physiques avec leurs calculs : pressions, volumes, pressions partielles, flottabilité."
+objectives:
+  - "Calculer une pression absolue à toute profondeur et l'exploiter dans un calcul multi-étapes"
+  - "Appliquer la loi de Boyle-Mariotte aux volumes de gaz, aux blocs et aux quantités d'air disponibles"
+  - "Calculer les pressions partielles d'un mélange à une profondeur donnée et les comparer aux seuils physiologiques"
+  - "Résoudre un problème complet de flottabilité : poids apparent, lestage, volume de parachute de levage"
+  - "Expliquer la loi de Henry et relier gradient de pression et vitesse de saturation ou de désaturation"
+durationMinutes: 60
+sources:
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+  - "Illustrated Physiology of Diving (publications médicales fédérales)"
+---
+
+À 60 m, la marge d'erreur se réduit : la pression est sept fois celle de la surface, la consommation d'air s'envole, la narcose guette et la toxicité de l'oxygène n'est plus une abstraction. Le plongeur Niveau 3 ne se contente plus de connaître les lois physiques : il doit savoir les enchaîner dans des calculs complets, car c'est sur elles que reposent toute sa planification et sa sécurité. Ce module reprend chaque loi avec la rigueur attendue d'un plongeur autonome à 60 m, exemples chiffrés et corrigés à l'appui.
+
+## Pressions : les fondations du raisonnement
+
+Tout calcul de plongée commence par la pression absolue. Trois grandeurs sont en jeu :
+
+- la **pression atmosphérique** $P_{atm}$, environ 1 bar au niveau de la mer ;
+- la **pression relative** (ou hydrostatique) $P_{rel}$, due au poids de la colonne d'eau : elle augmente de 1 bar tous les 10 m en eau de mer ;
+- la **pression absolue**, leur somme :
+
+$$P_{abs} = P_{atm} + P_{rel}$$
+
+Aux profondeurs du Niveau 3 : 5 bar à 40 m, 6 bar à 50 m, **7 bar à 60 m**. Retenez aussi la conversion inverse, indispensable dans les exercices : une pression absolue de 4,8 bar correspond à une profondeur de (4,8 − 1) × 10 = 38 m.
+
+La variation **relative** de pression est maximale près de la surface : entre 0 et 10 m, la pression double (+100 %), alors qu'entre 50 et 60 m elle ne croît que d'un sixième environ (+17 %). C'est pourquoi les barotraumatismes et les variations de flottabilité restent les plus brutaux dans la zone des 10 derniers mètres, même pour un plongeur profond.
+
+<ARetenir>
+
+$P_{abs} = P_{atm} + P_{rel}$, avec 1 bar de plus tous les 10 m. À 60 m : 7 bar. Profondeur = ($P_{abs}$ − 1) × 10. La zone proche de la surface concentre les plus fortes variations relatives de pression.
+
+</ARetenir>
+
+## Boyle-Mariotte : volumes, blocs et quantités de gaz
+
+À température constante, le produit de la pression par le volume d'une masse de gaz est constant :
+
+$$P_1 \times V_1 = P_2 \times V_2$$
+
+**Application 1 — volume d'air détendu d'un bloc.** Un bloc de 15 L gonflé à 220 bar contient, ramené à la pression de surface : 15 × 220 = **3300 L** d'air détendu. C'est cette quantité, et non la pression seule, qui détermine l'autonomie.
+
+**Application 2 — expansion d'un gaz à la remontée.** Un parachute de palier rempli de 12 L d'air à 40 m (5 bar) tend, à 10 m (2 bar), vers un volume de (5 × 12) / 2 = **30 L**, puis 60 L en surface s'il ne purgeait pas. D'où l'impératif de purger tout volume gazeux en remontant : gilet, combinaison étanche, parachute — et poumons, ce qui fonde l'interdiction absolue de bloquer sa ventilation à la remontée.
+
+**Application 3 — calcul multi-étapes corrigé.** Une palanquée doit équilibrer un bloc de secours : combien de temps un bloc de 12 L gonflé à 200 bar, réserve de 50 bar déduite, permet-il de rester à 60 m pour un plongeur consommant 20 L/min en surface ?
+
+1. Air utilisable : 12 × (200 − 50) = **1800 L**.
+2. Pression absolue à 60 m : 7 bar.
+3. Consommation à 60 m : 20 × 7 = **140 L/min**.
+4. Autonomie : 1800 / 140 ≈ **12,8 min**.
+
+Moins de 13 minutes : ce chiffre, à lui seul, résume l'exigence de la plongée profonde et justifie tout le module de planification qui suit.
+
+<Attention>
+
+Une erreur classique consiste à confondre pression et quantité de gaz. Deux blocs à 200 bar ne contiennent pas la même chose si leurs volumes diffèrent : un 12 L renferme 2400 L d'air détendu, un 15 L en renferme 3000. Raisonnez toujours en litres détendus.
+
+</Attention>
+
+## Dalton : les pressions partielles aux profondeurs du N3
+
+Dans un mélange, chaque gaz exerce une pression partielle proportionnelle à sa fraction :
+
+$$P_p = P_{abs} \times \%_{gaz}$$
+
+et la somme des pressions partielles égale la pression absolue. L'air est composé d'environ 79 % d'azote et 21 % d'oxygène. Calculons à 60 m (7 bar) :
+
+| Gaz | Fraction | Pression partielle à 60 m |
+|---|---|---|
+| Azote | 0,79 | 7 × 0,79 = 5,53 bar |
+| Oxygène | 0,21 | 7 × 0,21 = 1,47 bar |
+
+Ces deux valeurs commandent les limites de la plongée à l'air :
+
+- La **narcose** devient sensible chez la plupart des plongeurs quand la pression partielle d'azote dépasse 3,2 bar environ, soit dès 30 m ; à 60 m, avec 5,53 bar, l'altération du jugement est quasi systématique et justifie une progressivité rigoureuse vers les profondeurs.
+- La **toxicité neurologique de l'oxygène** (effet Paul Bert, crise hyperoxique) menace au-delà d'une pression partielle d'environ 1,6 bar. À l'air, ce seuil correspond à une pression absolue de 1,6 / 0,21 ≈ 7,6 bar, soit environ 66 m : la limite réglementaire de 60 m pour la plongée à l'air conserve une marge, mais elle est mince — l'effort, le froid et le CO₂ abaissent le seuil réel.
+
+**Exemple corrigé — profondeur équivalente.** À quelle profondeur à l'air retrouve-t-on la pression partielle d'azote régnant à 40 m ? À 40 m : 5 × 0,79 = 3,95 bar. C'est la valeur qu'on utilisera, au Niveau 4, pour les calculs de profondeur équivalente au nitrox ; au Niveau 3, retenez la méthode : toute comparaison physiologique se fait en pressions partielles, jamais en profondeurs brutes.
+
+## Henry : dissolution des gaz et gradients
+
+La loi de Henry énonce qu'à saturation, la quantité de gaz dissoute dans un liquide est proportionnelle à la pression partielle de ce gaz au contact du liquide. En plongée, l'azote inspiré à pression accrue se dissout dans le sang puis les tissus : c'est la **saturation**. À la remontée, le phénomène s'inverse : les tissus restituent l'azote, c'est la **désaturation**.
+
+Le moteur de ces échanges est le **gradient de pression** : la différence entre la pression partielle d'azote dans les alvéoles et la tension d'azote déjà dissoute dans les tissus. Plus le gradient est grand, plus l'échange est rapide. La descente crée un gradient entrant ; la remontée un gradient sortant. Tout l'art de la décompression consiste à maintenir ce gradient sortant assez grand pour désaturer efficacement, mais assez petit pour que l'azote reste dissous au lieu de former des bulles : c'est exactement ce que règlent la vitesse de remontée et les paliers, et ce que les modèles des ordinateurs (module dédié) formalisent compartiment par compartiment.
+
+Les facteurs qui influencent la dissolution : la pression (donc la profondeur), la durée d'exposition, la température, la nature du gaz et celle du tissu (les graisses dissolvent davantage d'azote que l'eau). Un même profil ne charge donc pas deux plongeurs de la même façon — d'où les marges de sécurité systématiques.
+
+## Archimède : flottabilité, lestage et levage
+
+Tout corps immergé subit une poussée verticale, dirigée de bas en haut, égale au poids du volume de fluide déplacé :
+
+$$P_{App} = P_{réel} - P_{Archimède}$$
+
+avec, en eau de mer, une masse volumique d'environ 1,025 kg/L. Le **poids apparent** indique le comportement : positif, le corps coule ; négatif, il flotte ; nul, il est équilibré.
+
+**Exemple corrigé 1 — lestage.** Un plongeur équipé pèse 95 kg pour un volume total de 94 L en surface, gilet vide. Poussée : 94 × 1,025 ≈ 96,4 kgf. Poids apparent : 95 − 96,4 = **−1,4 kg** : il flotte. Pour s'immerger poumons pleins, il ajoute environ 2 kg de lest — mais pas davantage : un surlestage se paie à chaque mètre en air de gilet et en consommation.
+
+**Exemple corrigé 2 — compression de la combinaison.** À 40 m, sa combinaison s'est comprimée et son volume total n'est plus que de 90 L. Poussée : 90 × 1,025 ≈ 92,3 kgf ; poids apparent : 95 + 2 − 92,3 ≈ **+4,7 kg**. Pour retrouver l'équilibre, il injecte dans le gilet un volume d'air d'environ 4,7 / 1,025 ≈ 4,6 L — volume qui, par Mariotte, gonflera en remontant et devra être purgé progressivement.
+
+**Exemple corrigé 3 — parachute de levage (multi-étapes).** Remonter du fond, à 40 m, un moteur de 60 kg occupant 20 L.
+
+1. Poussée sur l'objet : 20 × 1,025 = 20,5 kgf.
+2. Poids apparent : 60 − 20,5 = **39,5 kg**.
+3. Volume de parachute nécessaire : 39,5 / 1,025 ≈ **38,5 L** (on prendra un parachute de 40 L ou plus).
+4. Quantité d'air à injecter à 40 m (5 bar), exprimée en air détendu : 38,5 × 5 ≈ **193 L** — près de 13 bar d'un bloc de 15 L, à intégrer au calcul d'autonomie.
+
+<EnPratique>
+
+Vérifiez votre lestage en fin de plongée, bloc presque vide : équilibré à 3 m avec un gilet vide et une ventilation normale, vous tiendrez votre palier sans effort. Un bloc de 12 L acier « s'allège » d'environ 2,4 kg entre 200 bar et 40 bar : c'est le poids de l'air consommé, à anticiper dans le lestage.
+
+</EnPratique>
+
+## Enchaîner les lois : la méthode des calculs complets
+
+Les exercices du Niveau 3 combinent presque toujours plusieurs lois. Méthode en quatre temps : identifier les grandeurs données et demandées ; convertir les profondeurs en pressions absolues ; appliquer les lois une à une en écrivant chaque étape ; contrôler l'ordre de grandeur du résultat (une autonomie de 300 min à 60 m est absurde, une consommation multipliée par 7 ne l'est pas).
+
+**Exemple de synthèse corrigé.** Deux plongeurs (20 L/min chacun en surface) descendent à 50 m avec des blocs de 15 L à 230 bar. Quelle durée maximale au fond s'ils veulent entamer la remontée avec 90 bar (réserve et remontée comprises) ?
+
+1. Air utilisable au fond par plongeur : 15 × (230 − 90) = **2100 L**.
+2. Pression absolue à 50 m : 6 bar ; consommation : 20 × 6 = **120 L/min**.
+3. Durée : 2100 / 120 = **17,5 min**, arrondie par sécurité à **17 min**.
+
+Chaque résultat intermédiaire a un sens physique : c'est votre meilleur garde-fou contre les erreurs d'étourderie.
+
+<SimLoisPhysiques />
+
+<EnPratique>
+
+Le générateur d'exercices ci-dessous produit des énoncés chiffrés du niveau de l'examen, avec corrigé pas à pas. Travaillez sans calculatrice d'abord : les valeurs d'examen sont choisies pour tomber juste.
+
+</EnPratique>
+
+<SimGenerateur niveau="n3" />
+
+<Memo>
+
+### Formules
+
+- $P_{abs} = P_{atm} + P_{rel}$ — 1 bar + 1 bar / 10 m (eau de mer). À 40 m : 5 bar ; 50 m : 6 bar ; 60 m : 7 bar.
+- Mariotte : $P_1 V_1 = P_2 V_2$ — air détendu d'un bloc = volume × pression.
+- Dalton : $P_p = P_{abs} \times \%_{gaz}$ — la somme des $P_p$ égale $P_{abs}$.
+- Archimède : poids apparent = poids réel − poussée ; poussée = volume immergé × 1,025 (eau de mer, en kgf).
+- Consommation à la profondeur = consommation surface × $P_{abs}$.
+
+### Valeurs clés à 60 m (air)
+
+| Grandeur | Valeur |
+|---|---|
+| Pression absolue | 7 bar |
+| $P_p N_2$ | 5,53 bar (narcose marquée) |
+| $P_p O_2$ | 1,47 bar (proche du seuil de 1,6 bar) |
+| Consommation (20 L/min surface) | 140 L/min |
+
+### Seuils physiologiques
+
+- Narcose sensible : $P_p N_2$ au-delà d'environ 3,2 bar (≈ 30 m à l'air).
+- Crise hyperoxique : $P_p O_2$ au-delà d'environ 1,6 bar (≈ 66 m à l'air) — marge réduite à 60 m.
+- Henry : dissolution proportionnelle à la pression partielle ; le gradient de pression pilote la vitesse des échanges.
+
+### Méthode de calcul
+
+1. Profondeurs → pressions absolues.
+2. Une loi par étape, résultats intermédiaires écrits.
+3. Contrôle final de l'ordre de grandeur.
+
+</Memo>

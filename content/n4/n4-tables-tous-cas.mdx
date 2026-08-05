@@ -1,0 +1,140 @@
+---
+slug: n4-tables-tous-cas
+title: "Tables MN90 : maîtrise complète"
+level: n4
+domain: tables-deco
+description: "Tous les cas d'examen : successives complexes, procédures de rattrapage, plongée en altitude, au nitrox (notions)."
+objectives:
+  - "Résoudre toute plongée simple et successive avec calcul complet de la DTR et de l'heure de sortie"
+  - "Appliquer les procédures de rattrapage : remontée rapide, remontée lente, palier interrompu"
+  - "Adapter la lecture des tables à la plongée en altitude (pression réduite, profondeur fictive)"
+  - "Situer l'apport du nitrox dans la gestion de la décompression (notions)"
+  - "Enchaîner un problème d'examen multi-plongées sans erreur d'arrondi"
+durationMinutes: 80
+sources:
+  - "Tables de plongée à l'air MN90, édition FFESSM"
+  - "Manuel de Formation Technique FFESSM"
+  - "Code du sport, art. A.322-71 et s."
+---
+
+L'épreuve de tables du Niveau 4 balaie tous les cas d'emploi des MN90 : plongée simple experte, successives, procédures de rattrapage, et deux extensions propres au niveau — la plongée en **altitude** et une **notion** de l'apport du nitrox. Ce module reprend chaque cas avec sa méthode et des exemples corrigés, en s'appuyant sur les tables du site.
+
+<Attention>
+
+Les valeurs de tables utilisées ici et dans les simulateurs proviennent d'un jeu de données d'amorçage **non vérifié** sur un exemplaire officiel : elles illustrent la méthode. Avant une plongée réelle ou un examen, contrôlez chaque valeur sur les tables MN90 officielles (édition FFESSM).
+
+</Attention>
+
+## Cadre de validité et arrondis
+
+Les MN90 sont valides pour la plongée **à l'air, au niveau de la mer**, jusqu'à 60 m, **deux plongées par 24 h** au maximum, vitesse de remontée de **15 à 17 m/min** jusqu'au premier palier puis **6 m/min** entre paliers et vers la surface. On retient : **durée de plongée** = de l'immersion au début de la remontée ; **profondeur** = profondeur maximale atteinte ; **DTR** = durée totale de remontée (remontée + paliers + inter-paliers) ; **GPS** = groupe de plongée successive (A à P).
+
+Les **arrondis vont toujours dans le sens de la sécurité** : profondeur et durée à la valeur immédiatement **supérieure** de la table ; intervalle de surface à la valeur immédiatement **inférieure** du tableau II ; azote résiduel et profondeur de successive à la valeur immédiatement **supérieure** du tableau III.
+
+## Plongée simple : lecture complète
+
+**Exemple corrigé.** Immersion à 10 h 00, profondeur maximale 28 m, remontée entamée à 10 h 25.
+1. Arrondis : table **30 m**, ligne **25 min**.
+2. Lecture : palier de **9 min à 3 m**, GPS **G**.
+3. DTR : remontée de 28 à 3 m (25 m à 15 m/min ≈ 1,7 min) + 9 min + retour surface (0,5 min) ≈ **11 min**.
+4. Heure de sortie : 10 h 25 + 11 min = **10 h 36**.
+
+<SimTables />
+
+## Plongées successives : méthode des deux tableaux
+
+Une successive (intervalle de 15 min à 12 h) se calcule en quatre temps : GPS de la première plongée (table I) ; **azote résiduel** (tableau II, intervalle arrondi **en dessous**) ; **majoration** (tableau III, azote et profondeur arrondis **au-dessus**) ; puis lecture de la seconde plongée (table I) avec pour durée la **durée réelle + majoration**.
+
+**Exemple corrigé.** Première plongée 30 m / 25 min → GPS **G**. Intervalle 2 h 30 (150 min, arrondi à **120 min**). Seconde plongée prévue à 20 m, 30 min.
+1. Tableau II : G et 120 min → azote résiduel **0,94**.
+2. Tableau III : 0,94 → ligne 0,95 ; 20 m → **majoration 11 min**.
+3. Durée fictive : 30 + 11 = 41 min → table **20 m / 45 min** : palier de **4 min à 3 m**, GPS **I**.
+
+La majoration entre dans le calcul de décompression mais ne compte ni dans l'air consommé ni dans l'heure de sortie réelle.
+
+<ARetenir>
+
+Successive en 4 lectures : GPS → tableau II (intervalle **en dessous**) → azote résiduel → tableau III (arrondis **au-dessus**) → majoration → table I avec durée réelle + majoration.
+
+</ARetenir>
+
+## Procédures de rattrapage
+
+**Consécutive** (intervalle inférieur à 15 min) : les deux immersions comptent pour une seule ; durée = **somme des durées**, profondeur = **maximale des deux**.
+
+**Remontée rapide** (vitesse supérieure à 17 m/min) : redescendre à la **mi-profondeur dans les 3 min**, y rester **5 min**, puis appliquer les paliers de la table pour la profondeur maximale et une durée courant de l'immersion à la fin du passage à mi-profondeur ; si aucun palier n'est imposé, au minimum **2 min à 3 m**. Toute la palanquée redescend.
+
+**Remontée lente** (plus lente que les tables) : le temps de remontée lente **s'ajoute à la durée de plongée** jusqu'à la reprise d'une vitesse normale ; profondeur retenue = maximale.
+
+**Palier interrompu** : redescendre **dans les 3 min** à la profondeur du palier et le **recommencer intégralement** (le temps déjà fait est perdu).
+
+Ré-immersion impossible sous 3 min : décompression omise → **oxygène, surveillance, alerte** au moindre signe, aucune replongée.
+
+**Exemple corrigé — remontée rapide.** Plongée à 30 m ; à la 20e minute, remontée incontrôlée en surface. La palanquée redescend en 1 min à **15 m** (mi-profondeur), y reste **5 min**. Durée retenue : 20 + 1 + 5 = 26 min → table **30 m / 30 min** : **17 min à 3 m**, GPS **H**.
+
+## La plongée en altitude
+
+En altitude, la **pression atmosphérique est réduite** : elle n'est plus de 1 bar. Or les tables MN90 sont bâties pour une pression de surface de 1 bar. À la sortie, le plongeur retrouve une pression ambiante plus faible qu'au niveau de la mer : le **gradient de sursaturation est plus grand** pour une même profondeur réelle, donc le risque d'ADD augmente. On ne peut pas lire les tables avec la profondeur réelle.
+
+La méthode d'adaptation repose sur une **profondeur fictive** (ou équivalente), supérieure à la profondeur réelle, obtenue en corrigeant par le rapport des pressions :
+
+$$profondeur_{fictive} = profondeur_{réelle} \times \frac{P_{atm}(mer)}{P_{atm}(altitude)}$$
+
+On lit alors la table avec cette profondeur fictive (arrondie au-dessus), ce qui donne des paliers **plus contraignants**. Attention : la **profondeur d'affichage des paliers** doit elle aussi être corrigée (un palier « 3 m » de la table se fait à une profondeur réelle inférieure en altitude), et le profondimètre, souvent étalonné pour l'eau de mer au niveau de la mer, peut nécessiter une correction. La **vitesse de remontée** est également revue. En pratique, on utilise des **tables d'altitude** spécifiques ou un ordinateur réglé sur l'altitude ; on tient compte du temps d'**adaptation** après la montée en altitude (l'organisme met plusieurs heures à évacuer l'azote excédentaire et à s'équilibrer à la nouvelle pression avant de plonger).
+
+<Attention>
+
+En altitude, la pression de surface est plus basse : à profondeur réelle égale, la sursaturation à la sortie est plus forte qu'en mer. On plonge avec une **profondeur fictive majorée** (tables ou ordinateur d'altitude), on corrige la profondeur des paliers et on laisse le corps s'adapter après la montée.
+
+</Attention>
+
+**Exemple d'ordre de grandeur.** À 2000 m d'altitude, la pression atmosphérique avoisine 0,8 bar. Une plongée réelle à 20 m correspond à une profondeur fictive d'environ $20 \times 1 / 0{,}8 = 25$ m : on lit la table à 25 m, nettement plus exigeante. Les valeurs exactes dépendent des tables d'altitude retenues ; vérifiez le tableau en vigueur.
+
+## Notions de nitrox et de désaturation
+
+Le **nitrox** (mélange suroxygéné, par exemple 32 %) réduit la fraction d'azote respirée : à profondeur égale, la $P_pN_2$ est plus faible qu'à l'air, donc la charge d'azote des tissus est moindre. Conséquence sur la décompression : à profondeur et durée égales, le plongeur au nitrox **sature moins** et bénéficie d'un temps sans palier plus long, ou de paliers réduits. Deux méthodes d'emploi existent : utiliser des **tables nitrox** spécifiques, ou appliquer les tables air en calculant une **profondeur équivalente air** (plus faible que la profondeur réelle, à l'inverse de l'altitude), qui traduit la moindre teneur en azote. La contrepartie est la limite d'**hyperoxie** : la $P_pO_2$ plus élevée impose une profondeur maximale (MOD) et interdit de descendre trop bas. Ces procédures relèvent d'une **qualification nitrox** spécifique ; le Niveau 4 en retient le principe : moins d'azote respiré, donc désaturation facilitée, au prix d'une contrainte oxygène.
+
+<SimDesaturation />
+
+## Méthode d'examen : enchaîner sans erreur
+
+Un problème d'examen enchaîne souvent plusieurs plongées et procédures. La discipline paie :
+
+1. Poser un **schéma de profil** (profondeur, durée, heures) avant tout calcul.
+2. Traiter chaque plongée dans l'ordre chronologique, en notant à chaque fois **profondeur retenue, durée retenue, paliers, DTR, GPS, heures**.
+3. Vérifier chaque **arrondi** (le sens de la sécurité) : c'est là que se perdent les points.
+4. Ne jamais mélanger durée réelle et durée fictive : la majoration sert à lire la table, pas à calculer l'heure de sortie ni l'air.
+
+<SimGenerateur niveau="n4" />
+
+<Memo>
+
+### Cadre MN90
+
+- Air, niveau de la mer, ≤ 60 m, 2 plongées/24 h. Remontée 15-17 m/min puis 6 m/min.
+- Durée = immersion → début de remontée ; profondeur = max ; DTR = remontée + paliers + inter-paliers.
+- Arrondis vers la sécurité : profondeur/durée **au-dessus** ; intervalle **en dessous** ; azote résiduel et profondeur de successive **au-dessus**.
+
+### Successive (4 étapes)
+
+GPS → tableau II (intervalle en dessous) → azote résiduel → tableau III (au-dessus) → majoration → table I (durée réelle + majoration).
+
+### Rattrapages
+
+- Consécutive (moins de 15 min) : durée = somme, profondeur = max.
+- Remontée rapide (plus de 17 m/min) : mi-profondeur dans les 3 min, 5 min, puis paliers ; min 2 min à 3 m.
+- Remontée lente : temps ajouté à la durée. Palier interrompu : redescendre dans les 3 min, recommencer le palier.
+- Ré-immersion impossible : O₂, surveillance, alerte, pas de replongée.
+
+### Altitude
+
+- Pression de surface réduite → sursaturation accrue à la sortie.
+- Profondeur fictive = profondeur réelle × P(mer)/P(altitude) ; lire la table avec cette valeur.
+- Corriger la profondeur des paliers, la vitesse ; utiliser tables ou ordinateur d'altitude ; laisser le corps s'adapter.
+
+### Nitrox (notion)
+
+- Moins d'azote respiré (PpN₂ plus faible) → désaturation facilitée, temps sans palier allongé.
+- Contrainte : hyperoxie → MOD à ne pas dépasser. Qualification spécifique requise.
+
+</Memo>
