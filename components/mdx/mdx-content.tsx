@@ -222,6 +222,11 @@ export function MdxContent({ source }: MdxContentProps) {
             remarkPlugins: [remarkGfm, remarkMath],
             rehypePlugins: [rehypeKatex, rehypeSlug],
           },
+          // Le contenu MDX vit dans le dépôt (contenu de confiance) : sans ce
+          // réglage, next-mdx-remote v6 supprime toutes les expressions JSX,
+          // dont les attributs `n={1}` des <Figure>. Le garde-fou
+          // blockDangerousJS reste actif.
+          blockJS: false,
         }}
         components={components}
       />
