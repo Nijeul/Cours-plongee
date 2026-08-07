@@ -7,6 +7,7 @@ import remarkMath from "remark-math";
 
 import { ARetenir, Attention, EnPratique } from "@/components/mdx/callouts";
 import { Memo } from "@/components/mdx/memo";
+import * as Schemas from "@/components/schemas";
 import {
   SimAutonomie,
   SimDesaturation,
@@ -183,6 +184,8 @@ const components: MDXRemoteProps["components"] = {
   SimLoisPhysiques,
   SimDesaturation,
   SimGenerateur,
+  // Schémas pédagogiques (Figure + tous les Schema* de components/schemas).
+  ...Schemas,
   // Éléments HTML stylés.
   h1: H1,
   h2: H2,
@@ -219,6 +222,11 @@ export function MdxContent({ source }: MdxContentProps) {
             remarkPlugins: [remarkGfm, remarkMath],
             rehypePlugins: [rehypeKatex, rehypeSlug],
           },
+          // Le contenu MDX vit dans le dépôt (contenu de confiance) : sans ce
+          // réglage, next-mdx-remote v6 supprime toutes les expressions JSX,
+          // dont les attributs `n={1}` des <Figure>. Le garde-fou
+          // blockDangerousJS reste actif.
+          blockJS: false,
         }}
         components={components}
       />

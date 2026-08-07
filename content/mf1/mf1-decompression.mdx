@@ -35,7 +35,13 @@ Toute la difficulté est que l'organisme n'est pas homogène. Le sang, le cervea
 
 ## Les compartiments et la saturation exponentielle
 
-Haldane modélise le corps par un jeu de **compartiments** théoriques, indépendants les uns des autres, chacun caractérisé par une vitesse d'échange propre. Cette vitesse s'exprime par la **période** (ou temps de demi-saturation) $T$ : c'est le temps au bout duquel le compartiment comble **la moitié** de l'écart entre sa tension de départ et la tension qu'il atteindrait à saturation complète. Les tables MN90 utilisent une série de compartiments dont les périodes s'échelonnent typiquement de **5 à 120 minutes** ; on parle de tissus « courts » (5, 10, 20 min) rapides, et de tissus « longs » (60, 80, 120 min) lents.
+Haldane modélise le corps par un jeu de **compartiments** théoriques, indépendants les uns des autres, chacun caractérisé par une vitesse d'échange propre. Cette vitesse s'exprime par la **période** (ou temps de demi-saturation) $T$ : c'est le temps au bout duquel le compartiment comble **la moitié** de l'écart entre sa tension de départ et la tension qu'il atteindrait à saturation complète. Les tables MN90 utilisent une série de compartiments dont les périodes s'échelonnent typiquement de **5 à 120 minutes** ; on parle de tissus « courts » (5, 10, 20 min) rapides, et de tissus « longs » (60, 80, 120 min) lents. La figure 1 donne une vue d'ensemble de ce jeu de compartiments.
+
+<Figure n={1} titre="Vue d'ensemble des compartiments de Haldane : à chaque période, chacun comble la moitié de l'écart restant, à sa propre vitesse." description="Vue d'ensemble des compartiments théoriques de Haldane, des tissus courts aux tissus longs : à chaque période écoulée, chaque compartiment comble la moitié de l'écart de saturation restant, à sa propre vitesse.">
+  <SchemaCompartimentsPeriodes />
+</Figure>
+
+**À retenir —** Le corps est modélisé par des compartiments indépendants dont la période (5 à 120 min) fixe la vitesse de charge et de décharge.
 
 L'échange suit une loi **exponentielle**. Si $T_0$ est la tension initiale du compartiment et $T_f$ la tension imposée par le gaz respiré (la pression partielle d'azote alvéolaire), la tension après un temps $t$ vaut :
 
@@ -48,7 +54,13 @@ On lit cette loi plus simplement par **périodes successives**. À chaque pério
 - après **3 périodes** : 87,5 % ;
 - après **4 périodes** : 93,75 % ; puis 96,875 %…
 
-On considère la saturation **pratiquement complète après 6 périodes** (environ 99 %). Cette lecture par moitiés successives est la manière la plus parlante d'expliquer le phénomène à un élève : on n'ajoute jamais un pourcentage fixe, on comble toujours la moitié de ce qui reste.
+On considère la saturation **pratiquement complète après 6 périodes** (environ 99 %). Cette lecture par moitiés successives est la manière la plus parlante d'expliquer le phénomène à un élève ; la figure 2 en donne la traduction graphique, désaturation en miroir comprise.
+
+<Figure n={2} titre="La lecture « par moitiés » de l'exponentielle : 50 % du gradient après 1 période, 75 % après 2, 87,5 % après 3, 93,75 % après 4 — saturation pratiquement complète après 6 périodes ; la désaturation est le miroir." description="Courbes exponentielles de saturation et de désaturation lues par périodes : 50 % du gradient comblé après une période, 75 % après deux, 87,5 % après trois, 93,75 % après quatre, saturation pratiquement complète après six périodes ; la courbe de désaturation est le miroir de celle de saturation.">
+  <SchemaCourbesSaturation />
+</Figure>
+
+**À retenir —** On n'ajoute jamais un pourcentage fixe : à chaque période, le compartiment comble la moitié de ce qui reste.
 
 <EnPratique>
 
@@ -74,7 +86,13 @@ On en déduit la **pression absolue minimale** (donc la profondeur minimale) que
 
 $$P_{abs}^{\min} = \frac{T_{N_2}}{Sc}$$
 
-Cette relation est le cœur du calcul : elle indique jusqu'où l'on peut remonter sans dépasser la sursaturation critique.
+Cette relation est le cœur du calcul : elle indique jusqu'où l'on peut remonter sans dépasser la sursaturation critique. La figure 3 la représente graphiquement, tension d'azote contre pression ambiante.
+
+<Figure n={3} titre="Tension d'azote contre pression ambiante : la sursaturation est tolérée jusqu'à la droite critique TN₂ = Sc × P. abs (ici Sc = 2, rapport historique de Haldane) ; au-delà, bulles et risque d'ADD. La profondeur mini se lit en TN₂ / Sc." description="Graphique de la tension d'azote en fonction de la pression ambiante : la zone de sursaturation tolérée s'étend jusqu'à la droite critique TN₂ = Sc × Pabs, tracée ici avec le rapport historique de Haldane Sc = 2 ; au-delà apparaissent bulles et risque d'ADD, et la pression minimale autorisée se lit en TN₂ / Sc.">
+  <SchemaSursaturationCritique />
+</Figure>
+
+**À retenir —** La remontée est admissible tant que TN₂ ≤ Sc × P. abs pour tous les compartiments ; la profondeur minimale autorisée vaut TN₂ / Sc.
 
 ## Compartiment directeur et construction d'une table
 

@@ -31,11 +31,23 @@ On distingue trois pressions à ne jamais confondre :
 
 $$P_{abs} = P_{atm} + \frac{profondeur}{10}$$
 
-Ainsi à 30 m : $P_{abs} = 1 + 30/10 = 4$ bars. À 40 m : 5 bars. À 60 m : 7 bars. Cette conversion instantanée profondeur vers pression absolue est le socle de tous les calculs qui suivent ; l'examinateur la suppose acquise et sanctionne toute confusion entre relative et absolue.
+Ainsi à 30 m : $P_{abs} = 1 + 30/10 = 4$ bars. À 40 m : 5 bars. À 60 m : 7 bars. Cette conversion instantanée profondeur vers pression absolue est le socle de tous les calculs qui suivent ; l'examinateur la suppose acquise et sanctionne toute confusion entre relative et absolue. La figure 1 offre un rappel visuel de ces deux pressions de 0 à 60 m.
+
+<Figure n={1} titre="Rappel visuel des pressions relative et absolue de 0 à 60 m." description="Échelle des pressions de la surface à 60 m : pour chaque profondeur repère, le schéma met côte à côte la pression relative due à la colonne d'eau et la pression absolue qui lui ajoute le bar atmosphérique.">
+  <SchemaEchellePression />
+</Figure>
+
+**À retenir —** Pabs = Patm + Prel ; profondeur = (Pabs − 1) × 10.
 
 ## La loi de Boyle-Mariotte et sa démonstration
 
-À température constante, **pour une masse de gaz donnée, le produit de la pression par le volume est constant** : $P \times V = \text{constante}$, soit $P_1 V_1 = P_2 V_2$. La démonstration expérimentale historique consiste à comprimer un volume de gaz enfermé et à constater que le volume varie en raison inverse de la pression appliquée : doubler la pression réduit le volume de moitié.
+À température constante, **pour une masse de gaz donnée, le produit de la pression par le volume est constant** : $P \times V = \text{constante}$, soit $P_1 V_1 = P_2 V_2$. La démonstration expérimentale historique consiste à comprimer un volume de gaz enfermé et à constater que le volume varie en raison inverse de la pression appliquée : doubler la pression réduit le volume de moitié. La figure 2 déroule cette démonstration avec un ballon de 6 L suivi aux profondeurs repères.
+
+<Figure n={2} titre="Les volumes du ballon aux profondeurs repères, support de la démonstration P × V = constante." description="Un ballon de 6 litres en surface est suivi à 10, 20, 30 et 40 m : son volume diminue en raison inverse de la pression absolue, illustrant que le produit P × V reste constant.">
+  <SchemaMariotteBallon />
+</Figure>
+
+**À retenir —** La quantité de gaz ne change pas : seul le volume s'adapte à la pression.
 
 Conséquence directe en plongée : un volume d'air fermé (poumons pleins, air d'un gilet, bulle dans un sinus) se comprime à la descente et se dilate à la remontée. La variation relative de volume est la plus violente près de la surface, où la pression varie proportionnellement le plus vite : de 0 à 10 m la pression **double** (le volume est divisé par deux), alors que de 30 à 40 m elle ne passe que de 4 à 5 bars (variation de 25 %). C'est pourquoi les barotraumatismes et la surpression pulmonaire sont les plus redoutables dans les tout derniers mètres.
 
@@ -70,6 +82,14 @@ Les deux blocs s'équilibrent à 120 bars. Ce calcul de conservation de la quant
 | Toxicité de l'oxygène (hyperoxie) | PpO2 ≈ 1,6 bar | 70 m |
 | Limite de sécurité nitrox | PpO2 = 1,4 à 1,6 bar | selon mélange |
 
+La figure 3 visualise ces pressions partielles et leurs seuils sous forme de barres empilées.
+
+<Figure n={3} titre="Barres empilées N₂/O₂ avec les seuils : narcose PpN₂ ≈ 3,2 bar (≈ 30 m), hyperoxie PpO₂ ≥ 1,6 bar (≈ 70 m à l'air)." description="Pour plusieurs profondeurs, des barres empilées décomposent la pression absolue en pressions partielles d'azote et d'oxygène, et situent les seuils de narcose (PpN₂ ≈ 3,2 bar vers 30 m) et d'hyperoxie (PpO₂ ≥ 1,6 bar vers 70 m à l'air).">
+  <SchemaDaltonPressionsPartielles />
+</Figure>
+
+**À retenir —** Les seuils se convertissent en profondeur par Pabs = Pp / % : 3,2 / 0,8 = 4 bar soit 30 m.
+
 <EnPratique>
 
 Retrouvez la profondeur seuil d'hyperoxie à l'air : $P_{abs} = 1{,}6 / 0{,}20 = 8$ bars, soit $(8-1) \times 10 = 70$ m. Au-delà de 60 m, la plongée à l'air est interdite en France : la marge avant l'hyperoxie est faible, ce qui justifie la limite réglementaire.
@@ -93,6 +113,14 @@ Le nitrox ne repousse jamais la limite de narcose (celle-ci dépend de l'azote) 
 - $T$ inférieure à $P_p$ : le tissu se charge (descente, séjour au fond) ;
 - $T = P_p$ : équilibre, tissu saturé ;
 - $T$ supérieure à $P_p$ : le tissu se décharge, il est en **sursaturation** (remontée).
+
+La figure 4 illustre ces trois états par l'analogie classique de la bouteille d'eau gazeuse.
+
+<Figure n={4} titre="Les trois états de la bouteille gazeuse, parallèle des états tension/saturation/sursaturation des tissus." description="Une bouteille d'eau gazeuse fermée, ouverte doucement puis secouée illustre les trois états d'un tissu : chargement du gaz dissous, équilibre de saturation, puis dégazage — progressif ou en bulles selon la brutalité de la détente.">
+  <SchemaHenryBouteilleGazeuse />
+</Figure>
+
+**À retenir —** T &lt; Pp : le tissu se charge ; T = Pp : saturé ; T &gt; Pp : il se décharge — en douceur ou en bulles selon la remontée.
 
 La désaturation n'est sûre que tant que la sursaturation reste modérée : au-delà d'un rapport critique entre tension du tissu et pression ambiante, l'azote dissous ne peut plus s'évacuer en solution et forme des **bulles** — c'est le mécanisme de l'accident de désaturation. Les paliers servent précisément à maintenir le gradient de sursaturation sous le seuil dangereux pendant que l'azote quitte les tissus. La vitesse de désaturation dépend du gradient (différence entre $T$ et $P_p$) : c'est le fondement physique des modèles de compartiments étudiés au MF1.
 

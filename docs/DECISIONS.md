@@ -31,3 +31,9 @@ Les barèmes officiels varient selon les commissions ; valeurs retenues (modifia
 
 ## D-010 — Modèles des sous-agents
 L'environnement expose un seul modèle (hérité, Fable). La différenciation demandée (« le plus capable » vs « intermédiaire ») est appliquée via le **niveau d'effort de raisonnement** par agent (max/élevé pour moteur de calcul, contenu N4/MF1, simulateurs, questions techniques ; standard pour le reste ; bas pour la documentation).
+
+## D-011 — Expressions JSX dans le MDX des cours (blockJS)
+`next-mdx-remote` v6 supprime par défaut toutes les expressions JavaScript du MDX (plugin `removeJavaScriptExpressions`), ce qui vidait silencieusement les attributs `n={1}` des `<Figure>` (les figures s'affichaient sans numéro). Le contenu MDX vit dans le dépôt et est relu en revue : `blockJS: false` est donc activé dans `components/mdx/mdx-content.tsx`, en conservant le garde-fou `blockDangerousJS` (blocage de `eval`, `require`, etc.). Règle d'écriture inchangée pour les auteurs : pas d'expressions dans le texte courant, uniquement dans les attributs de composants.
+
+## D-012 — Schémas pédagogiques (chantier « enrichissement visuel »)
+50 schémas SVG (priorité 1 de `docs/AUDIT-SCHEMAS.md`) produits en composants React statiques (`components/schemas/<domaine>/`), bâtis sur des primitives communes (palette sémantique, axes, silhouettes, logigrammes) compatibles clair/sombre et lisibles à 375 px. 102 insertions dans 38 modules : chaque figure est numérotée par module, appelée dans le texte, légendée et suivie d'une synthèse « À retenir ». Registre : `docs/SCHEMAS.md` + page `/schemas`. Les propositions P2/P3 de l'audit restent à produire.
