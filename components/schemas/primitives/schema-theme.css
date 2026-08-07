@@ -1,0 +1,35 @@
+/*
+ * Variables de couleur des schémas pédagogiques (palette sémantique).
+ *
+ * Importé une seule fois par components/schemas/figure.tsx.
+ * Valeurs calées sur le thème oklch de app/globals.css :
+ *  - thème clair : lisibles sur --card (blanc), contraste AA ;
+ *  - thème sombre (.dark) : versions éclaircies, lisibles sur --card sombre.
+ * Le TypeScript (palette.ts) référence ces variables via var(--schema-…, repli).
+ */
+
+:root {
+  --schema-eau: oklch(0.5 0.11 240);
+  --schema-pression: oklch(0.44 0.12 255);
+  --schema-danger: oklch(0.52 0.19 27);
+  --schema-securite: oklch(0.5 0.12 150);
+  --schema-vigilance: oklch(0.52 0.13 60);
+  --schema-neutre: oklch(0.5 0.02 245);
+  --schema-air: oklch(0.52 0.1 210);
+  --schema-azote: oklch(0.5 0.15 300);
+  --schema-oxygene: oklch(0.5 0.1 180);
+  --schema-tissu: oklch(0.52 0.06 45);
+}
+
+.dark {
+  --schema-eau: oklch(0.72 0.1 235);
+  --schema-pression: oklch(0.68 0.11 250);
+  --schema-danger: oklch(0.7 0.16 25);
+  --schema-securite: oklch(0.74 0.12 150);
+  --schema-vigilance: oklch(0.76 0.12 70);
+  --schema-neutre: oklch(0.72 0.02 240);
+  --schema-air: oklch(0.78 0.1 210);
+  --schema-azote: oklch(0.73 0.12 300);
+  --schema-oxygene: oklch(0.75 0.1 180);
+  --schema-tissu: oklch(0.75 0.05 45);
+}
