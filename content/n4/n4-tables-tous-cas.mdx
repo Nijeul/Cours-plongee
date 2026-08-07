@@ -39,11 +39,25 @@ Les **arrondis vont toujours dans le sens de la sécurité** : profondeur et dur
 3. DTR : remontée de 28 à 3 m (25 m à 15 m/min ≈ 1,7 min) + 9 min + retour surface (0,5 min) ≈ **11 min**.
 4. Heure de sortie : 10 h 25 + 11 min = **10 h 36**.
 
+La figure 1 fixe ce chronométrage sur le profil annoté de référence.
+
+<Figure n={1} titre="Profil annoté de référence : durée de plongée, DTR et durée totale pour le chronométrage complet exigé à l'examen." description="Profil de plongée annoté montrant la durée de plongée de l'immersion au début de remontée, la DTR couvrant remontée et paliers, et la durée totale qui donne l'heure de sortie — le chronométrage complet exigé à l'examen.">
+  <SchemaProfilPlongeeAnnote />
+</Figure>
+
+**À retenir —** Le chronométrage complet (immersion + durée + DTR = sortie) se reconstruit d'un coup d'œil sur le profil.
+
 <SimTables />
 
 ## Plongées successives : méthode des deux tableaux
 
-Une successive (intervalle de 15 min à 12 h) se calcule en quatre temps : GPS de la première plongée (table I) ; **azote résiduel** (tableau II, intervalle arrondi **en dessous**) ; **majoration** (tableau III, azote et profondeur arrondis **au-dessus**) ; puis lecture de la seconde plongée (table I) avec pour durée la **durée réelle + majoration**.
+Une successive (intervalle de 15 min à 12 h) se calcule en quatre temps : GPS de la première plongée (table I) ; **azote résiduel** (tableau II, intervalle arrondi **en dessous**) ; **majoration** (tableau III, azote et profondeur arrondis **au-dessus**) ; puis lecture de la seconde plongée (table I) avec pour durée la **durée réelle + majoration**. La figure 2 rappelle cette chaîne complète en frise.
+
+<Figure n={2} titre="Rappel de la chaîne complète d'une successive : GPS, intervalle, tableau II, tableau III, durée fictive." description="Frise de la plongée successive : du GPS de la première plongée à l'intervalle de surface, puis lecture du tableau II (azote résiduel), du tableau III (majoration), et enfin de la table I avec la durée fictive de la seconde plongée.">
+  <SchemaFriseSuccessive />
+</Figure>
+
+**À retenir —** La majoration matérialise l'azote résiduel : tout se passe comme si la seconde plongée avait commencé plus tôt.
 
 **Exemple corrigé.** Première plongée 30 m / 25 min → GPS **G**. Intervalle 2 h 30 (150 min, arrondi à **120 min**). Seconde plongée prévue à 20 m, 30 min.
 1. Tableau II : G et 120 min → azote résiduel **0,94**.
@@ -68,7 +82,13 @@ Successive en 4 lectures : GPS → tableau II (intervalle **en dessous**) → az
 
 **Palier interrompu** : redescendre **dans les 3 min** à la profondeur du palier et le **recommencer intégralement** (le temps déjà fait est perdu).
 
-Ré-immersion impossible sous 3 min : décompression omise → **oxygène, surveillance, alerte** au moindre signe, aucune replongée.
+Ré-immersion impossible sous 3 min : décompression omise → **oxygène, surveillance, alerte** au moindre signe, aucune replongée. Le logigramme de la figure 3 récapitule la procédure complète de la remontée rapide.
+
+<Figure n={3} titre="Rappel du logigramme de la remontée rapide (procédure MN90 complète)." description="Logigramme MN90 de la remontée rapide : redescente à la mi-profondeur dans les 3 minutes, 5 minutes sur place, puis paliers recalculés pour la profondeur maximale ; au-delà de 3 minutes, décompression omise et conduite à tenir ADD.">
+  <SchemaLogigrammeRemonteeRapide />
+</Figure>
+
+**À retenir —** Une seule fenêtre de rattrapage : 3 minutes ; au-delà, décompression omise et CAT ADD.
 
 **Exemple corrigé — remontée rapide.** Plongée à 30 m ; à la 20e minute, remontée incontrôlée en surface. La palanquée redescend en 1 min à **15 m** (mi-profondeur), y reste **5 min**. Durée retenue : 20 + 1 + 5 = 26 min → table **30 m / 30 min** : **17 min à 3 m**, GPS **H**.
 

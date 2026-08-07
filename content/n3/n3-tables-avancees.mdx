@@ -49,7 +49,13 @@ Les arrondis se font toujours **dans le sens de la sécurité** : profondeur et 
 3. DTR : remontée de 32 à 6 m (26 m à 15 m/min ≈ 1,75 min) + 5 min + inter-palier (0,5 min) + 22 min + retour surface (0,5 min) ≈ **30 min**.
 4. Heure de sortie : 9 h 27 + 30 min = **9 h 57**.
 
-Ce chronométrage complet — immersion, durée, DTR, heure de sortie — est l'ossature de tous les exercices qui suivent : entraînez-le jusqu'à l'automatisme.
+Ce chronométrage complet — immersion, durée, DTR, heure de sortie — est l'ossature de tous les exercices qui suivent : entraînez-le jusqu'à l'automatisme. La figure 1 le rappelle sur un profil annoté.
+
+<Figure n={1} titre="Rappel du chronométrage d'une plongée simple : durée de plongée, DTR et heure de sortie sur un profil annoté." description="Profil de plongée simple annoté : la durée de plongée court de l'immersion au début de remontée, la DTR couvre la remontée et les paliers, et leur somme ajoutée à l'heure d'immersion donne l'heure de sortie.">
+  <SchemaProfilPlongeeAnnote />
+</Figure>
+
+**À retenir —** Heure de sortie = heure d'immersion + durée de plongée + DTR : les trois durées se lisent directement sur le profil.
 
 ## Plongée successive : la méthode des deux tableaux
 
@@ -59,6 +65,14 @@ Une successive se calcule en quatre temps :
 2. **Azote résiduel** : tableau II, à l'intersection du GPS et de l'intervalle de surface arrondi à la valeur **inférieure**.
 3. **Majoration** : tableau III, à l'intersection de l'azote résiduel arrondi à la valeur **supérieure** et de la profondeur prévue de la seconde plongée arrondie à la valeur **supérieure**. La majoration est un temps fictif, en minutes, qui représente l'azote restant.
 4. **Lecture de la seconde plongée** : table I, avec pour durée la **durée réelle + majoration** et pour profondeur la profondeur maximale réelle (arrondie comme d'habitude).
+
+La figure 2 met cette méthode en frise, arrondi par arrondi.
+
+<Figure n={2} titre="La méthode des deux tableaux en frise : chaque flèche correspond à une lecture et à son arrondi (intervalle vers le bas, azote et profondeur vers le haut)." description="Frise de la plongée successive en cinq étapes : GPS de la première plongée, intervalle de surface arrondi vers le bas au tableau II, azote résiduel arrondi vers le haut au tableau III, majoration, puis lecture de la seconde plongée avec la durée fictive.">
+  <SchemaFriseSuccessive />
+</Figure>
+
+**À retenir —** Le cœur de l'examen N3 : dérouler les quatre lectures dans l'ordre sans inverser un sens d'arrondi.
 
 **Exemple corrigé n° 1.** Première plongée 20 m / 40 min le matin → GPS **H**. Intervalle de 3 h. Replongée à 20 m l'après-midi, durée prévue 29 min.
 
@@ -89,7 +103,13 @@ Si l'intervalle de surface est **inférieur à 15 minutes**, les tissus n'ont pr
 - durée retenue = **somme des durées** des deux plongées ;
 - profondeur retenue = **profondeur maximale atteinte** au cours de l'une ou l'autre.
 
-**Exemple corrigé.** Plongée de 30 min à 20 m, retour en surface 10 min (récupération d'un parachute), ré-immersion à 15 m pendant 20 min. Lecture : profondeur 20 m, durée 30 + 20 = 50 min → table 20 m / 50 min : **9 min à 3 m**, GPS **I**. Les paliers de la première remontée, s'il y en avait, ne dispensent de rien : c'est la lecture globale qui s'applique.
+**Exemple corrigé.** Plongée de 30 min à 20 m, retour en surface 10 min (récupération d'un parachute), ré-immersion à 15 m pendant 20 min. Lecture : profondeur 20 m, durée 30 + 20 = 50 min → table 20 m / 50 min : **9 min à 3 m**, GPS **I**. Les paliers de la première remontée, s'il y en avait, ne dispensent de rien : c'est la lecture globale qui s'applique. La figure 3 résume ce classement d'une replongée selon son intervalle de surface.
+
+<Figure n={3} titre="Classement d'une replongée selon l'intervalle de surface : consécutive, successive ou simple." description="Arbre de classement d'une replongée selon l'intervalle de surface : moins de 15 minutes, plongée consécutive traitée comme une seule immersion ; de 15 minutes à 12 heures, plongée successive avec majoration ; au-delà de 12 heures, plongée simple.">
+  <SchemaConsecutiveVsSuccessive />
+</Figure>
+
+**À retenir —** Avant tout calcul, classer la plongée par son intervalle : moins de 15 min, 15 min-12 h, ou plus de 12 h.
 
 ## Remontée rapide : la procédure exacte
 
@@ -99,6 +119,14 @@ Une remontée est dite **rapide** lorsque la vitesse a dépassé 17 m/min (paniq
 2. **Y rester 5 minutes**.
 3. Remonter à vitesse normale et effectuer les **paliers donnés par la table** pour la profondeur maximale de la plongée et une durée courant **de l'immersion à la fin du palier à mi-profondeur**.
 4. Si la table n'impose aucun palier : effectuer au minimum **2 min à 3 m**.
+
+La figure 4 présente cette procédure sous forme de logigramme.
+
+<Figure n={4} titre="La procédure MN90 de la remontée rapide, à connaître mot pour mot : mi-profondeur en moins de 3 min, 5 min, paliers recalculés, minimum 2 min à 3 m." description="Logigramme de la procédure MN90 après remontée rapide : redescendre à la mi-profondeur en moins de 3 minutes, y rester 5 minutes, puis effectuer les paliers recalculés pour la profondeur maximale, avec un minimum de 2 minutes à 3 mètres.">
+  <SchemaLogigrammeRemonteeRapide />
+</Figure>
+
+**À retenir —** Mi-profondeur en moins de 3 min, 5 min sur place, paliers pour la profondeur max et la durée courant jusqu'à la fin du palier à mi-profondeur.
 
 **Exemple corrigé.** Plongée à 40 m ; à la 17e minute, remontée incontrôlée jusqu'à la surface. La palanquée redescend en 1 min à **20 m** (mi-profondeur) et y reste **5 min**. Durée à retenir : 17 + 1 + 5 = 23 min → table **40 m / 25 min** : paliers de **5 min à 6 m** puis **19 min à 3 m**, GPS **I**.
 
@@ -120,7 +148,13 @@ Les 3 minutes se comptent depuis l'arrivée en surface, et la procédure concern
 2. **Recommencer intégralement ce palier** depuis son début — le temps déjà effectué est perdu.
 3. Poursuivre normalement la décompression restante.
 
-Si la ré-immersion sous 3 minutes est impossible : même conduite que ci-dessus — oxygène, surveillance, alerte au moindre symptôme, pas de replongée. Un palier interrompu non rattrapé est une décompression incomplète, donc un accident potentiel en incubation.
+La figure 5 rappelle cette procédure du palier interrompu.
+
+<Figure n={5} titre="Rappel de la procédure du palier interrompu : moins de 3 min, palier refait intégralement, puis décompression restante." description="Logigramme du palier interrompu : redescendre à la profondeur du palier en moins de 3 minutes, refaire intégralement le palier interrompu depuis son début, puis poursuivre la décompression restante.">
+  <SchemaLogigrammePalierInterrompu />
+</Figure>
+
+Si la ré-immersion sous 3 minutes est impossible : même conduite que ci-dessus — oxygène, surveillance, alerte au moindre symptôme, pas de replongée. **À retenir —** un palier interrompu non rattrapé est une décompression incomplète, donc un accident potentiel en incubation.
 
 ## Plongées inversées, profils à risque et bonnes pratiques
 

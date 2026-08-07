@@ -21,7 +21,15 @@ L'ordinateur est aujourd'hui l'instrument de décompression de la quasi-totalit�
 
 ## Ce que calcule un ordinateur : la décompression en temps réel
 
-Un ordinateur mesure en permanence la pression ambiante (donc la profondeur) et le temps. À partir de ces mesures, il simule la charge en azote d'un jeu de **compartiments théoriques** — des tissus fictifs qui saturent et désaturent à des vitesses différentes, caractérisées par leur **période** (temps pour absorber la moitié de l'écart de saturation, de quelques minutes pour le sang à plusieurs heures pour les graisses et articulations). À chaque instant, l'ordinateur en déduit :
+Un ordinateur mesure en permanence la pression ambiante (donc la profondeur) et le temps. À partir de ces mesures, il simule la charge en azote d'un jeu de **compartiments théoriques** — des tissus fictifs qui saturent et désaturent à des vitesses différentes, caractérisées par leur **période** (temps pour absorber la moitié de l'écart de saturation, de quelques minutes pour le sang à plusieurs heures pour les graisses et articulations). La figure 1 illustre ces vitesses de saturation différentes après une heure à profondeur stable.
+
+<Figure n={1} titre="Six compartiments (périodes 5 à 120 min) après 60 min à profondeur stable : le tissu court est déjà saturé quand le tissu long n'a comblé qu'un tiers du gradient." description="Niveaux de saturation de six compartiments de périodes 5 à 120 minutes après 60 minutes passées à profondeur stable : le compartiment le plus court est déjà pratiquement saturé alors que le plus long n'a comblé qu'environ un tiers du gradient.">
+  <SchemaCompartimentsPeriodes />
+</Figure>
+
+**À retenir —** Un ordinateur simule des compartiments de périodes différentes : les rapides gouvernent les plongées courtes et profondes, les lents les plongées longues.
+
+À chaque instant, l'ordinateur en déduit :
 
 - la **durée restante sans palier** à la profondeur courante (temps de courbe de sécurité restant) ;
 - sinon, les **paliers requis** et leur durée, réactualisés en continu ;
@@ -64,6 +72,14 @@ GF 100/100 reviendrait au modèle Bühlmann sans marge ; GF 30/70 donne une déc
 | Vitesse de remontée | 15-17 m/min puis 6 m/min | Consigne propre au modèle (souvent 9 à 12 m/min), contrôlée en temps réel |
 | Erreur de procédure | Rattrapages codifiés | Mode dégradé ou verrouillage (mode « SOS ») |
 | Personnalisation | Aucune | Conservatisme, GF, altitude, gaz |
+
+La figure 2 met les deux logiques côte à côte sur la même plongée.
+
+<Figure n={2} titre="La même plongée vue par la table (profil carré : tout à 40 m) et par l'ordinateur (profil réel multi-niveaux) ; l'aire hachurée est la charge d'azote comptée en trop par la table." description="Comparaison d'une même plongée vue par la table, qui la traite en profil carré comme si tout le temps était passé à 40 m, et par l'ordinateur, qui suit le profil réel multi-niveaux ; l'aire hachurée entre les deux représente la charge d'azote comptée en trop par la table.">
+  <SchemaTableVsOrdinateur />
+</Figure>
+
+**À retenir —** La table majore tout au profil carré, l'ordinateur crédite les niveaux moins profonds : deux logiques à ne jamais mélanger en cours de plongée.
 
 Règle d'or : **on ne panache pas les moyens de décompression**. Une plongée commencée à l'ordinateur se termine à l'ordinateur ; on ne « repasse » pas aux tables en cours de plongée (le profil réel n'est plus reconstituable de tête), et inversement un jeu tables + profondimètre + montre se suit intégralement. De même, un ordinateur est **strictement personnel** : il mémorise VOTRE historique de saturation. Prêter son ordinateur entre deux plongées, ou en emprunter un « vierge » de votre première plongée, fausse tout le calcul de successive.
 
