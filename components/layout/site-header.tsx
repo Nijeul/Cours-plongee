@@ -16,6 +16,7 @@ const NAV_ITEMS = [
   { href: "/revision", label: "Révisions" },
   { href: "/examen", label: "Examen blanc" },
   { href: "/simulateurs", label: "Simulateurs" },
+  { href: "/schemas", label: "Schémas" },
 ] as const;
 
 function Logo({ className }: { className?: string }) {
