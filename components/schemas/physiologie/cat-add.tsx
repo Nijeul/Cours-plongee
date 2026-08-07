@@ -106,13 +106,12 @@ const GAP = 25;
 export function SchemaCatADD({ level = "n2" }: SchemaCatADDProps) {
   const etapes = level === "n3" ? ETAPES_N3 : ETAPES_N2;
 
-  let y = 12;
-  const briques = etapes.map((etape) => {
-    const boxY = y;
-    y += flowBoxHeight(etape.lignes.length) + GAP;
-    return { ...etape, y: boxY };
-  });
-  const hauteur = y - GAP + 12;
+  const hauteurs = etapes.map((etape) => flowBoxHeight(etape.lignes.length));
+  const briques = etapes.map((etape, i) => ({
+    ...etape,
+    y: 12 + hauteurs.slice(0, i).reduce((somme, h) => somme + h + GAP, 0),
+  }));
+  const hauteur = 12 + hauteurs.reduce((somme, h) => somme + h + GAP, 0) - GAP + 12;
 
   return (
     <>

@@ -69,7 +69,7 @@ export function SchemaDaltonPressionsPartielles() {
           fontWeight={600}
           textAnchor="end"
         >
-          Hyperoxie : PpO₂ ≥ 1,6 bar (≈ 70 m à l'air)
+          Hyperoxie : PpO₂ ≥ 1,6 bar (≈ 70 m à l&apos;air)
         </text>
 
         {/* Barres empilées */}

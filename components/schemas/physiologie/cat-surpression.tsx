@@ -57,13 +57,12 @@ const GAP = 25;
  * centre hyperbare — sans aspirine sans consigne médicale, sans réimmersion.
  */
 export function SchemaCatSurpression() {
-  let y = 12;
-  const briques = ETAPES.map((etape) => {
-    const boxY = y;
-    y += flowBoxHeight(etape.lignes.length) + GAP;
-    return { ...etape, y: boxY };
-  });
-  const hauteur = y - GAP + 12;
+  const hauteurs = ETAPES.map((etape) => flowBoxHeight(etape.lignes.length));
+  const briques = ETAPES.map((etape, i) => ({
+    ...etape,
+    y: 12 + hauteurs.slice(0, i).reduce((somme, h) => somme + h + GAP, 0),
+  }));
+  const hauteur = 12 + hauteurs.reduce((somme, h) => somme + h + GAP, 0) - GAP + 12;
 
   return (
     <>

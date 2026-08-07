@@ -7,6 +7,7 @@ import remarkMath from "remark-math";
 
 import { ARetenir, Attention, EnPratique } from "@/components/mdx/callouts";
 import { Memo } from "@/components/mdx/memo";
+import * as Schemas from "@/components/schemas";
 import {
   SimAutonomie,
   SimDesaturation,
@@ -183,6 +184,8 @@ const components: MDXRemoteProps["components"] = {
   SimLoisPhysiques,
   SimDesaturation,
   SimGenerateur,
+  // Schémas pédagogiques (Figure + tous les Schema* de components/schemas).
+  ...Schemas,
   // Éléments HTML stylés.
   h1: H1,
   h2: H2,
