@@ -26,7 +26,21 @@ Le bloc contient de l'air comprimé à 200 bars (parfois 230 ou 300 bars) : impo
 - le **premier étage**, vissé sur la robinetterie du bloc, abaisse la haute pression (HP, jusqu'à 200-300 bars) à une **moyenne pression** (MP) d'environ 8 à 10 bars **au-dessus de la pression ambiante**. Il comporte des sorties HP (pour le manomètre) et des sorties MP (deuxièmes étages, direct system du gilet). Deux grandes technologies existent : à **piston** ou à **membrane**, cette dernière isolant mieux le mécanisme de l'eau (avantage en eau froide ou chargée) ;
 - le **deuxième étage**, tenu en bouche, abaisse la moyenne pression à la **pression ambiante**, uniquement à l'inspiration : une membrane souple sépare l'eau (à pression ambiante) de la chambre d'air ; quand le plongeur inspire, la dépression fait fléchir la membrane qui appuie sur un levier et ouvre un clapet ; l'air arrive ; à l'arrêt de l'inspiration, le clapet se referme. L'expiration s'évacue par une soupape. C'est un mécanisme dit « à la demande ».
 
-Un point important pour comprendre les pannes : la moyenne pression est **asservie à la pression ambiante** (la chambre humide du premier étage communique avec l'eau). C'est ce qui permet au détendeur de délivrer un air toujours légèrement au-dessus de la pression ambiante, donc facile à inspirer à toute profondeur. Un détendeur dit « compensé » fournit en outre un effort inspiratoire constant quelle que soit la pression restante dans le bloc.
+La figure 1 résume cette chaîne des pressions, du bloc au plongeur.
+
+<Figure n={1} titre="La chaîne des pressions du détendeur : HP (200 bar) → MP (ambiante + 8 à 10 bar) → pression ambiante, avec le manomètre en dérivation HP." description="Le schéma suit le trajet de l'air du bloc au plongeur : la haute pression de 200 bar est abaissée par le premier étage à une moyenne pression de 8 à 10 bar au-dessus de la pression ambiante, puis délivrée par le deuxième étage à la pression ambiante ; le manomètre est branché en dérivation sur la sortie haute pression.">
+  <SchemaCircuitAir level="n2" />
+</Figure>
+
+**À retenir —** Le manomètre se branche sur une sortie HP ; le direct system du gilet et l'octopus sur des sorties MP.
+
+Un point important pour comprendre les pannes : la moyenne pression est **asservie à la pression ambiante** (la chambre humide du premier étage communique avec l'eau). C'est ce qui permet au détendeur de délivrer un air toujours légèrement au-dessus de la pression ambiante, donc facile à inspirer à toute profondeur. Un détendeur dit « compensé » fournit en outre un effort inspiratoire constant quelle que soit la pression restante dans le bloc. La figure 2 détaille le mécanisme interne du deuxième étage.
+
+<Figure n={2} titre="Le mécanisme « à la demande » du deuxième étage : membrane au contact de l'eau, levier, clapet sur l'arrivée MP, embout, soupape d'expiration et bouton de purge." description="Une coupe du deuxième étage montre son mécanisme à la demande : la membrane au contact de l'eau fléchit à l'inspiration, bascule le levier qui ouvre le clapet sur l'arrivée moyenne pression, l'air arrive à l'embout à la pression ambiante, puis le clapet se referme ; l'expiration s'évacue par la soupape et un bouton de purge permet l'ouverture manuelle du clapet.">
+  <SchemaCoupeDeuxiemeEtage />
+</Figure>
+
+**À retenir —** À l'inspiration, la dépression fléchit la membrane qui bascule le levier et ouvre le clapet : l'air arrive à la pression ambiante, puis le clapet se referme ; l'expiration s'évacue par la soupape.
 
 <ARetenir>
 
@@ -52,6 +66,14 @@ Ne confondez pas panne d'air et panne de détendeur. La vraie « panne d'air » 
 
 </Attention>
 
+La figure 3 résume cette réponse unique de la palanquée, valable quelle que soit la panne.
+
+<Figure n={3} titre="Quelle que soit la panne (fuite, débit continu, plus d'air) : signe « panne d'air », octopus de l'équipier, remontée contrôlée à deux — un débit continu reste respirable en attendant." description="Un logigramme montre que, quelle que soit la panne rencontrée — fuite, débit continu ou plus d'air du tout —, la réponse de la palanquée est identique : faire le signe « panne d'air », respirer sur l'octopus de l'équipier et remonter à deux de façon contrôlée ; un détendeur en débit continu reste respirable en attendant.">
+  <SchemaLogigrammePanneAir />
+</Figure>
+
+**À retenir —** La réponse de la palanquée est toujours la même : signe, air de l'équipier, remontée contrôlée — et la vraie panne d'air se prévient au manomètre.
+
 ## Le bloc : fabrication et marquages
 
 La bouteille de plongée (le « bloc ») est un équipement sous pression en **acier** (robuste, lourd, sensible à la corrosion) ou en **aluminium** (plus léger à volume égal, parois plus épaisses, flottabilité qui devient positive en fin de plongée). Les volumes courants vont de 6 à 18 litres, le 12 L et le 15 L étant les standards en club. La robinetterie (à une ou deux sorties) porte un volant d'ouverture et reçoit le premier étage ; un filetage normalisé la relie au bloc ; une pastille fusible ou un disque de rupture n'existe pas sur les blocs européens de plongée — la sécurité repose sur les inspections.
@@ -69,7 +91,13 @@ Tout bloc porte des **marquages gravés** dans le métal, à savoir lire pour l'
 | Dates et poinçons d'épreuve | Historique des requalifications, avec le poinçon de l'organisme |
 | Marquage de conformité (CE / π) | Conformité aux exigences européennes des équipements sous pression |
 
-Un bloc ne doit **jamais** être gonflé au-dessus de sa pression de service, ni utilisé au-delà de la date de validité de ses contrôles.
+Un bloc ne doit **jamais** être gonflé au-dessus de sa pression de service, ni utilisé au-delà de la date de validité de ses contrôles. La figure 4 situe ces marquages sur un bloc annoté.
+
+<Figure n={4} titre="Bloc annoté : volant, sortie vers le premier étage, filetage normalisé, ogive, marquages gravés (PS, PE = 1,5 × PS, volume, n° de série, dates et poinçons, CE/π) et tirette de réserve mécanique en pointillés (système historique)." description="Un bloc de plongée annoté montre le volant d'ouverture, la sortie vers le premier étage (mono ou bi-sortie), le filetage normalisé, l'ogive et les marquages gravés dans le métal : pression de service, pression d'épreuve égale à 1,5 fois la PS, volume, numéro de série, dates et poinçons d'épreuve et conformité CE/π ; la tirette de réserve mécanique, système historique, figure en pointillés.">
+  <SchemaBlocRobinetterie />
+</Figure>
+
+**À retenir —** Les marquages gravés font foi : jamais de gonflage au-dessus de la PS, ni hors validité d'épreuve ou de TIV.
 
 ## La réglementation des blocs : inspections et requalifications
 
@@ -89,7 +117,13 @@ Avant chaque plongée, adoptez la routine de contrôle du bloc : lire l'autocoll
 
 ## Le gilet stabilisateur
 
-Le gilet (ou « stab », réglementairement « système gonflable de stabilisation ») remplit trois fonctions : **s'équilibrer** à toute profondeur en compensant l'écrasement de la combinaison, **se maintenir en surface** tête hors de l'eau sans effort, et **assister un équipier** lors d'une remontée. Il se gonfle par le **direct system** (flexible MP branché sur le premier étage, bouton d'inflation) ou à la bouche, et se dégonfle par la purge buccale, la **purge lente** ou les **purges rapides** (haute et basse). La purge basse s'utilise en position tête en bas, la purge haute en position verticale : l'air se purge toujours par le point le plus haut du gilet.
+Le gilet (ou « stab », réglementairement « système gonflable de stabilisation ») remplit trois fonctions : **s'équilibrer** à toute profondeur en compensant l'écrasement de la combinaison, **se maintenir en surface** tête hors de l'eau sans effort, et **assister un équipier** lors d'une remontée. Il se gonfle par le **direct system** (flexible MP branché sur le premier étage, bouton d'inflation) ou à la bouche, et se dégonfle par la purge buccale, la **purge lente** ou les **purges rapides** (haute et basse). La purge basse s'utilise en position tête en bas, la purge haute en position verticale : l'air se purge toujours par le point le plus haut du gilet. La figure 5 détaille ce circuit de gonflage et de purge.
+
+<Figure n={5} titre="Le circuit du gilet : gonflage par le direct system (flexible MP, bouton d'inflation), dégonflage par la purge buccale et les purges rapides haute et basse, soupape de surpression en protection." description="Le schéma du gilet stabilisateur montre son circuit d'air : le gonflage par le direct system, flexible moyenne pression muni d'un bouton d'inflation, et le dégonflage par la purge buccale et les purges rapides haute et basse, une soupape de surpression protégeant l'enveloppe d'un excès de pression.">
+  <SchemaCircuitGilet />
+</Figure>
+
+**À retenir —** L'air s'échappe toujours par le point le plus haut du gilet : purge haute en position verticale, purge basse tête en bas.
 
 Points de sécurité : connaître l'emplacement de toutes les purges de **son** gilet et de celui de son équipier (assistance !), vérifier avant la plongée le fonctionnement de l'inflateur et des purges, ne jamais utiliser le gilet comme ascenseur (petites impulsions, jamais de gonflage prolongé), et anticiper la dilatation de l'air à la remontée : un gilet correct à 20 m devient trop gonflé à 10 m si l'on ne purge pas (loi de Mariotte — risque de remontée rapide). Entretien : rincer l'extérieur **et l'intérieur** (faire entrer de l'eau douce par la purge buccale, rincer, vidanger), stocker légèrement gonflé, contrôler régulièrement l'état des sangles et des purges.
 
@@ -102,6 +136,14 @@ Le plongeur autonome doit pouvoir contrôler en permanence son air et les caract
 - **deux détendeurs complets** (deux deuxièmes étages) montés sur **deux sorties indépendantes** de la robinetterie quand elle le permet : chaque autonome doit pouvoir donner de l'air à un équipier sans partager son embout ;
 - le **parachute de palier** : un par palanquée au minimum en autonomie ; il signale la palanquée en surface et sécurise le palier dans le bleu. Savoir le gréer et le larguer fait partie des compétences N2 ;
 - accessoires de sécurité : couteau ou coupe-fil, lampe selon les conditions, sifflet ou miroir pour la surface.
+
+La figure 6 offre un panorama de ces instruments et de la question à laquelle chacun répond.
+
+<Figure n={6} titre="Panorama des instruments du plongeur autonome : manomètre en HP (pression du bloc, réserve à 50 bar), ordinateur (profondeur, durée, vitesse, paliers), compas (cap) et montre (durée, avec tables et profondimètre)." description="Un panorama présente les instruments du plongeur autonome : le manomètre branché en haute pression indique la pression du bloc et la réserve à 50 bar, l'ordinateur affiche profondeur, durée, vitesse de remontée et paliers, le compas donne le cap, et la montre mesure la durée en complément des tables et du profondimètre.">
+  <SchemaInstruments />
+</Figure>
+
+**À retenir —** Chaque instrument répond à une question : combien d'air me reste-t-il, à quelle profondeur et depuis combien de temps suis-je, dans quelle direction vais-je.
 
 <SimAutonomie />
 
