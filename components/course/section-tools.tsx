@@ -191,6 +191,7 @@ export function SectionTools({ moduleSlug, sections }: SectionToolsProps) {
             onChange={(e) => setDraft(e.target.value)}
             placeholder="Votre note : point à revoir, moyen mnémotechnique, question à poser…"
             rows={5}
+            maxLength={5000}
             autoFocus
           />
           <DialogFooter className="gap-2">
