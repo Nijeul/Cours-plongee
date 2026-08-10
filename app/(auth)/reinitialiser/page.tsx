@@ -48,8 +48,8 @@ export default function ReinitialiserPage() {
     const supabase = createClient();
     if (!supabase) return;
 
-    if (password.length < 6) {
-      setError("Le mot de passe doit contenir au moins 6 caractères.");
+    if (password.length < 8) {
+      setError("Le mot de passe doit contenir au moins 8 caractères.");
       return;
     }
     if (password !== confirm) {
@@ -123,12 +123,12 @@ export default function ReinitialiserPage() {
                   type="password"
                   autoComplete="new-password"
                   required
-                  minLength={6}
+                  minLength={8}
                   disabled={formDisabled}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                <p className="text-muted-foreground text-xs">Au moins 6 caractères.</p>
+                <p className="text-muted-foreground text-xs">Au moins 8 caractères.</p>
               </div>
 
               <div className="flex flex-col gap-2">
@@ -138,7 +138,7 @@ export default function ReinitialiserPage() {
                   type="password"
                   autoComplete="new-password"
                   required
-                  minLength={6}
+                  minLength={8}
                   disabled={formDisabled}
                   value={confirm}
                   onChange={(e) => setConfirm(e.target.value)}
